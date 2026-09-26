@@ -1,6 +1,5 @@
 window.OPENPAJOBS_CONFIG = {
-  // Reuses Josh's Web3Forms key — add openpajobs.com to allowed domains in Web3Forms dashboard
-  web3formsAccessKey: '1be2ae80-d6f6-4d4d-8c29-b7c6e8e39488',
+  web3formsAccessKey: "c78eca05-7c2f-43af-8292-0ef2785b85cb",
   alertFormName: 'Open PA Jobs — job alerts',
   postFormName: 'Open PA Jobs — post a job',
 };
