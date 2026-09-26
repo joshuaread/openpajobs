@@ -1,20 +1,22 @@
 (function () {
   const cfg = window.OPENPAJOBS_CONFIG || {};
-  const listEl = document.getElementById("job-list");
-  const countEl = document.getElementById("count");
-  const statJobsEl = document.getElementById("stat-jobs");
-  const qEl = document.getElementById("q");
-  const typeEl = document.getElementById("type");
   const themeToggle = document.getElementById("theme-toggle");
-  document.getElementById("y").textContent = new Date().getFullYear();
+  const yearEl = document.getElementById("y");
+  if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 
-  let jobs = [];
-
-  /* —— Theme —— */
+  /* —— Theme (early; never blocked by jobs/forms) —— */
   const THEME_KEY = "openpajobs-theme";
 
   function getTheme() {
     return document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light";
+  }
+
+  function updateToggleLabel(theme) {
+    if (!themeToggle) return;
+    themeToggle.setAttribute(
+      "aria-label",
+      theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
+    );
   }
 
   function setTheme(theme) {
@@ -26,30 +28,44 @@
     updateToggleLabel(next);
   }
 
-  function updateToggleLabel(theme) {
-    if (!themeToggle) return;
-    themeToggle.setAttribute(
-      "aria-label",
-      theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
-    );
-  }
-
   updateToggleLabel(getTheme());
 
   if (themeToggle) {
-    themeToggle.addEventListener("click", () => {
+    themeToggle.addEventListener("click", function () {
       setTheme(getTheme() === "dark" ? "light" : "dark");
     });
   }
 
-  /* —— Jobs —— */
+  /* —— Escape helpers (concat so MCP/HTML pipelines cannot strip entities) —— */
+  function escapeHtml(s) {
+    return String(s)
+      .replace(/&/g, "&" + "amp;")
+      .replace(/</g, "&" + "lt;")
+      .replace(/>/g, "&" + "gt;")
+      .replace(/"/g, "&" + "quot;");
+  }
+
+  function escapeAttr(s) {
+    return escapeHtml(s).replace(/'/g, "&" + "#39;");
+  }
+
+  /* —— Jobs (homepage only) —— */
+  const listEl = document.getElementById("job-list");
+  const countEl = document.getElementById("count");
+  const statJobsEl = document.getElementById("stat-jobs");
+  const qEl = document.getElementById("q");
+  const typeEl = document.getElementById("type");
+  let jobs = [];
+
   function render() {
+    if (!listEl || !countEl || !qEl || !typeEl) return;
     const q = (qEl.value || "").trim().toLowerCase();
     const type = typeEl.value;
-    const filtered = jobs.filter((j) => {
+    const filtered = jobs.filter(function (j) {
       if (type && j.type !== type) return false;
       if (!q) return true;
-      const hay = [j.title, j.company, j.location, j.blurb, ...(j.tags || [])]
+      const hay = [j.title, j.company, j.location, j.blurb]
+        .concat(j.tags || [])
         .join(" ")
         .toLowerCase();
       return hay.includes(q);
@@ -57,71 +73,94 @@
     countEl.textContent = filtered.length + " open";
 
     if (!filtered.length) {
-      listEl.innerHTML = `<div class="jobs-empty">No roles match that search. Try clearing filters.</div>`;
+      listEl.innerHTML =
+        '<div class="jobs-empty">No roles match that search. Try clearing filters.</div>';
       return;
     }
 
     listEl.innerHTML = filtered
-      .map((j) => {
+      .map(function (j) {
         const href = j.url || "#";
         const external = href.startsWith("http");
         const tags = (j.tags || [])
-          .map((t) => `<span class="tag">${escapeHtml(t)}</span>`)
+          .map(function (t) {
+            return '<span class="tag">' + escapeHtml(t) + "</span>";
+          })
           .join("");
-        return `<article class="job">
-          <div class="job-top">
-            <h2 class="job-title"><a href="${escapeAttr(href)}" ${external ? 'target="_blank" rel="noopener noreferrer"' : ""}>${escapeHtml(j.title)}</a></h2>
-            <span class="job-company">${escapeHtml(j.company)}</span>
-          </div>
-          <div class="job-meta">
-            <span>${escapeHtml(j.location)}</span>
-            <span class="sep" aria-hidden="true">·</span>
-            <span>${escapeHtml(j.type || "")}</span>
-          </div>
-          <p class="job-blurb">${escapeHtml(j.blurb || "")}</p>
-          ${tags ? `<div class="job-tags">${tags}</div>` : ""}
-        </article>`;
+        return (
+          '<article class="job">' +
+          '<div class="job-top">' +
+          '<h2 class="job-title"><a href="' +
+          escapeAttr(href) +
+          '"' +
+          (external ? ' target="_blank" rel="noopener noreferrer"' : "") +
+          ">" +
+          escapeHtml(j.title) +
+          "</a></h2>" +
+          '<span class="job-company">' +
+          escapeHtml(j.company) +
+          "</span>" +
+          "</div>" +
+          '<div class="job-meta">' +
+          "<span>" +
+          escapeHtml(j.location) +
+          "</span>" +
+          '<span class="sep" aria-hidden="true">·</span>' +
+          "<span>" +
+          escapeHtml(j.type || "") +
+          "</span>" +
+          "</div>" +
+          '<p class="job-blurb">' +
+          escapeHtml(j.blurb || "") +
+          "</p>" +
+          (tags ? '<div class="job-tags">' + tags + "</div>" : "") +
+          "</article>"
+        );
       })
       .join("");
   }
 
-  function escapeHtml(s) {
-    return String(s)
-      .replace(/&/g, "&")
-      .replace(/</g, "<")
-      .replace(/>/g, ">")
-      .replace(/"/g, """);
-  }
-  function escapeAttr(s) {
-    return escapeHtml(s).replace(/'/g, "&#39;");
-  }
-
   async function loadJobs() {
-    const res = await fetch("jobs.json?v=20260926b");
-    jobs = await res.json();
-    if (statJobsEl) statJobsEl.textContent = String(jobs.length);
-    render();
+    if (!listEl) return;
+    try {
+      const res = await fetch("jobs.json?v=20260926c");
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      jobs = await res.json();
+      if (!Array.isArray(jobs)) throw new Error("Invalid jobs payload");
+      if (statJobsEl) statJobsEl.textContent = String(jobs.length);
+      render();
+    } catch (e) {
+      jobs = [];
+      if (statJobsEl) statJobsEl.textContent = "—";
+      if (countEl) countEl.textContent = "";
+      listEl.innerHTML =
+        '<div class="jobs-empty">Couldn\u2019t load listings right now. Refresh the page or try again shortly.</div>';
+    }
   }
 
-  qEl.addEventListener("input", render);
-  typeEl.addEventListener("change", render);
+  if (qEl) qEl.addEventListener("input", render);
+  if (typeEl) typeEl.addEventListener("change", render);
 
   /* —— Forms —— */
   async function submitWeb3(form, statusEl, formName, extra) {
-    statusEl.textContent = "Sending…";
+    if (!statusEl) return;
+    statusEl.textContent = "Sending\u2026";
     const key = cfg.web3formsAccessKey;
     if (!key || key.length < 20) {
-      statusEl.textContent = "Form not configured yet — email joshua.gray.read@gmail.com";
+      statusEl.textContent =
+        "Form not configured yet — email joshua.gray.read@gmail.com";
       return;
     }
     const fd = new FormData(form);
-    const payload = {
-      access_key: key,
-      subject: formName,
-      from_name: "Open PA Jobs",
-      ...extra,
-    };
-    fd.forEach((v, k) => {
+    const payload = Object.assign(
+      {
+        access_key: key,
+        subject: formName,
+        from_name: "Open PA Jobs",
+      },
+      extra || {}
+    );
+    fd.forEach(function (v, k) {
       payload[k] = v;
     });
     try {
@@ -142,18 +181,31 @@
     }
   }
 
-  document.getElementById("form-alerts").addEventListener("submit", (e) => {
-    e.preventDefault();
-    submitWeb3(e.target, document.getElementById("alert-status"), cfg.alertFormName || "Open PA Jobs alerts", {
-      form_type: "alerts",
+  const formAlerts = document.getElementById("form-alerts");
+  if (formAlerts) {
+    formAlerts.addEventListener("submit", function (e) {
+      e.preventDefault();
+      submitWeb3(
+        e.target,
+        document.getElementById("alert-status"),
+        cfg.alertFormName || "Open PA Jobs alerts",
+        { form_type: "alerts" }
+      );
     });
-  });
-  document.getElementById("form-post").addEventListener("submit", (e) => {
-    e.preventDefault();
-    submitWeb3(e.target, document.getElementById("post-status"), cfg.postFormName || "Open PA Jobs post", {
-      form_type: "post_job",
+  }
+
+  const formPost = document.getElementById("form-post");
+  if (formPost) {
+    formPost.addEventListener("submit", function (e) {
+      e.preventDefault();
+      submitWeb3(
+        e.target,
+        document.getElementById("post-status"),
+        cfg.postFormName || "Open PA Jobs post",
+        { form_type: "post_job" }
+      );
     });
-  });
+  }
 
   loadJobs();
 })();
