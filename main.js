@@ -3,14 +3,10 @@
   const themeToggle = document.getElementById("theme-toggle");
   const yearEl = document.getElementById("y");
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
-
-  /* —— Theme (early; never blocked by jobs/forms) —— */
   const THEME_KEY = "openpajobs-theme";
-
   function getTheme() {
     return document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light";
   }
-
   function updateToggleLabel(theme) {
     if (!themeToggle) return;
     themeToggle.setAttribute(
@@ -18,25 +14,20 @@
       theme === "dark" ? "Switch to light mode" : "Switch to dark mode"
     );
   }
-
   function setTheme(theme) {
     const next = theme === "dark" ? "dark" : "light";
     document.documentElement.setAttribute("data-theme", next);
     try {
       localStorage.setItem(THEME_KEY, next);
-    } catch (e) { /* ignore */ }
+    } catch (e) {  }
     updateToggleLabel(next);
   }
-
   updateToggleLabel(getTheme());
-
   if (themeToggle) {
     themeToggle.addEventListener("click", function () {
       setTheme(getTheme() === "dark" ? "light" : "dark");
     });
   }
-
-  /* —— Escape helpers (concat so MCP/HTML pipelines cannot strip entities) —— */
   function escapeHtml(s) {
     return String(s)
       .replace(/&/g, "&" + "amp;")
@@ -44,12 +35,9 @@
       .replace(/>/g, "&" + "gt;")
       .replace(/"/g, "&" + "quot;");
   }
-
   function escapeAttr(s) {
     return escapeHtml(s).replace(/'/g, "&" + "#39;");
   }
-
-  /* —— Icons (inline SVG strings) —— */
   var ICON_SEARCH =
     '<svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>';
   var ICON_PEOPLE =
@@ -58,7 +46,6 @@
     '<svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>';
   var ICON_CAL =
     '<svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>';
-
   function companyInitials(name) {
     var parts = String(name || "")
       .replace(/[()]/g, " ")
@@ -70,7 +57,6 @@
     if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
     return (parts[0][0] + parts[1][0]).toUpperCase();
   }
-
   function relativeTime(iso) {
     if (!iso) return "";
     var posted = new Date(iso + (String(iso).length <= 10 ? "T12:00:00" : ""));
@@ -86,11 +72,9 @@
     if (months < 12) return months + "mo ago";
     return Math.floor(months / 12) + "y ago";
   }
-
   function isFeatured(j) {
     return j.featured === true || j.type === "Featured";
   }
-
   function withinDays(iso, days) {
     if (!iso) return false;
     var posted = new Date(iso + (String(iso).length <= 10 ? "T12:00:00" : ""));
@@ -100,8 +84,6 @@
     cutoff.setDate(cutoff.getDate() - days);
     return posted.getTime() >= cutoff.getTime();
   }
-
-  /* —— Jobs (homepage only) —— */
   var listEl = document.getElementById("job-list");
   var countEl = document.getElementById("count");
   var qEl = document.getElementById("q");
@@ -109,20 +91,34 @@
   var sortEl = document.getElementById("filter-sort");
   var typeEl = document.getElementById("filter-type");
   var jobs = [];
-
   function renderJobCard(j) {
     var href = j.url || "#";
     var external = href.indexOf("http") === 0;
-    var tags = (j.tags || [])
+    var tagList = j.tags || [];
+    var tags = tagList
+      .filter(function (t) {
+        return !/^founding$/i.test(String(t));
+      })
       .map(function (t) {
         return '<span class="tag">' + escapeHtml(String(t).toUpperCase()) + "</span>";
       })
       .join("");
     var initials = companyInitials(j.company);
     var when = relativeTime(j.posted);
+    var featured = isFeatured(j);
+    var hasFounding = tagList.some(function (t) {
+      return /^founding$/i.test(String(t));
+    });
+    var typeClass = "job-type" + (featured ? " is-featured" : "");
+    var typeHtml = j.type
+      ? '<span class="' + typeClass + '">' + escapeHtml(String(j.type || "").toUpperCase()) + "</span>"
+      : "";
+    var badgeHtml = hasFounding
+      ? '<span class="job-badge is-founding">Founding</span>'
+      : "";
     return (
       '<article class="job' +
-      (isFeatured(j) ? " job-featured" : "") +
+      (featured ? " job-featured" : "") +
       '">' +
       '<div class="job-mark" aria-hidden="true">' +
       escapeHtml(initials) +
@@ -148,11 +144,12 @@
       "</span></span>" +
       "</div>" +
       "</div>" +
-      (tags ? '<div class="job-tags">' + tags + "</div>" : '<div class="job-tags"></div>') +
+      '<div class="job-tags">' +
+      tags +
+      "</div>" +
       '<div class="job-aside">' +
-      (j.type
-        ? '<span class="job-type">' + escapeHtml(String(j.type || "").toUpperCase()) + "</span>"
-        : "") +
+      badgeHtml +
+      typeHtml +
       (when
         ? '<span class="job-date">' + ICON_CAL + "<span>" + escapeHtml(when) + "</span></span>"
         : "") +
@@ -160,13 +157,11 @@
       "</article>"
     );
   }
-
   function getFiltered() {
     var q = qEl ? (qEl.value || "").trim().toLowerCase() : "";
     var type = typeEl ? typeEl.value : "";
     var time = timeEl ? timeEl.value : "all";
     var sort = sortEl ? sortEl.value : "recent";
-
     var filtered = jobs.filter(function (j) {
       if (type && j.type !== type) return false;
       if (time === "7" && !withinDays(j.posted, 7)) return false;
@@ -178,7 +173,6 @@
         .toLowerCase();
       return hay.indexOf(q) !== -1;
     });
-
     filtered = filtered.slice();
     if (sort === "company") {
       filtered.sort(function (a, b) {
@@ -196,7 +190,6 @@
     }
     return filtered;
   }
-
   function render() {
     if (!listEl) return;
     var filtered = getFiltered();
@@ -204,36 +197,35 @@
       countEl.textContent =
         filtered.length + (filtered.length === 1 ? " job found" : " jobs found");
     }
-
     if (!filtered.length) {
       listEl.innerHTML =
         '<div class="jobs-empty">No roles match that search. Try clearing filters.</div>';
       return;
     }
-
     var featured = [];
     var rest = [];
     filtered.forEach(function (j) {
       if (isFeatured(j)) featured.push(j);
       else rest.push(j);
     });
-
     var html = "";
     if (featured.length) {
       html += '<p class="jobs-label">Featured</p>';
       html += '<div class="jobs-group">' + featured.map(renderJobCard).join("") + "</div>";
     }
     if (rest.length) {
-      if (featured.length) html += '<p class="jobs-label">All jobs</p>';
+      if (featured.length) {
+        html += '<div class="section-wave" aria-hidden="true"></div>';
+        html += '<p class="jobs-label">All jobs</p>';
+      }
       html += '<div class="jobs-group">' + rest.map(renderJobCard).join("") + "</div>";
     }
     listEl.innerHTML = html;
   }
-
   async function loadJobs() {
     if (!listEl) return;
     try {
-      var res = await fetch("jobs.json?v=20260926d");
+      var res = await fetch("jobs.json?v=20260926e");
       if (!res.ok) throw new Error("HTTP " + res.status);
       jobs = await res.json();
       if (!Array.isArray(jobs)) throw new Error("Invalid jobs payload");
@@ -245,13 +237,10 @@
         '<div class="jobs-empty">Couldn’t load listings right now. Refresh the page or try again shortly.</div>';
     }
   }
-
   if (qEl) qEl.addEventListener("input", render);
   if (timeEl) timeEl.addEventListener("change", render);
   if (sortEl) sortEl.addEventListener("change", render);
   if (typeEl) typeEl.addEventListener("change", render);
-
-  /* —— Forms —— */
   async function submitWeb3(form, statusEl, formName, extra) {
     if (!statusEl) return;
     statusEl.textContent = "Sending…";
@@ -290,7 +279,6 @@
       statusEl.textContent = "Network error — try again in a minute.";
     }
   }
-
   var formAlerts = document.getElementById("form-alerts");
   if (formAlerts) {
     formAlerts.addEventListener("submit", function (e) {
@@ -303,7 +291,6 @@
       );
     });
   }
-
   var formPost = document.getElementById("form-post");
   if (formPost) {
     formPost.addEventListener("submit", function (e) {
@@ -316,6 +303,5 @@
       );
     });
   }
-
   loadJobs();
 })();
