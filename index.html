@@ -6,7 +6,7 @@
   <title>Open PA Jobs — Public adjuster job board</title>
   <meta name="description" content="Open PA Jobs lists public adjuster roles across the U.S. Get alerts. Firms can request a founding post." />
   <meta property="og:title" content="Open PA Jobs — Public adjuster job board" />
-  <meta property="og:description" content="Niche board for licensed PAs, apprentices, and PA firm roles." />
+  <meta property="og:description" content="Open PA Jobs lists public adjuster roles across the U.S. Get alerts. Firms can request a founding post." />
   <meta property="og:url" content="https://openpajobs.com/" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%233b82f6'/%3E%3Ctext x='16' y='21' text-anchor='middle' font-size='14' fill='%23fff' font-family='system-ui' font-weight='700'%3EPA%3C/text%3E%3C/svg%3E" />
   <script>
@@ -22,10 +22,10 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20260926f" />
-  <link rel="stylesheet" href="board.css?v=20260926f" />
-  <link rel="stylesheet" href="polish.css?v=20260926f" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=20260926g" />
+  <link rel="stylesheet" href="board.css?v=20260926g" />
+  <link rel="stylesheet" href="polish.css?v=20260926g" />
 </head>
 <body>
   <header class="nav">
@@ -34,6 +34,7 @@
       <nav class="nav-links" aria-label="Primary">
         <a href="#jobs">Jobs</a>
         <a href="#alerts">Alerts</a>
+        <a href="/about.html">About</a>
       </nav>
       <div class="nav-actions">
         <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">
@@ -114,11 +115,19 @@
 
     <section class="section section-alerts" id="alerts">
       <div class="wrap">
-        <h2>Job alerts</h2>
-        <p class="lede">Free email when we add roles. Unsubscribe anytime.</p>
-        <div class="card">
-          <form id="form-alerts">
-            <div class="field-row">
+        <div class="alerts-panel">
+          <div class="alerts-copy">
+            <p class="eyebrow">Job alerts</p>
+            <h2>Never miss a PA role</h2>
+            <p class="lede">Free email when we add openings. Stay focused on public adjuster work — no carrier spam.</p>
+            <ul class="alerts-benefits">
+              <li>New openings when we add them</li>
+              <li>Optional state focus</li>
+              <li>Unsubscribe anytime</li>
+            </ul>
+          </div>
+          <div class="alerts-form">
+            <form id="form-alerts">
               <div class="field">
                 <label for="alert-email">Email</label>
                 <input id="alert-email" name="email" type="email" required autocomplete="email" placeholder="you@firm.com" />
@@ -127,10 +136,10 @@
                 <label for="alert-state">State focus (optional)</label>
                 <input id="alert-state" name="state" type="text" placeholder="FL, TX, nationwide…" />
               </div>
-            </div>
-            <button class="btn btn-primary" type="submit">Subscribe to alerts</button>
-            <p class="status" id="alert-status" role="status"></p>
-          </form>
+              <button class="btn btn-primary" type="submit">Subscribe to alerts</button>
+              <p class="status" id="alert-status" role="status"></p>
+            </form>
+          </div>
         </div>
       </div>
     </section>
@@ -144,40 +153,45 @@
           <p class="footer-blurb">Niche board for U.S. public adjusters — licensed desks, apprentices, and PA firm roles in one place.</p>
         </div>
         <div class="footer-col">
-          <h3>Jobs</h3>
+          <h3>Job seekers</h3>
           <ul>
             <li><a href="#jobs">Browse openings</a></li>
-            <li><a href="#alerts">Email alerts</a></li>
+            <li><a href="#alerts">Job alerts</a></li>
+            <li><a href="/for-seekers.html">For job seekers</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h3>For firms</h3>
+          <h3>Employers</h3>
           <ul>
             <li><a href="/post.html">Post a job</a></li>
+            <li><a href="/for-employers.html">For employers</a></li>
             <li><a href="/post.html">Founding free listing</a></li>
           </ul>
         </div>
         <div class="footer-col">
-          <h3>About</h3>
+          <h3>Company</h3>
           <ul>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/privacy.html">Privacy</a></li>
+            <li><a href="/terms.html">Terms</a></li>
             <li><a href="mailto:joshua.gray.read@gmail.com">Contact</a></li>
-            <li><a href="mailto:joshua.gray.read@gmail.com">About / disclaimer</a></li>
           </ul>
         </div>
       </div>
       <nav class="footer-quick" aria-label="Quick links">
-        <a href="#jobs"><span aria-hidden="true">&gt;</span> Browse public adjuster jobs</a>
-        <a href="/post.html"><span aria-hidden="true">&gt;</span> Post a job</a>
-        <a href="#alerts"><span aria-hidden="true">&gt;</span> Email job alerts</a>
+        <a href="#jobs"><span aria-hidden="true">></span> Browse public adjuster jobs</a>
+        <a href="/for-employers.html"><span aria-hidden="true">></span> Hire public adjusters</a>
+        <a href="/post.html"><span aria-hidden="true">></span> Post a job</a>
+        <a href="/privacy.html"><span aria-hidden="true">></span> Privacy policy</a>
       </nav>
       <div class="footer-bottom">
-        <p>© <span id="y"></span> Open PA Jobs. Built for public adjusters.</p>
-        <p class="fine">Listings link out to employers. Not affiliated with NAPIA, FAPIA, or any carrier.</p>
+        <p class="footer-legal">© <span id="y"></span> Open PA Jobs <span class="sep" aria-hidden="true">·</span> <a href="/privacy.html">Privacy</a> <span class="sep" aria-hidden="true">·</span> <a href="/terms.html">Terms</a></p>
+        <p class="fine">Listings link out to employers. Not affiliated with NAPIA, FAPIA, or any carrier. Not an employment agency.</p>
       </div>
     </div>
   </footer>
 
-  <script src="config.js?v=20260926f"></script>
-  <script src="main.js?v=20260926f"></script>
+  <script src="config.js?v=20260926g"></script>
+  <script src="main.js?v=20260926g"></script>
 </body>
 </html>
