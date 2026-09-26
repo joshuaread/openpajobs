@@ -1,9 +1,10 @@
-/* Open PA Jobs polish — banner, alerts band, CTJ-style dark footer, post page */
+/* Open PA Jobs polish — alerts split CTA, page prose, CTJ-style dark footer */
 :root, [data-theme="light"] {
   --banner-bg: #1d4ed8;
   --banner-bg-2: #2563eb;
   --banner-ink: #ffffff;
-  --alerts-band: #d8dee8;
+  --alerts-band: #eef2f7;
+  --alerts-panel-bg: #ffffff;
   --footer-bg: #1e2532;
   --footer-bg-2: #151b24;
   --footer-ink: #f1f5f9;
@@ -17,7 +18,8 @@
   --banner-bg: #1e3a8a;
   --banner-bg-2: #1d4ed8;
   --banner-ink: #e8eef6;
-  --alerts-band: #1a222d;
+  --alerts-band: #161c25;
+  --alerts-panel-bg: #1c2430;
   --footer-bg: #121820;
   --footer-bg-2: #0c1016;
   --footer-ink: #e8eef6;
@@ -75,28 +77,105 @@ main { flex: 1; }
   line-height: 1.45;
 }
 
-/* ——— Job alerts band (distinct from jobs listing #f4f6f9) ——— */
+/* ——— Job alerts: split CTA panel (no orphan title + empty card) ——— */
 .section-alerts {
   background: var(--alerts-band);
   border-top: 1px solid rgba(15, 23, 42, 0.06);
   border-bottom: none;
-  padding: 3.25rem 0 3.5rem;
+  padding: 2.75rem 0 3rem;
 }
-.section-alerts h2 {
-  color: var(--ink);
-}
-.section-alerts .lede {
-  color: var(--ink-secondary);
+.section-alerts > .wrap > h2,
+.section-alerts > .wrap > .lede {
+  display: none; /* legacy orphan pattern — removed from markup */
 }
 .section-alerts .card {
-  background: var(--panel);
-  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06), 0 12px 32px rgba(15, 23, 42, 0.08);
+  /* kill old empty-card look if leftover markup exists */
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+.alerts-panel {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 2rem 2.5rem;
+  align-items: center;
+  background: var(--alerts-panel-bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg, 16px);
+  padding: 1.75rem 1.85rem;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04), 0 8px 24px rgba(15, 23, 42, 0.06);
+}
+.alerts-copy .eyebrow {
+  margin: 0 0 0.45rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent, #2563eb);
+}
+.alerts-copy h2 {
+  margin: 0 0 0.55rem;
+  font-size: clamp(1.35rem, 2.5vw, 1.7rem);
+  letter-spacing: -0.025em;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.25;
+}
+.alerts-copy .lede {
+  margin: 0 0 1rem;
+  font-size: 0.98rem;
+  color: var(--ink-secondary, var(--muted));
+  line-height: 1.5;
+}
+.alerts-benefits {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+.alerts-benefits li {
+  position: relative;
+  padding-left: 1.35rem;
+  font-size: 0.9rem;
+  color: var(--ink-secondary, var(--muted));
+  line-height: 1.4;
+}
+.alerts-benefits li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.35rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background: var(--accent-soft, #dbeafe);
+  box-shadow: inset 0 0 0 2px var(--accent, #2563eb);
+}
+.alerts-form .field {
+  margin-bottom: 0.75rem;
+}
+.alerts-form .field:last-of-type {
+  margin-bottom: 0.95rem;
+}
+.alerts-form .btn {
+  width: 100%;
+  justify-content: center;
+}
+.alerts-form .status {
+  margin-top: 0.55rem;
+  margin-bottom: 0;
 }
 [data-theme="dark"] .section-alerts {
   border-top-color: rgba(232, 238, 246, 0.08);
 }
-[data-theme="dark"] .section-alerts .card {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25), 0 12px 32px rgba(0, 0, 0, 0.3);
+[data-theme="dark"] .alerts-panel {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+[data-theme="dark"] .alerts-benefits li::before {
+  background: rgba(59, 130, 246, 0.25);
 }
 
 .post-page {
@@ -116,6 +195,60 @@ main { flex: 1; }
 .post-back { margin-top: 1.35rem; }
 .post-back a { color: var(--muted); font-weight: 500; }
 .post-back a:hover { color: var(--accent); }
+
+/* ——— Stub / SEO pages ——— */
+.page-section {
+  padding: 2.75rem 0 3.5rem;
+  background:
+    radial-gradient(ellipse 70% 50% at 50% -10%, var(--accent-soft), transparent 65%),
+    var(--bg);
+}
+.page-prose {
+  max-width: 40rem;
+}
+.page-prose h1 {
+  font-size: clamp(1.7rem, 3.5vw, 2.25rem);
+  letter-spacing: -0.03em;
+  margin: 0 0 0.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.page-prose h2 {
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+  margin: 1.75rem 0 0.55rem;
+  font-weight: 650;
+  color: var(--ink);
+}
+.page-prose p {
+  margin: 0 0 0.9rem;
+  line-height: 1.6;
+  color: var(--ink-secondary, var(--muted));
+  font-size: 1rem;
+}
+.page-prose ul {
+  margin: 0 0 1rem;
+  padding-left: 1.2rem;
+  color: var(--ink-secondary, var(--muted));
+  line-height: 1.55;
+}
+.page-prose li { margin-bottom: 0.35rem; }
+.page-prose a {
+  color: var(--accent, #2563eb);
+  font-weight: 500;
+}
+.page-prose .lede {
+  font-size: 1.05rem;
+  margin-bottom: 1.25rem;
+  color: var(--ink-secondary, var(--muted));
+}
+.page-prose .page-cta {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
 
 /* ——— CTJ-style dark footer (always dark, even on light pages) ——— */
 .footer {
@@ -204,11 +337,32 @@ main { flex: 1; }
   color: var(--footer-muted);
 }
 .footer-bottom p { margin: 0; }
+.footer-bottom a {
+  color: var(--footer-link);
+  text-decoration: none;
+}
+.footer-bottom a:hover { color: var(--footer-link-hover); }
+.footer-legal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.65rem;
+  align-items: baseline;
+}
+.footer-legal .sep {
+  opacity: 0.5;
+}
 .footer .fine {
   margin-top: 0.35rem;
   color: var(--footer-muted);
   opacity: 0.85;
   font-size: 0.8rem;
+}
+@media (max-width: 860px) {
+  .alerts-panel {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem 1.35rem;
+  }
 }
 @media (max-width: 720px) {
   .footer-grid { grid-template-columns: 1fr 1fr; }
@@ -218,4 +372,5 @@ main { flex: 1; }
   .hiring-banner-inner { flex-direction: column; align-items: flex-start; }
   .footer-grid { grid-template-columns: 1fr; gap: 1.5rem; }
   .footer-quick { flex-direction: column; gap: 0.65rem; }
+  .section-alerts { padding: 2.25rem 0 2.5rem; }
 }
