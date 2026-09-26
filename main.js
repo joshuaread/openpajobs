@@ -92,8 +92,8 @@
   var typeEl = document.getElementById("filter-type");
   var jobs = [];
   function renderJobCard(j) {
-    var href = j.url || "#";
-    var external = href.indexOf("http") === 0;
+    var href = j.id ? "/jobs/" + encodeURIComponent(j.id) + ".html" : (j.url || "#");
+    var external = false;
     var tagList = j.tags || [];
     var tags = tagList
       .filter(function (t) {
@@ -225,7 +225,7 @@
   async function loadJobs() {
     if (!listEl) return;
     try {
-      var res = await fetch("jobs.json?v=20260926e");
+      var res = await fetch("jobs.json?v=20260926j");
       if (!res.ok) throw new Error("HTTP " + res.status);
       jobs = await res.json();
       if (!Array.isArray(jobs)) throw new Error("Invalid jobs payload");
