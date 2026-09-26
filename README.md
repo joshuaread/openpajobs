@@ -1,5 +1,3 @@
 # Open PA Jobs
 
-Niche job board for U.S. public adjusters. MVP: curated listings + alert signup + post-a-job intake at `/post.html`.
-
-Live: https://openpajobs.com/
+Niche U.S. public adjuster job board — https://openpajobs.com
