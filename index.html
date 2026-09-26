@@ -23,8 +23,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20260926c" />
-  <link rel="stylesheet" href="polish.css?v=20260926c" />
+  <link rel="stylesheet" href="styles.css?v=20260926d" />
+  <link rel="stylesheet" href="polish.css?v=20260926d" />
 </head>
 <body>
   <header class="nav">
@@ -33,7 +33,6 @@
       <nav class="nav-links" aria-label="Primary">
         <a href="#jobs">Jobs</a>
         <a href="#alerts">Alerts</a>
-        <a href="/post.html">Post a job</a>
       </nav>
       <div class="nav-actions">
         <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">
@@ -51,30 +50,9 @@
   </header>
 
   <main>
-    <section class="hero">
+    <section class="board-hero" aria-label="Brand">
       <div class="wrap">
-        <p class="eyebrow">Public adjusters · U.S. · MVP</p>
-        <h1>Public adjuster jobs in one place.</h1>
-        <p class="lede">Open roles at PA firms — licensed desks, apprentices, and support. Apply on the employer's site. Get email when new listings land.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#jobs">Browse jobs</a>
-          <a class="btn btn-ghost" href="#alerts">Get free alerts</a>
-        </div>
-        <p class="fine">Founding firms: free featured post while we open the board. No card required.</p>
-        <div class="stats" aria-label="Board highlights">
-          <div class="stat">
-            <span class="stat-value" id="stat-jobs">—</span>
-            <span class="stat-label">Open roles</span>
-          </div>
-          <div class="stat">
-            <span class="stat-value">U.S.</span>
-            <span class="stat-label">Nationwide focus</span>
-          </div>
-          <div class="stat">
-            <span class="stat-value">Free</span>
-            <span class="stat-label">Email alerts</span>
-          </div>
-        </div>
+        <p class="board-lede">Public adjuster jobs across the U.S. — licensed desks, apprentices, and PA firm roles.</p>
       </div>
     </section>
 
@@ -88,13 +66,33 @@
       </div>
     </aside>
 
-    <section class="jobs-section" id="jobs">
+    <section class="search-section" id="jobs">
       <div class="wrap">
-        <div class="toolbar">
-          <label class="sr-only" for="q">Search</label>
-          <input id="q" type="search" placeholder="Search title, firm, city..." autocomplete="off" />
-          <label class="sr-only" for="type">Type</label>
-          <select id="type">
+        <h1 class="search-heading">Search for jobs</h1>
+        <div class="search-bar">
+          <label class="sr-only" for="q">Search jobs</label>
+          <span class="search-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.3-4.3" />
+            </svg>
+          </span>
+          <input id="q" type="search" placeholder="Try ‘licensed PA’, ‘Florida’, or ‘apprentice’" autocomplete="off" />
+        </div>
+        <div class="filter-row" role="group" aria-label="Filters">
+          <label class="sr-only" for="filter-time">Time window</label>
+          <select id="filter-time" class="filter-chip">
+            <option value="7">Last 7 days</option>
+            <option value="30" selected>Last 30 days</option>
+            <option value="all">All time</option>
+          </select>
+          <label class="sr-only" for="filter-sort">Sort</label>
+          <select id="filter-sort" class="filter-chip">
+            <option value="recent" selected>Most recent</option>
+            <option value="company">Company A–Z</option>
+          </select>
+          <label class="sr-only" for="filter-type">Type</label>
+          <select id="filter-type" class="filter-chip">
             <option value="">All types</option>
             <option>Licensed PA</option>
             <option>Apprentice</option>
@@ -102,8 +100,13 @@
             <option>Various</option>
             <option>Featured</option>
           </select>
-          <span class="count" id="count"></span>
         </div>
+      </div>
+    </section>
+
+    <section class="jobs-section" aria-label="Job listings">
+      <div class="wrap">
+        <p class="count" id="count" aria-live="polite"></p>
         <div class="jobs" id="job-list" aria-live="polite"></div>
       </div>
     </section>
@@ -121,7 +124,7 @@
               </div>
               <div class="field">
                 <label for="alert-state">State focus (optional)</label>
-                <input id="alert-state" name="state" type="text" placeholder="FL, TX, nationwide..." />
+                <input id="alert-state" name="state" type="text" placeholder="FL, TX, nationwide…" />
               </div>
             </div>
             <button class="btn btn-primary" type="submit">Subscribe to alerts</button>
@@ -168,7 +171,7 @@
     </div>
   </footer>
 
-  <script src="config.js?v=20260926c"></script>
-  <script src="main.js?v=20260926c"></script>
+  <script src="config.js?v=20260926d"></script>
+  <script src="main.js?v=20260926d"></script>
 </body>
 </html>
