@@ -12,7 +12,13 @@
       "free-post"
     ],
     "url": "/post.html",
-    "blurb": "PA firms: request a free founding listing while we open the board. No card required."
+    "blurb": "PA firms: request a free founding listing while we open the board. No card required.",
+    "applyUrl": "/post.html",
+    "description": [
+      "Open PA Jobs is opening with a short founding window: PA firms can request a free listing while we build the board.",
+      "Tell us the role, location, and apply link. We review submissions and publish when they fit the public-adjuster focus — licensed desks, apprentices, and related PA-firm roles.",
+      "No payment is required for founding posts. Paid featured placements come later."
+    ]
   },
   {
     "id": "metro-apprentice",
@@ -27,7 +33,13 @@
       "training"
     ],
     "url": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4363398009",
-    "blurb": "Entry path with training provided. Commission-based; select Mid-Atlantic states."
+    "blurb": "Entry path with training provided. Commission-based; select Mid-Atlantic states.",
+    "applyUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4363398009",
+    "description": [
+      "Metro Public Adjustment is hiring Public Adjuster Apprentices for select Mid-Atlantic states (PA, NJ, WV, SC, MD).",
+      "This is an entry path with training provided. Compensation is commission-based. Expect mentorship on inspections, estimating, and file work under licensed adjusters.",
+      "Full requirements and apply steps are on the employer Greenhouse posting. Use Apply below to open their official listing."
+    ]
   },
   {
     "id": "coastal-ctg",
@@ -42,7 +54,13 @@
       "1099"
     ],
     "url": "https://himalayas.app/companies/coastal-claims-services/jobs/cradle-to-grave-adjuster",
-    "blurb": "CTG appointment model with house leads and back-office support. Active PA license required."
+    "blurb": "CTG appointment model with house leads and back-office support. Active PA license required.",
+    "applyUrl": "https://himalayas.app/companies/coastal-claims-services/jobs/cradle-to-grave-adjuster",
+    "description": [
+      "Coastal Claims Services is hiring Cradle-to-Grave Public Adjusters on a remote (US) appointment model.",
+      "CTG desks typically handle files end-to-end with house leads and back-office support. An active public adjuster license is required.",
+      "Confirm schedule, state licensing, and 1099 details on the employer career page via Apply."
+    ]
   },
   {
     "id": "aaa-pa",
@@ -57,7 +75,13 @@
       "training"
     ],
     "url": "https://aaapublicadjusters.com/public-adjuster-jobs/",
-    "blurb": "Hiring licensed PAs, sales, and entry-level with training. Commission-focused."
+    "blurb": "Hiring licensed PAs, sales, and entry-level with training. Commission-focused.",
+    "applyUrl": "https://aaapublicadjusters.com/public-adjuster-jobs/",
+    "description": [
+      "AAA Public Adjusters lists openings for licensed public adjusters plus sales and support tracks, with remote and regional options.",
+      "Roles are commission-focused; some paths include training for newer entrants. Exact seats change — check their careers page for current openings.",
+      "Apply opens the employer site so you can pick the role that matches your license and location."
+    ]
   },
   {
     "id": "metro-claims-rep",
@@ -71,7 +95,13 @@
       "wfh"
     ],
     "url": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4291164009",
-    "blurb": "Inspection + policy review support for homeowners. Flexible schedule."
+    "blurb": "Inspection + policy review support for homeowners. Flexible schedule.",
+    "applyUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4291164009",
+    "description": [
+      "Metro Public Adjustment is hiring a Public Adjusting Services Claims Rep with Greater Philadelphia focus and remote flexibility.",
+      "The work centers on inspection support and policy review for homeowners, with a flexible schedule.",
+      "See the Greenhouse posting for schedule, pay structure, and qualifications."
+    ]
   },
   {
     "id": "rockwall-austin",
@@ -85,7 +115,13 @@
       "licensed"
     ],
     "url": "https://www.linkedin.com/posts/rockwallnpa_now-hiring-licensed-public-adjusters-austin-activity-7496266431613882368-LXU2",
-    "blurb": "Experienced licensed Texas PAs for residential and commercial property claims."
+    "blurb": "Experienced licensed Texas PAs for residential and commercial property claims.",
+    "applyUrl": "https://www.linkedin.com/posts/rockwallnpa_now-hiring-licensed-public-adjusters-austin-activity-7496266431613882368-LXU2",
+    "description": [
+      "Rockwall National Public Adjusters is hiring licensed public adjusters for Austin / Central Texas.",
+      "Ideal candidates have an active Texas PA license and experience on residential and commercial property claims.",
+      "Apply opens the employer’s LinkedIn hiring post for the latest details."
+    ]
   },
   {
     "id": "statewide-pa",
@@ -99,7 +135,13 @@
       "contracts"
     ],
     "url": "https://statewidepa.com/careers/",
-    "blurb": "Licensed PA and contract signer/solicitor openings."
+    "blurb": "Licensed PA and contract signer/solicitor openings.",
+    "applyUrl": "https://statewidepa.com/careers/",
+    "description": [
+      "Statewide Public Adjusters (SPAI) posts openings for licensed public adjusters and contract signer/solicitor roles.",
+      "Locations and contract terms vary by opening — review the careers page for current seats.",
+      "Use Apply to open SPAI’s careers page."
+    ]
   },
   {
     "id": "fapia-board",
@@ -113,6 +155,12 @@
       "association"
     ],
     "url": "https://fapia.memberclicks.net/job-boardll",
-    "blurb": "Member association listings for Florida public adjusting firms."
+    "blurb": "Member association listings for Florida public adjusting firms.",
+    "applyUrl": "https://fapia.memberclicks.net/job-boardll",
+    "description": [
+      "FAPIA’s member job board aggregates Florida public adjusting openings from association firms.",
+      "Listings and requirements change frequently. Treat this page as a pointer to the association board rather than a single employer role.",
+      "Apply opens the FAPIA job board so you can browse current Florida PA postings."
+    ]
   }
 ]
