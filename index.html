@@ -23,7 +23,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20260926b" />
+  <link rel="stylesheet" href="styles.css?v=20260926c" />
 </head>
 <body>
   <header class="nav">
@@ -32,7 +32,7 @@
       <nav class="nav-links" aria-label="Primary">
         <a href="#jobs">Jobs</a>
         <a href="#alerts">Alerts</a>
-        <a href="#post">Post a job</a>
+        <a href="/post.html">Post a job</a>
       </nav>
       <div class="nav-actions">
         <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">
@@ -44,7 +44,7 @@
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
           </svg>
         </button>
-        <a class="btn btn-primary btn-sm" href="#post">Post a job</a>
+        <a class="btn btn-primary btn-sm" href="/post.html">Post a job</a>
       </div>
     </div>
   </header>
@@ -54,7 +54,7 @@
       <div class="wrap">
         <p class="eyebrow">Public adjusters · U.S. · MVP</p>
         <h1>Public adjuster jobs in one place.</h1>
-        <p class="lede">Open roles at PA firms — licensed desks, apprentices, and support. Apply on the employer’s site. Get email when new listings land.</p>
+        <p class="lede">Open roles at PA firms — licensed desks, apprentices, and support. Apply on the employer's site. Get email when new listings land.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#jobs">Browse jobs</a>
           <a class="btn btn-ghost" href="#alerts">Get free alerts</a>
@@ -77,11 +77,21 @@
       </div>
     </section>
 
+    <aside class="hiring-banner" aria-label="Hiring call to action">
+      <div class="wrap hiring-banner-inner">
+        <div class="hiring-banner-copy">
+          <strong>Hiring public adjusters?</strong>
+          <span>Reach licensed PAs and apprentices — free founding post while we open the board.</span>
+        </div>
+        <a class="btn btn-banner" href="/post.html">Post a job</a>
+      </div>
+    </aside>
+
     <section class="jobs-section" id="jobs">
       <div class="wrap">
         <div class="toolbar">
           <label class="sr-only" for="q">Search</label>
-          <input id="q" type="search" placeholder="Search title, firm, city…" autocomplete="off" />
+          <input id="q" type="search" placeholder="Search title, firm, city..." autocomplete="off" />
           <label class="sr-only" for="type">Type</label>
           <select id="type">
             <option value="">All types</option>
@@ -110,7 +120,7 @@
               </div>
               <div class="field">
                 <label for="alert-state">State focus (optional)</label>
-                <input id="alert-state" name="state" type="text" placeholder="FL, TX, nationwide…" />
+                <input id="alert-state" name="state" type="text" placeholder="FL, TX, nationwide..." />
               </div>
             </div>
             <button class="btn btn-primary" type="submit">Subscribe to alerts</button>
@@ -119,57 +129,45 @@
         </div>
       </div>
     </section>
-
-    <section class="section" id="post">
-      <div class="wrap">
-        <h2>Post a job</h2>
-        <p class="lede">PA firms: request a founding listing. We’ll review and publish. Paid featured posts come next.</p>
-        <div class="card">
-          <form id="form-post">
-            <div class="field-row">
-              <div class="field">
-                <label for="post-email">Work email</label>
-                <input id="post-email" name="email" type="email" required autocomplete="email" />
-              </div>
-              <div class="field">
-                <label for="post-firm">Firm name</label>
-                <input id="post-firm" name="firm" type="text" required autocomplete="organization" />
-              </div>
-            </div>
-            <div class="field">
-              <label for="post-title">Job title</label>
-              <input id="post-title" name="title" type="text" required placeholder="Licensed Public Adjuster — Houston" />
-            </div>
-            <div class="field-row">
-              <div class="field">
-                <label for="post-location">Location</label>
-                <input id="post-location" name="location" type="text" required placeholder="City, ST or Remote" />
-              </div>
-              <div class="field">
-                <label for="post-url">Apply URL</label>
-                <input id="post-url" name="apply_url" type="url" placeholder="https://…" />
-              </div>
-            </div>
-            <div class="field">
-              <label for="post-blurb">Short description</label>
-              <textarea id="post-blurb" name="blurb" rows="4" required placeholder="License requirements, split, territories…"></textarea>
-            </div>
-            <button class="btn btn-primary" type="submit">Request founding post</button>
-            <p class="status" id="post-status" role="status"></p>
-          </form>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer class="footer">
     <div class="wrap">
-      <p><strong class="footer-brand">Open PA Jobs</strong> · Built for public adjusters · © <span id="y"></span></p>
-      <p class="fine">Listings link out to employers. Not affiliated with NAPIA, FAPIA, or any carrier.</p>
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a class="footer-logo" href="/">Open <span>PA</span> Jobs</a>
+          <p class="footer-blurb">Niche board for U.S. public adjusters — licensed desks, apprentices, and PA firm roles in one place.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Jobs</h3>
+          <ul>
+            <li><a href="#jobs">Browse openings</a></li>
+            <li><a href="#alerts">Email alerts</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>For firms</h3>
+          <ul>
+            <li><a href="/post.html">Post a job</a></li>
+            <li><a href="/post.html">Founding free listing</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>About</h3>
+          <ul>
+            <li><a href="mailto:joshua.gray.read@gmail.com">Contact</a></li>
+            <li><a href="mailto:joshua.gray.read@gmail.com">About / disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="y"></span> Open PA Jobs. Built for public adjusters.</p>
+        <p class="fine">Listings link out to employers. Not affiliated with NAPIA, FAPIA, or any carrier.</p>
+      </div>
     </div>
   </footer>
 
-  <script src="config.js?v=20260926b"></script>
-  <script src="main.js?v=20260926b"></script>
+  <script src="config.js?v=20260926c"></script>
+  <script src="main.js?v=20260926c"></script>
 </body>
 </html>
