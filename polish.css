@@ -1,13 +1,31 @@
-/* Open PA Jobs polish — banner, footer grid, post page (loaded after styles.css) */
+/* Open PA Jobs polish — banner, alerts band, CTJ-style dark footer, post page */
 :root, [data-theme="light"] {
   --banner-bg: #1d4ed8;
   --banner-bg-2: #2563eb;
   --banner-ink: #ffffff;
+  --alerts-band: #d8dee8;
+  --footer-bg: #1e2532;
+  --footer-bg-2: #151b24;
+  --footer-ink: #f1f5f9;
+  --footer-muted: #94a3b8;
+  --footer-heading: #cbd5e1;
+  --footer-line: rgba(241, 245, 249, 0.12);
+  --footer-link: #94a3b8;
+  --footer-link-hover: #93c5fd;
 }
 [data-theme="dark"] {
   --banner-bg: #1e3a8a;
   --banner-bg-2: #1d4ed8;
   --banner-ink: #e8eef6;
+  --alerts-band: #1a222d;
+  --footer-bg: #121820;
+  --footer-bg-2: #0c1016;
+  --footer-ink: #e8eef6;
+  --footer-muted: #9aa8b8;
+  --footer-heading: #c5d0dc;
+  --footer-line: rgba(232, 238, 246, 0.12);
+  --footer-link: #9aa8b8;
+  --footer-link-hover: #93c5fd;
 }
 body {
   min-height: 100vh;
@@ -56,6 +74,31 @@ main { flex: 1; }
   opacity: 0.92;
   line-height: 1.45;
 }
+
+/* ——— Job alerts band (distinct from jobs listing #f4f6f9) ——— */
+.section-alerts {
+  background: var(--alerts-band);
+  border-top: 1px solid rgba(15, 23, 42, 0.06);
+  border-bottom: none;
+  padding: 3.25rem 0 3.5rem;
+}
+.section-alerts h2 {
+  color: var(--ink);
+}
+.section-alerts .lede {
+  color: var(--ink-secondary);
+}
+.section-alerts .card {
+  background: var(--panel);
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06), 0 12px 32px rgba(15, 23, 42, 0.08);
+}
+[data-theme="dark"] .section-alerts {
+  border-top-color: rgba(232, 238, 246, 0.08);
+}
+[data-theme="dark"] .section-alerts .card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25), 0 12px 32px rgba(0, 0, 0, 0.3);
+}
+
 .post-page {
   padding: 2.75rem 0 3.5rem;
   background:
@@ -73,42 +116,48 @@ main { flex: 1; }
 .post-back { margin-top: 1.35rem; }
 .post-back a { color: var(--muted); font-weight: 500; }
 .post-back a:hover { color: var(--accent); }
+
+/* ——— CTJ-style dark footer (always dark, even on light pages) ——— */
 .footer {
-  padding: 2.75rem 0 2.25rem;
+  background: linear-gradient(180deg, var(--footer-bg) 0%, var(--footer-bg-2) 100%);
+  color: var(--footer-muted);
+  border-top: none;
+  padding: 3.25rem 0 2.5rem;
   margin-top: 0;
+  font-size: 0.88rem;
 }
 .footer-grid {
   display: grid;
   grid-template-columns: 1.6fr 1fr 1fr 1fr;
   gap: 2rem 1.5rem;
   padding-bottom: 2rem;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--footer-line);
 }
 .footer-logo {
   display: inline-block;
-  color: var(--ink);
+  color: var(--footer-ink);
   font-weight: 700;
   font-size: 1.05rem;
   letter-spacing: -0.02em;
   text-decoration: none;
   margin-bottom: 0.65rem;
 }
-.footer-logo:hover { text-decoration: none; }
-.footer-logo span { color: var(--accent); }
+.footer-logo:hover { text-decoration: none; color: #fff; }
+.footer-logo span { color: #60a5fa; }
 .footer-blurb {
   margin: 0;
   max-width: 22rem;
   line-height: 1.5;
-  color: var(--muted);
+  color: var(--footer-muted);
   font-size: 0.9rem;
 }
 .footer-col h3 {
   margin: 0 0 0.75rem;
-  font-size: 0.8rem;
+  font-size: 0.72rem;
   font-weight: 600;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--ink);
+  color: var(--footer-heading);
 }
 .footer-col ul {
   list-style: none;
@@ -119,18 +168,48 @@ main { flex: 1; }
   gap: 0.45rem;
 }
 .footer-col a {
-  color: var(--muted);
+  color: var(--footer-link);
   text-decoration: none;
   font-size: 0.9rem;
 }
-.footer-col a:hover { color: var(--accent); text-decoration: none; }
+.footer-col a:hover {
+  color: var(--footer-link-hover);
+  text-decoration: none;
+}
+.footer-quick {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.75rem;
+  padding: 1.35rem 0;
+  border-bottom: 1px solid var(--footer-line);
+}
+.footer-quick a {
+  color: var(--footer-link);
+  text-decoration: none;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.footer-quick a:hover { color: var(--footer-link-hover); }
+.footer-quick a span {
+  margin-right: 0.35rem;
+  opacity: 0.7;
+}
 .footer-bottom {
   padding-top: 1.35rem;
   display: flex;
   flex-direction: column;
   gap: 0.35rem;
+  color: var(--footer-muted);
 }
 .footer-bottom p { margin: 0; }
+.footer .fine {
+  margin-top: 0.35rem;
+  color: var(--footer-muted);
+  opacity: 0.85;
+  font-size: 0.8rem;
+}
 @media (max-width: 720px) {
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .footer-brand-col { grid-column: 1 / -1; }
@@ -138,4 +217,5 @@ main { flex: 1; }
 @media (max-width: 640px) {
   .hiring-banner-inner { flex-direction: column; align-items: flex-start; }
   .footer-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .footer-quick { flex-direction: column; gap: 0.65rem; }
 }
