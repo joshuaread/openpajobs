@@ -49,28 +49,161 @@
     return escapeHtml(s).replace(/'/g, "&" + "#39;");
   }
 
-  /* —— Jobs (homepage only) —— */
-  const listEl = document.getElementById("job-list");
-  const countEl = document.getElementById("count");
-  const statJobsEl = document.getElementById("stat-jobs");
-  const qEl = document.getElementById("q");
-  const typeEl = document.getElementById("type");
-  let jobs = [];
+  /* —— Icons (inline SVG strings) —— */
+  var ICON_SEARCH =
+    '<svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>';
+  var ICON_PEOPLE =
+    '<svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>';
+  var ICON_PIN =
+    '<svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>';
+  var ICON_CAL =
+    '<svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>';
 
-  function render() {
-    if (!listEl || !countEl || !qEl || !typeEl) return;
-    const q = (qEl.value || "").trim().toLowerCase();
-    const type = typeEl.value;
-    const filtered = jobs.filter(function (j) {
+  function companyInitials(name) {
+    var parts = String(name || "")
+      .replace(/[()]/g, " ")
+      .split(/\s+/)
+      .filter(function (w) {
+        return w && !/^(and|&|the|of|a|an)$/i.test(w);
+      });
+    if (!parts.length) return "PA";
+    if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
+    return (parts[0][0] + parts[1][0]).toUpperCase();
+  }
+
+  function relativeTime(iso) {
+    if (!iso) return "";
+    var posted = new Date(iso + (String(iso).length <= 10 ? "T12:00:00" : ""));
+    if (isNaN(posted.getTime())) return "";
+    var now = new Date();
+    var diffMs = now.getTime() - posted.getTime();
+    if (diffMs < 0) diffMs = 0;
+    var days = Math.floor(diffMs / 86400000);
+    if (days === 0) return "Today";
+    if (days === 1) return "1d ago";
+    if (days < 30) return days + "d ago";
+    var months = Math.floor(days / 30);
+    if (months < 12) return months + "mo ago";
+    return Math.floor(months / 12) + "y ago";
+  }
+
+  function isFeatured(j) {
+    return j.featured === true || j.type === "Featured";
+  }
+
+  function withinDays(iso, days) {
+    if (!iso) return false;
+    var posted = new Date(iso + (String(iso).length <= 10 ? "T12:00:00" : ""));
+    if (isNaN(posted.getTime())) return false;
+    var cutoff = new Date();
+    cutoff.setHours(0, 0, 0, 0);
+    cutoff.setDate(cutoff.getDate() - days);
+    return posted.getTime() >= cutoff.getTime();
+  }
+
+  /* —— Jobs (homepage only) —— */
+  var listEl = document.getElementById("job-list");
+  var countEl = document.getElementById("count");
+  var qEl = document.getElementById("q");
+  var timeEl = document.getElementById("filter-time");
+  var sortEl = document.getElementById("filter-sort");
+  var typeEl = document.getElementById("filter-type");
+  var jobs = [];
+
+  function renderJobCard(j) {
+    var href = j.url || "#";
+    var external = href.indexOf("http") === 0;
+    var tags = (j.tags || [])
+      .map(function (t) {
+        return '<span class="tag">' + escapeHtml(String(t).toUpperCase()) + "</span>";
+      })
+      .join("");
+    var initials = companyInitials(j.company);
+    var when = relativeTime(j.posted);
+    return (
+      '<article class="job' +
+      (isFeatured(j) ? " job-featured" : "") +
+      '">' +
+      '<div class="job-mark" aria-hidden="true">' +
+      escapeHtml(initials) +
+      "</div>" +
+      '<div class="job-body">' +
+      '<h2 class="job-title"><a href="' +
+      escapeAttr(href) +
+      '"' +
+      (external ? ' target="_blank" rel="noopener noreferrer"' : "") +
+      ">" +
+      escapeHtml(j.title) +
+      "</a></h2>" +
+      '<div class="job-sub">' +
+      '<span class="job-sub-item">' +
+      ICON_PEOPLE +
+      '<span class="job-company">' +
+      escapeHtml(j.company) +
+      "</span></span>" +
+      '<span class="job-sub-item">' +
+      ICON_PIN +
+      "<span>" +
+      escapeHtml(j.location || "") +
+      "</span></span>" +
+      "</div>" +
+      "</div>" +
+      (tags ? '<div class="job-tags">' + tags + "</div>" : '<div class="job-tags"></div>') +
+      '<div class="job-aside">' +
+      (j.type
+        ? '<span class="job-type">' + escapeHtml(String(j.type || "").toUpperCase()) + "</span>"
+        : "") +
+      (when
+        ? '<span class="job-date">' + ICON_CAL + "<span>" + escapeHtml(when) + "</span></span>"
+        : "") +
+      "</div>" +
+      "</article>"
+    );
+  }
+
+  function getFiltered() {
+    var q = qEl ? (qEl.value || "").trim().toLowerCase() : "";
+    var type = typeEl ? typeEl.value : "";
+    var time = timeEl ? timeEl.value : "all";
+    var sort = sortEl ? sortEl.value : "recent";
+
+    var filtered = jobs.filter(function (j) {
       if (type && j.type !== type) return false;
+      if (time === "7" && !withinDays(j.posted, 7)) return false;
+      if (time === "30" && !withinDays(j.posted, 30)) return false;
       if (!q) return true;
-      const hay = [j.title, j.company, j.location, j.blurb]
+      var hay = [j.title, j.company, j.location, j.blurb, j.type]
         .concat(j.tags || [])
         .join(" ")
         .toLowerCase();
-      return hay.includes(q);
+      return hay.indexOf(q) !== -1;
     });
-    countEl.textContent = filtered.length + " open";
+
+    filtered = filtered.slice();
+    if (sort === "company") {
+      filtered.sort(function (a, b) {
+        return String(a.company || "").localeCompare(String(b.company || ""), undefined, {
+          sensitivity: "base",
+        });
+      });
+    } else {
+      filtered.sort(function (a, b) {
+        var da = a.posted || "";
+        var db = b.posted || "";
+        if (da !== db) return db < da ? -1 : 1;
+        return 0;
+      });
+    }
+    return filtered;
+  }
+
+  function render() {
+    if (!listEl) return;
+    var filtered = getFiltered();
+    if (countEl) {
+      countEl.textContent =
+        filtered.length + (filtered.length === 1 ? " job found" : " jobs found");
+    }
 
     if (!filtered.length) {
       listEl.innerHTML =
@@ -78,81 +211,58 @@
       return;
     }
 
-    listEl.innerHTML = filtered
-      .map(function (j) {
-        const href = j.url || "#";
-        const external = href.startsWith("http");
-        const tags = (j.tags || [])
-          .map(function (t) {
-            return '<span class="tag">' + escapeHtml(t) + "</span>";
-          })
-          .join("");
-        return (
-          '<article class="job">' +
-          '<div class="job-top">' +
-          '<h2 class="job-title"><a href="' +
-          escapeAttr(href) +
-          '"' +
-          (external ? ' target="_blank" rel="noopener noreferrer"' : "") +
-          ">" +
-          escapeHtml(j.title) +
-          "</a></h2>" +
-          '<span class="job-company">' +
-          escapeHtml(j.company) +
-          "</span>" +
-          "</div>" +
-          '<div class="job-meta">' +
-          "<span>" +
-          escapeHtml(j.location) +
-          "</span>" +
-          '<span class="sep" aria-hidden="true">·</span>' +
-          "<span>" +
-          escapeHtml(j.type || "") +
-          "</span>" +
-          "</div>" +
-          '<p class="job-blurb">' +
-          escapeHtml(j.blurb || "") +
-          "</p>" +
-          (tags ? '<div class="job-tags">' + tags + "</div>" : "") +
-          "</article>"
-        );
-      })
-      .join("");
+    var featured = [];
+    var rest = [];
+    filtered.forEach(function (j) {
+      if (isFeatured(j)) featured.push(j);
+      else rest.push(j);
+    });
+
+    var html = "";
+    if (featured.length) {
+      html += '<p class="jobs-label">Featured</p>';
+      html += '<div class="jobs-group">' + featured.map(renderJobCard).join("") + "</div>";
+    }
+    if (rest.length) {
+      if (featured.length) html += '<p class="jobs-label">All jobs</p>';
+      html += '<div class="jobs-group">' + rest.map(renderJobCard).join("") + "</div>";
+    }
+    listEl.innerHTML = html;
   }
 
   async function loadJobs() {
     if (!listEl) return;
     try {
-      const res = await fetch("jobs.json?v=20260926c");
+      var res = await fetch("jobs.json?v=20260926d");
       if (!res.ok) throw new Error("HTTP " + res.status);
       jobs = await res.json();
       if (!Array.isArray(jobs)) throw new Error("Invalid jobs payload");
-      if (statJobsEl) statJobsEl.textContent = String(jobs.length);
       render();
     } catch (e) {
       jobs = [];
-      if (statJobsEl) statJobsEl.textContent = "—";
       if (countEl) countEl.textContent = "";
       listEl.innerHTML =
-        '<div class="jobs-empty">Couldn\u2019t load listings right now. Refresh the page or try again shortly.</div>';
+        '<div class="jobs-empty">Couldn’t load listings right now. Refresh the page or try again shortly.</div>';
     }
   }
 
   if (qEl) qEl.addEventListener("input", render);
+  if (timeEl) timeEl.addEventListener("change", render);
+  if (sortEl) sortEl.addEventListener("change", render);
   if (typeEl) typeEl.addEventListener("change", render);
 
   /* —— Forms —— */
   async function submitWeb3(form, statusEl, formName, extra) {
     if (!statusEl) return;
-    statusEl.textContent = "Sending\u2026";
-    const key = cfg.web3formsAccessKey;
+    statusEl.textContent = "Sending…";
+    var key = cfg.web3formsAccessKey;
     if (!key || key.length < 20) {
       statusEl.textContent =
         "Form not configured yet — email joshua.gray.read@gmail.com";
       return;
     }
-    const fd = new FormData(form);
-    const payload = Object.assign(
+    var fd = new FormData(form);
+    var payload = Object.assign(
       {
         access_key: key,
         subject: formName,
@@ -164,12 +274,12 @@
       payload[k] = v;
     });
     try {
-      const res = await fetch("https://api.web3forms.com/submit", {
+      var res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify(payload),
       });
-      const data = await res.json();
+      var data = await res.json();
       if (data.success) {
         statusEl.textContent = "Got it — check your inbox soon.";
         form.reset();
@@ -181,7 +291,7 @@
     }
   }
 
-  const formAlerts = document.getElementById("form-alerts");
+  var formAlerts = document.getElementById("form-alerts");
   if (formAlerts) {
     formAlerts.addEventListener("submit", function (e) {
       e.preventDefault();
@@ -194,7 +304,7 @@
     });
   }
 
-  const formPost = document.getElementById("form-post");
+  var formPost = document.getElementById("form-post");
   if (formPost) {
     formPost.addEventListener("submit", function (e) {
       e.preventDefault();
