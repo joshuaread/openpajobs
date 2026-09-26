@@ -1,0 +1,82 @@
+[
+  {
+    "id": "metro-apprentice",
+    "title": "Public Adjuster Apprentice",
+    "company": "Metro Public Adjustment",
+    "location": "PA / NJ / WV / SC / MD",
+    "type": "Apprentice",
+    "tags": ["apprentice", "commission", "training"],
+    "url": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4363398009",
+    "blurb": "Entry path with training provided. Commission-based; select Mid-Atlantic states."
+  },
+  {
+    "id": "metro-claims-rep",
+    "title": "Public Adjusting Services Claims Rep",
+    "company": "Metro Public Adjustment",
+    "location": "Greater Philadelphia / remote flexibility",
+    "type": "Claims rep",
+    "tags": ["flexible", "wfh"],
+    "url": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4291164009",
+    "blurb": "Inspection + policy review support for homeowners. Flexible schedule."
+  },
+  {
+    "id": "aaa-pa",
+    "title": "Public Adjuster / Sales / Support roles",
+    "company": "AAA Public Adjusters",
+    "location": "Remote \u0026 regional",
+    "type": "Licensed PA",
+    "tags": ["licensed", "commission", "training"],
+    "url": "https://aaapublicadjusters.com/public-adjuster-jobs/",
+    "blurb": "Hiring licensed PAs, sales, and entry-level with training. Commission-focused."
+  },
+  {
+    "id": "statewide-pa",
+    "title": "Licensed Public Adjusters \u0026 Solicitors",
+    "company": "Statewide Public Adjusters (SPAI)",
+    "location": "See careers page",
+    "type": "Licensed PA",
+    "tags": ["licensed", "contracts"],
+    "url": "https://statewidepa.com/careers/",
+    "blurb": "Licensed PA and contract signer/solicitor openings."
+  },
+  {
+    "id": "coastal-ctg",
+    "title": "Cradle-to-Grave Public Adjuster",
+    "company": "Coastal Claims Services",
+    "location": "Remote (US)",
+    "type": "Licensed PA",
+    "tags": ["remote", "licensed", "1099"],
+    "url": "https://himalayas.app/companies/coastal-claims-services/jobs/cradle-to-grave-adjuster",
+    "blurb": "CTG appointment model with house leads and back-office support. Active PA license required."
+  },
+  {
+    "id": "fapia-board",
+    "title": "Florida PA openings (association board)",
+    "company": "FAPIA Job Board",
+    "location": "Florida",
+    "type": "Various",
+    "tags": ["florida", "association"],
+    "url": "https://fapia.memberclicks.net/job-boardll",
+    "blurb": "Member association listings for Florida public adjusting firms."
+  },
+  {
+    "id": "rockwall-austin",
+    "title": "Licensed Public Adjusters — Austin / Central Texas",
+    "company": "Rockwall National Public Adjusters",
+    "location": "Austin, TX area",
+    "type": "Licensed PA",
+    "tags": ["texas", "licensed"],
+    "url": "https://www.linkedin.com/posts/rockwallnpa_now-hiring-licensed-public-adjusters-austin-activity-7496266431613882368-LXU2",
+    "blurb": "Experienced licensed Texas PAs for residential and commercial property claims."
+  },
+  {
+    "id": "founding-placeholder",
+    "title": "Your firm here — founding free post",
+    "company": "Open PA Jobs",
+    "location": "Nationwide",
+    "type": "Featured",
+    "tags": ["founding", "free-post"],
+    "url": "#post",
+    "blurb": "PA firms: request a free founding listing while we open the board. No card required."
+  }
+]
