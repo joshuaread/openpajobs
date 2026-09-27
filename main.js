@@ -116,13 +116,21 @@
     var badgeHtml = hasFounding
       ? '<span class="job-badge is-founding">Founding</span>'
       : "";
+    var markHtml = j.logo
+      ? '<div class="job-mark has-logo" aria-hidden="true"><img src="' +
+        escapeAttr(j.logo) +
+        '" alt="" /></div>'
+      : '<div class="job-mark" aria-hidden="true">' + escapeHtml(initials) + "</div>";
+    var salaryHtml = j.salary
+      ? '<div class="job-salary"><span class="job-salary-icon" aria-hidden="true">$</span><span>' +
+        escapeHtml(j.salary) +
+        "</span></div>"
+      : "";
     return (
       '<article class="job' +
       (featured ? " job-featured" : "") +
       '">' +
-      '<div class="job-mark" aria-hidden="true">' +
-      escapeHtml(initials) +
-      "</div>" +
+      markHtml +
       '<div class="job-body">' +
       '<h2 class="job-title"><a href="' +
       escapeAttr(href) +
@@ -131,6 +139,7 @@
       ">" +
       escapeHtml(j.title) +
       "</a></h2>" +
+      salaryHtml +
       '<div class="job-sub">' +
       '<span class="job-sub-item">' +
       ICON_PEOPLE +
@@ -225,7 +234,7 @@
   async function loadJobs() {
     if (!listEl) return;
     try {
-      var res = await fetch("jobs.json?v=20260926j");
+      var res = await fetch("jobs.json?v=20260926m");
       if (!res.ok) throw new Error("HTTP " + res.status);
       jobs = await res.json();
       if (!Array.isArray(jobs)) throw new Error("Invalid jobs payload");
