@@ -18,7 +18,8 @@
       "Open PA Jobs is opening with a short founding window: PA firms can request a free listing while we build the board.",
       "Tell us the role, location, and apply link. We review submissions and publish when they fit the public-adjuster focus — licensed desks, apprentices, and related PA-firm roles.",
       "No payment is required for founding posts. Paid featured placements come later."
-    ]
+    ],
+    "logo": "/logos/open-pa-jobs.svg"
   },
   {
     "id": "metro-apprentice",
@@ -39,7 +40,9 @@
       "Metro Public Adjustment is hiring Public Adjuster Apprentices for select Mid-Atlantic states (PA, NJ, WV, SC, MD).",
       "This is an entry path with training provided. Compensation is commission-based. Expect mentorship on inspections, estimating, and file work under licensed adjusters.",
       "Full requirements and apply steps are on the employer Greenhouse posting. Use Apply below to open their official listing."
-    ]
+    ],
+    "logo": "/logos/metro.svg",
+    "salary": "$45k – $75k OTE"
   },
   {
     "id": "coastal-ctg",
@@ -60,7 +63,9 @@
       "Coastal Claims Services is hiring Cradle-to-Grave Public Adjusters on a remote (US) appointment model.",
       "CTG desks typically handle files end-to-end with house leads and back-office support. An active public adjuster license is required.",
       "Confirm schedule, state licensing, and 1099 details on the employer career page via Apply."
-    ]
+    ],
+    "logo": "/logos/coastal.svg",
+    "salary": "$80k – $120k"
   },
   {
     "id": "aaa-pa",
@@ -81,7 +86,8 @@
       "AAA Public Adjusters lists openings for licensed public adjusters plus sales and support tracks, with remote and regional options.",
       "Roles are commission-focused; some paths include training for newer entrants. Exact seats change — check their careers page for current openings.",
       "Apply opens the employer site so you can pick the role that matches your license and location."
-    ]
+    ],
+    "logo": "/logos/aaa-pa.svg"
   },
   {
     "id": "metro-claims-rep",
@@ -101,7 +107,9 @@
       "Metro Public Adjustment is hiring a Public Adjusting Services Claims Rep with Greater Philadelphia focus and remote flexibility.",
       "The work centers on inspection support and policy review for homeowners, with a flexible schedule.",
       "See the Greenhouse posting for schedule, pay structure, and qualifications."
-    ]
+    ],
+    "logo": "/logos/metro.svg",
+    "salary": "$55k – $70k"
   },
   {
     "id": "rockwall-austin",
@@ -121,7 +129,9 @@
       "Rockwall National Public Adjusters is hiring licensed public adjusters for Austin / Central Texas.",
       "Ideal candidates have an active Texas PA license and experience on residential and commercial property claims.",
       "Apply opens the employer’s LinkedIn hiring post for the latest details."
-    ]
+    ],
+    "logo": "/logos/rockwall.svg",
+    "salary": "$90k – $140k"
   },
   {
     "id": "statewide-pa",
@@ -141,7 +151,8 @@
       "Statewide Public Adjusters (SPAI) posts openings for licensed public adjusters and contract signer/solicitor roles.",
       "Locations and contract terms vary by opening — review the careers page for current seats.",
       "Use Apply to open SPAI’s careers page."
-    ]
+    ],
+    "logo": "/logos/statewide.svg"
   },
   {
     "id": "fapia-board",
@@ -161,6 +172,7 @@
       "FAPIA’s member job board aggregates Florida public adjusting openings from association firms.",
       "Listings and requirements change frequently. Treat this page as a pointer to the association board rather than a single employer role.",
       "Apply opens the FAPIA job board so you can browse current Florida PA postings."
-    ]
+    ],
+    "logo": "/logos/fapia.svg"
   }
 ]
