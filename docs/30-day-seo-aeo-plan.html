@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>30-Day SEO / AEO Plan — Open PA Jobs</title>
+  <meta name="description" content="Captain-readable 30-day plan for Open PA Jobs: post→live P0, weekly SEO/AEO tasks, KPIs, and ownership. No fake metrics." />
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --blue: #2563eb;
+      --blue-soft: #dbeafe;
+      --blue-deep: #1e40af;
+      --ink: #0f172a;
+      --ink-2: #334155;
+      --muted: #64748b;
+      --line: #e2e8f0;
+      --card: #ffffff;
+      --bg: #f1f5f9;
+      --bg-accent: #e8eef9;
+      --ok: #059669;
+      --warn: #d97706;
+      --danger: #dc2626;
+      --radius: 14px;
+      --shadow: 0 1px 2px rgba(15, 23, 42, 0.06), 0 8px 24px rgba(15, 23, 42, 0.06);
+    }
+
+    html[data-theme="dark"] {
+      --ink: #f1f5f9;
+      --ink-2: #cbd5e1;
+      --muted: #94a3b8;
+      --line: #334155;
+      --card: #1e293b;
+      --bg: #0f172a;
+      --bg-accent: #172554;
+      --blue-soft: #1e3a8a;
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.25);
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      color: var(--ink);
+      line-height: 1.55;
+      background-color: var(--bg);
+      background-image:
+        radial-gradient(ellipse 900px 480px at 10% -10%, var(--bg-accent), transparent 55%),
+        radial-gradient(ellipse 700px 420px at 95% 5%, rgba(37, 99, 235, 0.12), transparent 50%),
+        radial-gradient(ellipse 600px 400px at 50% 100%, rgba(37, 99, 235, 0.08), transparent 55%),
+        linear-gradient(180deg, var(--bg) 0%, var(--bg) 100%);
+      background-attachment: fixed;
+    }
+
+    a { color: var(--blue); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    a:hover { color: var(--blue-deep); }
+
+    html[data-theme="dark"] a:hover { color: #93c5fd; }
+
+    .wrap {
+      width: min(920px, calc(100% - 2rem));
+      margin: 0 auto;
+      padding: 2.5rem 0 4rem;
+    }
+
+    header.top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 1.15rem;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    .logo span { color: var(--blue); }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--blue);
+      background: var(--blue-soft);
+      padding: 0.28rem 0.65rem;
+      border-radius: 999px;
+      width: fit-content;
+    }
+
+    h1 {
+      font-size: clamp(1.75rem, 4vw, 2.35rem);
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      margin: 0.6rem 0 0.5rem;
+    }
+
+    .lede {
+      font-size: 1.05rem;
+      color: var(--ink-2);
+      margin: 0;
+      max-width: 40rem;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      border: 1px solid var(--line);
+      background: var(--card);
+      color: var(--ink);
+      font: inherit;
+      font-size: 0.875rem;
+      font-weight: 600;
+      padding: 0.5rem 0.85rem;
+      border-radius: 10px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: var(--shadow);
+    }
+
+    .btn:hover { border-color: var(--blue); color: var(--blue); }
+
+    .btn-primary {
+      background: var(--blue);
+      border-color: var(--blue);
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: var(--blue-deep);
+      border-color: var(--blue-deep);
+      color: #fff;
+    }
+
+    .theme-toggle {
+      width: 2.4rem;
+      height: 2.4rem;
+      padding: 0;
+      justify-content: center;
+    }
+
+    html[data-theme="light"] .icon-moon { display: none; }
+    html[data-theme="dark"] .icon-sun { display: none; }
+
+    nav.toc {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 1.5rem 0 2rem;
+    }
+
+    nav.toc a {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--ink-2);
+      text-decoration: none;
+      background: var(--card);
+      border: 1px solid var(--line);
+      padding: 0.35rem 0.7rem;
+      border-radius: 999px;
+    }
+
+    nav.toc a:hover {
+      border-color: var(--blue);
+      color: var(--blue);
+    }
+
+    section.card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1.35rem 1.5rem 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    section.card h2 {
+      margin: 0 0 0.75rem;
+      font-size: 1.2rem;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    section.card h2 .num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.6rem;
+      height: 1.6rem;
+      border-radius: 8px;
+      background: var(--blue);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    section.card h3 {
+      margin: 1.1rem 0 0.45rem;
+      font-size: 0.95rem;
+      color: var(--ink);
+    }
+
+    p { margin: 0 0 0.75rem; color: var(--ink-2); }
+    p:last-child { margin-bottom: 0; }
+
+    .callout {
+      border-left: 3px solid var(--blue);
+      background: var(--blue-soft);
+      padding: 0.85rem 1rem;
+      border-radius: 0 10px 10px 0;
+      margin: 0.85rem 0;
+      color: var(--ink);
+      font-size: 0.95rem;
+    }
+
+    .callout strong { color: var(--ink); }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      margin: 0.5rem 0 0.25rem;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 0.65rem 0.7rem;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+
+    th {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+      font-weight: 600;
+      background: transparent;
+    }
+
+    tr:last-child td { border-bottom: none; }
+
+    .pill {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 0.15rem 0.45rem;
+      border-radius: 999px;
+      background: var(--blue-soft);
+      color: var(--blue-deep);
+    }
+
+    html[data-theme="dark"] .pill { color: #93c5fd; }
+
+    .pill-ok { background: rgba(5, 150, 105, 0.15); color: var(--ok); }
+    .pill-warn { background: rgba(217, 119, 6, 0.18); color: var(--warn); }
+
+    ul.check {
+      list-style: none;
+      margin: 0.4rem 0 0;
+      padding: 0;
+    }
+
+    ul.check li {
+      position: relative;
+      padding: 0.4rem 0 0.4rem 1.7rem;
+      color: var(--ink-2);
+      border-bottom: 1px solid var(--line);
+      font-size: 0.92rem;
+    }
+
+    ul.check li:last-child { border-bottom: none; }
+
+    ul.check li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.65rem;
+      width: 1rem;
+      height: 1rem;
+      border: 2px solid var(--line);
+      border-radius: 4px;
+      background: var(--bg);
+    }
+
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 0.75rem;
+      margin-top: 0.75rem;
+    }
+
+    .kpi {
+      background: var(--bg);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 0.9rem 1rem;
+    }
+
+    .kpi .n {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      color: var(--blue);
+      line-height: 1.1;
+    }
+
+    .kpi .l {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 0.25rem;
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    @media (max-width: 640px) {
+      .split { grid-template-columns: 1fr; }
+    }
+
+    .col-box {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 0.9rem 1rem;
+      background: var(--bg);
+    }
+
+    .col-box h3 {
+      margin: 0 0 0.5rem;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+    }
+
+    .col-box ul {
+      margin: 0;
+      padding-left: 1.1rem;
+      color: var(--ink-2);
+      font-size: 0.9rem;
+    }
+
+    .col-box li { margin-bottom: 0.35rem; }
+
+    footer.page-foot {
+      margin-top: 2rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--line);
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    footer.page-foot code {
+      font-size: 0.8rem;
+      background: var(--card);
+      border: 1px solid var(--line);
+      padding: 0.1rem 0.35rem;
+      border-radius: 4px;
+    }
+
+    .files {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      margin-top: 0.6rem;
+    }
+
+    .files a {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.82rem;
+      text-decoration: none;
+      background: var(--bg);
+      border: 1px solid var(--line);
+      padding: 0.55rem 0.75rem;
+      border-radius: 8px;
+      color: var(--ink-2);
+    }
+
+    .files a:hover {
+      border-color: var(--blue);
+      color: var(--blue);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div class="brand">
+        <a class="logo" href="https://openpajobs.com/">Open <span>PA</span> Jobs</a>
+        <span class="eyebrow">Internal plan · Sep 2026</span>
+        <h1>30-day SEO / AEO plan</h1>
+        <p class="lede">Honest baseline, P0 post→live, week-by-week calendar, KPIs, ownership, and risks. Built for Josh review; Claude implements from the Markdown handoff.</p>
+      </div>
+      <div class="actions">
+        <button type="button" class="btn theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l-1.41 1.41M17.66 6.34l-1.41 1.41" /></svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" /></svg>
+        </button>
+        <a class="btn btn-primary" href="./CLAUDE-BUILD-SPEC.md">Claude build spec</a>
+      </div>
+    </header>
+
+    <nav class="toc" aria-label="Sections">
+      <a href="#baseline">Baseline</a>
+      <a href="#p0">P0 Post→Live</a>
+      <a href="#calendar">Weeks 1–4</a>
+      <a href="#kpis">KPIs</a>
+      <a href="#owners">Owners</a>
+      <a href="#risks">Risks</a>
+      <a href="#handoff">Handoff files</a>
+    </nav>
+
+    <section class="card" id="baseline">
+      <h2><span class="num">1</span> Honest baseline</h2>
+      <p>No invented traffic, rankings, or salary numbers. This is where the product actually sits.</p>
+      <table>
+        <thead>
+          <tr><th>Area</th><th>Today</th><th>Gap</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Hosting</td>
+            <td>Static GitHub Pages · openpajobs.com</td>
+            <td>HTTPS custom-domain cert still quirky</td>
+          </tr>
+          <tr>
+            <td>Jobs</td>
+            <td>~8 seed rows in <code>jobs.json</code> → <code>/jobs/{id}.html</code></td>
+            <td>Hand-edited; not self-serve</td>
+          </tr>
+          <tr>
+            <td>Post flow</td>
+            <td><code>post.html</code> → Web3Forms email (“Request founding post”)</td>
+            <td><span class="pill pill-warn">Not auto-live</span></td>
+          </tr>
+          <tr>
+            <td>SEO foundation</td>
+            <td>sitemap.xml, robots.txt, hubs, job title/description/canonical, CTJ-style footer</td>
+            <td>Thin hubs; no JobPosting JSON-LD</td>
+          </tr>
+          <tr>
+            <td>Measurement</td>
+            <td>Not assumed wired</td>
+            <td>GSC, Bing, GA4/Plausible in Week 1</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="callout"><strong>Product priority:</strong> Employers must post and see the job live without Josh editing JSON. SEO weeks support that funnel — they do not replace it.</div>
+    </section>
+
+    <section class="card" id="p0">
+      <h2><span class="num">2</span> P0 — Post a job → live</h2>
+      <p>Employer fills the form on <code>/post.html</code> (or improved <code>/post</code>). Within minutes: card on the board, <code>/jobs/{id}</code> page, Apply hits <code>applyUrl</code>. Founding free. No “we’ll review and email you” as the only path.</p>
+
+      <h3>Primary recommendation</h3>
+      <table>
+        <thead><tr><th>Layer</th><th>Choice</th></tr></thead>
+        <tbody>
+          <tr><td>Host</td><td>Vercel (or similar) + custom domain</td></tr>
+          <tr><td>App</td><td>Next.js — keep hubs; SSR/ISR job pages</td></tr>
+          <tr><td>Data</td><td>Supabase (Postgres) <code>jobs</code> table</td></tr>
+          <tr><td>Write</td><td>Public <code>POST /api/jobs</code> + honeypot + rate limit</td></tr>
+          <tr><td>Publish</td><td>Auto-live for founding free; admin unpublish stub</td></tr>
+          <tr><td>Success</td><td>Redirect to live job URL — “Your job is live”</td></tr>
+          <tr><td>Later</td><td>Stripe for featured/paid — do not block P0</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Alternative</h3>
+      <p>Stay on GitHub Pages: form → serverless function → commit <code>jobs.json</code> + <code>jobs/*.html</code> + sitemap via GitHub token → Pages rebuild. Slower and riskier; acceptable only if Claude documents tradeoffs and still meets acceptance tests.</p>
+
+      <h3>Acceptance tests</h3>
+      <ul class="check">
+        <li>Submit test job via UI → appears on homepage list</li>
+        <li>Job detail URL returns 200 with real content</li>
+        <li>Apply button hits submitted applyUrl</li>
+        <li>Sitemap (or equivalent) includes the new job</li>
+        <li>Empty fields / filled honeypot rejected</li>
+      </ul>
+      <p style="margin-top:0.85rem">Copy on post + pricing must say jobs <strong>go live immediately</strong> (founding free), not review-only email.</p>
+    </section>
+
+    <section class="card" id="calendar">
+      <h2><span class="num">3</span> 30-day calendar</h2>
+
+      <h3><span class="pill">Week 1</span> Technical + measurement</h3>
+      <ul class="check">
+        <li>Enforce HTTPS when cert ready (or fix via Vercel cutover)</li>
+        <li>Google Search Console + Bing Webmaster + GA4 or Plausible</li>
+        <li>Organization + WebSite + JobPosting JSON-LD; BreadcrumbList</li>
+        <li>Canonical + OG/Twitter on money pages; brand og:image</li>
+        <li>llms.txt + optional FAQ hub stub for AEO</li>
+        <li>Fix thin / inconsistent title and meta</li>
+      </ul>
+
+      <h3><span class="pill">Week 2</span> Deepen money pages (sourced — no fake stats)</h3>
+      <ul class="check">
+        <li>salaries.html — PA pay structure; cite DOI/BLS/industry where real</li>
+        <li>become-a-public-adjuster.html — license path + state DOI links</li>
+        <li>locations/fl.html, tx.html, ca.html — licensing notes + links to live jobs</li>
+        <li>remote.html + roles.html depth</li>
+        <li>FAQ: what is a PA; PA vs independent; how PA firms hire — answer-first H2s (40–80 words), then detail</li>
+      </ul>
+
+      <h3><span class="pill">Week 3</span> Inventory + distribution</h3>
+      <ul class="check">
+        <li>Post→live working; recruit 10–20 real listings</li>
+        <li>Companies page auto from live jobs</li>
+        <li>Soft outreach: FAPIA/NAPIA-adjacent + LinkedIn PA groups (Josh voice; templates in build spec)</li>
+        <li>Internal linking pass: hubs → jobs</li>
+      </ul>
+
+      <h3><span class="pill">Week 4</span> AEO polish + iteration</h3>
+      <ul class="check">
+        <li>Expand FAQ + statistics with honest methodology</li>
+        <li>Add “last updated” dates on guides</li>
+        <li>Submit sitemap; fix GSC coverage issues</li>
+        <li>Optional: job alerts confirmation page SEO</li>
+        <li>Measure impressions, queries, AI citations if observable</li>
+      </ul>
+    </section>
+
+    <section class="card" id="kpis">
+      <h2><span class="num">4</span> KPI targets (day 30)</h2>
+      <p>Realistic for a new niche board. Report from GSC/analytics — do not fabricate.</p>
+      <div class="kpi-grid">
+        <div class="kpi"><div class="n">30+</div><div class="l">Indexed URLs</div></div>
+        <div class="kpi"><div class="n">10+</div><div class="l">Live jobs</div></div>
+        <div class="kpi"><div class="n">3</div><div class="l">Money pages with long-tail presence</div></div>
+        <div class="kpi"><div class="n">&lt;2m</div><div class="l">Form → live job</div></div>
+      </div>
+      <p style="margin-top:0.9rem;font-size:0.9rem">Example long-tail: “public adjuster jobs florida”. Presence means measurable impressions/rankings in GSC — not a guaranteed #1 claim.</p>
+    </section>
+
+    <section class="card" id="owners">
+      <h2><span class="num">5</span> What Claude builds vs what Josh owns</h2>
+      <div class="split">
+        <div class="col-box">
+          <h3>Claude builds</h3>
+          <ul>
+            <li>Post→live stack (Next + Supabase or documented alt)</li>
+            <li>API, validation, honeypot, rate limit</li>
+            <li>Seed import from jobs.json</li>
+            <li>JSON-LD, llms.txt, meta/OG, sitemap</li>
+            <li>Hub content drafts with real citations</li>
+            <li>Companies auto page; post/pricing copy update</li>
+          </ul>
+        </div>
+        <div class="col-box">
+          <h3>Josh owns</h3>
+          <ul>
+            <li>Domain / DNS / HTTPS decisions</li>
+            <li>GSC, Bing, analytics accounts</li>
+            <li>Outreach in his voice</li>
+            <li>Final OK on sourced copy</li>
+            <li>Spam / unpublish calls</li>
+            <li>Founding firm conversations</li>
+          </ul>
+        </div>
+      </div>
+      <p style="margin-top:0.9rem">Admin contact for stubs: <strong>joshua.gray.read@gmail.com</strong></p>
+    </section>
+
+    <section class="card" id="risks">
+      <h2><span class="num">6</span> Risks</h2>
+      <table>
+        <thead><tr><th>Risk</th><th>Mitigation</th></tr></thead>
+        <tbody>
+          <tr><td>Open form spam</td><td>Honeypot + rate limit + unpublish stub; founding free ≠ forever unmoderated</td></tr>
+          <tr><td>Staying on GH Pages commit-bot</td><td>Slower rebuild, token risk — prefer Vercel + DB</td></tr>
+          <tr><td>Thin doorway state pages</td><td>Depth on FL/TX/CA first; no spray spam</td></tr>
+          <tr><td>Fake stats / social proof</td><td><span class="pill pill-ok">Out of scope</span> — cite or omit</td></tr>
+          <tr><td>HTTPS / cert quirks</td><td>Resolve in Week 1 with host cutover</td></tr>
+          <tr><td>Empty board after launch</td><td>Week 3 outreach; keep founding free live-on-submit</td></tr>
+          <tr><td>Key leakage</td><td>Never print Web3Forms key; do not reuse Slatecliff keys</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card" id="handoff">
+      <h2><span class="num">7</span> Claude handoff files</h2>
+      <p>Open these from the repo (local paths under <code>/workspace/openpajobs/docs/</code>):</p>
+      <div class="files">
+        <a href="./CLAUDE-BUILD-SPEC.md">docs/CLAUDE-BUILD-SPEC.md — full agent build spec (post→live + SEO + conventions)</a>
+        <a href="./30-DAY-SEO-AEO-PLAN.md">docs/30-DAY-SEO-AEO-PLAN.md — captain-readable week table + checklist</a>
+        <a href="./30-day-seo-aeo-plan.html">docs/30-day-seo-aeo-plan.html — this page</a>
+      </div>
+      <div class="callout" style="margin-top:1rem"><strong>Out of scope reminder:</strong> no fake salary averages or headcounts, no fake social proof, no doorway SEO spam, no Slatecliff Web3Forms key reuse.</div>
+    </section>
+
+    <footer class="page-foot">
+      <p>Open PA Jobs · Internal planning doc · Not for indexing · Prefer shipping <strong>post→live</strong> over perfect Week-1 SEO.</p>
+      <p>Design tokens: Inter / system · accent <code>#2563eb</code> · extend existing board styles when building product UI.</p>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var key = "openpajobs-theme";
+      try {
+        var saved = localStorage.getItem(key);
+        root.setAttribute("data-theme", saved === "dark" ? "dark" : "light");
+      } catch (e) {
+        root.setAttribute("data-theme", "light");
+      }
+      var btn = document.getElementById("theme-toggle");
+      if (!btn) return;
+      function syncLabel() {
+        var dark = root.getAttribute("data-theme") === "dark";
+        btn.setAttribute("aria-label", dark ? "Switch to light mode" : "Switch to dark mode");
+      }
+      syncLabel();
+      btn.addEventListener("click", function () {
+        var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+        root.setAttribute("data-theme", next);
+        try { localStorage.setItem(key, next); } catch (e) {}
+        syncLabel();
+      });
+    })();
+  </script>
+</body>
+</html>
