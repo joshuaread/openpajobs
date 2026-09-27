@@ -13,7 +13,7 @@ jobs:
       - name: Decode staging tarball and commit
         run: |
           set -euo pipefail
-          cat seo-staging/part00.b64 seo-staging/part01.b64 | base64 -d > /tmp/seo_remaining.tar.gz
+          cat seo-staging/p00.b64 seo-staging/p01.b64 seo-staging/p02.b64 seo-staging/p03.b64 seo-staging/p04.b64 seo-staging/p05.b64 seo-staging/p06.b64 | base64 -d > /tmp/seo_remaining.tar.gz
           tar -xzf /tmp/seo_remaining.tar.gz
           rm -rf seo-staging
           rm -f .github/workflows/seo-apply-once.yml
