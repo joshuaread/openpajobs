@@ -1,0 +1,51 @@
+name: Apply SEO staging once
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: seo/week1-technical-pass
+      - name: Apply SEO head inserts + generate og-image
+        run: |
+          set -euo pipefail
+          python3 << 'PY'
+          from pathlib import Path
+          inserts = Path("seo-inserts")
+          if not inserts.exists():
+              raise SystemExit("seo-inserts missing on branch")
+          for p in sorted(inserts.glob("*.txt")):
+              rel = p.name[:-4].replace("__", "/")
+              target = Path(rel)
+              if not target.exists():
+                  raise SystemExit(f"missing target {rel}")
+              html = target.read_text(encoding="utf-8")
+              ins = p.read_text(encoding="utf-8")
+              if "og:image" in html:
+                  print("skip already-seo", rel)
+                  continue
+              if "</head>" not in html:
+                  raise SystemExit(f"no </head> in {rel}")
+              marker = ins[:40]
+              if marker in html:
+                  print("skip present", rel)
+                  continue
+              target.write_text(html.replace("</head>", ins + "</head>", 1), encoding="utf-8")
+              print("applied", rel, "->", target.stat().st_size)
+          PY
+          python3 -m pip install --quiet pillow
+          sudo apt-get update -qq && sudo apt-get install -y -qq fonts-dejavu-core >/dev/null
+          python3 scripts/gen_og_image.py
+          ls -la og-image.png
+          rm -rf seo-inserts seo-staging
+          rm -f .github/workflows/seo-apply-once.yml
+          git config user.name "openpajobs-seo-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git status --short | head -60
+          git commit -m "Week 1 SEO/AEO technical pass (HTML inserts + og-image from Claude bundle)"
+          git push origin HEAD:seo/week1-technical-pass
