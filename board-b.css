@@ -331,3 +331,54 @@
     padding: 1.15rem 0 2.5rem;
   }
 }
+
+
+.job-mark.has-logo {
+  background: #fff;
+  border: 1px solid var(--line);
+  padding: 0.35rem;
+  overflow: hidden;
+}
+.job-mark.has-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+.job-salary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 0 0 0.45rem;
+  padding: 0.2rem 0.65rem 0.2rem 0.25rem;
+  border-radius: 999px;
+  background: #dcfce7;
+  color: #166534;
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.job-salary-icon {
+  width: 1.15rem;
+  height: 1.15rem;
+  border-radius: 999px;
+  background: #166534;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.65rem;
+  font-weight: 700;
+}
+[data-theme="dark"] .job-mark.has-logo {
+  background: #0f172a;
+  border-color: var(--line);
+}
+[data-theme="dark"] .job-salary {
+  background: #14532d;
+  color: #bbf7d0;
+}
+[data-theme="dark"] .job-salary-icon {
+  background: #22c55e;
+  color: #052e16;
+}
