@@ -234,7 +234,7 @@
   async function loadJobs() {
     if (!listEl) return;
     try {
-      var res = await fetch("jobs.json?v=20260926m");
+      var res = await fetch("jobs.active.json?v=20260926m");
       if (!res.ok) throw new Error("HTTP " + res.status);
       jobs = await res.json();
       if (!Array.isArray(jobs)) throw new Error("Invalid jobs payload");
