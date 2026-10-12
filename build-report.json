@@ -1,0 +1,99 @@
+{
+  "buildDate": "2026-10-12",
+  "total": 8,
+  "active": 7,
+  "droppedExpired": [
+    "fapia-board"
+  ],
+  "jsonLdEmitted": [
+    "metro-apprentice",
+    "coastal-ctg",
+    "metro-claims-rep",
+    "rockwall-austin"
+  ],
+  "jsonLdSkipped": {
+    "founding-placeholder": "internal/placeholder listing (no external job), not a JobPosting",
+    "aaa-pa": "jsonld:false on record",
+    "statewide-pa": "jsonld:false on record"
+  },
+  "defaultedValidThrough": [
+    {
+      "id": "founding-placeholder",
+      "validThrough": "2026-11-25T23:59:59Z",
+      "rule": "posted + 60 days"
+    },
+    {
+      "id": "metro-apprentice",
+      "validThrough": "2026-11-24T23:59:59Z",
+      "rule": "posted + 60 days"
+    },
+    {
+      "id": "coastal-ctg",
+      "validThrough": "2026-11-22T23:59:59Z",
+      "rule": "posted + 60 days"
+    },
+    {
+      "id": "aaa-pa",
+      "validThrough": "2026-11-19T23:59:59Z",
+      "rule": "posted + 60 days"
+    },
+    {
+      "id": "metro-claims-rep",
+      "validThrough": "2026-11-14T23:59:59Z",
+      "rule": "posted + 60 days"
+    },
+    {
+      "id": "rockwall-austin",
+      "validThrough": "2026-11-07T23:59:59Z",
+      "rule": "posted + 60 days"
+    },
+    {
+      "id": "statewide-pa",
+      "validThrough": "2026-10-27T23:59:59Z",
+      "rule": "posted + 60 days"
+    },
+    {
+      "id": "fapia-board",
+      "validThrough": "2026-10-09T23:59:59Z",
+      "rule": "posted + 60 days"
+    }
+  ],
+  "missingFields": {
+    "founding-placeholder": [
+      "location(jobLocation/applicantLocationRequirements)",
+      "validThrough (not in data; defaulted)"
+    ],
+    "metro-apprentice": [
+      "validThrough (not in data; defaulted)"
+    ],
+    "coastal-ctg": [
+      "validThrough (not in data; defaulted)"
+    ],
+    "aaa-pa": [
+      "validThrough (not in data; defaulted)"
+    ],
+    "metro-claims-rep": [
+      "validThrough (not in data; defaulted)"
+    ],
+    "rockwall-austin": [
+      "validThrough (not in data; defaulted)"
+    ],
+    "statewide-pa": [
+      "location(jobLocation/applicantLocationRequirements)",
+      "validThrough (not in data; defaulted)"
+    ],
+    "fapia-board": [
+      "validThrough (not in data; defaulted)"
+    ]
+  },
+  "validation": {
+    "metro-apprentice": "ok",
+    "coastal-ctg": "ok",
+    "metro-claims-rep": "ok",
+    "rockwall-austin": "ok"
+  },
+  "removedPages": [
+    "jobs/fapia-board.html"
+  ],
+  "sitemapUrls": 34
+}

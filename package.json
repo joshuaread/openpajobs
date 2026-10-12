@@ -1,0 +1,11 @@
+{
+  "name": "openpajobs",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "merge": "node scripts/merge-inbox.mjs",
+    "validate": "node scripts/validate.mjs",
+    "test": "node --test test/"
+  }
+}

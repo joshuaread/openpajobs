@@ -33,7 +33,7 @@ Do not invent traffic, rankings, or salary averages.
 ## Week calendar
 
 | Week | Theme | Top outcomes |
-|------|-------|--------------|
+|------|--------|--------------|
 | **1** | Technical + measurement | HTTPS path clear; GSC + Bing + GA4/Plausible; Organization/WebSite/JobPosting/Breadcrumb JSON-LD; canonical + OG/Twitter; og:image; llms.txt; title/meta consistency; FAQ stub |
 | **2** | Deepen money pages | Sourced depth on salaries, become-a-PA, FL/TX/CA location pages, remote, roles; FAQ with AEO answer-first H2s; cite DOI/BLS/industry — **no fake stats** |
 | **3** | Inventory + distribution | Post→live hardened; **10–20 real listings**; companies page from live jobs; Josh outreach (FAPIA/NAPIA-adjacent, LinkedIn); hubs → jobs internal links |

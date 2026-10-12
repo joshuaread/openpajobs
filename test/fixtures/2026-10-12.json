@@ -1,0 +1,23 @@
+[
+  {
+    "id": "fake-acme-licensed-pa-tampa-2",
+    "title": "FAKE TEST — Licensed Public Adjuster",
+    "company": "Acme Test Adjusters (FAKE)",
+    "location": "Tampa, FL",
+    "type": "Full-time",
+    "posted": "2026-10-11",
+    "validThrough": "2026-12-11",
+    "applyUrl": "https://example.com/fake/apply/4",
+    "sourceUrl": "https://example.com/fake/source/4",
+    "description": ["SYNTHETIC: same title+company+location, different id -> flagged, not dropped."]
+  },
+  { "id": "Bad ID!", "title": "", "company": "FAKE", "location": "Nowhere", "type": "x", "posted": "10/12/2026",
+    "validThrough": "soon", "applyUrl": "javascript:alert(1)", "sourceUrl": "ftp://x", "description": "not an array" },
+  { "id": "fake-expired", "title": "FAKE expired", "company": "FAKE", "location": "Austin, TX", "type": "Full-time",
+    "posted": "2026-08-01", "validThrough": "2026-09-01", "applyUrl": "https://example.com/fake/5",
+    "sourceUrl": "https://example.com/fake/5", "description": ["SYNTHETIC: already expired."] },
+  "not-an-object",
+  { "id": "fake-bad-emp", "title": "FAKE", "company": "FAKE", "location": "Austin, TX", "type": "Full-time",
+    "posted": "2026-10-11", "validThrough": "2026-12-01", "employmentType": "SOMETIMES",
+    "applyUrl": "https://example.com/fake/6", "sourceUrl": "https://example.com/fake/6", "description": ["SYNTHETIC"] }
+]

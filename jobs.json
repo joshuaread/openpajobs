@@ -87,7 +87,8 @@
       "Roles are commission-focused; some paths include training for newer entrants. Exact seats change — check their careers page for current openings.",
       "Apply opens the employer site so you can pick the role that matches your license and location."
     ],
-    "logo": "/logos/aaa-pa.svg"
+    "logo": "/logos/aaa-pa.svg",
+    "jsonld": false
   },
   {
     "id": "metro-claims-rep",
@@ -152,7 +153,8 @@
       "Locations and contract terms vary by opening — review the careers page for current seats.",
       "Use Apply to open SPAI’s careers page."
     ],
-    "logo": "/logos/statewide.svg"
+    "logo": "/logos/statewide.svg",
+    "jsonld": false
   },
   {
     "id": "fapia-board",
