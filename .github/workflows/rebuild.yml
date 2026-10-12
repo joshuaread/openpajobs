@@ -1,0 +1,35 @@
+name: Daily rebuild (expire jobs)
+# Rebuilds from committed jobs.json only, so expired listings drop off even if the box is down.
+# Never reads inbox/ (inbox files live on the box and are not committed).
+on:
+  schedule:
+    - cron: "17 11 * * *" # 11:17 UTC daily
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: rebuild
+  cancel-in-progress: false
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Build
+        run: node scripts/build.mjs
+      - name: Validate
+        run: node scripts/validate.mjs
+      - name: Commit if output changed
+        run: |
+          git add -A jobs jobs.active.json index.html sitemap.xml data build-report.json
+          if git diff --cached --quiet; then
+            echo "No changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898759+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: daily rebuild (expire listings) $(date -u +%F)"
+          git push
