@@ -176,5 +176,367 @@
       "Apply opens the FAPIA job board so you can browse current Florida PA postings."
     ],
     "logo": "/logos/fapia.svg"
+  },
+  {
+    "id": "metro-apprentice-249388",
+    "title": "Public Adjuster Apprentice",
+    "company": "Metro Public Adjustment",
+    "location": "PA / NJ / WV / SC / MD",
+    "type": "Apprentice",
+    "posted": "2026-09-24",
+    "tags": [
+      "apprentice",
+      "commission",
+      "training"
+    ],
+    "applyUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4420018009",
+    "sourceUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4420018009",
+    "blurb": "New Greenhouse seat (249388). Training provided; commission; Mid-Atlantic states only.",
+    "description": [
+      "Metro Public Adjustment is hiring Public Adjuster Apprentices (posting 249388) for PA, NJ, WV, SC, and MD.",
+      "Commission-based with training provided. No prior adjusting experience required.",
+      "Apply on the official Greenhouse listing."
+    ],
+    "validThrough": "2026-11-23T23:59:59Z",
+    "employmentType": "OTHER",
+    "companyUrl": "https://metropublicadjustment.com/",
+    "url": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4420018009"
+  },
+  {
+    "id": "metro-inspectors-western-pa",
+    "title": "Property Inspectors Needed - Western PA",
+    "company": "Metro Public Adjustment",
+    "location": "Western Pennsylvania",
+    "type": "Inspector",
+    "posted": "2026-09-18",
+    "tags": [
+      "inspector",
+      "training",
+      "flexible"
+    ],
+    "applyUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4411631009",
+    "sourceUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4411631009",
+    "blurb": "Western PA property inspections with training; flexible schedule; Pittsburgh-area counties.",
+    "description": [
+      "Metro Public Adjustment is hiring property inspectors for Western Pennsylvania counties around Pittsburgh.",
+      "No prior experience required; training and mentorship provided. Flexible part-time or full-time schedule.",
+      "Apply on the official Greenhouse listing."
+    ],
+    "validThrough": "2026-11-17T23:59:59Z",
+    "employmentType": "OTHER",
+    "companyUrl": "https://metropublicadjustment.com/",
+    "url": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4411631009"
+  },
+  {
+    "id": "noble-field-pa-sales",
+    "title": "Field Public Adjuster (Sales)",
+    "company": "Noble Public Adjusting Group",
+    "location": "Field / multi-state",
+    "type": "Licensed PA",
+    "posted": "2026-10-13",
+    "tags": [
+      "licensed",
+      "sales",
+      "field"
+    ],
+    "applyUrl": "https://noblepagroup.com/about/careers/",
+    "sourceUrl": "https://noblepagroup.com/about/careers/",
+    "blurb": "Field PA sales role: inspect, advocate, and drive client acquisition.",
+    "description": [
+      "Noble Public Adjusting Group is hiring Field Public Adjusters focused on sales and client acquisition.",
+      "Role covers property damage inspection, policyholder advocacy, and field business development.",
+      "Apply from Noble's careers page."
+    ],
+    "validThrough": "2026-12-12T23:59:59Z",
+    "employmentType": "OTHER",
+    "companyUrl": "https://noblepagroup.com/",
+    "url": "https://noblepagroup.com/about/careers/",
+    "jsonld": false
+  },
+  {
+    "id": "noble-estimator-1099",
+    "title": "Estimator (1099 Independent Contractor)",
+    "company": "Noble Public Adjusting Group",
+    "location": "Remote / contract",
+    "type": "Estimator",
+    "posted": "2026-10-13",
+    "tags": [
+      "estimator",
+      "1099",
+      "xactimate"
+    ],
+    "applyUrl": "https://noblepagroup.com/about/careers/",
+    "sourceUrl": "https://noblepagroup.com/about/careers/",
+    "blurb": "1099 estimating with Xactimate line-item scopes for residential and commercial claims.",
+    "description": [
+      "Noble is hiring 1099 estimators to scope property damage and build Xactimate line-item estimates.",
+      "Flexible high-volume contract work supporting residential and commercial claims.",
+      "Apply from Noble's careers page."
+    ],
+    "validThrough": "2026-12-12T23:59:59Z",
+    "employmentType": "CONTRACTOR",
+    "companyUrl": "https://noblepagroup.com/",
+    "url": "https://noblepagroup.com/about/careers/",
+    "jsonld": false
+  },
+  {
+    "id": "avalo-pa-1099",
+    "title": "Public Insurance Adjuster (1099)",
+    "company": "Avalo Public Adjuster",
+    "location": "Florida",
+    "type": "Licensed PA",
+    "posted": "2026-10-13",
+    "tags": [
+      "licensed",
+      "1099",
+      "commission",
+      "florida"
+    ],
+    "applyUrl": "https://avalopublicadjuster.com/hiring",
+    "sourceUrl": "https://avalopublicadjuster.com/hiring",
+    "blurb": "Florida 1099 PA desk with firm-generated claims; commission-based.",
+    "description": [
+      "Avalo Public Adjuster is hiring experienced public insurance adjusters as 1099 contractors in Florida.",
+      "Firm generates claims so adjusters focus on negotiation and settlements. 0320 license preferred; 0620 apprentice path available.",
+      "Apply by email via the hiring page."
+    ],
+    "validThrough": "2026-12-12T23:59:59Z",
+    "employmentType": "CONTRACTOR",
+    "companyUrl": "https://avalopublicadjuster.com/",
+    "url": "https://avalopublicadjuster.com/hiring",
+    "jsonld": false
+  },
+  {
+    "id": "fspa-pa-fl",
+    "title": "Licensed Public Adjusters (Florida)",
+    "company": "Florida State Public Adjusters, Inc.",
+    "location": "Florida",
+    "type": "Licensed PA",
+    "posted": "2026-10-13",
+    "tags": [
+      "licensed",
+      "florida",
+      "commission"
+    ],
+    "applyUrl": "https://floridastatepa.com/join-the-team",
+    "sourceUrl": "https://floridastatepa.com/join-the-team",
+    "blurb": "Seeking 5 fully licensed Florida public adjusters; published commission starts at 85%.",
+    "description": [
+      "Florida State Public Adjusters is hiring five fully licensed Florida public adjusters (residential and non-residential).",
+      "Firm handles admin and sends qualified leads. Published commission starts at 85%, up to 90% with benchmarks.",
+      "Apply via floridastatepa.com/join-the-team or admin@floridastatepa.com."
+    ],
+    "validThrough": "2026-12-12T23:59:59Z",
+    "employmentType": "OTHER",
+    "companyUrl": "https://floridastatepa.com/",
+    "url": "https://floridastatepa.com/join-the-team",
+    "jsonld": false
+  },
+  {
+    "id": "fspa-apprentice-fl",
+    "title": "Public Adjuster Apprentice (Florida)",
+    "company": "Florida State Public Adjusters, Inc.",
+    "location": "Florida",
+    "type": "Apprentice",
+    "posted": "2026-10-13",
+    "tags": [
+      "apprentice",
+      "florida",
+      "commission"
+    ],
+    "applyUrl": "https://floridastatepa.com/join-the-team/public-adjuster-apprentice-fl",
+    "sourceUrl": "https://floridastatepa.com/join-the-team/public-adjuster-apprentice-fl",
+    "blurb": "One FL apprentice seat for licensed independent adjusters moving to full PA licensure.",
+    "description": [
+      "Florida State Public Adjusters is seeking one Florida independent adjuster (0620) for a public adjuster apprenticeship.",
+      "Minimum apprentice commission 40%; bumps to standard PA rates after full licensure.",
+      "Details on the apprentice page; contact admin@floridastatepa.com."
+    ],
+    "validThrough": "2026-12-12T23:59:59Z",
+    "employmentType": "OTHER",
+    "companyUrl": "https://floridastatepa.com/",
+    "url": "https://floridastatepa.com/join-the-team/public-adjuster-apprentice-fl"
+  },
+  {
+    "id": "fspa-pa-co",
+    "title": "Licensed Public Adjusters (Colorado)",
+    "company": "Florida State Public Adjusters, Inc.",
+    "location": "Colorado",
+    "type": "Licensed PA",
+    "posted": "2026-10-13",
+    "tags": [
+      "licensed",
+      "colorado",
+      "commission"
+    ],
+    "applyUrl": "https://floridastatepa.com/join-the-team",
+    "sourceUrl": "https://floridastatepa.com/join-the-team",
+    "blurb": "Seeking 3 fully licensed Colorado public adjusters (Designated Home State path noted).",
+    "description": [
+      "Florida State Public Adjusters is hiring three fully licensed Colorado public adjusters.",
+      "Colorado non-residential work requires Designated Home State licensure per their careers page.",
+      "Apply via floridastatepa.com/join-the-team."
+    ],
+    "validThrough": "2026-12-12T23:59:59Z",
+    "employmentType": "OTHER",
+    "companyUrl": "https://floridastatepa.com/",
+    "url": "https://floridastatepa.com/join-the-team",
+    "jsonld": false
+  },
+  {
+    "id": "rockwall-charleston",
+    "title": "Licensed Public Adjuster — Charleston, SC",
+    "company": "Rockwall National Public Adjusters",
+    "location": "Charleston, SC",
+    "type": "Licensed PA",
+    "posted": "2026-10-13",
+    "tags": [
+      "licensed",
+      "hybrid",
+      "commission"
+    ],
+    "applyUrl": "https://rockwallnpa.com/contact/",
+    "sourceUrl": "https://rockwallnpa.com/contact/",
+    "blurb": "Hybrid commission PA seat in Charleston, SC; listed on Rockwall contact/careers block.",
+    "description": [
+      "Rockwall National Public Adjusters is seeking a licensed public adjuster in Charleston, SC.",
+      "Hybrid, commission-based role with administrative support for new and experienced adjusters.",
+      "Details and apply path are on rockwallnpa.com/contact/."
+    ],
+    "validThrough": "2026-12-12T23:59:59Z",
+    "employmentType": "OTHER",
+    "companyUrl": "https://rockwallnpa.com/",
+    "url": "https://rockwallnpa.com/contact/",
+    "jsonld": false
+  },
+  {
+    "id": "rockwall-tampa",
+    "title": "Licensed Public Adjuster — Tampa, FL",
+    "company": "Rockwall National Public Adjusters",
+    "location": "Tampa, FL",
+    "type": "Licensed PA",
+    "posted": "2026-10-13",
+    "tags": [
+      "licensed",
+      "hybrid",
+      "commission"
+    ],
+    "applyUrl": "https://rockwallnpa.com/contact/",
+    "sourceUrl": "https://rockwallnpa.com/contact/",
+    "blurb": "Hybrid commission PA seat in Tampa, FL; listed on Rockwall contact/careers block.",
+    "description": [
+      "Rockwall National Public Adjusters is seeking a licensed public adjuster in Tampa, FL.",
+      "Hybrid, commission-based role with administrative support for new and experienced adjusters.",
+      "Details and apply path are on rockwallnpa.com/contact/."
+    ],
+    "validThrough": "2026-12-12T23:59:59Z",
+    "employmentType": "OTHER",
+    "companyUrl": "https://rockwallnpa.com/",
+    "url": "https://rockwallnpa.com/contact/",
+    "jsonld": false
+  },
+  {
+    "id": "rockwall-destin",
+    "title": "Licensed Public Adjuster — Destin, FL",
+    "company": "Rockwall National Public Adjusters",
+    "location": "Destin, FL",
+    "type": "Licensed PA",
+    "posted": "2026-10-13",
+    "tags": [
+      "licensed",
+      "hybrid",
+      "commission"
+    ],
+    "applyUrl": "https://rockwallnpa.com/contact/",
+    "sourceUrl": "https://rockwallnpa.com/contact/",
+    "blurb": "Hybrid commission PA seat in Destin, FL; listed on Rockwall contact/careers block.",
+    "description": [
+      "Rockwall National Public Adjusters is seeking a licensed public adjuster in Destin, FL.",
+      "Hybrid, commission-based role with administrative support for new and experienced adjusters.",
+      "Details and apply path are on rockwallnpa.com/contact/."
+    ],
+    "validThrough": "2026-12-12T23:59:59Z",
+    "employmentType": "OTHER",
+    "companyUrl": "https://rockwallnpa.com/",
+    "url": "https://rockwallnpa.com/contact/",
+    "jsonld": false
+  },
+  {
+    "id": "rockwall-dallas",
+    "title": "Licensed Public Adjuster — Dallas, TX",
+    "company": "Rockwall National Public Adjusters",
+    "location": "Dallas, TX",
+    "type": "Licensed PA",
+    "posted": "2026-10-13",
+    "tags": [
+      "licensed",
+      "hybrid",
+      "commission"
+    ],
+    "applyUrl": "https://rockwallnpa.com/contact/",
+    "sourceUrl": "https://rockwallnpa.com/contact/",
+    "blurb": "Hybrid commission PA seat in Dallas, TX; listed on Rockwall contact/careers block.",
+    "description": [
+      "Rockwall National Public Adjusters is seeking a licensed public adjuster in Dallas, TX.",
+      "Hybrid, commission-based role with administrative support for new and experienced adjusters.",
+      "Details and apply path are on rockwallnpa.com/contact/."
+    ],
+    "validThrough": "2026-12-12T23:59:59Z",
+    "employmentType": "OTHER",
+    "companyUrl": "https://rockwallnpa.com/",
+    "url": "https://rockwallnpa.com/contact/",
+    "jsonld": false
+  },
+  {
+    "id": "rockwall-san-antonio",
+    "title": "Licensed Public Adjuster — San Antonio, TX",
+    "company": "Rockwall National Public Adjusters",
+    "location": "San Antonio, TX",
+    "type": "Licensed PA",
+    "posted": "2026-10-13",
+    "tags": [
+      "licensed",
+      "hybrid",
+      "commission"
+    ],
+    "applyUrl": "https://rockwallnpa.com/contact/",
+    "sourceUrl": "https://rockwallnpa.com/contact/",
+    "blurb": "Hybrid commission PA seat in San Antonio, TX; listed on Rockwall contact/careers block.",
+    "description": [
+      "Rockwall National Public Adjusters is seeking a licensed public adjuster in San Antonio, TX.",
+      "Hybrid, commission-based role with administrative support for new and experienced adjusters.",
+      "Details and apply path are on rockwallnpa.com/contact/."
+    ],
+    "validThrough": "2026-12-12T23:59:59Z",
+    "employmentType": "OTHER",
+    "companyUrl": "https://rockwallnpa.com/",
+    "url": "https://rockwallnpa.com/contact/",
+    "jsonld": false
+  },
+  {
+    "id": "rockwall-houston",
+    "title": "Licensed Public Adjuster — Houston, TX",
+    "company": "Rockwall National Public Adjusters",
+    "location": "Houston, TX",
+    "type": "Licensed PA",
+    "posted": "2026-10-13",
+    "tags": [
+      "licensed",
+      "hybrid",
+      "commission"
+    ],
+    "applyUrl": "https://rockwallnpa.com/contact/",
+    "sourceUrl": "https://rockwallnpa.com/contact/",
+    "blurb": "Hybrid commission PA seat in Houston, TX; listed on Rockwall contact/careers block.",
+    "description": [
+      "Rockwall National Public Adjusters is seeking a licensed public adjuster in Houston, TX.",
+      "Hybrid, commission-based role with administrative support for new and experienced adjusters.",
+      "Details and apply path are on rockwallnpa.com/contact/."
+    ],
+    "validThrough": "2026-12-12T23:59:59Z",
+    "employmentType": "OTHER",
+    "companyUrl": "https://rockwallnpa.com/",
+    "url": "https://rockwallnpa.com/contact/",
+    "jsonld": false
   }
 ]
