@@ -1,7 +1,7 @@
 {
-  "buildDate": "2026-10-12",
-  "total": 8,
-  "active": 7,
+  "buildDate": "2026-10-13",
+  "total": 22,
+  "active": 21,
   "droppedExpired": [
     "fapia-board"
   ],
@@ -9,12 +9,26 @@
     "metro-apprentice",
     "coastal-ctg",
     "metro-claims-rep",
-    "rockwall-austin"
+    "rockwall-austin",
+    "metro-apprentice-249388",
+    "fspa-apprentice-fl"
   ],
   "jsonLdSkipped": {
     "founding-placeholder": "internal/placeholder listing (no external job), not a JobPosting",
     "aaa-pa": "jsonld:false on record",
-    "statewide-pa": "jsonld:false on record"
+    "statewide-pa": "jsonld:false on record",
+    "metro-inspectors-western-pa": "missing required: location(jobLocation/applicantLocationRequirements)",
+    "noble-field-pa-sales": "jsonld:false on record",
+    "noble-estimator-1099": "jsonld:false on record",
+    "avalo-pa-1099": "jsonld:false on record",
+    "fspa-pa-fl": "jsonld:false on record",
+    "fspa-pa-co": "jsonld:false on record",
+    "rockwall-charleston": "jsonld:false on record",
+    "rockwall-tampa": "jsonld:false on record",
+    "rockwall-destin": "jsonld:false on record",
+    "rockwall-dallas": "jsonld:false on record",
+    "rockwall-san-antonio": "jsonld:false on record",
+    "rockwall-houston": "jsonld:false on record"
   },
   "defaultedValidThrough": [
     {
@@ -84,16 +98,22 @@
     ],
     "fapia-board": [
       "validThrough (not in data; defaulted)"
+    ],
+    "metro-inspectors-western-pa": [
+      "location(jobLocation/applicantLocationRequirements)"
+    ],
+    "noble-field-pa-sales": [
+      "location(jobLocation/applicantLocationRequirements)"
     ]
   },
   "validation": {
     "metro-apprentice": "ok",
     "coastal-ctg": "ok",
     "metro-claims-rep": "ok",
-    "rockwall-austin": "ok"
+    "rockwall-austin": "ok",
+    "metro-apprentice-249388": "ok",
+    "fspa-apprentice-fl": "ok"
   },
-  "removedPages": [
-    "jobs/fapia-board.html"
-  ],
-  "sitemapUrls": 34
+  "removedPages": [],
+  "sitemapUrls": 48
 }
