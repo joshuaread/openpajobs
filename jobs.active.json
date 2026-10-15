@@ -517,5 +517,293 @@
     "companyUrl": "https://rockwallnpa.com/",
     "url": "https://rockwallnpa.com/contact/",
     "jsonld": false
+  },
+  {
+    "id": "united-pa-claims-advocate-melville",
+    "title": "Claims Advocate (Path to Licensed Public Adjuster)",
+    "company": "United Public Adjusters & Appraisers",
+    "location": "Melville, NY (on-site)",
+    "type": "Apprentice",
+    "posted": "2025-09-22",
+    "tags": [
+      "new-york",
+      "salaried",
+      "path-to-license",
+      "business-interruption"
+    ],
+    "url": "https://www.unitedpublicadjusters.com/about/careers/claims-advocate/",
+    "applyUrl": "https://www.unitedpublicadjusters.com/about/careers/claims-advocate/",
+    "sourceUrl": "https://www.unitedpublicadjusters.com/about/careers/claims-advocate/",
+    "blurb": "Salaried NY seat that pays for your public adjuster license while you learn financial-loss claim advocacy.",
+    "description": [
+      "United Public Adjusters & Appraisers is hiring a Claims Advocate at its Melville, Long Island office, aimed at people coming from accounting, finance, insurance customer service, or claims.",
+      "The firm covers licensing and training so the hire can become a licensed public adjuster within a few months, then work business interruption, builder's risk, and property damage files using financial records to support the claim.",
+      "The page lists a $75k–$85k salary (based on experience) plus bonus, health benefits, and PTO; submit a resume through the careers page."
+    ],
+    "validThrough": "2026-11-14"
+  },
+  {
+    "id": "united-pa-property-claims-adjuster-ny",
+    "title": "Property Insurance Claims Adjuster",
+    "company": "United Public Adjusters & Appraisers",
+    "location": "New York (office-based, some field meetings)",
+    "type": "Licensed PA",
+    "posted": "2025-04-14",
+    "tags": [
+      "new-york",
+      "salaried",
+      "residential",
+      "commercial"
+    ],
+    "url": "https://www.unitedpublicadjusters.com/about/careers/public-adjuster-property-inspector-claims-writer/",
+    "applyUrl": "https://www.unitedpublicadjusters.com/about/careers/public-adjuster-property-inspector-claims-writer/",
+    "sourceUrl": "https://www.unitedpublicadjusters.com/about/careers/public-adjuster-property-inspector-claims-writer/",
+    "blurb": "Experienced property adjuster to run policyholder claims from intake to settlement for a Long Island PA firm.",
+    "description": [
+      "United Public Adjusters & Appraisers wants a seasoned property adjuster, from either the carrier or public side, to manage residential and commercial claims for policyholders.",
+      "The work is mostly in the office: reviewing estimates, engineering reports, and policy language, building claim packages, and negotiating with carriers, with some joint inspections in the field. It asks for 3+ years of property adjusting and a NY public adjuster license or willingness to get one.",
+      "Pay is listed at $75k–$110k plus medical coverage and PTO."
+    ],
+    "validThrough": "2026-11-14"
+  },
+  {
+    "id": "united-pa-insurance-claims-manager-ny",
+    "title": "Insurance Claims Manager",
+    "company": "United Public Adjusters & Appraisers",
+    "location": "New York office (Tri-State Area)",
+    "type": "Claims rep",
+    "posted": "2025-04-14",
+    "tags": [
+      "new-york",
+      "leadership",
+      "salaried",
+      "xactimate"
+    ],
+    "url": "https://www.unitedpublicadjusters.com/about/careers/senior-claims-manager/",
+    "applyUrl": "https://www.unitedpublicadjusters.com/about/careers/senior-claims-manager/",
+    "sourceUrl": "https://www.unitedpublicadjusters.com/about/careers/senior-claims-manager/",
+    "blurb": "Leadership role steering a portfolio of policyholder property claims and mentoring the adjuster team.",
+    "description": [
+      "United Public Adjusters & Appraisers is hiring a Claims Manager to coordinate strategy and day-to-day progress on residential and commercial property claims for policyholders.",
+      "The manager oversees active files, mentors adjusters and support staff, negotiates settlements, and makes sure files are ready for appraisal, mediation, or litigation. Requirements include 5+ years in property claims and Xactimate experience; a NYS public adjuster license is preferred.",
+      "The posting lists a $110k–$130k salary with medical coverage and PTO."
+    ],
+    "validThrough": "2026-11-14"
+  },
+  {
+    "id": "tiger-adjusters-public-adjuster-houston",
+    "title": "Public Adjuster",
+    "company": "Tiger Adjusters",
+    "location": "Houston, TX",
+    "type": "Licensed PA",
+    "posted": "2026-09-28",
+    "tags": [
+      "texas",
+      "franchise",
+      "xactimate",
+      "full-time"
+    ],
+    "url": "https://www.tigeradjusters.com/careers/public-adjuster-houston",
+    "applyUrl": "https://www.tigeradjusters.com/careers/public-adjuster-houston",
+    "sourceUrl": "https://www.tigeradjusters.com/careers/public-adjuster-houston",
+    "blurb": "Licensed Texas PA to inspect, estimate, and negotiate claims while helping grow a Houston franchise office.",
+    "description": [
+      "Tiger Adjusters, a franchise-based public adjusting firm, is looking for an experienced licensed public adjuster for its Houston market.",
+      "Daily work covers documenting property damage, reviewing policies for gaps or errors, writing Xactimate estimates, and negotiating settlements with carriers, plus business development to grow the office. A Texas public adjuster license is required.",
+      "Full-time, with pay negotiated based on experience; the posting asks applicants to email a resume and LinkedIn profile."
+    ],
+    "validThrough": "2026-11-14"
+  },
+  {
+    "id": "tiger-adjusters-public-adjuster-trenton",
+    "title": "Public Adjuster",
+    "company": "Tiger Adjusters",
+    "location": "Trenton, NJ",
+    "type": "Licensed PA",
+    "posted": "2026-09-22",
+    "tags": [
+      "new-jersey",
+      "franchise",
+      "xactimate",
+      "full-time"
+    ],
+    "url": "https://www.tigeradjusters.com/careers/public-adjuster-trenton",
+    "applyUrl": "https://www.tigeradjusters.com/careers/public-adjuster-trenton",
+    "sourceUrl": "https://www.tigeradjusters.com/careers/public-adjuster-trenton",
+    "blurb": "Licensed New Jersey PA to handle claims end to end and build business for a Trenton franchise office.",
+    "description": [
+      "Tiger Adjusters is hiring an experienced public adjuster for its Trenton, New Jersey location as part of its growing franchise network.",
+      "The role includes property inspections, policy analysis, Xactimate estimating, carrier negotiation, and supporting attorneys when a claim is disputed, along with sales and outreach. A New Jersey public adjuster license is required.",
+      "Full-time, with pay negotiated based on experience; applicants send a resume per the posting."
+    ],
+    "validThrough": "2026-11-14"
+  },
+  {
+    "id": "swift-pa-field-sales-rep-omaha",
+    "title": "Field and Sales Representative",
+    "company": "Swift Public Adjusters",
+    "location": "Omaha, NE (remote + in-person inspections)",
+    "type": "Claims rep",
+    "posted": "2026-10-15",
+    "tags": [
+      "nebraska",
+      "sales",
+      "field-inspections",
+      "draw-vs-commission",
+      "benefits"
+    ],
+    "url": "https://swiftpublicadjusters.applytojob.com/apply/EuWlliq5TL/Field-And-Sales-Representative",
+    "applyUrl": "https://swiftpublicadjusters.applytojob.com/apply/EuWlliq5TL/Field-And-Sales-Representative",
+    "sourceUrl": "https://swiftpublicadjusters.applytojob.com/apply/EuWlliq5TL/Field-And-Sales-Representative",
+    "blurb": "Hybrid sales-and-field role at a PA firm: win clients and inspect storm damage across Greater Omaha.",
+    "description": [
+      "Swift Public Adjusters is hiring a full-time Field & Sales Representative for Omaha who both brings in clients and inspects their property damage.",
+      "The job combines referral networking and presentations with on-site storm-damage inspections, scope-of-loss reports, policy review, and coordination with carriers and contractors. A public adjusting license is required, or must be obtained within a month of hire.",
+      "Compensation starts as a $50k–$65k draw against uncapped commission, with health, dental, vision, and 401(k) benefits."
+    ],
+    "validThrough": "2026-11-14"
+  },
+  {
+    "id": "swift-pa-licensed-outside-sales-st-louis",
+    "title": "Licensed Outside Sales Representative",
+    "company": "Swift Public Adjusters",
+    "location": "St. Louis, MO (remote + in-person outreach)",
+    "type": "Claims rep",
+    "posted": "2026-10-15",
+    "tags": [
+      "missouri",
+      "sales",
+      "draw-vs-commission",
+      "benefits"
+    ],
+    "url": "https://swiftpublicadjusters.applytojob.com/apply/3rl6jPYnzN/Licensed-Outside-Sales-Representative",
+    "applyUrl": "https://swiftpublicadjusters.applytojob.com/apply/3rl6jPYnzN/Licensed-Outside-Sales-Representative",
+    "sourceUrl": "https://swiftpublicadjusters.applytojob.com/apply/3rl6jPYnzN/Licensed-Outside-Sales-Representative",
+    "blurb": "Licensed sales seat signing property owners for a PA firm in the St. Louis market, with draw and benefits.",
+    "description": [
+      "Swift Public Adjusters wants an outside sales representative to grow its client base across the St. Louis region.",
+      "The rep builds referral partnerships, meets with residential and commercial property owners, screens referred claims, and reports on territory activity. A public adjusting license is required, or must be earned within a month of starting.",
+      "Pay begins as a $50k–$65k draw against uncapped commission, with full benefits. Swift also lists similar seats in Kansas City and Springfield, MO."
+    ],
+    "validThrough": "2026-11-14"
+  },
+  {
+    "id": "select-adjusters-field-pa-phoenix",
+    "title": "Field Public Adjuster / Senior Public Adjuster",
+    "company": "Select Adjusters",
+    "location": "Phoenix Valley / Mesa, AZ",
+    "type": "Various",
+    "posted": "2026-10-15",
+    "tags": [
+      "arizona",
+      "base-plus-bonus",
+      "training",
+      "path-to-license"
+    ],
+    "url": "https://selectadjusters.com/careers",
+    "applyUrl": "https://selectadjusters.com/careers",
+    "sourceUrl": "https://selectadjusters.com/careers",
+    "blurb": "Phoenix-area PA firm hiring field and senior adjusters with base pay, paid training, and licensing support.",
+    "description": [
+      "Select Adjusters, an Advosy-backed public adjusting firm in Mesa, is hiring across the Phoenix Valley.",
+      "Field Public Adjusters inspect and document damage and work with homeowners; an Arizona PA license is preferred, and the firm will help the right candidate get one. Senior Public Adjusters need the license already and lead complex claims and carrier negotiations. The page also lists claims coordinator and office roles.",
+      "Pay is base salary plus performance pay tied to claim results, with paid training; apply through the form on the careers page."
+    ],
+    "validThrough": "2026-11-14"
+  },
+  {
+    "id": "panther-pa-licensed-apprentice-multistate",
+    "title": "Public Adjusters (Licensed) & Public Adjuster Apprentices",
+    "company": "Panther Public Adjusting",
+    "location": "NY, NJ, CT, GA, NC, SC, TX, FL",
+    "type": "Various",
+    "posted": "2025-07-14",
+    "tags": [
+      "multi-state",
+      "commission",
+      "apprentice",
+      "flexible-schedule"
+    ],
+    "url": "https://pantherpa.com/careers/",
+    "applyUrl": "https://pantherpa.com/careers/",
+    "sourceUrl": "https://pantherpa.com/careers/",
+    "blurb": "Commission-based licensed PA and apprentice openings across eight states, with training for newcomers.",
+    "description": [
+      "Panther Public Adjusting is hiring licensed public adjusters and apprentices in New York, New Jersey, Connecticut, Georgia, the Carolinas, Texas, and Florida.",
+      "Licensed adjusters need an active PA license in one of those states and handle damage assessment, claim filing, and carrier negotiation. Apprentices need no prior experience; they train under senior adjusters while working toward a license.",
+      "Pay is commission on successful claims with a flexible schedule; apply by emailing a resume as described on the careers page."
+    ],
+    "validThrough": "2026-11-14"
+  },
+  {
+    "id": "mla-claims-apprentice-pia-lafayette-hill",
+    "title": "Apprentice Public Insurance Adjuster",
+    "company": "MLA Claims",
+    "location": "Lafayette Hill, PA",
+    "type": "Apprentice",
+    "posted": "2026-10-15",
+    "tags": [
+      "pennsylvania",
+      "entry-level",
+      "full-time",
+      "benefits"
+    ],
+    "url": "https://www.mlaclaims.com/apprentice-public-insurance-adjuster",
+    "applyUrl": "https://www.mlaclaims.com/apprentice-public-insurance-adjuster",
+    "sourceUrl": "https://www.mlaclaims.com/apprentice-public-insurance-adjuster",
+    "blurb": "Full-time entry-level seat at a Philadelphia-area PA firm that trains you toward a public adjuster license.",
+    "description": [
+      "MLA Claims, a public adjusting and property loss consulting firm near Philadelphia, has a full-time, entry-level apprentice opening.",
+      "The apprentice handles contents inventories and pricing in Excel, measures and photographs loss sites, schedules inspections, and does office tasks, building the experience needed for licensure. A bachelor's degree, a valid driver's license, and a vehicle are required.",
+      "Pay depends on experience, and healthcare and a 401(k) are offered."
+    ],
+    "validThrough": "2026-11-14"
+  },
+  {
+    "id": "cohen-associates-licensed-pa-florida",
+    "title": "Licensed Public Adjuster",
+    "company": "Cohen & Associates Public Adjusters",
+    "location": "Florida (Miami area)",
+    "type": "Licensed PA",
+    "posted": "2026-10-15",
+    "tags": [
+      "florida",
+      "business-development",
+      "bilingual-plus"
+    ],
+    "url": "https://bestpublicadjusters.com/careers/",
+    "applyUrl": "https://bestpublicadjusters.com/careers/",
+    "sourceUrl": "https://bestpublicadjusters.com/careers/",
+    "blurb": "Florida PA firm looking for licensed adjusters or licensed apprentices to sign and manage new claims.",
+    "description": [
+      "Cohen & Associates Public Adjusters, in business since 2005, is looking for licensed public adjusters to bring in and handle residential and commercial claims.",
+      "Applicants need a Florida 3-20 public adjuster license or a 31-20 apprentice license, with bond in good standing. The work includes networking with roofers, plumbers, contractors, and property managers for leads, keeping clients updated, and meeting carrier adjusters at inspections.",
+      "Xactimate, negotiation skills, and being bilingual are all pluses."
+    ],
+    "validThrough": "2026-11-14"
+  },
+  {
+    "id": "tutwiler-pa-solicitor-tampa",
+    "title": "Public Adjuster & Solicitor",
+    "company": "Tutwiler & Associates Public Adjusters",
+    "location": "Tampa, FL (Florida offices)",
+    "type": "Licensed PA",
+    "posted": "2025-09-23",
+    "tags": [
+      "florida",
+      "sales",
+      "commercial",
+      "residential"
+    ],
+    "url": "https://publicadjuster.com/careers/",
+    "applyUrl": "https://publicadjuster.com/careers/",
+    "sourceUrl": "https://publicadjuster.com/careers/",
+    "blurb": "Licensed Florida PA to work firm-generated leads and grow commercial and residential referrals for a 30-year firm.",
+    "description": [
+      "Tutwiler & Associates, a public adjusting firm based in Tampa with more than 30 years in business, is looking for licensed public adjusters to sign homeowners and commercial property owners.",
+      "The role follows up on leads the firm generates and builds relationships with property managers and businesses. It requires a current all-lines Florida PA license (3-20), 2+ years of experience, and your own laptop, phone, camera, and transportation.",
+      "Compensation is discussed after an interview; the careers page explains how to send a resume."
+    ],
+    "validThrough": "2026-11-14"
   }
 ]

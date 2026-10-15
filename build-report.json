@@ -1,7 +1,7 @@
 {
-  "buildDate": "2026-10-14",
-  "total": 22,
-  "active": 21,
+  "buildDate": "2026-10-15",
+  "total": 34,
+  "active": 33,
   "droppedExpired": [
     "fapia-board"
   ],
@@ -11,7 +11,14 @@
     "metro-claims-rep",
     "rockwall-austin",
     "metro-apprentice-249388",
-    "fspa-apprentice-fl"
+    "fspa-apprentice-fl",
+    "united-pa-claims-advocate-melville",
+    "tiger-adjusters-public-adjuster-houston",
+    "tiger-adjusters-public-adjuster-trenton",
+    "swift-pa-field-sales-rep-omaha",
+    "swift-pa-licensed-outside-sales-st-louis",
+    "mla-claims-apprentice-pia-lafayette-hill",
+    "tutwiler-pa-solicitor-tampa"
   ],
   "jsonLdSkipped": {
     "founding-placeholder": "internal/placeholder listing (no external job), not a JobPosting",
@@ -28,7 +35,12 @@
     "rockwall-destin": "jsonld:false on record",
     "rockwall-dallas": "jsonld:false on record",
     "rockwall-san-antonio": "jsonld:false on record",
-    "rockwall-houston": "jsonld:false on record"
+    "rockwall-houston": "jsonld:false on record",
+    "united-pa-property-claims-adjuster-ny": "missing required: location(jobLocation/applicantLocationRequirements)",
+    "united-pa-insurance-claims-manager-ny": "missing required: location(jobLocation/applicantLocationRequirements)",
+    "select-adjusters-field-pa-phoenix": "multi-listing pointer (type Various), not a single job — Google policy",
+    "panther-pa-licensed-apprentice-multistate": "multi-listing pointer (type Various), not a single job — Google policy",
+    "cohen-associates-licensed-pa-florida": "missing required: location(jobLocation/applicantLocationRequirements)"
   },
   "defaultedValidThrough": [
     {
@@ -104,6 +116,15 @@
     ],
     "noble-field-pa-sales": [
       "location(jobLocation/applicantLocationRequirements)"
+    ],
+    "united-pa-property-claims-adjuster-ny": [
+      "location(jobLocation/applicantLocationRequirements)"
+    ],
+    "united-pa-insurance-claims-manager-ny": [
+      "location(jobLocation/applicantLocationRequirements)"
+    ],
+    "cohen-associates-licensed-pa-florida": [
+      "location(jobLocation/applicantLocationRequirements)"
     ]
   },
   "validation": {
@@ -112,8 +133,15 @@
     "metro-claims-rep": "ok",
     "rockwall-austin": "ok",
     "metro-apprentice-249388": "ok",
-    "fspa-apprentice-fl": "ok"
+    "fspa-apprentice-fl": "ok",
+    "united-pa-claims-advocate-melville": "ok",
+    "tiger-adjusters-public-adjuster-houston": "ok",
+    "tiger-adjusters-public-adjuster-trenton": "ok",
+    "swift-pa-field-sales-rep-omaha": "ok",
+    "swift-pa-licensed-outside-sales-st-louis": "ok",
+    "mla-claims-apprentice-pia-lafayette-hill": "ok",
+    "tutwiler-pa-solicitor-tampa": "ok"
   },
   "removedPages": [],
-  "sitemapUrls": 48
+  "sitemapUrls": 60
 }
