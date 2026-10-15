@@ -1,7 +1,7 @@
 {
   "buildDate": "2026-10-15",
-  "total": 34,
-  "active": 33,
+  "total": 40,
+  "active": 39,
   "droppedExpired": [
     "fapia-board"
   ],
@@ -18,7 +18,13 @@
     "swift-pa-field-sales-rep-omaha",
     "swift-pa-licensed-outside-sales-st-louis",
     "mla-claims-apprentice-pia-lafayette-hill",
-    "tutwiler-pa-solicitor-tampa"
+    "tutwiler-pa-solicitor-tampa",
+    "allied-public-adjuster-socal",
+    "allied-senior-public-adjuster",
+    "allied-executive-desk-pa",
+    "allied-senior-estimator",
+    "metro-pa-trainee-ga",
+    "metro-remote-claims-rep-pa"
   ],
   "jsonLdSkipped": {
     "founding-placeholder": "internal/placeholder listing (no external job), not a JobPosting",
@@ -140,8 +146,14 @@
     "swift-pa-field-sales-rep-omaha": "ok",
     "swift-pa-licensed-outside-sales-st-louis": "ok",
     "mla-claims-apprentice-pia-lafayette-hill": "ok",
-    "tutwiler-pa-solicitor-tampa": "ok"
+    "tutwiler-pa-solicitor-tampa": "ok",
+    "allied-public-adjuster-socal": "ok",
+    "allied-senior-public-adjuster": "ok",
+    "allied-executive-desk-pa": "ok",
+    "allied-senior-estimator": "ok",
+    "metro-pa-trainee-ga": "ok",
+    "metro-remote-claims-rep-pa": "ok"
   },
   "removedPages": [],
-  "sitemapUrls": 60
+  "sitemapUrls": 66
 }
