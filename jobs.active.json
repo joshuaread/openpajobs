@@ -805,5 +805,149 @@
       "Compensation is discussed after an interview; the careers page explains how to send a resume."
     ],
     "validThrough": "2026-11-14"
+  },
+  {
+    "id": "allied-public-adjuster-socal",
+    "title": "Public Adjuster",
+    "company": "Allied Public Adjusters",
+    "location": "Glendale / Newport Beach, CA (SoCal field)",
+    "type": "Apprentice",
+    "posted": "2026-08-22",
+    "tags": [
+      "california",
+      "field",
+      "path-to-license",
+      "xactimate"
+    ],
+    "url": "https://job-boards.greenhouse.io/alliedpublicadjusters/jobs/4379732009",
+    "blurb": "Experienced restoration or carrier-claims path into CA public adjusting, with structured oversight toward a license.",
+    "applyUrl": "https://job-boards.greenhouse.io/alliedpublicadjusters/jobs/4379732009",
+    "description": [
+      "Allied Public Adjusters is hiring Public Adjusters for Glendale and Newport Beach with field work across Southern California.",
+      "The seat is aimed at insurance-restoration or carrier claims managers who will inspect, estimate, and advocate for policyholders while working toward a California Public Adjuster license.",
+      "Base pay is listed around $65k–$100k with overtime eligibility; confirm schedule and apply steps on the Greenhouse posting."
+    ],
+    "validThrough": "2026-11-13",
+    "sourceUrl": "https://job-boards.greenhouse.io/alliedpublicadjusters/jobs/4379732009"
+  },
+  {
+    "id": "allied-senior-public-adjuster",
+    "title": "Senior Public Adjuster",
+    "company": "Allied Public Adjusters",
+    "location": "Glendale / Newport Beach, CA",
+    "type": "Licensed PA",
+    "posted": "2026-08-22",
+    "tags": [
+      "california",
+      "licensed",
+      "complex-claims",
+      "in-person"
+    ],
+    "url": "https://job-boards.greenhouse.io/alliedpublicadjusters/jobs/4379627009",
+    "blurb": "Licensed CA PA for complex files with sales support, estimators, and in-house counsel.",
+    "applyUrl": "https://job-boards.greenhouse.io/alliedpublicadjusters/jobs/4379627009",
+    "description": [
+      "Allied Public Adjusters is hiring Senior Public Adjusters for in-person work in Glendale or Newport Beach, California.",
+      "An active California Public Adjuster license and deep claims experience are required; the firm feeds clients so you can focus on investigation, estimates, and negotiation.",
+      "Compensation is listed with base roughly $85k–$110k and OTE about $160k–$225k; see Greenhouse for benefits and apply."
+    ],
+    "validThrough": "2026-11-13",
+    "sourceUrl": "https://job-boards.greenhouse.io/alliedpublicadjusters/jobs/4379627009"
+  },
+  {
+    "id": "allied-executive-desk-pa",
+    "title": "Executive Desk Public Adjuster",
+    "company": "Allied Public Adjusters",
+    "location": "Remote (Los Angeles–based firm)",
+    "type": "Licensed PA",
+    "posted": "2026-10-10",
+    "tags": [
+      "remote",
+      "licensed",
+      "large-loss",
+      "desk"
+    ],
+    "url": "https://job-boards.greenhouse.io/alliedpublicadjusters/jobs/4444795009",
+    "blurb": "Senior desk PA partnering with field EPAs on large-loss and high-value files.",
+    "applyUrl": "https://job-boards.greenhouse.io/alliedpublicadjusters/jobs/4444795009",
+    "description": [
+      "Allied Public Adjusters posted an Executive Desk Public Adjuster role for remote day-to-day ownership of shared large-loss caseloads.",
+      "You partner with an Executive Public Adjuster in the field, run carrier and client communication, and drive supplements and negotiations from the desk.",
+      "Expect 7+ years of property claims experience and an active PA license or ability to obtain one within 90 days; base is listed at about $110k–$150k plus bonus."
+    ],
+    "validThrough": "2026-11-13",
+    "sourceUrl": "https://job-boards.greenhouse.io/alliedpublicadjusters/jobs/4444795009"
+  },
+  {
+    "id": "allied-senior-estimator",
+    "title": "Senior Estimator",
+    "company": "Allied Public Adjusters",
+    "location": "Glendale / Los Angeles / Newport Beach, CA",
+    "type": "Claims rep",
+    "posted": "2026-10-02",
+    "tags": [
+      "california",
+      "xactimate",
+      "estimating",
+      "field"
+    ],
+    "url": "https://job-boards.greenhouse.io/alliedpublicadjusters/jobs/4379731009",
+    "blurb": "PA-firm senior estimator owning field scoping and defensible Xactimate estimates.",
+    "applyUrl": "https://job-boards.greenhouse.io/alliedpublicadjusters/jobs/4379731009",
+    "description": [
+      "Allied Public Adjusters is hiring a Senior Estimator to support public adjusters on complex water, fire, and structural losses in Southern California.",
+      "The role owns field investigation, Xactimate production, and defending scopes when carriers push back.",
+      "Requirements include 7+ years of insurance restoration estimating; base is listed around $110k–$135k plus a performance bonus."
+    ],
+    "validThrough": "2026-11-13",
+    "sourceUrl": "https://job-boards.greenhouse.io/alliedpublicadjusters/jobs/4379731009"
+  },
+  {
+    "id": "metro-pa-trainee-ga",
+    "title": "Public Insurance Adjuster Trainee",
+    "company": "Metro Public Adjustment",
+    "location": "GA (also NC, WV, MD, WI, SD postings)",
+    "type": "Apprentice",
+    "posted": "2026-07-24",
+    "tags": [
+      "trainee",
+      "training",
+      "flexible",
+      "entry"
+    ],
+    "url": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4330432009",
+    "blurb": "Entry trainee path with training and licensing support; no prior adjusting experience required.",
+    "applyUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4330432009",
+    "description": [
+      "Metro Public Adjustment is hiring Public Insurance Adjuster Trainees for several states, including Georgia, with parallel Greenhouse posts for NC, WV, MD, WI, and SD.",
+      "Trainees assist on inspections, policy review, and claim documentation under senior adjusters; training and licensing support are offered.",
+      "Compensation is listed in a broad $35k–$125k band; apply on Greenhouse for the state seat that matches you."
+    ],
+    "validThrough": "2026-11-13",
+    "sourceUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4330432009"
+  },
+  {
+    "id": "metro-remote-claims-rep-pa",
+    "title": "Remote Claims Representative",
+    "company": "Metro Public Adjustment",
+    "location": "Pennsylvania (multi-state apply list)",
+    "type": "Claims rep",
+    "posted": "2026-10-13",
+    "tags": [
+      "remote",
+      "commission",
+      "training",
+      "flexible"
+    ],
+    "url": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4449000009",
+    "blurb": "Newest Metro remote claims-rep seat with free training and commission pay.",
+    "applyUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4449000009",
+    "description": [
+      "Metro Public Adjustment refreshed a Remote Claims Representative posting (updated mid-October 2026) focused on Pennsylvania with a multi-state apply list.",
+      "Work centers on virtual walk-throughs, photos, and light paperwork; no experience is required and training is provided.",
+      "Pay is commission-based in a stated $35k–$150k range; read the Greenhouse ad carefully for which states they will and will not hire."
+    ],
+    "validThrough": "2026-11-13",
+    "sourceUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4449000009"
   }
 ]
