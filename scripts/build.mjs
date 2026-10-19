@@ -14,6 +14,30 @@ import {
 
 const NOINDEX_IDS = new Set(["founding-placeholder"]);
 
+export function renderRedirectPage(job, target) {
+  const href = `/jobs/${target.id}.html`;
+  const abs = `${SITE}${href}`;
+  const label = `${target.title} at ${target.company}`;
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>This listing has moved — Open PA Jobs</title>
+  <meta name="robots" content="noindex, follow" />
+  <link rel="canonical" href="${esc(abs)}" />
+  <meta http-equiv="refresh" content="0; url=${esc(href)}" />
+  <script>location.replace(${JSON.stringify(href)});</script>
+</head>
+<body>
+  <p>This listing (${esc(job.title)}, ${esc(job.company)}) has been replaced by
+  <a href="${esc(href)}">${esc(label)}</a>.</p>
+  <p><a href="/#jobs">Browse all public adjuster jobs</a></p>
+</body>
+</html>
+`;
+}
+
 export function build({ root, now = new Date(), log = console.log } = {}) {
   root = root || path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
   const today = now.toISOString().slice(0, 10);
@@ -39,6 +63,13 @@ export function build({ root, now = new Date(), log = console.log } = {}) {
   const jobsDir = path.join(root, "jobs");
   fs.mkdirSync(jobsDir, { recursive: true });
   const keep = new Set(active.map((j) => `${j.id}.html`));
+  // Retired listings with `redirectTo` (id of an active job) keep their URL as a noindex redirect stub,
+  // so old links land on the replacement posting instead of a 404. Never in the sitemap or board feed.
+  const activeById = new Map(active.map((j) => [j.id, j]));
+  const redirects = expired.filter((j) => j.redirectTo && activeById.has(j.redirectTo));
+  for (const j of expired) if (j.redirectTo && !activeById.has(j.redirectTo)) log(`redirect: ${j.id} -> ${j.redirectTo} skipped (target not active); page removed`);
+  for (const j of redirects) keep.add(`${j.id}.html`);
+  report.redirects = Object.fromEntries(redirects.map((j) => [j.id, j.redirectTo]));
   for (const f of fs.readdirSync(jobsDir).sort()) {
     if (f.endsWith(".html") && !keep.has(f)) { fs.unlinkSync(path.join(jobsDir, f)); report.removedPages.push(`jobs/${f}`); }
   }
@@ -52,6 +83,8 @@ export function build({ root, now = new Date(), log = console.log } = {}) {
       report.validation[j.id] = probs.length ? probs : "ok";
     } else report.jsonLdSkipped[j.id] = jsonLdSkipReason(j);
   }
+
+  for (const j of redirects) fs.writeFileSync(path.join(jobsDir, `${j.id}.html`), renderRedirectPage(j, activeById.get(j.redirectTo)));
 
   // --- public feed for the client-side board (expired jobs never reach the browser) ---
   fs.writeFileSync(path.join(root, "jobs.active.json"), JSON.stringify(active, null, 2) + "\n");

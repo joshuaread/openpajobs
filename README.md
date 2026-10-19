@@ -17,6 +17,10 @@ No npm deps (Node 20+).
 (FULL_TIME/PART_TIME/CONTRACTOR/TEMPORARY/INTERN/PER_DIEM/OTHER), `addressLocality`, `addressRegion`, `remote`,
 `applicantRegions`, `companyUrl`, `updated`, `jsonld:false`.
 
+**Retiring a job:** set its `validThrough` to a past time; the build drops it from the board, feed and sitemap and deletes
+its page. If it was replaced by another listing, also set `redirectTo: "<active job id>"`; the build then keeps the old
+URL as a noindex meta-refresh stub pointing to the replacement (GitHub Pages has no server-side redirects).
+
 **`scripts/build.mjs` is the generator for job pages, the index fallback list, and sitemap.xml.** The old
 `_gen/regen_jobs_ctj.py` is retired and deleted; `_gen/` is local scratch and is not published.
 

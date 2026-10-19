@@ -429,11 +429,12 @@
       "Hybrid, commission-based role with administrative support for new and experienced adjusters.",
       "Details and apply path are on rockwallnpa.com/contact/."
     ],
-    "validThrough": "2026-12-12T23:59:59Z",
+    "validThrough": "2026-10-19T13:00:00Z",
     "employmentType": "OTHER",
     "companyUrl": "https://rockwallnpa.com/",
     "url": "https://rockwallnpa.com/contact/",
-    "jsonld": false
+    "jsonld": false,
+    "redirectTo": "rockwall-licensed-pa-tampa-fl"
   },
   {
     "id": "rockwall-destin",
@@ -455,11 +456,12 @@
       "Hybrid, commission-based role with administrative support for new and experienced adjusters.",
       "Details and apply path are on rockwallnpa.com/contact/."
     ],
-    "validThrough": "2026-12-12T23:59:59Z",
+    "validThrough": "2026-10-19T13:00:00Z",
     "employmentType": "OTHER",
     "companyUrl": "https://rockwallnpa.com/",
     "url": "https://rockwallnpa.com/contact/",
-    "jsonld": false
+    "jsonld": false,
+    "redirectTo": "rockwall-licensed-pa-destin-fl"
   },
   {
     "id": "rockwall-dallas",
@@ -507,11 +509,12 @@
       "Hybrid, commission-based role with administrative support for new and experienced adjusters.",
       "Details and apply path are on rockwallnpa.com/contact/."
     ],
-    "validThrough": "2026-12-12T23:59:59Z",
+    "validThrough": "2026-10-19T13:00:00Z",
     "employmentType": "OTHER",
     "companyUrl": "https://rockwallnpa.com/",
     "url": "https://rockwallnpa.com/contact/",
-    "jsonld": false
+    "jsonld": false,
+    "redirectTo": "rockwall-licensed-pa-san-antonio-tx"
   },
   {
     "id": "rockwall-houston",
@@ -533,11 +536,12 @@
       "Hybrid, commission-based role with administrative support for new and experienced adjusters.",
       "Details and apply path are on rockwallnpa.com/contact/."
     ],
-    "validThrough": "2026-12-12T23:59:59Z",
+    "validThrough": "2026-10-19T13:00:00Z",
     "employmentType": "OTHER",
     "companyUrl": "https://rockwallnpa.com/",
     "url": "https://rockwallnpa.com/contact/",
-    "jsonld": false
+    "jsonld": false,
+    "redirectTo": "rockwall-licensed-pa-houston-tx"
   },
   {
     "id": "united-pa-claims-advocate-melville",
@@ -1262,5 +1266,279 @@
       "Pay starts with a $50k–$65k draw against uncapped commission after a 30–60 day probation, plus health, dental, vision, and a 401(k). A public adjuster license is required within a month of hire, and a business degree or five years of sales experience is expected. Apply through the posting."
     ],
     "validThrough": "2026-11-18"
+  },
+  {
+    "id": "allied-pa-construction-consultant-la",
+    "title": "Construction Consultant",
+    "company": "Allied Public Adjusters",
+    "location": "Los Angeles / Newport Beach, CA",
+    "type": "Claims rep",
+    "posted": "2026-09-18",
+    "tags": [
+      "california",
+      "xactimate",
+      "estimating",
+      "large-loss"
+    ],
+    "url": "https://job-boards.greenhouse.io/alliedpublicadjusters/jobs/4412081009",
+    "applyUrl": "https://job-boards.greenhouse.io/alliedpublicadjusters/jobs/4412081009",
+    "sourceUrl": "https://job-boards.greenhouse.io/alliedpublicadjusters/jobs/4412081009",
+    "blurb": "Be the technical voice on complex water and fire claims: inspect, build the Xactimate estimate, and defend it against carrier pushback.",
+    "description": [
+      "Allied Public Adjusters, a policyholder-side firm working since 1997, wants a Construction Consultant to own the technical side of its claims in Southern California.",
+      "The role inspects losses alongside the public adjuster, writes detailed Xactimate estimates (the firm targets a 48-hour turnaround after inspection), rebuts carrier counter-estimates, and reviews vendor and expert bids.",
+      "It also helps build the firm's estimating standards, procedures, and historical database, and mentors junior estimators. Apply through the Greenhouse posting."
+    ],
+    "validThrough": "2026-11-15"
+  },
+  {
+    "id": "metro-pa-claims-property-inspector-pa",
+    "title": "Claims Property Inspector",
+    "company": "Metro Public Adjustment",
+    "location": "Philadelphia area, PA (Bucks, Montgomery, South Jersey)",
+    "type": "Claims rep",
+    "posted": "2026-10-06",
+    "tags": [
+      "pennsylvania",
+      "entry-level",
+      "flexible-schedule",
+      "inspections"
+    ],
+    "url": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4435604009",
+    "applyUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4435604009",
+    "sourceUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4435604009",
+    "blurb": "Entry-level, flexible inspector seat at a 30-year PA firm, with training provided and no experience needed.",
+    "description": [
+      "Metro Public Adjustment is hiring property inspectors to serve homeowners across Philadelphia, Bucks County, Montgomery County, and nearby South Jersey.",
+      "Inspectors look for insurance-covered damage, help homeowners understand their policies, keep clients updated during the claim, and handle the paperwork that supports each file.",
+      "The firm says no experience is needed, offers training and mentorship, and lets hires work part-time or full-time on their own schedule."
+    ],
+    "validThrough": "2026-11-15",
+    "addressLocality": "Philadelphia",
+    "addressRegion": "PA"
+  },
+  {
+    "id": "experienced-pa-licensed-and-apprentice-fl",
+    "title": "Licensed Public Adjuster & Apprentice Candidates",
+    "company": "Experienced Public Adjusters",
+    "location": "Florida (Orlando, Tampa, Naples, Daytona Beach, and other markets)",
+    "type": "Various",
+    "posted": "2026-10-16",
+    "tags": [
+      "florida",
+      "3-20",
+      "6-20",
+      "apprentice",
+      "estimator"
+    ],
+    "url": "https://experiencedpublicadjusters.com/careers/",
+    "applyUrl": "https://experiencedpublicadjusters.com/careers/",
+    "sourceUrl": "https://experiencedpublicadjusters.com/careers/",
+    "blurb": "Florida PA firm talking to licensed 3-20 adjusters, 6-20 apprentice candidates, and estimators or inspectors.",
+    "description": [
+      "Experienced Public Adjusters represents Florida homeowners, condo owners, and businesses on delayed, underpaid, and denied property claims, and is building out its Florida team.",
+      "It lists three paths: licensed 3-20 public adjusters for inspections, file review, and carrier communication; 6-20 all-lines adjusters who want a supervised 31-20 apprentice appointment; and estimator, inspector, or claim-support people with construction, roofing, mitigation, or Xactimate backgrounds.",
+      "Candidates near Naples, Orlando, Tampa, Daytona Beach, and Central or Southwest Florida are especially welcome. Reach out through the form on the careers page."
+    ],
+    "validThrough": "2026-11-15"
+  },
+  {
+    "id": "vpa-property-claims-adjuster-lexington",
+    "title": "Property Claims Adjuster – Public Adjusting",
+    "company": "VPA Public Claims Adjusting",
+    "location": "Lexington, KY (on-site, relocation required)",
+    "type": "Licensed PA",
+    "posted": "2025-02-06",
+    "tags": [
+      "kentucky",
+      "salaried",
+      "carrier-experience",
+      "licensing-paid"
+    ],
+    "url": "https://www.vpa.claims/jobs/propertyclaimsadjuster/",
+    "applyUrl": "https://www.vpa.claims/jobs/propertyclaimsadjuster/",
+    "sourceUrl": "https://www.vpa.claims/jobs/propertyclaimsadjuster/",
+    "blurb": "Salaried, team-based PA seat for former carrier adjusters, with licensing fees covered.",
+    "description": [
+      "VPA Public Claims Adjusting is hiring a salaried property claims adjuster for its Lexington, Kentucky corporate office, aimed at carrier-side adjusters moving to the policyholder side and current PAs who want more structure.",
+      "The adjuster reviews policies, manages claims, and negotiates settlements with carriers, while a support team handles inspections, documentation, and admin work.",
+      "VPA covers public adjuster licensing fees and transition support. The role is on-site and requires relocation; apply with the form on the posting."
+    ],
+    "validThrough": "2026-11-15"
+  },
+  {
+    "id": "ai-mbc-c-level-sales-executive-westminster",
+    "title": "C-Level Sales Executive",
+    "company": "Adjusters International/MBC",
+    "location": "Westminster, CO (Denver–Boulder)",
+    "type": "Claims rep",
+    "posted": "2025-12-02",
+    "tags": [
+      "colorado",
+      "leadership",
+      "sales",
+      "equity",
+      "commercial-claims"
+    ],
+    "url": "https://www.aimbc.com/about/careers/c-level-sales-executive-opportunity-equity-six-figure-comp-leadership-of-proven-team",
+    "applyUrl": "https://www.aimbc.com/about/careers/c-level-sales-executive-opportunity-equity-six-figure-comp-leadership-of-proven-team/apply",
+    "sourceUrl": "https://www.aimbc.com/about/careers/c-level-sales-executive-opportunity-equity-six-figure-comp-leadership-of-proven-team",
+    "blurb": "Lead revenue at a 40-year public adjusting firm, with equity and a draw against commissions.",
+    "description": [
+      "Adjusters International/MBC, a national public adjusting and claims management firm, is adding a senior sales leader as its founders plan a phased transition over the next several years.",
+      "The executive sells directly, leads two experienced claims sales producers, and builds the pipeline, forecasting, partnerships, and enterprise-account strategy.",
+      "The firm wants someone with a track record in commercial insurance claims, commercial real estate, or CRE finance, and lists a draw against commissions, team overrides, and performance-based equity."
+    ],
+    "validThrough": "2026-11-15"
+  },
+  {
+    "id": "icrs-pa-estimator-office-texas",
+    "title": "Public Adjusters, Commercial Xactimate Estimator & Office Manager",
+    "company": "Insurance Claim Recovery Support",
+    "location": "Texas and Florida (work from home)",
+    "type": "Various",
+    "posted": "2026-10-16",
+    "tags": [
+      "texas",
+      "florida",
+      "commercial",
+      "remote",
+      "xactimate"
+    ],
+    "url": "https://insuranceclaimrecoverysupport.com/about-insurance-claim-recovery-support-public-insurance-adjusters/careers/",
+    "applyUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeQib-JB5IwRvCtgf9t99ZI6m8OzRDYBFahlNQBgxzFlC6SyQ/viewform",
+    "sourceUrl": "https://insuranceclaimrecoverysupport.com/about-insurance-claim-recovery-support-public-insurance-adjusters/careers/",
+    "blurb": "Commercial and multifamily PA firm hiring licensed adjusters, an Xactimate estimator, and an office manager.",
+    "description": [
+      "Insurance Claim Recovery Support (ICRS) is a commercial property public adjusting firm, based in Lakeway, Texas, that works for commercial and multifamily owners in Texas and Florida.",
+      "Its careers page has three openings: licensed public adjusters, a commercial Xactimate estimator, and an office manager or assistant. Backgrounds in commercial brokerage, construction, or insurance policies are a plus.",
+      "The firm describes the work as work-from-home with free training. Each role has its own application form on the careers page."
+    ],
+    "validThrough": "2026-11-15"
+  },
+  {
+    "id": "manhattan-pa-fire-outreach-bd-nyc",
+    "title": "Business Development | Fire Outreach Public Adjuster",
+    "company": "Manhattan Public Adjustment",
+    "location": "NY, NJ & CT (field travel)",
+    "type": "Claims rep",
+    "posted": "2026-09-20",
+    "tags": [
+      "new-york",
+      "new-jersey",
+      "connecticut",
+      "fire-claims",
+      "base-plus-commission"
+    ],
+    "url": "https://manhattanpublicadjustment.com/careers/",
+    "applyUrl": "https://manhattanpublicadjustment.com/careers/",
+    "sourceUrl": "https://manhattanpublicadjustment.com/careers/",
+    "blurb": "Outbound fire-claim outreach role with base, bonus, and commission, plus full training.",
+    "description": [
+      "Manhattan Public Adjustment is hiring business development reps to meet fire-damaged homeowners, businesses, property managers, and co-op or condo boards across New York, New Jersey, and Connecticut.",
+      "The job is in-person and phone outreach, with 100+ call attempts on some days, while the firm's claims team handles the claim itself. Insurance, claims, or restoration experience is preferred but not required.",
+      "Pay is base plus bonus and commission (the posting lists about $91k for the first six months), with health, dental, vision, retirement, and PTO. Apply on the careers page and don't call the office."
+    ],
+    "validThrough": "2026-11-15",
+    "addressRegion": "NY"
+  },
+  {
+    "id": "claims-pa-licensed-pa-dfw",
+    "title": "Licensed Public Adjuster",
+    "company": "Claims Public Adjusting, Inc.",
+    "location": "Dallas–Fort Worth, TX",
+    "type": "Licensed PA",
+    "posted": "2026-10-16",
+    "tags": [
+      "texas",
+      "w2",
+      "full-time",
+      "health-insurance"
+    ],
+    "url": "https://www.claimspa.com/careers",
+    "applyUrl": "https://www.claimspa.com/careers",
+    "sourceUrl": "https://www.claimspa.com/careers",
+    "blurb": "Full-time W-2 licensed PA seat in DFW with base pay, incentives, and health insurance.",
+    "description": [
+      "Claims Public Adjusting, a policyholder-side firm growing across Texas, Oklahoma, and California, is hiring a full-time licensed public adjuster in Dallas–Fort Worth.",
+      "Every role is direct W-2 employment, not 1099, with health insurance, base pay plus performance incentives, and support for licensing, CE, Xactimate, and IICRC training. Field adjusters set their own schedules.",
+      "Apply through the form on the careers page; the firm says it replies within two business days."
+    ],
+    "validThrough": "2026-11-15"
+  },
+  {
+    "id": "claims-pa-licensed-pa-thousand-oaks",
+    "title": "Licensed Public Adjuster",
+    "company": "Claims Public Adjusting, Inc.",
+    "location": "Thousand Oaks, CA",
+    "type": "Licensed PA",
+    "posted": "2026-10-16",
+    "tags": [
+      "california",
+      "w2",
+      "full-time",
+      "health-insurance"
+    ],
+    "url": "https://www.claimspa.com/careers",
+    "applyUrl": "https://www.claimspa.com/careers",
+    "sourceUrl": "https://www.claimspa.com/careers",
+    "blurb": "Full-time W-2 licensed PA role in Thousand Oaks with benefits and uncapped incentives.",
+    "description": [
+      "Claims Public Adjusting is hiring a full-time licensed public adjuster for its Thousand Oaks, California market as it expands beyond Texas.",
+      "The firm hires everyone as W-2 employees with health insurance, pairs base pay with performance incentives, and supports ongoing licensing and Xactimate training.",
+      "Apply through the careers page form and pick the Thousand Oaks Licensed Public Adjuster role."
+    ],
+    "validThrough": "2026-11-15"
+  },
+  {
+    "id": "claims-pa-desk-adjuster-nrh",
+    "title": "Desk Adjuster",
+    "company": "Claims Public Adjusting, Inc.",
+    "location": "North Richland Hills, TX (hybrid)",
+    "type": "Claims rep",
+    "posted": "2026-10-16",
+    "tags": [
+      "texas",
+      "desk",
+      "w2",
+      "hybrid"
+    ],
+    "url": "https://www.claimspa.com/careers",
+    "applyUrl": "https://www.claimspa.com/careers",
+    "sourceUrl": "https://www.claimspa.com/careers",
+    "blurb": "Full-time W-2 desk adjuster at a Texas PA firm, with hybrid office flexibility.",
+    "description": [
+      "Claims Public Adjusting is hiring a full-time desk adjuster at its North Richland Hills, Texas office to help move policyholder claims forward.",
+      "Office roles at the firm are hybrid, and all hires are W-2 employees with health insurance, base pay plus incentives, and support for licensing and Xactimate training.",
+      "Apply through the careers page form."
+    ],
+    "validThrough": "2026-11-15",
+    "employmentType": "FULL_TIME"
+  },
+  {
+    "id": "claims-pa-xactimate-estimator-inspector",
+    "title": "Xactimate Estimator and Inspector",
+    "company": "Claims Public Adjusting, Inc.",
+    "location": "North Richland Hills, TX or Thousand Oaks, CA",
+    "type": "Claims rep",
+    "posted": "2026-10-16",
+    "tags": [
+      "texas",
+      "california",
+      "xactimate",
+      "inspections",
+      "w2"
+    ],
+    "url": "https://www.claimspa.com/careers",
+    "applyUrl": "https://www.claimspa.com/careers",
+    "sourceUrl": "https://www.claimspa.com/careers",
+    "blurb": "Full-time W-2 estimator and inspector seats in Texas and California at a growing PA firm.",
+    "description": [
+      "Claims Public Adjusting has two full-time Xactimate Estimator and Inspector openings, one in North Richland Hills, Texas and one in Thousand Oaks, California.",
+      "The roles inspect damage and build estimates that back the firm's policyholder claims. The firm supports Xactimate and IICRC certification for staff.",
+      "All positions are W-2 with health insurance. Apply through the careers page form and pick your location."
+    ],
+    "validThrough": "2026-11-15",
+    "employmentType": "FULL_TIME"
   }
 ]

@@ -124,3 +124,19 @@ test("validateRecord accepts a good record", () => {
   const good = JSON.parse(fs.readFileSync(path.join(FIX, "2026-10-11.json")))[0];
   assert.deepEqual(validateRecord(good, NOW), []);
 });
+
+test("retired listings with redirectTo keep a noindex redirect stub to the active replacement", () => {
+  const dir = sandbox();
+  const p = path.join(dir, "jobs.json");
+  const jobs = JSON.parse(fs.readFileSync(p, "utf8"));
+  jobs.find((j) => j.id === "fapia-board").redirectTo = "rockwall-austin";
+  fs.writeFileSync(p, JSON.stringify(jobs));
+  const r = build({ root: dir, now: NOW, log: quiet });
+  assert.equal(r.redirects["fapia-board"], "rockwall-austin");
+  const html = fs.readFileSync(path.join(dir, "jobs", "fapia-board.html"), "utf8");
+  assert.match(html, /http-equiv="refresh" content="0; url=\/jobs\/rockwall-austin\.html"/);
+  assert.match(html, /name="robots" content="noindex/);
+  assert.equal(extractJsonLd(html).length, 0);
+  assert.ok(!fs.readFileSync(path.join(dir, "sitemap.xml"), "utf8").includes("fapia-board"));
+  assert.ok(!JSON.parse(fs.readFileSync(path.join(dir, "jobs.active.json"))).some((j) => j.id === "fapia-board"));
+});

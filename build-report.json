@@ -1,9 +1,13 @@
 {
   "buildDate": "2026-10-19",
-  "total": 52,
-  "active": 51,
+  "total": 63,
+  "active": 58,
   "droppedExpired": [
-    "fapia-board"
+    "fapia-board",
+    "rockwall-tampa",
+    "rockwall-destin",
+    "rockwall-san-antonio",
+    "rockwall-houston"
   ],
   "jsonLdEmitted": [
     "metro-apprentice",
@@ -36,7 +40,16 @@
     "united-pa-content-claims-adjuster",
     "united-pa-manhattan-business-development-associate",
     "swift-pa-outside-sales-rep-denver",
-    "swift-pa-outside-sales-rep-minneapolis"
+    "swift-pa-outside-sales-rep-minneapolis",
+    "allied-pa-construction-consultant-la",
+    "metro-pa-claims-property-inspector-pa",
+    "vpa-property-claims-adjuster-lexington",
+    "ai-mbc-c-level-sales-executive-westminster",
+    "manhattan-pa-fire-outreach-bd-nyc",
+    "claims-pa-licensed-pa-dfw",
+    "claims-pa-licensed-pa-thousand-oaks",
+    "claims-pa-desk-adjuster-nrh",
+    "claims-pa-xactimate-estimator-inspector"
   ],
   "jsonLdSkipped": {
     "founding-placeholder": "internal/placeholder listing (no external job), not a JobPosting",
@@ -49,16 +62,14 @@
     "fspa-pa-fl": "jsonld:false on record",
     "fspa-pa-co": "jsonld:false on record",
     "rockwall-charleston": "jsonld:false on record",
-    "rockwall-tampa": "jsonld:false on record",
-    "rockwall-destin": "jsonld:false on record",
     "rockwall-dallas": "jsonld:false on record",
-    "rockwall-san-antonio": "jsonld:false on record",
-    "rockwall-houston": "jsonld:false on record",
     "united-pa-property-claims-adjuster-ny": "missing required: location(jobLocation/applicantLocationRequirements)",
     "united-pa-insurance-claims-manager-ny": "missing required: location(jobLocation/applicantLocationRequirements)",
     "select-adjusters-field-pa-phoenix": "multi-listing pointer (type Various), not a single job — Google policy",
     "panther-pa-licensed-apprentice-multistate": "multi-listing pointer (type Various), not a single job — Google policy",
-    "cohen-associates-licensed-pa-florida": "missing required: location(jobLocation/applicantLocationRequirements)"
+    "cohen-associates-licensed-pa-florida": "missing required: location(jobLocation/applicantLocationRequirements)",
+    "experienced-pa-licensed-and-apprentice-fl": "multi-listing pointer (type Various), not a single job — Google policy",
+    "icrs-pa-estimator-office-texas": "multi-listing pointer (type Various), not a single job — Google policy"
   },
   "defaultedValidThrough": [
     {
@@ -143,6 +154,9 @@
     ],
     "cohen-associates-licensed-pa-florida": [
       "location(jobLocation/applicantLocationRequirements)"
+    ],
+    "experienced-pa-licensed-and-apprentice-fl": [
+      "location(jobLocation/applicantLocationRequirements)"
     ]
   },
   "validation": {
@@ -176,8 +190,23 @@
     "united-pa-content-claims-adjuster": "ok",
     "united-pa-manhattan-business-development-associate": "ok",
     "swift-pa-outside-sales-rep-denver": "ok",
-    "swift-pa-outside-sales-rep-minneapolis": "ok"
+    "swift-pa-outside-sales-rep-minneapolis": "ok",
+    "allied-pa-construction-consultant-la": "ok",
+    "metro-pa-claims-property-inspector-pa": "ok",
+    "vpa-property-claims-adjuster-lexington": "ok",
+    "ai-mbc-c-level-sales-executive-westminster": "ok",
+    "manhattan-pa-fire-outreach-bd-nyc": "ok",
+    "claims-pa-licensed-pa-dfw": "ok",
+    "claims-pa-licensed-pa-thousand-oaks": "ok",
+    "claims-pa-desk-adjuster-nrh": "ok",
+    "claims-pa-xactimate-estimator-inspector": "ok"
   },
   "removedPages": [],
-  "sitemapUrls": 78
+  "redirects": {
+    "rockwall-tampa": "rockwall-licensed-pa-tampa-fl",
+    "rockwall-destin": "rockwall-licensed-pa-destin-fl",
+    "rockwall-san-antonio": "rockwall-licensed-pa-san-antonio-tx",
+    "rockwall-houston": "rockwall-licensed-pa-houston-tx"
+  },
+  "sitemapUrls": 85
 }
