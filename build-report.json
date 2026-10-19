@@ -1,7 +1,7 @@
 {
-  "buildDate": "2026-10-18",
-  "total": 40,
-  "active": 39,
+  "buildDate": "2026-10-19",
+  "total": 52,
+  "active": 51,
   "droppedExpired": [
     "fapia-board"
   ],
@@ -24,7 +24,19 @@
     "allied-executive-desk-pa",
     "allied-senior-estimator",
     "metro-pa-trainee-ga",
-    "metro-remote-claims-rep-pa"
+    "metro-remote-claims-rep-pa",
+    "rockwall-licensed-pa-destin-fl",
+    "rockwall-licensed-pa-tampa-fl",
+    "rockwall-licensed-pa-houston-tx",
+    "rockwall-licensed-pa-san-antonio-tx",
+    "metro-pa-business-development-lead-western-pa",
+    "vpa-loss-documentation-field-inspector",
+    "mla-claims-licensed-public-adjuster",
+    "united-pa-property-damage-estimator",
+    "united-pa-content-claims-adjuster",
+    "united-pa-manhattan-business-development-associate",
+    "swift-pa-outside-sales-rep-denver",
+    "swift-pa-outside-sales-rep-minneapolis"
   ],
   "jsonLdSkipped": {
     "founding-placeholder": "internal/placeholder listing (no external job), not a JobPosting",
@@ -152,8 +164,20 @@
     "allied-executive-desk-pa": "ok",
     "allied-senior-estimator": "ok",
     "metro-pa-trainee-ga": "ok",
-    "metro-remote-claims-rep-pa": "ok"
+    "metro-remote-claims-rep-pa": "ok",
+    "rockwall-licensed-pa-destin-fl": "ok",
+    "rockwall-licensed-pa-tampa-fl": "ok",
+    "rockwall-licensed-pa-houston-tx": "ok",
+    "rockwall-licensed-pa-san-antonio-tx": "ok",
+    "metro-pa-business-development-lead-western-pa": "ok",
+    "vpa-loss-documentation-field-inspector": "ok",
+    "mla-claims-licensed-public-adjuster": "ok",
+    "united-pa-property-damage-estimator": "ok",
+    "united-pa-content-claims-adjuster": "ok",
+    "united-pa-manhattan-business-development-associate": "ok",
+    "swift-pa-outside-sales-rep-denver": "ok",
+    "swift-pa-outside-sales-rep-minneapolis": "ok"
   },
   "removedPages": [],
-  "sitemapUrls": 66
+  "sitemapUrls": 78
 }
