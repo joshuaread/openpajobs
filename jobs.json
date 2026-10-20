@@ -1540,5 +1540,302 @@
     ],
     "validThrough": "2026-11-15",
     "employmentType": "FULL_TIME"
+  },
+  {
+    "id": "firstcall-claims-outside-sales-tennessee",
+    "title": "Outside Sales Representative – Public Adjuster Sales",
+    "company": "FirstCall Claims",
+    "location": "Tennessee – Nashville, Memphis, Knoxville, or Chattanooga (field-based)",
+    "type": "Claims rep",
+    "posted": "2026-10-05",
+    "tags": [
+      "tennessee",
+      "sales",
+      "commission-only",
+      "1099",
+      "licensing-support"
+    ],
+    "url": "https://www.firstcallclaims.com/careers/outside-sales-representative-public-adjuster-sales",
+    "applyUrl": "https://www.firstcallclaims.com/careers/outside-sales-representative-public-adjuster-sales",
+    "sourceUrl": "https://www.firstcallclaims.com/careers/outside-sales-representative-public-adjuster-sales",
+    "blurb": "Commission-only 1099 field sales role signing policyholders for a Franklin, TN public adjusting firm founded in 1989.",
+    "description": [
+      "FirstCall Claims is a policyholder-only public adjusting firm based in Franklin, Tennessee. It wants a field closer to work a Tennessee territory: Nashville, Memphis, Knoxville, or Chattanooga.",
+      "The rep prospects and qualifies property owners after fire, storm, and water losses, explains how public adjusting works, and signs representation agreements. Signed files go to the in-house adjusting team, which handles documentation, estimating, and negotiation. The firm supplies leads, referral channels, and training.",
+      "This is a 1099, commission-only job with no base or draw. You need outside sales or other closing experience. A Tennessee public adjuster license is preferred, and the firm helps unlicensed hires get one. The posting runs through Dec 4, 2026."
+    ],
+    "validThrough": "2026-12-04"
+  },
+  {
+    "id": "c3-group-sales-public-adjuster-hybrid-colorado",
+    "title": "Sales & Public Adjuster Hybrid Role",
+    "company": "C3 Group",
+    "location": "Colorado (remote; must live in CO)",
+    "type": "Licensed PA",
+    "posted": "2024-06-11",
+    "tags": [
+      "colorado",
+      "sales",
+      "base-plus-commission",
+      "remote",
+      "commercial"
+    ],
+    "url": "https://www.c3adjusters.com/careers/",
+    "applyUrl": "https://www.c3adjusters.com/careers/",
+    "sourceUrl": "https://www.c3adjusters.com/careers/",
+    "blurb": "Colorado-based hybrid seat, about 80% sales and 20% adjusting, with a $43,888 base plus uncapped commission.",
+    "description": [
+      "C3 Group is a public adjusting firm with a Greenwood Village, CO office. It is hiring a remote hybrid producer who must live in Colorado and spends roughly 80% of the time on sales and 20% on adjusting.",
+      "On the sales side, the rep prospects by phone, in person, and at loss sites, presents and signs representation contracts, and builds referral relationships. On the adjusting side, the rep reviews policies, inspects damage, prepares estimates, and negotiates with the carrier's adjuster. Claims go to appraisal or litigation when needed.",
+      "According to the posted job description, pay is a $43,888 base plus uncapped commission, with separate percentages for lead generation, contract signing, and adjusting work. You need a Colorado public adjuster license or must get one within 30 days of hire. Apply with a resume and cover letter on the careers page."
+    ],
+    "validThrough": "2026-11-19"
+  },
+  {
+    "id": "sunpoint-public-insurance-adjuster-los-angeles",
+    "title": "Public Insurance Adjuster – Los Angeles, CA",
+    "company": "SunPoint Public Adjusters",
+    "location": "Los Angeles, CA (remote; must commute to LA)",
+    "type": "Licensed PA",
+    "posted": "2024-12-02",
+    "tags": [
+      "california",
+      "senior",
+      "salary-plus-commission",
+      "benefits",
+      "large-loss"
+    ],
+    "url": "https://sunpoint.us/careers/public-insurance-adjuster-los-angeles-ca/",
+    "applyUrl": "https://sunpoint.us/careers/public-insurance-adjuster-los-angeles-ca/",
+    "sourceUrl": "https://sunpoint.us/careers/public-insurance-adjuster-los-angeles-ca/",
+    "blurb": "Seasoned first-party property adjuster role for a major-loss PA firm, paying $60k–$250k plus commissions.",
+    "description": [
+      "SunPoint Public Adjusters represents policyholders on major first-party home, business, and commercial losses. It is hiring a seasoned public insurance adjuster based in Los Angeles to handle claims in California, Washington, and Oregon.",
+      "The firm wants a four-year degree and about ten years as a staff adjuster on residential and commercial first-party property claims, including building and contents coverage. You also need to travel to loss sites and pass background screening and licensing. Experience only in auto, casualty, or workers' comp does not qualify.",
+      "Pay is listed at $60,000–$250,000 a year plus commissions. Benefits include medical, dental, vision, an FSA, PTO, and a 401(k) with a 3% company contribution. A public adjuster license is preferred. Apply through the form on the posting."
+    ],
+    "validThrough": "2026-11-19"
+  },
+  {
+    "id": "sunpoint-contents-inventory-specialist-washington",
+    "title": "Contents/Inventory Specialist",
+    "company": "SunPoint Public Adjusters",
+    "location": "Washington State (field-based, travel required)",
+    "type": "Claims rep",
+    "posted": "2024-11-27",
+    "tags": [
+      "washington",
+      "contents",
+      "hourly",
+      "benefits",
+      "travel"
+    ],
+    "url": "https://sunpoint.us/careers/contents-inventory-specialist/",
+    "applyUrl": "https://sunpoint.us/careers/contents-inventory-specialist/",
+    "sourceUrl": "https://sunpoint.us/careers/contents-inventory-specialist/",
+    "blurb": "Full-time $30–$34/hr contents inventory role helping fire, water, and theft clients maximize their recovery.",
+    "description": [
+      "SunPoint Public Adjusters is hiring a full-time contents and inventory specialist in Washington State. The specialist documents personal property for policyholders after fire, water, or theft losses so they recover the most their policy allows.",
+      "This is hands-on fieldwork with up to 60% travel. It involves juggling several projects and vendors and lifting up to 60 lbs. You need at least intermediate Excel, strong attention to detail, a clean driving record, and a clean background check. Knowing retail brands and pricing helps.",
+      "Pay is $30–$34 an hour for about 40 hours a week. Benefits include health, dental, vision, an FSA, PTO, and a matched 401(k). Apply through the form on the posting."
+    ],
+    "validThrough": "2026-11-19"
+  },
+  {
+    "id": "sunpoint-sales-professional-washington",
+    "title": "Sales Professional – Washington State",
+    "company": "SunPoint Public Adjusters",
+    "location": "Washington State (field-based, travel required)",
+    "type": "Claims rep",
+    "posted": "2024-12-02",
+    "tags": [
+      "washington",
+      "sales",
+      "commission",
+      "licensing-support",
+      "benefits"
+    ],
+    "url": "https://sunpoint.us/careers/sales-professional-washington-state/",
+    "applyUrl": "https://sunpoint.us/careers/sales-professional-washington-state/",
+    "sourceUrl": "https://sunpoint.us/careers/sales-professional-washington-state/",
+    "blurb": "Commission-based PA sales role ($125k–$400k+) for licensed or apprentice producers in the Pacific Northwest.",
+    "description": [
+      "SunPoint Public Adjusters is hiring licensed and apprentice sales professionals for its Pacific Northwest territory. This posting covers Washington State, and the firm has matching postings for Oregon and Idaho.",
+      "The role requires state Department of Insurance licensing, and SunPoint helps strong candidates get licensed. It looks for a record in professional-services or high-level sales and the drive to work unsupervised with high-profile clients. The firm notes that career changers, such as attorneys and bankers, have done well in the role.",
+      "Pay is commission-based, with earnings listed at $125K–$400K+ a year. Benefits include medical, dental, vision, and a 401(k) with a 3% company contribution. A degree or equivalent experience is preferred. Apply through the form on the posting."
+    ],
+    "validThrough": "2026-11-19"
+  },
+  {
+    "id": "crossroads-ira-houston-open-applications",
+    "title": "Public Adjusters, License Candidates & Claims Support",
+    "company": "Crossroads Insurance Recovery Advocates",
+    "location": "Houston, TX",
+    "type": "Various",
+    "posted": "2026-10-20",
+    "tags": [
+      "texas",
+      "houston",
+      "rolling",
+      "licensing-support",
+      "entry"
+    ],
+    "url": "https://crossroadsinsuranceadjusters.com/careers",
+    "applyUrl": "https://crossroadsinsuranceadjusters.com/careers",
+    "sourceUrl": "https://crossroadsinsuranceadjusters.com/careers",
+    "blurb": "Houston PA firm accepting rolling applications for licensed adjusters, license candidates, contents, sales, and support roles.",
+    "description": [
+      "Crossroads Insurance Recovery Advocates is a Houston public adjusting firm founded in 2010. It works only for home and business owners and says it has recovered more than $500M for policyholders.",
+      "It takes applications on a rolling basis from licensed Texas public adjusters, people working toward their license, and staff for claims support and admin. The application form lists adjuster, contents, adjuster sales, admin, support, and other roles.",
+      "For candidates without a license, the firm publishes a free Texas licensing study guide with practice questions. Apply through the careers page form with a resume."
+    ],
+    "validThrough": "2026-11-19"
+  },
+  {
+    "id": "ak-public-adjusters-field-sales-owings-mills",
+    "title": "Field Sales Representative – Storm & Property Damage",
+    "company": "AK Public Adjusters",
+    "location": "Owings Mills, MD",
+    "type": "Claims rep",
+    "posted": "2026-06-20",
+    "tags": [
+      "maryland",
+      "sales",
+      "hourly-plus-commission",
+      "w2",
+      "training"
+    ],
+    "url": "https://www.salesjobs.com/sales-job/51167213",
+    "applyUrl": "https://www.salesjobs.com/sales-job/51167213",
+    "sourceUrl": "https://www.salesjobs.com/sales-job/51167213",
+    "blurb": "W-2 field sales role with hourly pay plus uncapped commission, targeting $92k–$108k+.",
+    "description": [
+      "AK Public Adjusters is hiring a full-time field sales rep in Owings Mills, MD. The firm advocates for homeowners and businesses after storm, fire, and water damage.",
+      "The rep canvasses targeted neighborhoods, spots properties likely hit by hail, wind, fire, or water, explains what public adjuster representation involves, does basic inspections and photo documentation, and completes intake paperwork for clients who sign. Training is provided.",
+      "This W-2 job pays hourly plus uncapped commission, with expected earnings of $92k–$108k+. It includes paid field coaching, a territory-based flexible schedule, and a company truck depending on role and performance. Canvassing or field sales experience is preferred, and you need a driver's license and reliable transportation."
+    ],
+    "validThrough": "2026-12-20"
+  },
+  {
+    "id": "swift-pa-outside-sales-rep-madison",
+    "title": "Outside Sales Representative – Madison, WI",
+    "company": "Swift Public Adjusters",
+    "location": "Madison, WI (remote + in-person outreach)",
+    "type": "Claims rep",
+    "posted": "2026-10-20",
+    "tags": [
+      "wisconsin",
+      "sales",
+      "draw-vs-commission",
+      "benefits"
+    ],
+    "url": "https://swiftpublicadjusters.applytojob.com/apply/CdpdholSdV/Outside-Sales-Representative",
+    "applyUrl": "https://swiftpublicadjusters.applytojob.com/apply/CdpdholSdV/Outside-Sales-Representative",
+    "sourceUrl": "https://swiftpublicadjusters.applytojob.com/apply/CdpdholSdV/Outside-Sales-Representative",
+    "blurb": "Draw-plus-commission sales seat building referral partners for a PA firm in the Madison market.",
+    "description": [
+      "Swift Public Adjusters is hiring an Outside Sales Representative for the Madison market. The job is remote, with in-person outreach across the Greater Madison region.",
+      "The rep develops referral sources, meets with residential and commercial property owners, teaches partners what a public adjuster does, screens the claims they send over, and files daily activity reports and territory forecasts.",
+      "After a 30–60 day probation, pay starts as a $50k–$65k draw against uncapped commission, and benefits include health, dental, vision, and a 401(k). You need a public adjuster license within a month of hire, plus a business degree or five years of sales experience. Apply through the posting."
+    ],
+    "validThrough": "2026-11-19"
+  },
+  {
+    "id": "swift-pa-licensed-outside-sales-kansas-city",
+    "title": "Licensed Outside Sales Representative – Kansas City, MO",
+    "company": "Swift Public Adjusters",
+    "location": "Kansas City, MO (remote + in-person outreach)",
+    "type": "Claims rep",
+    "posted": "2026-10-20",
+    "tags": [
+      "missouri",
+      "sales",
+      "draw-vs-commission",
+      "benefits"
+    ],
+    "url": "https://swiftpublicadjusters.applytojob.com/apply/VxoqFbbkI0/Licensed-Outside-Sales-Representative",
+    "applyUrl": "https://swiftpublicadjusters.applytojob.com/apply/VxoqFbbkI0/Licensed-Outside-Sales-Representative",
+    "sourceUrl": "https://swiftpublicadjusters.applytojob.com/apply/VxoqFbbkI0/Licensed-Outside-Sales-Representative",
+    "blurb": "Draw-plus-commission sales seat building referral partners for a PA firm in the Kansas City market.",
+    "description": [
+      "Swift Public Adjusters is hiring an Outside Sales Representative for the Kansas City market. The job is remote, with in-person outreach across the Kansas City metro.",
+      "The rep develops referral sources, meets with residential and commercial property owners, teaches partners what a public adjuster does, screens the claims they send over, and files daily activity reports and territory forecasts.",
+      "After a 30–60 day probation, pay starts as a $50k–$65k draw against uncapped commission, and benefits include health, dental, vision, and a 401(k). You need a public adjuster license within a month of hire, plus a business degree or five years of sales experience. Apply through the posting."
+    ],
+    "validThrough": "2026-11-19"
+  },
+  {
+    "id": "swift-pa-outside-sales-rep-des-moines",
+    "title": "Outside Sales Representative – Des Moines, IA",
+    "company": "Swift Public Adjusters",
+    "location": "Des Moines, IA (remote + in-person outreach)",
+    "type": "Claims rep",
+    "posted": "2026-10-20",
+    "tags": [
+      "iowa",
+      "sales",
+      "draw-vs-commission",
+      "benefits"
+    ],
+    "url": "https://swiftpublicadjusters.applytojob.com/apply/l6f7VMeZ6B/Outside-Sales-Representative",
+    "applyUrl": "https://swiftpublicadjusters.applytojob.com/apply/l6f7VMeZ6B/Outside-Sales-Representative",
+    "sourceUrl": "https://swiftpublicadjusters.applytojob.com/apply/l6f7VMeZ6B/Outside-Sales-Representative",
+    "blurb": "Draw-plus-commission sales seat building referral partners for a PA firm in the Des Moines market.",
+    "description": [
+      "Swift Public Adjusters is hiring an Outside Sales Representative for the Des Moines market. The job is remote, with in-person outreach across the Midwest region.",
+      "The rep develops referral sources, meets with residential and commercial property owners, teaches partners what a public adjuster does, screens the claims they send over, and files daily activity reports and territory forecasts.",
+      "After a 30–60 day probation, pay starts as a $50k–$65k draw against uncapped commission, and benefits include health, dental, vision, and a 401(k). You need a public adjuster license within a month of hire, plus a business degree or five years of sales experience. Apply through the posting."
+    ],
+    "validThrough": "2026-11-19"
+  },
+  {
+    "id": "swift-pa-licensed-outside-sales-springfield-mo",
+    "title": "Licensed Outside Sales Rep – Springfield, MO",
+    "company": "Swift Public Adjusters",
+    "location": "Springfield, MO (remote + in-person outreach)",
+    "type": "Claims rep",
+    "posted": "2026-10-20",
+    "tags": [
+      "missouri",
+      "sales",
+      "commission",
+      "referral-partners",
+      "benefits"
+    ],
+    "url": "https://swiftpublicadjusters.applytojob.com/apply/pOe3kH6BSl/Licensed-Outside-Sales-Rep",
+    "applyUrl": "https://swiftpublicadjusters.applytojob.com/apply/pOe3kH6BSl/Licensed-Outside-Sales-Rep",
+    "sourceUrl": "https://swiftpublicadjusters.applytojob.com/apply/pOe3kH6BSl/Licensed-Outside-Sales-Rep",
+    "blurb": "Referral-driven PA sales seat in Springfield, MO paying 20% uncapped commission, with a draw after probation.",
+    "description": [
+      "Swift Public Adjusters wants an outside sales rep in Springfield, MO who already has relationships with commercial property owners, contractors, realtors, property managers, or insurance agents in the area.",
+      "The rep builds and educates a referral network, screens referred claims, keeps partners updated on progress, and signs residential and commercial property owners. The rep also tracks calls, meetings, and sales and provides territory forecasts.",
+      "Pay is a 20% uncapped commission on all sales, with a draw against commission once probation ends. Benefits include health, dental, vision, a 401(k), and reimbursed business expenses. Knowing storm damage and the claims process is preferred. Apply through the posting."
+    ],
+    "validThrough": "2026-11-19"
+  },
+  {
+    "id": "metro-pa-remote-claims-writer-denver",
+    "title": "Remote Claims Writer – Denver, CO",
+    "company": "Metro Public Adjustment",
+    "location": "Denver, CO (work from home + field inspections)",
+    "type": "Claims rep",
+    "posted": "2026-09-09",
+    "tags": [
+      "colorado",
+      "remote",
+      "entry-level",
+      "flexible-schedule",
+      "training"
+    ],
+    "url": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4337682009",
+    "applyUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4337682009",
+    "sourceUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4337682009",
+    "blurb": "Entry-level, flexible-hours claims role in Denver with a 30-year PA firm. Training is provided.",
+    "description": [
+      "Metro Public Adjustment has represented policyholders for more than 30 years. It is adding a claims writer in the Denver area who can work from home, part-time or full-time.",
+      "The rep inspects properties for damage that insurance may cover, helps homeowners understand their policy, keeps clients informed throughout the claim, and completes the claim paperwork.",
+      "No experience is needed, since Metro provides training and ongoing mentorship and you set your own hours. Apply through the Greenhouse posting."
+    ],
+    "validThrough": "2026-11-19"
   }
 ]

@@ -1,7 +1,7 @@
 {
-  "buildDate": "2026-10-19",
-  "total": 63,
-  "active": 58,
+  "buildDate": "2026-10-20",
+  "total": 75,
+  "active": 70,
   "droppedExpired": [
     "fapia-board",
     "rockwall-tampa",
@@ -49,7 +49,15 @@
     "claims-pa-licensed-pa-dfw",
     "claims-pa-licensed-pa-thousand-oaks",
     "claims-pa-desk-adjuster-nrh",
-    "claims-pa-xactimate-estimator-inspector"
+    "claims-pa-xactimate-estimator-inspector",
+    "c3-group-sales-public-adjuster-hybrid-colorado",
+    "sunpoint-public-insurance-adjuster-los-angeles",
+    "ak-public-adjusters-field-sales-owings-mills",
+    "swift-pa-outside-sales-rep-madison",
+    "swift-pa-licensed-outside-sales-kansas-city",
+    "swift-pa-outside-sales-rep-des-moines",
+    "swift-pa-licensed-outside-sales-springfield-mo",
+    "metro-pa-remote-claims-writer-denver"
   ],
   "jsonLdSkipped": {
     "founding-placeholder": "internal/placeholder listing (no external job), not a JobPosting",
@@ -69,7 +77,11 @@
     "panther-pa-licensed-apprentice-multistate": "multi-listing pointer (type Various), not a single job — Google policy",
     "cohen-associates-licensed-pa-florida": "missing required: location(jobLocation/applicantLocationRequirements)",
     "experienced-pa-licensed-and-apprentice-fl": "multi-listing pointer (type Various), not a single job — Google policy",
-    "icrs-pa-estimator-office-texas": "multi-listing pointer (type Various), not a single job — Google policy"
+    "icrs-pa-estimator-office-texas": "multi-listing pointer (type Various), not a single job — Google policy",
+    "firstcall-claims-outside-sales-tennessee": "missing required: location(jobLocation/applicantLocationRequirements)",
+    "sunpoint-contents-inventory-specialist-washington": "missing required: location(jobLocation/applicantLocationRequirements)",
+    "sunpoint-sales-professional-washington": "missing required: location(jobLocation/applicantLocationRequirements)",
+    "crossroads-ira-houston-open-applications": "multi-listing pointer (type Various), not a single job — Google policy"
   },
   "defaultedValidThrough": [
     {
@@ -157,6 +169,15 @@
     ],
     "experienced-pa-licensed-and-apprentice-fl": [
       "location(jobLocation/applicantLocationRequirements)"
+    ],
+    "firstcall-claims-outside-sales-tennessee": [
+      "location(jobLocation/applicantLocationRequirements)"
+    ],
+    "sunpoint-contents-inventory-specialist-washington": [
+      "location(jobLocation/applicantLocationRequirements)"
+    ],
+    "sunpoint-sales-professional-washington": [
+      "location(jobLocation/applicantLocationRequirements)"
     ]
   },
   "validation": {
@@ -199,7 +220,15 @@
     "claims-pa-licensed-pa-dfw": "ok",
     "claims-pa-licensed-pa-thousand-oaks": "ok",
     "claims-pa-desk-adjuster-nrh": "ok",
-    "claims-pa-xactimate-estimator-inspector": "ok"
+    "claims-pa-xactimate-estimator-inspector": "ok",
+    "c3-group-sales-public-adjuster-hybrid-colorado": "ok",
+    "sunpoint-public-insurance-adjuster-los-angeles": "ok",
+    "ak-public-adjusters-field-sales-owings-mills": "ok",
+    "swift-pa-outside-sales-rep-madison": "ok",
+    "swift-pa-licensed-outside-sales-kansas-city": "ok",
+    "swift-pa-outside-sales-rep-des-moines": "ok",
+    "swift-pa-licensed-outside-sales-springfield-mo": "ok",
+    "metro-pa-remote-claims-writer-denver": "ok"
   },
   "removedPages": [],
   "redirects": {
@@ -208,5 +237,5 @@
     "rockwall-san-antonio": "rockwall-licensed-pa-san-antonio-tx",
     "rockwall-houston": "rockwall-licensed-pa-houston-tx"
   },
-  "sitemapUrls": 85
+  "sitemapUrls": 97
 }
