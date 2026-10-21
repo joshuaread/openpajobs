@@ -1,7 +1,7 @@
 {
-  "buildDate": "2026-10-20",
-  "total": 75,
-  "active": 70,
+  "buildDate": "2026-10-21",
+  "total": 80,
+  "active": 75,
   "droppedExpired": [
     "fapia-board",
     "rockwall-tampa",
@@ -57,7 +57,10 @@
     "swift-pa-licensed-outside-sales-kansas-city",
     "swift-pa-outside-sales-rep-des-moines",
     "swift-pa-licensed-outside-sales-springfield-mo",
-    "metro-pa-remote-claims-writer-denver"
+    "metro-pa-remote-claims-writer-denver",
+    "metro-pa-claims-support-rep-entry-level-nc",
+    "shoreline-pa-licensed-public-adjuster-fl-mn-wi-nd-sd",
+    "select-adjusters-claims-coordinator-phoenix"
   ],
   "jsonLdSkipped": {
     "founding-placeholder": "internal/placeholder listing (no external job), not a JobPosting",
@@ -81,7 +84,9 @@
     "firstcall-claims-outside-sales-tennessee": "missing required: location(jobLocation/applicantLocationRequirements)",
     "sunpoint-contents-inventory-specialist-washington": "missing required: location(jobLocation/applicantLocationRequirements)",
     "sunpoint-sales-professional-washington": "missing required: location(jobLocation/applicantLocationRequirements)",
-    "crossroads-ira-houston-open-applications": "multi-listing pointer (type Various), not a single job — Google policy"
+    "crossroads-ira-houston-open-applications": "multi-listing pointer (type Various), not a single job — Google policy",
+    "metro-pa-business-development-lead-maryland": "missing required: location(jobLocation/applicantLocationRequirements)",
+    "gavnat-licensed-public-adjuster-or-license-candidate": "missing required: location(jobLocation/applicantLocationRequirements)"
   },
   "defaultedValidThrough": [
     {
@@ -178,6 +183,12 @@
     ],
     "sunpoint-sales-professional-washington": [
       "location(jobLocation/applicantLocationRequirements)"
+    ],
+    "metro-pa-business-development-lead-maryland": [
+      "location(jobLocation/applicantLocationRequirements)"
+    ],
+    "gavnat-licensed-public-adjuster-or-license-candidate": [
+      "location(jobLocation/applicantLocationRequirements)"
     ]
   },
   "validation": {
@@ -228,7 +239,10 @@
     "swift-pa-licensed-outside-sales-kansas-city": "ok",
     "swift-pa-outside-sales-rep-des-moines": "ok",
     "swift-pa-licensed-outside-sales-springfield-mo": "ok",
-    "metro-pa-remote-claims-writer-denver": "ok"
+    "metro-pa-remote-claims-writer-denver": "ok",
+    "metro-pa-claims-support-rep-entry-level-nc": "ok",
+    "shoreline-pa-licensed-public-adjuster-fl-mn-wi-nd-sd": "ok",
+    "select-adjusters-claims-coordinator-phoenix": "ok"
   },
   "removedPages": [],
   "redirects": {
@@ -237,5 +251,5 @@
     "rockwall-san-antonio": "rockwall-licensed-pa-san-antonio-tx",
     "rockwall-houston": "rockwall-licensed-pa-houston-tx"
   },
-  "sitemapUrls": 97
+  "sitemapUrls": 102
 }
