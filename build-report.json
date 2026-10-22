@@ -1,7 +1,7 @@
 {
-  "buildDate": "2026-10-21",
-  "total": 80,
-  "active": 75,
+  "buildDate": "2026-10-22",
+  "total": 85,
+  "active": 80,
   "droppedExpired": [
     "fapia-board",
     "rockwall-tampa",
@@ -60,7 +60,10 @@
     "metro-pa-remote-claims-writer-denver",
     "metro-pa-claims-support-rep-entry-level-nc",
     "shoreline-pa-licensed-public-adjuster-fl-mn-wi-nd-sd",
-    "select-adjusters-claims-coordinator-phoenix"
+    "select-adjusters-claims-coordinator-phoenix",
+    "metro-nj-claims-representative-610527",
+    "metro-remote-claims-representative-part-full-time-630810",
+    "tiger-adjusters-public-adjuster-dayton-oh"
   ],
   "jsonLdSkipped": {
     "founding-placeholder": "internal/placeholder listing (no external job), not a JobPosting",
@@ -86,7 +89,9 @@
     "sunpoint-sales-professional-washington": "missing required: location(jobLocation/applicantLocationRequirements)",
     "crossroads-ira-houston-open-applications": "multi-listing pointer (type Various), not a single job — Google policy",
     "metro-pa-business-development-lead-maryland": "missing required: location(jobLocation/applicantLocationRequirements)",
-    "gavnat-licensed-public-adjuster-or-license-candidate": "missing required: location(jobLocation/applicantLocationRequirements)"
+    "gavnat-licensed-public-adjuster-or-license-candidate": "missing required: location(jobLocation/applicantLocationRequirements)",
+    "ifile-claims-public-adjuster-fl-tx-pa": "missing required: location(jobLocation/applicantLocationRequirements)",
+    "claim-concepts-public-adjuster-fl-ga-sc": "multi-listing pointer (type Various), not a single job — Google policy"
   },
   "defaultedValidThrough": [
     {
@@ -189,6 +194,9 @@
     ],
     "gavnat-licensed-public-adjuster-or-license-candidate": [
       "location(jobLocation/applicantLocationRequirements)"
+    ],
+    "ifile-claims-public-adjuster-fl-tx-pa": [
+      "location(jobLocation/applicantLocationRequirements)"
     ]
   },
   "validation": {
@@ -242,7 +250,10 @@
     "metro-pa-remote-claims-writer-denver": "ok",
     "metro-pa-claims-support-rep-entry-level-nc": "ok",
     "shoreline-pa-licensed-public-adjuster-fl-mn-wi-nd-sd": "ok",
-    "select-adjusters-claims-coordinator-phoenix": "ok"
+    "select-adjusters-claims-coordinator-phoenix": "ok",
+    "metro-nj-claims-representative-610527": "ok",
+    "metro-remote-claims-representative-part-full-time-630810": "ok",
+    "tiger-adjusters-public-adjuster-dayton-oh": "ok"
   },
   "removedPages": [],
   "redirects": {
@@ -251,5 +262,5 @@
     "rockwall-san-antonio": "rockwall-licensed-pa-san-antonio-tx",
     "rockwall-houston": "rockwall-licensed-pa-houston-tx"
   },
-  "sitemapUrls": 102
+  "sitemapUrls": 107
 }
