@@ -1,3 +1,7 @@
 /* Board layout rules — split for deploy size */
 @import url("board-a.css?v=20260926m");
 @import url("board-b.css?v=20260926m");
+/* state landing links */
+.state-links{list-style:none;padding:0;margin:.75rem 0 1.5rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:.4rem 1rem}
+.section-states{padding:2rem 0}
+.footer-states{flex-wrap:wrap;gap:.25rem 1rem;margin-top:.5rem}
