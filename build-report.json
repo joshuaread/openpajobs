@@ -1,7 +1,7 @@
 {
-  "buildDate": "2026-10-22",
-  "total": 85,
-  "active": 80,
+  "buildDate": "2026-10-23",
+  "total": 89,
+  "active": 84,
   "droppedExpired": [
     "fapia-board",
     "rockwall-tampa",
@@ -63,7 +63,11 @@
     "select-adjusters-claims-coordinator-phoenix",
     "metro-nj-claims-representative-610527",
     "metro-remote-claims-representative-part-full-time-630810",
-    "tiger-adjusters-public-adjuster-dayton-oh"
+    "tiger-adjusters-public-adjuster-dayton-oh",
+    "allied-claims-operations-manager-systems-ai",
+    "metro-claims-rep-618275-ct",
+    "metro-pa-trainee-596930-mo",
+    "rockwall-licensed-pa-austin-tx"
   ],
   "jsonLdSkipped": {
     "founding-placeholder": "internal/placeholder listing (no external job), not a JobPosting",
@@ -253,7 +257,11 @@
     "select-adjusters-claims-coordinator-phoenix": "ok",
     "metro-nj-claims-representative-610527": "ok",
     "metro-remote-claims-representative-part-full-time-630810": "ok",
-    "tiger-adjusters-public-adjuster-dayton-oh": "ok"
+    "tiger-adjusters-public-adjuster-dayton-oh": "ok",
+    "allied-claims-operations-manager-systems-ai": "ok",
+    "metro-claims-rep-618275-ct": "ok",
+    "metro-pa-trainee-596930-mo": "ok",
+    "rockwall-licensed-pa-austin-tx": "ok"
   },
   "removedPages": [],
   "redirects": {
@@ -262,5 +270,5 @@
     "rockwall-san-antonio": "rockwall-licensed-pa-san-antonio-tx",
     "rockwall-houston": "rockwall-licensed-pa-houston-tx"
   },
-  "sitemapUrls": 107
+  "sitemapUrls": 111
 }

@@ -1958,5 +1958,104 @@
       "An adjusting or construction background is preferred but not required for unlicensed candidates. Send a resume to the email listed on the careers page."
     ],
     "validThrough": "2026-11-21"
+  },
+  {
+    "id": "allied-claims-operations-manager-systems-ai",
+    "title": "Claims Operations Manager (Systems & AI)",
+    "company": "Allied Public Adjusters",
+    "location": "Los Angeles, CA",
+    "type": "Claims rep",
+    "posted": "2026-10-22",
+    "tags": [
+      "california",
+      "operations",
+      "full-time",
+      "technology"
+    ],
+    "url": "https://job-boards.greenhouse.io/alliedpublicadjusters/jobs/4464736009",
+    "applyUrl": "https://job-boards.greenhouse.io/alliedpublicadjusters/jobs/4464736009",
+    "sourceUrl": "https://job-boards.greenhouse.io/alliedpublicadjusters/jobs/4464736009",
+    "blurb": "Own the workflows, in-house claims platform, dashboards, and AI tools behind a policyholder-side claims team in Los Angeles.",
+    "description": [
+      "Allied Public Adjusters has represented policyholders on property losses since 1997 and is reorganizing its claims team into pods of adjusters, estimators, and attorneys working to one standard.",
+      "This manager connects the claims team and its technology: designing every workflow a claim moves through, from client onboarding to settlement, and configuring stages, handoffs, triggers, and SLA timers in Allied's in-house claims platform.",
+      "The role also builds the reporting, audits, and AI tools the team uses, and turns stakeholder requests into defined builds or backlog items. Apply on Greenhouse."
+    ],
+    "validThrough": "2026-11-22"
+  },
+  {
+    "id": "metro-claims-rep-618275-ct",
+    "title": "Claims Rep – Connecticut (Remote)",
+    "company": "Metro Public Adjustment",
+    "location": "Connecticut, work from home",
+    "type": "Claims rep",
+    "posted": "2026-09-22",
+    "tags": [
+      "connecticut",
+      "remote",
+      "no-experience",
+      "training",
+      "part-time",
+      "full-time"
+    ],
+    "url": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4415169009",
+    "applyUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4415169009",
+    "sourceUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4415169009",
+    "blurb": "Remote, flexible claims rep role helping homeowners and business owners with insurance claims; training provided.",
+    "description": [
+      "Metro Public Adjustment, a public adjusting firm with more than 30 years in the business, is adding remote claims reps based in Connecticut.",
+      "Reps review policies with homeowners and business owners, inspect properties for covered damage, keep clients informed through the claim, and document each step.",
+      "No experience is needed; Metro provides training and ongoing mentorship, and reps choose part-time or full-time hours. Apply on Greenhouse."
+    ],
+    "validThrough": "2026-11-22"
+  },
+  {
+    "id": "metro-pa-trainee-596930-mo",
+    "title": "Public Insurance Adjuster Trainee – Missouri",
+    "company": "Metro Public Adjustment",
+    "location": "Missouri",
+    "type": "Apprentice",
+    "posted": "2026-10-15",
+    "tags": [
+      "missouri",
+      "training",
+      "no-experience",
+      "part-time",
+      "full-time"
+    ],
+    "url": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4455197009",
+    "applyUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4455197009",
+    "sourceUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4455197009",
+    "blurb": "Paid-training path to a public adjuster license in Missouri; full- or part-time, posted at $35,000–$125,000.",
+    "description": [
+      "Metro Public Adjustment is hiring public adjuster trainees in Missouri, one of sixteen states listed on the posting. No adjusting experience is required.",
+      "Trainees help inspect residential and commercial damage, learn to read policies and estimate losses, support senior adjusters on claim files, and talk with clients, contractors, and carriers.",
+      "Metro offers paid training, licensing support, a flexible schedule, and a stated pay range of $35,000 to $125,000 with performance-based upside. A valid driver’s license and reliable transportation are required. Apply on Greenhouse."
+    ],
+    "validThrough": "2026-11-22"
+  },
+  {
+    "id": "rockwall-licensed-pa-austin-tx",
+    "title": "Licensed Public Adjuster – Austin, Texas",
+    "company": "Rockwall National Public Adjusters",
+    "location": "Austin, TX (hybrid)",
+    "type": "Licensed PA",
+    "posted": "2025-10-07",
+    "tags": [
+      "texas",
+      "commission",
+      "hybrid",
+      "training"
+    ],
+    "url": "https://rockwall.bamboohr.com/careers/25",
+    "applyUrl": "https://rockwall.bamboohr.com/careers/25",
+    "sourceUrl": "https://rockwall.bamboohr.com/careers/25",
+    "blurb": "Hybrid, commission-based Austin PA seat for Texas-licensed adjusters, with mentorship and back-office support.",
+    "description": [
+      "Rockwall National Public Adjusters, a policyholder-side firm with more than 15 years in the business, is adding a licensed Texas public adjuster in Austin on a hybrid, commission-based contractor basis.",
+      "The adjuster builds referral business, signs clients, evaluates damage, and prepares and negotiates claims on the policyholder’s behalf.",
+      "Newly licensed adjusters get structured training and mentorship, while experienced adjusters get the firm’s processes and administrative support. Apply through the BambooHR posting."
+    ],
+    "validThrough": "2026-11-22"
   }
 ]
