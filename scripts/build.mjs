@@ -9,7 +9,7 @@ import crypto from "node:crypto";
 import { fileURLToPath } from "node:url";
 import {
   SITE, esc, isExpired, resolveValidThrough, renderJobPage, buildJsonLd, jsonLdSkipReason,
-  missingRequired, extractJsonLd, checkGoogleJobPosting,
+  missingRequired, extractJsonLd, checkGoogleJobPosting, isFeaturedNow, featuredProblems,
 } from "./lib/jobs.mjs";
 
 const NOINDEX_IDS = new Set(["founding-placeholder"]);
@@ -49,7 +49,7 @@ export function build({ root, now = new Date(), log = console.log } = {}) {
     buildDate: today,
     total: jobs.length, active: active.length, droppedExpired: expired.map((j) => j.id),
     jsonLdEmitted: [], jsonLdSkipped: {}, defaultedValidThrough: [], missingFields: {}, validation: {},
-    removedPages: [],
+    removedPages: [], featuredNow: [], featuredProblems: {},
   };
   for (const j of jobs) {
     const vt = resolveValidThrough(j);
@@ -57,6 +57,12 @@ export function build({ root, now = new Date(), log = console.log } = {}) {
     const miss = missingRequired(j);
     if (!j.validThrough) miss.push("validThrough (not in data; defaulted)");
     if (miss.length) report.missingFields[j.id] = miss;
+  }
+
+  for (const j of active) {
+    if (isFeaturedNow(j, now)) report.featuredNow.push(j.id);
+    const fp = featuredProblems(j);
+    if (fp.length) report.featuredProblems[j.id] = fp;
   }
 
   // --- job pages ---
@@ -74,7 +80,7 @@ export function build({ root, now = new Date(), log = console.log } = {}) {
     if (f.endsWith(".html") && !keep.has(f)) { fs.unlinkSync(path.join(jobsDir, f)); report.removedPages.push(`jobs/${f}`); }
   }
   for (const j of active) {
-    const html = renderJobPage(j, active);
+    const html = renderJobPage(j, active, now);
     fs.writeFileSync(path.join(jobsDir, `${j.id}.html`), html);
     const blocks = extractJsonLd(html); // re-parse what we actually wrote
     if (blocks.length) {
@@ -92,10 +98,12 @@ export function build({ root, now = new Date(), log = console.log } = {}) {
   // --- index.html crawlable fallback (noscript, so the visible board is unchanged) ---
   const idxPath = path.join(root, "index.html");
   let idx = fs.readFileSync(idxPath, "utf8");
-  const sorted = [...active].sort((a, b) => (b.posted || "").localeCompare(a.posted || "") || a.id.localeCompare(b.id));
+  const featuredIds = new Set(report.featuredNow);
+  const sorted = [...active].sort((a, b) =>
+    (featuredIds.has(b.id) - featuredIds.has(a.id)) || (b.posted || "").localeCompare(a.posted || "") || a.id.localeCompare(b.id));
   const list =
     "<!--JOBS:START--><noscript><ul class=\"jobs-static\">" +
-    sorted.map((j) => `<li><a href="/jobs/${esc(j.id)}.html">${esc(j.title)}</a> — ${esc(j.company)} · ${esc(j.location)}</li>`).join("") +
+    sorted.map((j) => `<li><a href="/jobs/${esc(j.id)}.html">${esc(j.title)}</a> — ${esc(j.company)} · ${esc(j.location)}${featuredIds.has(j.id) ? " · Featured" : ""}</li>`).join("") +
     "</ul></noscript><!--JOBS:END-->";
   if (idx.includes("<!--JOBS:START-->")) idx = idx.replace(/<!--JOBS:START-->[\s\S]*?<!--JOBS:END-->/, list);
   else idx = idx.replace('<div class="jobs" id="job-list" aria-live="polite"></div>', `<div class="jobs" id="job-list" aria-live="polite">${list}</div>`);

@@ -611,6 +611,49 @@ a:hover {
   background: var(--founding-bg);
 }
 
+.job-badge.is-featured {
+  color: var(--featured-ink);
+  background: var(--featured-bg);
+}
+
+.job-badge[hidden] {
+  display: none;
+}
+
+.job-page-featured {
+  display: inline-block;
+  margin: 0 0 0.75rem;
+}
+
+.job-featured {
+  border-color: var(--featured-ink);
+}
+
+.feature-cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+  margin: 0 0 1.75rem;
+}
+
+.feature-cta-text,
+.feature-cta p {
+  margin: 0;
+  flex: 1 1 16rem;
+}
+
+.feature-cta-post {
+  margin: 1.5rem 0 0;
+  padding: 1.25rem;
+}
+
+.feature-cta-post h2 {
+  flex: 1 1 100%;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
 .job-date {
   display: inline-flex;
   align-items: center;

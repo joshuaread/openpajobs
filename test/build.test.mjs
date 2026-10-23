@@ -140,3 +140,77 @@ test("retired listings with redirectTo keep a noindex redirect stub to the activ
   assert.ok(!fs.readFileSync(path.join(dir, "sitemap.xml"), "utf8").includes("fapia-board"));
   assert.ok(!JSON.parse(fs.readFileSync(path.join(dir, "jobs.active.json"))).some((j) => j.id === "fapia-board"));
 });
+
+// ---------- paid Featured listings ----------
+const FEATURE_URL = "https://buy.stripe.com/7sY4gA1gg3X70W24PLd3i02";
+const FEATURE_LABEL = "Feature your listing — $49 for 30 days";
+
+function featuredSandbox(overrides) {
+  const dir = sandbox();
+  const p = path.join(dir, "jobs.json");
+  const jobs = JSON.parse(fs.readFileSync(p, "utf8"));
+  for (const [id, o] of Object.entries(overrides)) Object.assign(jobs.find((j) => j.id === id), o);
+  fs.writeFileSync(p, JSON.stringify(jobs, null, 2));
+  return dir;
+}
+const page = (dir, id) => fs.readFileSync(path.join(dir, "jobs", `${id}.html`), "utf8");
+const idxOrder = (dir) =>
+  [...fs.readFileSync(path.join(dir, "index.html"), "utf8").matchAll(/<li><a href="\/jobs\/([^"]+)\.html"/g)].map((m) => m[1]);
+
+test("featured_until is inclusive of its day; expired or undated featured is not featured", () => {
+  const dir = featuredSandbox({
+    "rockwall-austin": { featured: true, featured_until: "2026-10-12" }, // today (NOW is 2026-10-12 22:00Z)
+    "coastal-ctg": { featured: true, featured_until: "2026-10-11" }, // yesterday
+    "avalo-pa-1099": { featured: true }, // no end date -> fail closed
+    "aaa-pa": { featured: false, featured_until: "2027-01-01" }, // not opted in
+  });
+  const report = build({ root: dir, now: NOW, log: quiet });
+  assert.deepEqual(report.featuredNow, ["rockwall-austin"]);
+  assert.ok(report.featuredProblems["avalo-pa-1099"]);
+  assert.match(page(dir, "rockwall-austin"), /class="job-badge is-featured job-page-featured"/);
+  for (const id of ["coastal-ctg", "avalo-pa-1099", "aaa-pa"]) assert.doesNotMatch(page(dir, id), /is-featured/);
+  assert.equal(idxOrder(dir)[0], "rockwall-austin");
+});
+
+test("a featured listing drops off after featured_until with no data edit (only a rebuild)", () => {
+  const dir = featuredSandbox({ "rockwall-austin": { featured: true, featured_until: "2026-10-12" } });
+  build({ root: dir, now: NOW, log: quiet });
+  assert.match(page(dir, "rockwall-austin"), /is-featured/);
+  assert.equal(idxOrder(dir)[0], "rockwall-austin");
+  build({ root: dir, now: new Date("2026-10-13T00:00:01Z"), log: quiet });
+  assert.doesNotMatch(page(dir, "rockwall-austin"), /is-featured/);
+  assert.notEqual(idxOrder(dir)[0], "rockwall-austin");
+});
+
+test("every listing page has the Feature button (new tab); JSON-LD stays valid and identical for featured jobs", () => {
+  const dir = featuredSandbox({});
+  build({ root: dir, now: NOW, log: quiet });
+  const plainLd = ld(dir, "rockwall-austin");
+  const dir2 = featuredSandbox({ "rockwall-austin": { featured: true, featured_until: "2026-11-12" } });
+  build({ root: dir2, now: NOW, log: quiet });
+  assert.deepEqual(ld(dir2, "rockwall-austin"), plainLd);
+  assert.deepEqual(checkGoogleJobPosting(ld(dir2, "rockwall-austin")[0]), []);
+  for (const f of fs.readdirSync(path.join(dir2, "jobs"))) {
+    const h = fs.readFileSync(path.join(dir2, "jobs", f), "utf8");
+    if (h.includes('http-equiv="refresh"')) continue;
+    assert.ok(h.includes(`href="${FEATURE_URL}" target="_blank" rel="noopener noreferrer">${FEATURE_LABEL}</a>`), f);
+    assert.doesNotMatch(h, /coming later|may come later/i, f);
+  }
+});
+
+test("post/pricing/for-employers carry the button and no 'coming later' copy", () => {
+  for (const f of ["post.html", "pricing.html", "for-employers.html"]) {
+    const h = fs.readFileSync(path.join(ROOT, f), "utf8");
+    assert.ok(h.includes(`href="${FEATURE_URL}" target="_blank" rel="noopener noreferrer">${FEATURE_LABEL}</a>`), f);
+    assert.doesNotMatch(h, /coming later|may come later|come next|featuring TBD/i, f);
+  }
+});
+
+test("featured fields are validated on inbox records", () => {
+  const base = { id: "x", title: "T", company: "C", location: "Austin, TX", type: "Licensed PA", posted: "2026-10-01",
+    applyUrl: "https://example.com", sourceUrl: "https://example.com", validThrough: "2026-12-01", description: ["d"] };
+  assert.deepEqual(validateRecord({ ...base, featured: true, featured_until: "2026-11-01" }, NOW), []);
+  assert.ok(validateRecord({ ...base, featured: "yes" }, NOW).length);
+  assert.ok(validateRecord({ ...base, featured: true, featured_until: "11/01/2026" }, NOW).length);
+  assert.ok(validateRecord({ ...base, featured: true }, NOW).length);
+});

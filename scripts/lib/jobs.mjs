@@ -5,6 +5,8 @@ import { ICON, THEME_BOOT, NAV, FOOTER, SVG_PIN, SVG_USER, SVG_DOLLAR } from "./
 export const SITE = "https://openpajobs.com";
 export const CACHE = "20260927a";
 export const DEFAULT_VALID_DAYS = 60;
+export const FEATURE_URL = "https://buy.stripe.com/7sY4gA1gg3X70W24PLd3i02";
+export const FEATURE_LABEL = "Feature your listing — $49 for 30 days";
 
 // ---------- helpers ----------
 // Same as Python html.escape(s, quote=True)
@@ -65,6 +67,32 @@ export function isExpired(job, now) {
   const vt = resolveValidThrough(job);
   if (!vt) return false; // can't tell; kept, but reported as missing field
   return new Date(vt.value).getTime() < now.getTime();
+}
+
+// ---------- featured (paid) listings ----------
+/**
+ * End of the featured window as epoch ms, or null if `featured_until` is missing/invalid.
+ * A date-only value runs through the end of that day (UTC); a datetime is an exact instant.
+ */
+export function featuredUntilMs(job) {
+  const u = job?.featured_until;
+  if (!isValidDateOrDateTime(u)) return null;
+  return new Date(DATE_RE.test(u) ? `${u}T23:59:59.999Z` : u).getTime();
+}
+/** Pinned + badged only when featured === true AND featured_until is on/after today. Fail closed. */
+export function isFeaturedNow(job, now) {
+  if (job?.featured !== true) return false;
+  const end = featuredUntilMs(job);
+  return end !== null && now.getTime() <= end;
+}
+/** Problems with a record's featured fields (empty = fine). */
+export function featuredProblems(job) {
+  const p = [];
+  if (job.featured !== undefined && typeof job.featured !== "boolean") p.push("featured must be a boolean");
+  if (job.featured_until !== undefined && !isValidDateOrDateTime(job.featured_until))
+    p.push("featured_until must be an ISO date (YYYY-MM-DD) or datetime");
+  if (job.featured === true && job.featured_until === undefined) p.push("featured is true but featured_until is missing (never shown as featured)");
+  return p;
 }
 
 // ---------- locations ----------
@@ -254,7 +282,7 @@ function relatedJobs(job, all, n = 3) {
   return others.slice(0, n);
 }
 
-export function renderJobPage(job, activeJobs) {
+export function renderJobPage(job, activeJobs, now = new Date()) {
   const { id: jid, title, company } = job;
   const blurb = job.blurb || "";
   const pageUrl = `${SITE}/jobs/${jid}.html`;
@@ -271,6 +299,9 @@ export function renderJobPage(job, activeJobs) {
   if (job.salary)
     chips.push(`<span class="job-chip job-chip-salary" role="listitem">${SVG_DOLLAR}<span>${esc(job.salary)}</span></span>`);
   chips.push("</div>");
+  const featuredBadge = isFeaturedNow(job, now)
+    ? `<span class="job-badge is-featured job-page-featured" data-featured-until="${esc(new Date(featuredUntilMs(job)).toISOString())}">Featured</span>`
+    : "";
   const tags = job.tags || [];
   const tagsHtml = tags.length
     ? `<div class="job-tags job-page-tags">${tags.map((t) => `<span class="tag">${esc(String(t).toUpperCase())}</span>`).join("")}</div>`
@@ -281,6 +312,9 @@ export function renderJobPage(job, activeJobs) {
     : "";
   const [href, label, extra] = applyAttrs(job);
   const applyBar = `<div class="job-apply-bar"><a class="btn btn-primary" href="${esc(href)}"${extra}>${esc(label)}</a><a class="btn btn-ghost" href="/#jobs">All jobs</a></div>`;
+  const featureCta =
+    `<aside class="feature-cta" aria-label="Feature this listing"><p class="feature-cta-text">Hiring for this role? Pin it to the top of the board with a Featured badge.</p>` +
+    `<a class="btn btn-primary" href="${FEATURE_URL}" target="_blank" rel="noopener noreferrer">${esc(FEATURE_LABEL)}</a></aside>`;
   const moreHtml = relatedJobs(job, activeJobs)
     .map((m) => `<li><a href="/jobs/${esc(m.id)}.html"><strong>${esc(m.title)}</strong></a><span class="job-more-meta">${esc(m.company)} · ${esc(m.location)}</span></li>`)
     .join("");
@@ -308,7 +342,7 @@ export function renderJobPage(job, activeJobs) {
     `${css}${og}${plausible}${noindex}${ldHtml}</head>`;
   const header =
     `<header class="job-header">${companyRow}<h1 class="job-title-block"><span class="job-hiring-line">${esc(hiringLine)}</span>` +
-    `<span class="job-title-line">${esc(title)}</span></h1>${chips.join("")}${tagsHtml}${quick}${applyBar}</header>`;
+    `<span class="job-title-line">${esc(title)}</span></h1>${featuredBadge}${chips.join("")}${tagsHtml}${quick}${applyBar}${featureCta}</header>`;
   const main =
     `<main><section class="job-page"><div class="wrap job-page-inner"><nav class="job-breadcrumb" aria-label="Breadcrumb">` +
     `<a href="/#jobs">Jobs</a><span aria-hidden="true">/</span><span>${esc(title)}</span></nav>${header}` +
