@@ -11,7 +11,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { isValidDate, isValidDateOrDateTime, toIsoDateTime, EMP_ENUM } from "./lib/jobs.mjs";
+import { isValidDate, isValidDateOrDateTime, toIsoDateTime, EMP_ENUM, featuredProblems } from "./lib/jobs.mjs";
 import { build } from "./build.mjs";
 
 const FILE_RE = /^\d{4}-\d{2}-\d{2}\.json$/;
@@ -41,6 +41,7 @@ export function validateRecord(r, now) {
   for (const f of ["salary", "blurb", "logo", "companyUrl"]) if (r[f] !== undefined && typeof r[f] !== "string") e.push(`${f} must be a string`);
   if (r.employmentType !== undefined && ![].concat(r.employmentType).every((x) => EMP_ENUM.includes(x)))
     e.push("employmentType must be one of " + EMP_ENUM.join("/"));
+  e.push(...featuredProblems(r));
   return e;
 }
 

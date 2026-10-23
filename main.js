@@ -73,7 +73,10 @@
     return Math.floor(months / 12) + "y ago";
   }
   function isFeatured(j) {
-    return j.featured === true || j.type === "Featured";
+    if (!j || j.featured !== true || typeof j.featured_until !== "string") return false;
+    var u = j.featured_until;
+    var end = /^\d{4}-\d{2}-\d{2}$/.test(u) ? new Date(u + "T23:59:59.999Z") : new Date(u);
+    return !isNaN(end.getTime()) && Date.now() <= end.getTime();
   }
   function withinDays(iso, days) {
     if (!iso) return false;
@@ -109,11 +112,13 @@
     var hasFounding = tagList.some(function (t) {
       return /^founding$/i.test(String(t));
     });
-    var typeClass = "job-type" + (featured ? " is-featured" : "");
+    var typeClass = "job-type";
     var typeHtml = j.type
       ? '<span class="' + typeClass + '">' + escapeHtml(String(j.type || "").toUpperCase()) + "</span>"
       : "";
-    var badgeHtml = hasFounding
+    var badgeHtml = featured
+      ? '<span class="job-badge is-featured">Featured</span>'
+      : hasFounding
       ? '<span class="job-badge is-founding">Founding</span>'
       : "";
     var markHtml = j.logo
@@ -172,7 +177,7 @@
     var time = timeEl ? timeEl.value : "all";
     var sort = sortEl ? sortEl.value : "recent";
     var filtered = jobs.filter(function (j) {
-      if (type && j.type !== type) return false;
+      if (type === "Featured" ? !isFeatured(j) : type && j.type !== type) return false;
       if (time === "7" && !withinDays(j.posted, 7)) return false;
       if (time === "30" && !withinDays(j.posted, 30)) return false;
       if (!q) return true;
@@ -312,5 +317,9 @@
       );
     });
   }
+  document.querySelectorAll("[data-featured-until]").forEach(function (el) {
+    var end = new Date(el.getAttribute("data-featured-until"));
+    if (isNaN(end.getTime()) || Date.now() > end.getTime()) el.hidden = true;
+  });
   loadJobs();
 })();

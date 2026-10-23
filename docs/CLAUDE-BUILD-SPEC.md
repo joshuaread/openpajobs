@@ -112,7 +112,7 @@ Then client redirects to that URL (or a thin success page that links there).
 **Copy updates (must ship with P0):**
 
 - `post.html` / `/post`: change from “Request founding post” / “We’ll review and publish” → **“Post a job — goes live immediately (founding free)”**
-- `pricing.html`: founding free, live on submit; paid featuring TBD
+- `pricing.html`: founding free, live on submit; paid featuring live ($49 for 30 days, Stripe payment link)
 - Homepage / for-employers: align language (no email-only promise)
 
 **Seed migration:**
