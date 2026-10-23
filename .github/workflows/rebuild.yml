@@ -3,6 +3,7 @@ name: Daily rebuild (expire jobs)
 # Never reads inbox/ (inbox files live on the box and are not committed).
 on:
   schedule:
+    - cron: "5 0 * * *" # 00:05 UTC: featured_until windows end at 23:59:59 UTC
     - cron: "17 11 * * *" # 11:17 UTC daily
   workflow_dispatch:
 permissions:

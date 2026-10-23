@@ -4,8 +4,7 @@
     "title": "Your firm here — founding free post",
     "company": "Open PA Jobs",
     "location": "Nationwide",
-    "type": "Featured",
-    "featured": true,
+    "type": "Founding",
     "posted": "2026-09-26",
     "tags": [
       "founding",
@@ -17,7 +16,7 @@
     "description": [
       "Open PA Jobs is opening with a short founding window: PA firms can request a free listing while we build the board.",
       "Tell us the role, location, and apply link. We review submissions and publish when they fit the public-adjuster focus — licensed desks, apprentices, and related PA-firm roles.",
-      "No payment is required for founding posts. Paid featured placements come later."
+      "No payment is required for founding posts. To pin a listing to the top of the board with a Featured badge, use the Feature your listing button — $49 for 30 days."
     ],
     "logo": "/logos/open-pa-jobs.svg"
   },
