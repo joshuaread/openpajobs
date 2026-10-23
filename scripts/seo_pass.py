@@ -28,6 +28,13 @@ PLAUSIBLE_SNIPPET = (
     'src="https://plausible.io/js/script.js"></script>'
 )
 
+GA_SNIPPET = (
+    '<!-- Google tag (gtag.js) -->'
+    '<script async src="https://www.googletagmanager.com/gtag/js?id=G-RJ2FD6L55V"></script>'
+    "<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}"
+    "gtag('js',new Date());gtag('config','G-RJ2FD6L55V');</script>"
+)
+
 EMPLOYMENT_TYPE = {
     "metro-apprentice": "OTHER",
     "coastal-ctg": "CONTRACTOR",
@@ -118,6 +125,10 @@ def ensure_head_tags(html: str, rel_path: str) -> str:
 
 
 def ensure_analytics(html: str) -> str:
+    if "googletagmanager.com/gtag/js?id=G-RJ2FD6L55V" not in html:
+        html, n = re.subn(r"(<meta\s+name=\"viewport\"[^>]*>)", lambda m: m.group(1) + GA_SNIPPET, html, count=1)
+        if not n:
+            html = html.replace("</head>", GA_SNIPPET + "</head>", 1)
     if "plausible.io/js/script.js" in html:
         return html
     return html.replace("</head>", PLAUSIBLE_SNIPPET + "</head>", 1)

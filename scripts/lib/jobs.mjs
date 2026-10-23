@@ -3,6 +3,10 @@
 import { ICON, THEME_BOOT, NAV, FOOTER, SVG_PIN, SVG_USER, SVG_DOLLAR } from "./templates.mjs";
 
 export const SITE = "https://openpajobs.com";
+export const GA_ID = "G-RJ2FD6L55V";
+export const GA_SNIPPET =
+  `<!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=${GA_ID}"></script>` +
+  `<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');</script>`;
 export const CACHE = "20260927a";
 export const DEFAULT_VALID_DAYS = 60;
 
@@ -299,7 +303,7 @@ export function renderJobPage(job, activeJobs) {
     : "";
   const css = ["styles", "board", "polish", "job"].map((c) => `<link rel="stylesheet" href="/${c}.css?v=${CACHE}" />`).join("");
   const head =
-    `<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />` +
+    `<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />` + GA_SNIPPET +
     `<title>${esc(pageTitle)}</title><meta name="description" content="${esc(metaDesc)}" />` +
     `<link rel="canonical" href="${esc(pageUrl)}" /><link rel="icon" href="${ICON}" />` +
     `<script>\n${THEME_BOOT}\n</script>` +

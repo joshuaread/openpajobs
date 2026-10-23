@@ -8,7 +8,7 @@ import path from "node:path";
 import crypto from "node:crypto";
 import { fileURLToPath } from "node:url";
 import {
-  SITE, esc, isExpired, resolveValidThrough, renderJobPage, buildJsonLd, jsonLdSkipReason,
+  SITE, GA_SNIPPET, esc, isExpired, resolveValidThrough, renderJobPage, buildJsonLd, jsonLdSkipReason,
   missingRequired, extractJsonLd, checkGoogleJobPosting,
 } from "./lib/jobs.mjs";
 
@@ -23,6 +23,7 @@ export function renderRedirectPage(job, target) {
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  ${GA_SNIPPET}
   <title>This listing has moved — Open PA Jobs</title>
   <meta name="robots" content="noindex, follow" />
   <link rel="canonical" href="${esc(abs)}" />
