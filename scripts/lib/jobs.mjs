@@ -3,7 +3,12 @@
 import { ICON, THEME_BOOT, NAV, FOOTER, SVG_PIN, SVG_USER, SVG_DOLLAR } from "./templates.mjs";
 
 export const SITE = "https://openpajobs.com";
+export const GA_ID = "G-RJ2FD6L55V";
+export const GA_SNIPPET =
+  `<!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=${GA_ID}"></script>` +
+  `<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');</script>`;
 export const CACHE = "20260927a";
+export const JS_VERSION = "20261023a";
 export const DEFAULT_VALID_DAYS = 60;
 export const FEATURE_URL = "https://buy.stripe.com/7sY4gA1gg3X70W24PLd3i02";
 export const FEATURE_LABEL = "Feature your listing — $49 for 30 days";
@@ -299,6 +304,10 @@ export function renderJobPage(job, activeJobs, now = new Date()) {
   if (job.salary)
     chips.push(`<span class="job-chip job-chip-salary" role="listitem">${SVG_DOLLAR}<span>${esc(job.salary)}</span></span>`);
   chips.push("</div>");
+  const loc = parseLocation(job);
+  const gaAttrs =
+    ` data-job-id="${esc(jid)}" data-company="${esc(company)}" data-state="${esc(loc.places[0]?.region || "")}"` +
+    ` data-remote="${loc.remote}" data-featured="${isFeaturedNow(job, now)}"`;
   const featuredBadge = isFeaturedNow(job, now)
     ? `<span class="job-badge is-featured job-page-featured" data-featured-until="${esc(new Date(featuredUntilMs(job)).toISOString())}">Featured</span>`
     : "";
@@ -333,7 +342,7 @@ export function renderJobPage(job, activeJobs, now = new Date()) {
     : "";
   const css = ["styles", "board", "polish", "job"].map((c) => `<link rel="stylesheet" href="/${c}.css?v=${CACHE}" />`).join("");
   const head =
-    `<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />` +
+    `<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />` + GA_SNIPPET +
     `<title>${esc(pageTitle)}</title><meta name="description" content="${esc(metaDesc)}" />` +
     `<link rel="canonical" href="${esc(pageUrl)}" /><link rel="icon" href="${ICON}" />` +
     `<script>\n${THEME_BOOT}\n</script>` +
@@ -344,7 +353,7 @@ export function renderJobPage(job, activeJobs, now = new Date()) {
     `<header class="job-header">${companyRow}<h1 class="job-title-block"><span class="job-hiring-line">${esc(hiringLine)}</span>` +
     `<span class="job-title-line">${esc(title)}</span></h1>${featuredBadge}${chips.join("")}${tagsHtml}${quick}${applyBar}${featureCta}</header>`;
   const main =
-    `<main><section class="job-page"><div class="wrap job-page-inner"><nav class="job-breadcrumb" aria-label="Breadcrumb">` +
+    `<main><section class="job-page"${gaAttrs}><div class="wrap job-page-inner"><nav class="job-breadcrumb" aria-label="Breadcrumb">` +
     `<a href="/#jobs">Jobs</a><span aria-hidden="true">/</span><span>${esc(title)}</span></nav>${header}` +
     `<article class="job-body-prose page-prose">${bodyHtml(job)}</article></div></section>` +
     `<section class="job-bottom"><div class="wrap"><div class="job-bottom-grid">` +
@@ -352,7 +361,7 @@ export function renderJobPage(job, activeJobs, now = new Date()) {
     `<div class="job-bottom-card"><h2>More openings</h2><ul class="job-more-list">${moreHtml}</ul><p class="fine"><a href="/#jobs">← Back to the job board</a></p></div>` +
     `<div class="job-bottom-card"><h2>Get job alerts</h2><p>New PA roles in your inbox — free, no spam pitch.</p><a class="btn btn-ghost" href="/#alerts">Subscribe to alerts</a></div>` +
     `</div></div></section></main>`;
-  const scripts = `<script src="/config.js?v=${CACHE}"></script><script src="/main.js?v=${CACHE}"></script>`;
+  const scripts = `<script src="/config.js?v=${CACHE}"></script><script src="/main.js?v=${JS_VERSION}"></script>`;
   return head + "<body>" + NAV + main + FOOTER + scripts + "</body></html>\n";
 }
 
