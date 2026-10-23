@@ -6,7 +6,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { build } from "../scripts/build.mjs";
 import { mergeInbox, validateRecord } from "../scripts/merge-inbox.mjs";
-import { buildJsonLd, extractJsonLd, checkGoogleJobPosting, safeJson } from "../scripts/lib/jobs.mjs";
+import { buildJsonLd, extractJsonLd, checkGoogleJobPosting, safeJson, resolveValidThrough } from "../scripts/lib/jobs.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const FIX = path.join(ROOT, "test", "fixtures");
@@ -20,6 +20,11 @@ function sandbox() {
     fs.cpSync(path.join(ROOT, f), path.join(dir, f), { recursive: true });
   }
   fs.mkdirSync(path.join(dir, "inbox"), { recursive: true });
+  // Pin the fixture listings the tests reference so the 30-day default expiry can't age them out of live data.
+  const jp = path.join(dir, "jobs.json");
+  const pinned = new Set(["rockwall-austin", "coastal-ctg", "metro-claims-rep", "aaa-pa", "statewide-pa"]);
+  const all = JSON.parse(fs.readFileSync(jp, "utf8")).map((j) => (pinned.has(j.id) && !j.validThrough ? { ...j, validThrough: "2026-12-31" } : j));
+  fs.writeFileSync(jp, JSON.stringify(all, null, 2));
   return dir;
 }
 const ld = (dir, id) => extractJsonLd(fs.readFileSync(path.join(dir, "jobs", `${id}.html`), "utf8"));
@@ -190,7 +195,7 @@ test("every listing page has the Feature button (new tab); JSON-LD stays valid a
   build({ root: dir2, now: NOW, log: quiet });
   assert.deepEqual(ld(dir2, "rockwall-austin"), plainLd);
   assert.deepEqual(checkGoogleJobPosting(ld(dir2, "rockwall-austin")[0]), []);
-  for (const f of fs.readdirSync(path.join(dir2, "jobs"))) {
+  for (const f of fs.readdirSync(path.join(dir2, "jobs")).filter((f) => f.endsWith(".html"))) {
     const h = fs.readFileSync(path.join(dir2, "jobs", f), "utf8");
     if (h.includes('http-equiv="refresh"')) continue;
     assert.ok(h.includes(`href="${FEATURE_URL}" target="_blank" rel="noopener noreferrer">${FEATURE_LABEL}</a>`), f);
@@ -222,7 +227,7 @@ test("GA4: every page head loads gtag.js async; job pages carry event params; st
   const pages = [
     ...fs.readdirSync(dir).filter((f) => f.endsWith(".html")),
     ...fs.readdirSync(path.join(dir, "locations")).map((f) => `locations/${f}`),
-    ...fs.readdirSync(path.join(dir, "jobs")).map((f) => `jobs/${f}`),
+    ...fs.readdirSync(path.join(dir, "jobs")).filter((f) => f.endsWith(".html")).map((f) => `jobs/${f}`),
   ];
   for (const f of pages) {
     const html = fs.readFileSync(path.join(dir, f), "utf8");
@@ -242,4 +247,8 @@ test("thanks-featured.html exists, is noindex, fires featured_purchase and stays
   assert.match(html, /gtag\/js\?id=G-RJ2FD6L55V/);
   assert.ok(!fs.readFileSync(path.join(ROOT, "sitemap.xml"), "utf8").includes("thanks-featured"));
   assert.match(fs.readFileSync(path.join(ROOT, "privacy.html"), "utf8"), /Google Analytics/);
+});
+
+test("validThrough defaults to posted + 30 days when the record has none", () => {
+  assert.equal(resolveValidThrough({ posted: "2026-10-01" }).value, "2026-10-31T23:59:59Z");
 });

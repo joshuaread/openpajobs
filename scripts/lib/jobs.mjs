@@ -9,7 +9,7 @@ export const GA_SNIPPET =
   `<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');</script>`;
 export const CACHE = "20260927a";
 export const JS_VERSION = "20261023a";
-export const DEFAULT_VALID_DAYS = 60;
+export const DEFAULT_VALID_DAYS = 30;
 export const FEATURE_URL = "https://buy.stripe.com/7sY4gA1gg3X70W24PLd3i02";
 export const FEATURE_LABEL = "Feature your listing — $49 for 30 days";
 
@@ -121,6 +121,7 @@ const METROS = { "greater philadelphia": ["Philadelphia", "PA"] };
  * Otherwise parse the free-text `location`. Returns
  * { remote, places:[{locality?, region}], applicantRegions:[abbr], ok }.
  */
+export { STATES };
 export function parseLocation(job) {
   const raw = String(job.location || "");
   const low = raw.toLowerCase();
@@ -148,6 +149,15 @@ export function parseLocation(job) {
         else allStates = false;
       }
       if (allStates) for (const r of regs) places.push({ region: r });
+    }
+    if (!places.length) {
+      // Retry on a cleaned string: drop "(...)", text after a dash, and qualifiers like "Western", "State", "office".
+      const clean = raw.replace(/\([^)]*\)/g, " ").split(/\s[–—-]\s/)[0]
+        .replace(/\b(western|eastern|northern|southern|central|greater|state|office|field)\b/gi, " ")
+        .replace(/\s+/g, " ").trim();
+      const parts = clean.split(/[\/,&]|\band\b/i).map((p) => p.trim()).filter(Boolean);
+      const regs = parts.map((p) => STATES[p] ? p : NAME_TO_ABBR[p.toLowerCase()]);
+      if (parts.length && regs.every(Boolean)) for (const r of regs) places.push({ region: r });
     }
   }
   const applicantRegions = Array.isArray(job.applicantRegions) ? job.applicantRegions : [];
@@ -212,11 +222,22 @@ export function descriptionHtml(job) {
   return (job.description || []).map((p) => `<p>${esc(p)}</p>`).join("");
 }
 
+// Hosts that are ATS / job boards / directories, not the firm's own site.
+const NOT_FIRM_HOSTS = /(greenhouse\.io|applytojob\.com|bamboohr\.com|lever\.co|workday|indeed\.|ziprecruiter|linkedin\.com|himalayas\.app|memberclicks\.net|docs\.google\.com|salesjobs\.com|glassdoor|monster\.com|^publicadjuster\.com|bestpublicadjusters\.com)/i;
+/** Firm website for hiringOrganization.sameAs: companyUrl, else origin of apply/source URL if it is the firm's own domain. */
+export function firmSite(job) {
+  if (job.companyUrl) return job.companyUrl;
+  for (const u of [job.applyUrl, job.sourceUrl]) {
+    try { const x = new URL(u); if (/^https?:$/.test(x.protocol) && !NOT_FIRM_HOSTS.test(x.hostname)) return `${x.origin}/`; } catch {}
+  }
+  return null;
+}
 export function buildJsonLd(job) {
   if (jsonLdSkipReason(job)) return null;
   const loc = parseLocation(job);
   const org = { "@type": "Organization", name: job.company };
-  if (job.companyUrl) org.sameAs = job.companyUrl;
+  const site = firmSite(job);
+  if (site) org.sameAs = site;
   if (job.logo) org.logo = job.logo.startsWith("http") ? job.logo : SITE + job.logo;
   const ld = {
     "@context": "https://schema.org/",

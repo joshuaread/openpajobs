@@ -1,8 +1,12 @@
 {
   "buildDate": "2026-10-23",
   "total": 89,
-  "active": 84,
+  "active": 80,
   "droppedExpired": [
+    "aaa-pa",
+    "metro-claims-rep",
+    "rockwall-austin",
+    "statewide-pa",
     "fapia-board",
     "rockwall-tampa",
     "rockwall-destin",
@@ -12,16 +16,18 @@
   "jsonLdEmitted": [
     "metro-apprentice",
     "coastal-ctg",
-    "metro-claims-rep",
-    "rockwall-austin",
     "metro-apprentice-249388",
+    "metro-inspectors-western-pa",
     "fspa-apprentice-fl",
     "united-pa-claims-advocate-melville",
+    "united-pa-property-claims-adjuster-ny",
+    "united-pa-insurance-claims-manager-ny",
     "tiger-adjusters-public-adjuster-houston",
     "tiger-adjusters-public-adjuster-trenton",
     "swift-pa-field-sales-rep-omaha",
     "swift-pa-licensed-outside-sales-st-louis",
     "mla-claims-apprentice-pia-lafayette-hill",
+    "cohen-associates-licensed-pa-florida",
     "tutwiler-pa-solicitor-tampa",
     "allied-public-adjuster-socal",
     "allied-senior-public-adjuster",
@@ -50,20 +56,25 @@
     "claims-pa-licensed-pa-thousand-oaks",
     "claims-pa-desk-adjuster-nrh",
     "claims-pa-xactimate-estimator-inspector",
+    "firstcall-claims-outside-sales-tennessee",
     "c3-group-sales-public-adjuster-hybrid-colorado",
     "sunpoint-public-insurance-adjuster-los-angeles",
+    "sunpoint-contents-inventory-specialist-washington",
+    "sunpoint-sales-professional-washington",
     "ak-public-adjusters-field-sales-owings-mills",
     "swift-pa-outside-sales-rep-madison",
     "swift-pa-licensed-outside-sales-kansas-city",
     "swift-pa-outside-sales-rep-des-moines",
     "swift-pa-licensed-outside-sales-springfield-mo",
     "metro-pa-remote-claims-writer-denver",
+    "metro-pa-business-development-lead-maryland",
     "metro-pa-claims-support-rep-entry-level-nc",
     "shoreline-pa-licensed-public-adjuster-fl-mn-wi-nd-sd",
     "select-adjusters-claims-coordinator-phoenix",
     "metro-nj-claims-representative-610527",
     "metro-remote-claims-representative-part-full-time-630810",
     "tiger-adjusters-public-adjuster-dayton-oh",
+    "ifile-claims-public-adjuster-fl-tx-pa",
     "allied-claims-operations-manager-systems-ai",
     "metro-claims-rep-618275-ct",
     "metro-pa-trainee-596930-mo",
@@ -71,9 +82,6 @@
   ],
   "jsonLdSkipped": {
     "founding-placeholder": "internal/placeholder listing (no external job), not a JobPosting",
-    "aaa-pa": "jsonld:false on record",
-    "statewide-pa": "jsonld:false on record",
-    "metro-inspectors-western-pa": "missing required: location(jobLocation/applicantLocationRequirements)",
     "noble-field-pa-sales": "jsonld:false on record",
     "noble-estimator-1099": "jsonld:false on record",
     "avalo-pa-1099": "jsonld:false on record",
@@ -81,61 +89,53 @@
     "fspa-pa-co": "jsonld:false on record",
     "rockwall-charleston": "jsonld:false on record",
     "rockwall-dallas": "jsonld:false on record",
-    "united-pa-property-claims-adjuster-ny": "missing required: location(jobLocation/applicantLocationRequirements)",
-    "united-pa-insurance-claims-manager-ny": "missing required: location(jobLocation/applicantLocationRequirements)",
     "select-adjusters-field-pa-phoenix": "multi-listing pointer (type Various), not a single job — Google policy",
     "panther-pa-licensed-apprentice-multistate": "multi-listing pointer (type Various), not a single job — Google policy",
-    "cohen-associates-licensed-pa-florida": "missing required: location(jobLocation/applicantLocationRequirements)",
     "experienced-pa-licensed-and-apprentice-fl": "multi-listing pointer (type Various), not a single job — Google policy",
     "icrs-pa-estimator-office-texas": "multi-listing pointer (type Various), not a single job — Google policy",
-    "firstcall-claims-outside-sales-tennessee": "missing required: location(jobLocation/applicantLocationRequirements)",
-    "sunpoint-contents-inventory-specialist-washington": "missing required: location(jobLocation/applicantLocationRequirements)",
-    "sunpoint-sales-professional-washington": "missing required: location(jobLocation/applicantLocationRequirements)",
     "crossroads-ira-houston-open-applications": "multi-listing pointer (type Various), not a single job — Google policy",
-    "metro-pa-business-development-lead-maryland": "missing required: location(jobLocation/applicantLocationRequirements)",
     "gavnat-licensed-public-adjuster-or-license-candidate": "missing required: location(jobLocation/applicantLocationRequirements)",
-    "ifile-claims-public-adjuster-fl-tx-pa": "missing required: location(jobLocation/applicantLocationRequirements)",
     "claim-concepts-public-adjuster-fl-ga-sc": "multi-listing pointer (type Various), not a single job — Google policy"
   },
   "defaultedValidThrough": [
     {
       "id": "founding-placeholder",
-      "validThrough": "2026-11-25T23:59:59Z",
+      "validThrough": "2026-10-26T23:59:59Z",
       "rule": "posted + 60 days"
     },
     {
       "id": "metro-apprentice",
-      "validThrough": "2026-11-24T23:59:59Z",
+      "validThrough": "2026-10-25T23:59:59Z",
       "rule": "posted + 60 days"
     },
     {
       "id": "coastal-ctg",
-      "validThrough": "2026-11-22T23:59:59Z",
+      "validThrough": "2026-10-23T23:59:59Z",
       "rule": "posted + 60 days"
     },
     {
       "id": "aaa-pa",
-      "validThrough": "2026-11-19T23:59:59Z",
+      "validThrough": "2026-10-20T23:59:59Z",
       "rule": "posted + 60 days"
     },
     {
       "id": "metro-claims-rep",
-      "validThrough": "2026-11-14T23:59:59Z",
+      "validThrough": "2026-10-15T23:59:59Z",
       "rule": "posted + 60 days"
     },
     {
       "id": "rockwall-austin",
-      "validThrough": "2026-11-07T23:59:59Z",
+      "validThrough": "2026-10-08T23:59:59Z",
       "rule": "posted + 60 days"
     },
     {
       "id": "statewide-pa",
-      "validThrough": "2026-10-27T23:59:59Z",
+      "validThrough": "2026-09-27T23:59:59Z",
       "rule": "posted + 60 days"
     },
     {
       "id": "fapia-board",
-      "validThrough": "2026-10-09T23:59:59Z",
+      "validThrough": "2026-09-09T23:59:59Z",
       "rule": "posted + 60 days"
     }
   ],
@@ -166,56 +166,28 @@
     "fapia-board": [
       "validThrough (not in data; defaulted)"
     ],
-    "metro-inspectors-western-pa": [
-      "location(jobLocation/applicantLocationRequirements)"
-    ],
     "noble-field-pa-sales": [
       "location(jobLocation/applicantLocationRequirements)"
     ],
-    "united-pa-property-claims-adjuster-ny": [
-      "location(jobLocation/applicantLocationRequirements)"
-    ],
-    "united-pa-insurance-claims-manager-ny": [
-      "location(jobLocation/applicantLocationRequirements)"
-    ],
-    "cohen-associates-licensed-pa-florida": [
-      "location(jobLocation/applicantLocationRequirements)"
-    ],
-    "experienced-pa-licensed-and-apprentice-fl": [
-      "location(jobLocation/applicantLocationRequirements)"
-    ],
-    "firstcall-claims-outside-sales-tennessee": [
-      "location(jobLocation/applicantLocationRequirements)"
-    ],
-    "sunpoint-contents-inventory-specialist-washington": [
-      "location(jobLocation/applicantLocationRequirements)"
-    ],
-    "sunpoint-sales-professional-washington": [
-      "location(jobLocation/applicantLocationRequirements)"
-    ],
-    "metro-pa-business-development-lead-maryland": [
-      "location(jobLocation/applicantLocationRequirements)"
-    ],
     "gavnat-licensed-public-adjuster-or-license-candidate": [
-      "location(jobLocation/applicantLocationRequirements)"
-    ],
-    "ifile-claims-public-adjuster-fl-tx-pa": [
       "location(jobLocation/applicantLocationRequirements)"
     ]
   },
   "validation": {
     "metro-apprentice": "ok",
     "coastal-ctg": "ok",
-    "metro-claims-rep": "ok",
-    "rockwall-austin": "ok",
     "metro-apprentice-249388": "ok",
+    "metro-inspectors-western-pa": "ok",
     "fspa-apprentice-fl": "ok",
     "united-pa-claims-advocate-melville": "ok",
+    "united-pa-property-claims-adjuster-ny": "ok",
+    "united-pa-insurance-claims-manager-ny": "ok",
     "tiger-adjusters-public-adjuster-houston": "ok",
     "tiger-adjusters-public-adjuster-trenton": "ok",
     "swift-pa-field-sales-rep-omaha": "ok",
     "swift-pa-licensed-outside-sales-st-louis": "ok",
     "mla-claims-apprentice-pia-lafayette-hill": "ok",
+    "cohen-associates-licensed-pa-florida": "ok",
     "tutwiler-pa-solicitor-tampa": "ok",
     "allied-public-adjuster-socal": "ok",
     "allied-senior-public-adjuster": "ok",
@@ -244,20 +216,25 @@
     "claims-pa-licensed-pa-thousand-oaks": "ok",
     "claims-pa-desk-adjuster-nrh": "ok",
     "claims-pa-xactimate-estimator-inspector": "ok",
+    "firstcall-claims-outside-sales-tennessee": "ok",
     "c3-group-sales-public-adjuster-hybrid-colorado": "ok",
     "sunpoint-public-insurance-adjuster-los-angeles": "ok",
+    "sunpoint-contents-inventory-specialist-washington": "ok",
+    "sunpoint-sales-professional-washington": "ok",
     "ak-public-adjusters-field-sales-owings-mills": "ok",
     "swift-pa-outside-sales-rep-madison": "ok",
     "swift-pa-licensed-outside-sales-kansas-city": "ok",
     "swift-pa-outside-sales-rep-des-moines": "ok",
     "swift-pa-licensed-outside-sales-springfield-mo": "ok",
     "metro-pa-remote-claims-writer-denver": "ok",
+    "metro-pa-business-development-lead-maryland": "ok",
     "metro-pa-claims-support-rep-entry-level-nc": "ok",
     "shoreline-pa-licensed-public-adjuster-fl-mn-wi-nd-sd": "ok",
     "select-adjusters-claims-coordinator-phoenix": "ok",
     "metro-nj-claims-representative-610527": "ok",
     "metro-remote-claims-representative-part-full-time-630810": "ok",
     "tiger-adjusters-public-adjuster-dayton-oh": "ok",
+    "ifile-claims-public-adjuster-fl-tx-pa": "ok",
     "allied-claims-operations-manager-systems-ai": "ok",
     "metro-claims-rep-618275-ct": "ok",
     "metro-pa-trainee-596930-mo": "ok",
@@ -272,5 +249,107 @@
     "rockwall-san-antonio": "rockwall-licensed-pa-san-antonio-tx",
     "rockwall-houston": "rockwall-licensed-pa-houston-tx"
   },
-  "sitemapUrls": 111
+  "statePages": [
+    {
+      "url": "/jobs/arizona/",
+      "listings": 2
+    },
+    {
+      "url": "/jobs/california/",
+      "listings": 7
+    },
+    {
+      "url": "/jobs/colorado/",
+      "listings": 5
+    },
+    {
+      "url": "/jobs/florida/",
+      "listings": 12
+    },
+    {
+      "url": "/jobs/georgia/",
+      "listings": 1
+    },
+    {
+      "url": "/jobs/iowa/",
+      "listings": 1
+    },
+    {
+      "url": "/jobs/kentucky/",
+      "listings": 1
+    },
+    {
+      "url": "/jobs/maryland/",
+      "listings": 4
+    },
+    {
+      "url": "/jobs/minnesota/",
+      "listings": 2
+    },
+    {
+      "url": "/jobs/missouri/",
+      "listings": 4
+    },
+    {
+      "url": "/jobs/nebraska/",
+      "listings": 1
+    },
+    {
+      "url": "/jobs/new-jersey/",
+      "listings": 4
+    },
+    {
+      "url": "/jobs/new-york/",
+      "listings": 7
+    },
+    {
+      "url": "/jobs/north-carolina/",
+      "listings": 1
+    },
+    {
+      "url": "/jobs/north-dakota/",
+      "listings": 1
+    },
+    {
+      "url": "/jobs/ohio/",
+      "listings": 1
+    },
+    {
+      "url": "/jobs/pennsylvania/",
+      "listings": 9
+    },
+    {
+      "url": "/jobs/south-carolina/",
+      "listings": 4
+    },
+    {
+      "url": "/jobs/south-dakota/",
+      "listings": 1
+    },
+    {
+      "url": "/jobs/tennessee/",
+      "listings": 1
+    },
+    {
+      "url": "/jobs/texas/",
+      "listings": 11
+    },
+    {
+      "url": "/jobs/washington/",
+      "listings": 2
+    },
+    {
+      "url": "/jobs/west-virginia/",
+      "listings": 3
+    },
+    {
+      "url": "/jobs/wisconsin/",
+      "listings": 2
+    },
+    {
+      "url": "/jobs/remote/",
+      "listings": 21
+    }
+  ],
+  "sitemapUrls": 132
 }

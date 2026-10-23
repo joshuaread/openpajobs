@@ -7,7 +7,7 @@ import { extractJsonLd, checkGoogleJobPosting } from "./lib/jobs.mjs";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const now = new Date(process.env.BUILD_NOW || Date.now());
 let fail = 0, n = 0;
-for (const f of fs.readdirSync(path.join(root, "jobs")).sort()) {
+for (const f of fs.readdirSync(path.join(root, "jobs")).filter((f) => f.endsWith(".html")).sort()) {
   let blocks;
   try { blocks = extractJsonLd(fs.readFileSync(path.join(root, "jobs", f), "utf8")); }
   catch (e) { console.log(`FAIL ${f}: invalid JSON ${e.message}`); fail++; continue; }

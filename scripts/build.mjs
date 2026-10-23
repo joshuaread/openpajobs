@@ -11,6 +11,7 @@ import {
   SITE, GA_SNIPPET, esc, isExpired, resolveValidThrough, renderJobPage, buildJsonLd, jsonLdSkipReason,
   missingRequired, extractJsonLd, checkGoogleJobPosting, isFeaturedNow, featuredProblems,
 } from "./lib/jobs.mjs";
+import { writeStatePages, injectStateLinks } from "./lib/states.mjs";
 
 const NOINDEX_IDS = new Set(["founding-placeholder"]);
 
@@ -96,6 +97,16 @@ export function build({ root, now = new Date(), log = console.log } = {}) {
   // --- public feed for the client-side board (expired jobs never reach the browser) ---
   fs.writeFileSync(path.join(root, "jobs.active.json"), JSON.stringify(active, null, 2) + "\n");
 
+  // --- state landing pages + state links in every static page footer and the home page ---
+  const stateGroups = writeStatePages(root, active);
+  report.statePages = stateGroups.map((g) => ({ url: `/jobs/${g.slug}/`, listings: g.jobs.length }));
+  const staticPages = [...fs.readdirSync(root).filter((f) => f.endsWith(".html")),
+    ...(fs.existsSync(path.join(root, "locations")) ? fs.readdirSync(path.join(root, "locations")).filter((f) => f.endsWith(".html")).map((f) => `locations/${f}`) : [])];
+  for (const rel of staticPages) {
+    const fp = path.join(root, rel), cur = fs.readFileSync(fp, "utf8"), next = injectStateLinks(cur, stateGroups);
+    if (next !== cur) fs.writeFileSync(fp, next);
+  }
+
   // --- index.html crawlable fallback (noscript, so the visible board is unchanged) ---
   const idxPath = path.join(root, "index.html");
   let idx = fs.readFileSync(idxPath, "utf8");
@@ -115,6 +126,12 @@ export function build({ root, now = new Date(), log = console.log } = {}) {
   const old = fs.existsSync(smPath) ? fs.readFileSync(smPath, "utf8") : "";
   const oldLocs = [...old.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
   const staticLocs = oldLocs.filter((u) => !u.startsWith(`${SITE}/jobs/`));
+  // Make sure every root page and /locations/ page is listed (except noindex / utility pages).
+  for (const rel of staticPages) {
+    const loc = rel === "index.html" ? `${SITE}/` : `${SITE}/${rel}`;
+    const html = fs.readFileSync(path.join(root, rel), "utf8");
+    if (!staticLocs.includes(loc) && !/<meta name="robots" content="noindex/i.test(html)) staticLocs.push(loc);
+  }
   // lastmod for non-job pages: content hash manifest; date only moves when the file changes.
   const lmPath = path.join(root, "data", "lastmod.json");
   const lm = fs.existsSync(lmPath) ? JSON.parse(fs.readFileSync(lmPath, "utf8")) : {};
@@ -128,6 +145,10 @@ export function build({ root, now = new Date(), log = console.log } = {}) {
     const date = lm[rel]?.hash === hash ? lm[rel].lastmod : today;
     nextLm[rel] = { hash, lastmod: date };
     entries.push([loc, date]);
+  }
+  for (const g of stateGroups) {
+    const d = g.jobs.map((j) => (j.updated && j.updated > j.posted ? j.updated : j.posted)).sort().pop() || today;
+    entries.push([`${SITE}/jobs/${g.slug}/`, d]);
   }
   for (const j of active) {
     if (NOINDEX_IDS.has(j.id)) continue; // noindex pages don't belong in the sitemap
