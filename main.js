@@ -255,7 +255,61 @@
   if (timeEl) timeEl.addEventListener("change", render);
   if (sortEl) sortEl.addEventListener("change", render);
   if (typeEl) typeEl.addEventListener("change", render);
-  async function submitWeb3(form, statusEl, formName, extra) {
+  var FEATURE_HOST = "https://buy.stripe.com/";
+  function track(name, params) {
+    try {
+      if (typeof window.gtag !== "function") return;
+      var clean = {};
+      Object.keys(params || {}).forEach(function (k) {
+        var v = params[k];
+        if (v !== undefined && v !== null && v !== "") clean[k] = v;
+      });
+      window.gtag("event", name, clean);
+    } catch (e) {}
+  }
+  function pageJobParams() {
+    var el = document.querySelector("[data-job-id]");
+    if (!el) return {};
+    var badge = document.querySelector(".job-page-featured");
+    return {
+      job_id: el.getAttribute("data-job-id"),
+      company: el.getAttribute("data-company"),
+      state: el.getAttribute("data-state"),
+      remote: el.getAttribute("data-remote") === "true",
+      featured: el.getAttribute("data-featured") === "true" && !(badge && badge.hidden),
+    };
+  }
+  function formLocationParams(location) {
+    var loc = String(location || "");
+    var m = loc.match(/,\s*([A-Z]{2})\b/) || loc.match(/\b([A-Z]{2})\b/);
+    return { state: m ? m[1] : "", remote: /\bremote\b/i.test(loc) };
+  }
+  function isOutbound(a) {
+    try {
+      var u = new URL(a.href, location.href);
+      return /^https?:$/.test(u.protocol) && u.host !== location.host;
+    } catch (e) {
+      return false;
+    }
+  }
+  document.addEventListener("click", function (e) {
+    var a = e.target && e.target.closest ? e.target.closest("a[href]") : null;
+    if (!a) return;
+    var href = a.getAttribute("href") || "";
+    if (href.indexOf(FEATURE_HOST) === 0) {
+      track("featured_click", pageJobParams());
+      return;
+    }
+    var inApplyBar = a.closest(".job-apply-bar") && a.classList.contains("btn-primary");
+    var inSourceLink = a.closest(".job-body-prose");
+    if ((inApplyBar || inSourceLink) && isOutbound(a)) {
+      var p = pageJobParams();
+      p.link_location = inApplyBar ? "apply_button" : "source_link";
+      p.transport_type = "beacon";
+      track("apply_click", p);
+    }
+  });
+  async function submitWeb3(form, statusEl, formName, extra, onSuccess) {
     if (!statusEl) return;
     statusEl.textContent = "Sending…";
     var key = cfg.web3formsAccessKey;
@@ -285,6 +339,7 @@
       var data = await res.json();
       if (data.success) {
         statusEl.textContent = "Got it — check your inbox soon.";
+        if (onSuccess) onSuccess(payload);
         form.reset();
       } else {
         statusEl.textContent = data.message || "Something went wrong. Try again.";
@@ -301,7 +356,10 @@
         e.target,
         document.getElementById("alert-status"),
         cfg.alertFormName || "Open PA Jobs alerts",
-        { form_type: "alerts" }
+        { form_type: "alerts" },
+        function () {
+          track("alert_signup", {});
+        }
       );
     });
   }
@@ -313,7 +371,12 @@
         e.target,
         document.getElementById("post-status"),
         cfg.postFormName || "Open PA Jobs post",
-        { form_type: "post_job" }
+        { form_type: "post_job" },
+        function (payload) {
+          var p = formLocationParams(payload.location);
+          p.company = payload.firm;
+          track("post_job_submit", p);
+        }
       );
     });
   }
@@ -321,5 +384,14 @@
     var end = new Date(el.getAttribute("data-featured-until"));
     if (isNaN(end.getTime()) || Date.now() > end.getTime()) el.hidden = true;
   });
+  if (document.querySelector("[data-job-id]")) track("listing_view", pageJobParams());
+  if (document.querySelector('[data-ga-event="featured_purchase"]')) {
+    var sent = false;
+    try {
+      sent = sessionStorage.getItem("opj-featured-purchase") === "1";
+      if (!sent) sessionStorage.setItem("opj-featured-purchase", "1");
+    } catch (e) {}
+    if (!sent) track("featured_purchase", { value: 49, currency: "USD" });
+  }
   loadJobs();
 })();

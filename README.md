@@ -49,6 +49,30 @@ URL as a noindex meta-refresh stub pointing to the replacement (GitHub Pages has
 **`scripts/build.mjs` is the generator for job pages, the index fallback list, and sitemap.xml.** The old
 `_gen/regen_jobs_ctj.py` is retired and deleted; `_gen/` is local scratch and is not published.
 
+## Analytics (Google Analytics 4)
+GA4 (`G-RJ2FD6L55V`) is loaded `async` in the `<head>` of every page: job pages and redirect stubs via `GA_SNIPPET` in
+`scripts/lib/jobs.mjs` (used by `scripts/build.mjs`), static pages as plain HTML (`scripts/seo_pass.py` injects it too).
+Events are sent from `main.js` through `gtag("event", …)` (no-op if gtag is blocked):
+
+| event | fires when | params |
+|---|---|---|
+| `listing_view` | a job detail page loads | `job_id`, `company`, `state`, `remote`, `featured` |
+| `apply_click` | click on the outbound Apply button / "Source listing" link | job params + `link_location` |
+| `featured_click` | click on any "Feature your listing" (Stripe) button | job params on listing pages; none elsewhere |
+| `post_job_submit` | Web3Forms accepts the post-a-job form | `company` (firm), `state`/`remote` parsed from the location field |
+| `alert_signup` | Web3Forms accepts the alerts form | none (no email or state is sent to GA) |
+| `featured_purchase` | `thanks-featured.html` loads (once per browser session) | `value` 49, `currency` USD |
+
+Job pages carry the params as `data-job-id/-company/-state/-remote/-featured` on `<section class="job-page">`
+(state/remote come from `parseLocation`; `featured` is also re-checked client-side against the badge's expiry).
+Cards on the board link straight to the detail page, so a card "view" is the `listing_view` of the page it opens.
+
+**Manual step in Stripe:** `featured_purchase` only fires if the Featured payment link redirects to
+`https://openpajobs.com/thanks-featured.html` after payment (Stripe Dashboard → Payment Links → the $49 link → After payment →
+"Don't show confirmation page" → redirect to that URL). The page is `noindex` and not in the sitemap. In GA4, mark the
+events you care about as key events and register the params (`job_id`, `company`, `state`, `remote`, `featured`) as custom
+dimensions to report on them. Disclosure lives in `privacy.html`.
+
 ## Daily merge (box cron → PR) and scheduled rebuild
 - `.github/workflows/rebuild.yml` runs `node scripts/build.mjs` daily at 00:05 and 11:17 UTC from committed `jobs.json` and
   commits only if output changed (drops expired jobs). It never reads `inbox/`.

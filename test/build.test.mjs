@@ -214,3 +214,32 @@ test("featured fields are validated on inbox records", () => {
   assert.ok(validateRecord({ ...base, featured: true, featured_until: "11/01/2026" }, NOW).length);
   assert.ok(validateRecord({ ...base, featured: true }, NOW).length);
 });
+
+test("GA4: every page head loads gtag.js async; job pages carry event params; static pages carry no job params", () => {
+  const dir = sandbox();
+  build({ root: dir, now: NOW, log: quiet });
+  const GA = /<head>[\s\S]*<script async src="https:\/\/www\.googletagmanager\.com\/gtag\/js\?id=G-RJ2FD6L55V"><\/script>[\s\S]*<\/head>/;
+  const pages = [
+    ...fs.readdirSync(dir).filter((f) => f.endsWith(".html")),
+    ...fs.readdirSync(path.join(dir, "locations")).map((f) => `locations/${f}`),
+    ...fs.readdirSync(path.join(dir, "jobs")).map((f) => `jobs/${f}`),
+  ];
+  for (const f of pages) {
+    const html = fs.readFileSync(path.join(dir, f), "utf8");
+    assert.match(html, GA, f);
+    assert.equal(html.split("gtag/js?id=").length - 1, 1, `${f}: exactly one gtag include`);
+  }
+  const jobHtml = fs.readFileSync(path.join(dir, "jobs", "coastal-ctg.html"), "utf8");
+  assert.match(jobHtml, /<section class="job-page" data-job-id="coastal-ctg" data-company="[^"]+" data-state="[A-Z]*" data-remote="true" data-featured="(true|false)">/);
+  const austin = fs.readFileSync(path.join(dir, "jobs", "rockwall-austin.html"), "utf8");
+  assert.match(austin, /data-state="TX" data-remote="false"/);
+});
+
+test("thanks-featured.html exists, is noindex, fires featured_purchase and stays out of the sitemap", () => {
+  const html = fs.readFileSync(path.join(ROOT, "thanks-featured.html"), "utf8");
+  assert.match(html, /data-ga-event="featured_purchase"/);
+  assert.match(html, /name="robots" content="noindex/);
+  assert.match(html, /gtag\/js\?id=G-RJ2FD6L55V/);
+  assert.ok(!fs.readFileSync(path.join(ROOT, "sitemap.xml"), "utf8").includes("thanks-featured"));
+  assert.match(fs.readFileSync(path.join(ROOT, "privacy.html"), "utf8"), /Google Analytics/);
+});
