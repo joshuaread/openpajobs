@@ -1,8 +1,9 @@
 {
-  "buildDate": "2026-10-23",
+  "buildDate": "2026-10-24",
   "total": 89,
-  "active": 80,
+  "active": 79,
   "droppedExpired": [
+    "coastal-ctg",
     "aaa-pa",
     "metro-claims-rep",
     "rockwall-austin",
@@ -15,7 +16,6 @@
   ],
   "jsonLdEmitted": [
     "metro-apprentice",
-    "coastal-ctg",
     "metro-apprentice-249388",
     "metro-inspectors-western-pa",
     "fspa-apprentice-fl",
@@ -175,7 +175,6 @@
   },
   "validation": {
     "metro-apprentice": "ok",
-    "coastal-ctg": "ok",
     "metro-apprentice-249388": "ok",
     "metro-inspectors-western-pa": "ok",
     "fspa-apprentice-fl": "ok",
@@ -240,7 +239,9 @@
     "metro-pa-trainee-596930-mo": "ok",
     "rockwall-licensed-pa-austin-tx": "ok"
   },
-  "removedPages": [],
+  "removedPages": [
+    "jobs/coastal-ctg.html"
+  ],
   "featuredNow": [],
   "featuredProblems": {},
   "redirects": {
@@ -348,8 +349,8 @@
     },
     {
       "url": "/jobs/remote/",
-      "listings": 21
+      "listings": 20
     }
   ],
-  "sitemapUrls": 132
+  "sitemapUrls": 131
 }
