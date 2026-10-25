@@ -93,7 +93,31 @@
   var timeEl = document.getElementById("filter-time");
   var sortEl = document.getElementById("filter-sort");
   var typeEl = document.getElementById("filter-type");
+  var locEl = document.getElementById("filter-loc");
   var jobs = [];
+  function normLoc(v) {
+    v = String(v || "").trim();
+    return /^remote$/i.test(v) ? "remote" : v.toUpperCase();
+  }
+  function hasLocOption(v) {
+    if (!locEl) return false;
+    for (var i = 0; i < locEl.options.length; i++) if (locEl.options[i].value === v) return true;
+    return false;
+  }
+  if (locEl) {
+    try {
+      var initLoc = normLoc(new URLSearchParams(location.search).get("loc"));
+      if (initLoc && hasLocOption(initLoc)) locEl.value = initLoc;
+    } catch (e) {}
+  }
+  function syncLocParam() {
+    try {
+      var u = new URL(location.href);
+      if (locEl && locEl.value) u.searchParams.set("loc", locEl.value);
+      else u.searchParams.delete("loc");
+      history.replaceState(history.state, "", u.pathname + u.search + u.hash);
+    } catch (e) {}
+  }
   function renderJobCard(j) {
     var href = j.id ? "/jobs/" + encodeURIComponent(j.id) + ".html" : (j.url || "#");
     var external = false;
@@ -176,7 +200,9 @@
     var type = typeEl ? typeEl.value : "";
     var time = timeEl ? timeEl.value : "all";
     var sort = sortEl ? sortEl.value : "recent";
+    var loc = locEl ? locEl.value : "";
     var filtered = jobs.filter(function (j) {
+      if (loc && (j.locs || []).indexOf(loc) === -1) return false;
       if (type === "Featured" ? !isFeatured(j) : type && j.type !== type) return false;
       if (time === "7" && !withinDays(j.posted, 7)) return false;
       if (time === "30" && !withinDays(j.posted, 30)) return false;
@@ -239,7 +265,7 @@
   async function loadJobs() {
     if (!listEl) return;
     try {
-      var res = await fetch("jobs.active.json?v=20260926m");
+      var res = await fetch("jobs.active.json?v=20261025a");
       if (!res.ok) throw new Error("HTTP " + res.status);
       jobs = await res.json();
       if (!Array.isArray(jobs)) throw new Error("Invalid jobs payload");
@@ -255,6 +281,13 @@
   if (timeEl) timeEl.addEventListener("change", render);
   if (sortEl) sortEl.addEventListener("change", render);
   if (typeEl) typeEl.addEventListener("change", render);
+  if (locEl) {
+    locEl.addEventListener("change", function () {
+      render();
+      syncLocParam();
+      track("filter_location", { loc: locEl.value || "all" });
+    });
+  }
   var FEATURE_HOST = "https://buy.stripe.com/";
   function track(name, params) {
     try {

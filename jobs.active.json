@@ -41,7 +41,14 @@
       "Full requirements and apply steps are on the employer Greenhouse posting. Use Apply below to open their official listing."
     ],
     "logo": "/logos/metro.svg",
-    "salary": "$45k – $75k OTE"
+    "salary": "$45k – $75k OTE",
+    "locs": [
+      "MD",
+      "NJ",
+      "PA",
+      "SC",
+      "WV"
+    ]
   },
   {
     "id": "metro-apprentice-249388",
@@ -66,7 +73,14 @@
     "validThrough": "2026-11-23T23:59:59Z",
     "employmentType": "OTHER",
     "companyUrl": "https://metropublicadjustment.com/",
-    "url": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4420018009"
+    "url": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4420018009",
+    "locs": [
+      "MD",
+      "NJ",
+      "PA",
+      "SC",
+      "WV"
+    ]
   },
   {
     "id": "metro-inspectors-western-pa",
@@ -91,7 +105,10 @@
     "validThrough": "2026-11-17T23:59:59Z",
     "employmentType": "OTHER",
     "companyUrl": "https://metropublicadjustment.com/",
-    "url": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4411631009"
+    "url": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4411631009",
+    "locs": [
+      "PA"
+    ]
   },
   {
     "id": "noble-field-pa-sales",
@@ -143,7 +160,10 @@
     "employmentType": "CONTRACTOR",
     "companyUrl": "https://noblepagroup.com/",
     "url": "https://noblepagroup.com/about/careers/",
-    "jsonld": false
+    "jsonld": false,
+    "locs": [
+      "remote"
+    ]
   },
   {
     "id": "avalo-pa-1099",
@@ -170,7 +190,10 @@
     "employmentType": "CONTRACTOR",
     "companyUrl": "https://avalopublicadjuster.com/",
     "url": "https://avalopublicadjuster.com/hiring",
-    "jsonld": false
+    "jsonld": false,
+    "locs": [
+      "FL"
+    ]
   },
   {
     "id": "fspa-pa-fl",
@@ -196,7 +219,10 @@
     "employmentType": "OTHER",
     "companyUrl": "https://floridastatepa.com/",
     "url": "https://floridastatepa.com/join-the-team",
-    "jsonld": false
+    "jsonld": false,
+    "locs": [
+      "FL"
+    ]
   },
   {
     "id": "fspa-apprentice-fl",
@@ -221,7 +247,10 @@
     "validThrough": "2026-12-12T23:59:59Z",
     "employmentType": "OTHER",
     "companyUrl": "https://floridastatepa.com/",
-    "url": "https://floridastatepa.com/join-the-team/public-adjuster-apprentice-fl"
+    "url": "https://floridastatepa.com/join-the-team/public-adjuster-apprentice-fl",
+    "locs": [
+      "FL"
+    ]
   },
   {
     "id": "fspa-pa-co",
@@ -247,7 +276,10 @@
     "employmentType": "OTHER",
     "companyUrl": "https://floridastatepa.com/",
     "url": "https://floridastatepa.com/join-the-team",
-    "jsonld": false
+    "jsonld": false,
+    "locs": [
+      "CO"
+    ]
   },
   {
     "id": "rockwall-charleston",
@@ -273,7 +305,10 @@
     "employmentType": "OTHER",
     "companyUrl": "https://rockwallnpa.com/",
     "url": "https://rockwallnpa.com/contact/",
-    "jsonld": false
+    "jsonld": false,
+    "locs": [
+      "SC"
+    ]
   },
   {
     "id": "rockwall-dallas",
@@ -299,7 +334,10 @@
     "employmentType": "OTHER",
     "companyUrl": "https://rockwallnpa.com/",
     "url": "https://rockwallnpa.com/contact/",
-    "jsonld": false
+    "jsonld": false,
+    "locs": [
+      "TX"
+    ]
   },
   {
     "id": "united-pa-claims-advocate-melville",
@@ -323,7 +361,10 @@
       "The firm covers licensing and training so the hire can become a licensed public adjuster within a few months, then work business interruption, builder's risk, and property damage files using financial records to support the claim.",
       "The page lists a $75k–$85k salary (based on experience) plus bonus, health benefits, and PTO; submit a resume through the careers page."
     ],
-    "validThrough": "2026-11-14"
+    "validThrough": "2026-11-14",
+    "locs": [
+      "NY"
+    ]
   },
   {
     "id": "united-pa-property-claims-adjuster-ny",
@@ -347,7 +388,10 @@
       "The work is mostly in the office: reviewing estimates, engineering reports, and policy language, building claim packages, and negotiating with carriers, with some joint inspections in the field. It asks for 3+ years of property adjusting and a NY public adjuster license or willingness to get one.",
       "Pay is listed at $75k–$110k plus medical coverage and PTO."
     ],
-    "validThrough": "2026-11-14"
+    "validThrough": "2026-11-14",
+    "locs": [
+      "NY"
+    ]
   },
   {
     "id": "united-pa-insurance-claims-manager-ny",
@@ -371,7 +415,10 @@
       "The manager oversees active files, mentors adjusters and support staff, negotiates settlements, and makes sure files are ready for appraisal, mediation, or litigation. Requirements include 5+ years in property claims and Xactimate experience; a NYS public adjuster license is preferred.",
       "The posting lists a $110k–$130k salary with medical coverage and PTO."
     ],
-    "validThrough": "2026-11-14"
+    "validThrough": "2026-11-14",
+    "locs": [
+      "NY"
+    ]
   },
   {
     "id": "tiger-adjusters-public-adjuster-houston",
@@ -395,7 +442,10 @@
       "Daily work covers documenting property damage, reviewing policies for gaps or errors, writing Xactimate estimates, and negotiating settlements with carriers, plus business development to grow the office. A Texas public adjuster license is required.",
       "Full-time, with pay negotiated based on experience; the posting asks applicants to email a resume and LinkedIn profile."
     ],
-    "validThrough": "2026-11-14"
+    "validThrough": "2026-11-14",
+    "locs": [
+      "TX"
+    ]
   },
   {
     "id": "tiger-adjusters-public-adjuster-trenton",
@@ -419,7 +469,10 @@
       "The role includes property inspections, policy analysis, Xactimate estimating, carrier negotiation, and supporting attorneys when a claim is disputed, along with sales and outreach. A New Jersey public adjuster license is required.",
       "Full-time, with pay negotiated based on experience; applicants send a resume per the posting."
     ],
-    "validThrough": "2026-11-14"
+    "validThrough": "2026-11-14",
+    "locs": [
+      "NJ"
+    ]
   },
   {
     "id": "swift-pa-field-sales-rep-omaha",
@@ -444,7 +497,11 @@
       "The job combines referral networking and presentations with on-site storm-damage inspections, scope-of-loss reports, policy review, and coordination with carriers and contractors. A public adjusting license is required, or must be obtained within a month of hire.",
       "Compensation starts as a $50k–$65k draw against uncapped commission, with health, dental, vision, and 401(k) benefits."
     ],
-    "validThrough": "2026-11-14"
+    "validThrough": "2026-11-14",
+    "locs": [
+      "NE",
+      "remote"
+    ]
   },
   {
     "id": "swift-pa-licensed-outside-sales-st-louis",
@@ -468,7 +525,11 @@
       "The rep builds referral partnerships, meets with residential and commercial property owners, screens referred claims, and reports on territory activity. A public adjusting license is required, or must be earned within a month of starting.",
       "Pay begins as a $50k–$65k draw against uncapped commission, with full benefits. Swift also lists similar seats in Kansas City and Springfield, MO."
     ],
-    "validThrough": "2026-11-14"
+    "validThrough": "2026-11-14",
+    "locs": [
+      "MO",
+      "remote"
+    ]
   },
   {
     "id": "select-adjusters-field-pa-phoenix",
@@ -492,7 +553,10 @@
       "Field Public Adjusters inspect and document damage and work with homeowners; an Arizona PA license is preferred, and the firm will help the right candidate get one. Senior Public Adjusters need the license already and lead complex claims and carrier negotiations. The page also lists claims coordinator and office roles.",
       "Pay is base salary plus performance pay tied to claim results, with paid training; apply through the form on the careers page."
     ],
-    "validThrough": "2026-11-14"
+    "validThrough": "2026-11-14",
+    "locs": [
+      "AZ"
+    ]
   },
   {
     "id": "panther-pa-licensed-apprentice-multistate",
@@ -516,7 +580,10 @@
       "Licensed adjusters need an active PA license in one of those states and handle damage assessment, claim filing, and carrier negotiation. Apprentices need no prior experience; they train under senior adjusters while working toward a license.",
       "Pay is commission on successful claims with a flexible schedule; apply by emailing a resume as described on the careers page."
     ],
-    "validThrough": "2026-11-14"
+    "validThrough": "2026-11-14",
+    "locs": [
+      "NJ"
+    ]
   },
   {
     "id": "mla-claims-apprentice-pia-lafayette-hill",
@@ -540,7 +607,10 @@
       "The apprentice handles contents inventories and pricing in Excel, measures and photographs loss sites, schedules inspections, and does office tasks, building the experience needed for licensure. A bachelor's degree, a valid driver's license, and a vehicle are required.",
       "Pay depends on experience, and healthcare and a 401(k) are offered."
     ],
-    "validThrough": "2026-11-14"
+    "validThrough": "2026-11-14",
+    "locs": [
+      "PA"
+    ]
   },
   {
     "id": "cohen-associates-licensed-pa-florida",
@@ -563,7 +633,10 @@
       "Applicants need a Florida 3-20 public adjuster license or a 31-20 apprentice license, with bond in good standing. The work includes networking with roofers, plumbers, contractors, and property managers for leads, keeping clients updated, and meeting carrier adjusters at inspections.",
       "Xactimate, negotiation skills, and being bilingual are all pluses."
     ],
-    "validThrough": "2026-11-14"
+    "validThrough": "2026-11-14",
+    "locs": [
+      "FL"
+    ]
   },
   {
     "id": "tutwiler-pa-solicitor-tampa",
@@ -587,7 +660,10 @@
       "The role follows up on leads the firm generates and builds relationships with property managers and businesses. It requires a current all-lines Florida PA license (3-20), 2+ years of experience, and your own laptop, phone, camera, and transportation.",
       "Compensation is discussed after an interview; the careers page explains how to send a resume."
     ],
-    "validThrough": "2026-11-14"
+    "validThrough": "2026-11-14",
+    "locs": [
+      "FL"
+    ]
   },
   {
     "id": "allied-public-adjuster-socal",
@@ -611,7 +687,10 @@
       "Base pay is listed around $65k–$100k with overtime eligibility; confirm schedule and apply steps on the Greenhouse posting."
     ],
     "validThrough": "2026-11-13",
-    "sourceUrl": "https://job-boards.greenhouse.io/alliedpublicadjusters/jobs/4379732009"
+    "sourceUrl": "https://job-boards.greenhouse.io/alliedpublicadjusters/jobs/4379732009",
+    "locs": [
+      "CA"
+    ]
   },
   {
     "id": "allied-senior-public-adjuster",
@@ -635,7 +714,10 @@
       "Compensation is listed with base roughly $85k–$110k and OTE about $160k–$225k; see Greenhouse for benefits and apply."
     ],
     "validThrough": "2026-11-13",
-    "sourceUrl": "https://job-boards.greenhouse.io/alliedpublicadjusters/jobs/4379627009"
+    "sourceUrl": "https://job-boards.greenhouse.io/alliedpublicadjusters/jobs/4379627009",
+    "locs": [
+      "CA"
+    ]
   },
   {
     "id": "allied-executive-desk-pa",
@@ -659,7 +741,10 @@
       "Expect 7+ years of property claims experience and an active PA license or ability to obtain one within 90 days; base is listed at about $110k–$150k plus bonus."
     ],
     "validThrough": "2026-11-13",
-    "sourceUrl": "https://job-boards.greenhouse.io/alliedpublicadjusters/jobs/4444795009"
+    "sourceUrl": "https://job-boards.greenhouse.io/alliedpublicadjusters/jobs/4444795009",
+    "locs": [
+      "remote"
+    ]
   },
   {
     "id": "allied-senior-estimator",
@@ -683,7 +768,10 @@
       "Requirements include 7+ years of insurance restoration estimating; base is listed around $110k–$135k plus a performance bonus."
     ],
     "validThrough": "2026-11-13",
-    "sourceUrl": "https://job-boards.greenhouse.io/alliedpublicadjusters/jobs/4379731009"
+    "sourceUrl": "https://job-boards.greenhouse.io/alliedpublicadjusters/jobs/4379731009",
+    "locs": [
+      "CA"
+    ]
   },
   {
     "id": "metro-pa-trainee-ga",
@@ -707,7 +795,10 @@
       "Compensation is listed in a broad $35k–$125k band; apply on Greenhouse for the state seat that matches you."
     ],
     "validThrough": "2026-11-13",
-    "sourceUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4330432009"
+    "sourceUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4330432009",
+    "locs": [
+      "WV"
+    ]
   },
   {
     "id": "metro-remote-claims-rep-pa",
@@ -731,7 +822,11 @@
       "Pay is commission-based in a stated $35k–$150k range; read the Greenhouse ad carefully for which states they will and will not hire."
     ],
     "validThrough": "2026-11-13",
-    "sourceUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4449000009"
+    "sourceUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4449000009",
+    "locs": [
+      "PA",
+      "remote"
+    ]
   },
   {
     "id": "rockwall-licensed-pa-destin-fl",
@@ -755,7 +850,10 @@
       "The adjuster solicits residential and commercial claims and referral partners, then signs, inspects, documents, and negotiates each loss for the policyholder. An active Florida public adjuster license (or the ability to get one) is required; adjusting, construction, or restoration experience is preferred but not mandatory.",
       "Newer licensees get structured training and mentorship, experienced adjusters get qualified leads and claims systems, and the office handles contracts, compliance, invoicing, and mortgage-company payments. Apply through the BambooHR posting."
     ],
-    "validThrough": "2026-11-18"
+    "validThrough": "2026-11-18",
+    "locs": [
+      "FL"
+    ]
   },
   {
     "id": "rockwall-licensed-pa-tampa-fl",
@@ -779,7 +877,10 @@
       "The adjuster solicits residential and commercial claims and referral partners, then signs, inspects, documents, and negotiates each loss for the policyholder. An active Florida public adjuster license (or the ability to get one) is required; adjusting, construction, or restoration experience is preferred but not mandatory.",
       "Newer licensees get structured training and mentorship, experienced adjusters get qualified leads and claims systems, and the office handles contracts, compliance, invoicing, and mortgage-company payments. Apply through the BambooHR posting."
     ],
-    "validThrough": "2026-11-18"
+    "validThrough": "2026-11-18",
+    "locs": [
+      "FL"
+    ]
   },
   {
     "id": "rockwall-licensed-pa-houston-tx",
@@ -803,7 +904,10 @@
       "The adjuster solicits residential and commercial claims and referral partners, then signs, inspects, documents, and negotiates each loss for the policyholder. An active Texas public adjuster license (or the ability to get one) is required; adjusting, construction, or restoration experience is preferred but not mandatory.",
       "Newer licensees get structured training and mentorship, experienced adjusters get qualified leads and claims systems, and the office handles contracts, compliance, invoicing, and mortgage-company payments. Apply through the BambooHR posting."
     ],
-    "validThrough": "2026-11-18"
+    "validThrough": "2026-11-18",
+    "locs": [
+      "TX"
+    ]
   },
   {
     "id": "rockwall-licensed-pa-san-antonio-tx",
@@ -827,7 +931,10 @@
       "The adjuster solicits residential and commercial claims and referral partners, then signs, inspects, documents, and negotiates each loss for the policyholder. An active Texas public adjuster license (or the ability to get one) is required; adjusting, construction, or restoration experience is preferred but not mandatory.",
       "Newer licensees get structured training and mentorship, experienced adjusters get qualified leads and claims systems, and the office handles contracts, compliance, invoicing, and mortgage-company payments. Apply through the BambooHR posting."
     ],
-    "validThrough": "2026-11-18"
+    "validThrough": "2026-11-18",
+    "locs": [
+      "TX"
+    ]
   },
   {
     "id": "metro-pa-business-development-lead-western-pa",
@@ -852,7 +959,10 @@
       "No experience is required: Metro provides training, lets you earn while you learn, and offers a path to build and lead your own team. Apply through the Greenhouse posting."
     ],
     "validThrough": "2026-11-18",
-    "addressRegion": "PA"
+    "addressRegion": "PA",
+    "locs": [
+      "PA"
+    ]
   },
   {
     "id": "vpa-loss-documentation-field-inspector",
@@ -877,7 +987,10 @@
       "The job is salaried with full benefits and no commission. VPA looks for field adjusting, inspection, or loss documentation experience and says it suits independent adjusters and newer public adjusters. Apply on the posting page."
     ],
     "validThrough": "2026-11-18",
-    "remote": true
+    "remote": true,
+    "locs": [
+      "remote"
+    ]
   },
   {
     "id": "mla-claims-licensed-public-adjuster",
@@ -902,7 +1015,10 @@
       "The adjuster handles property claims start to finish: inspecting losses, building estimates and documentation, advising clients, negotiating settlements, and signing both new and in-house leads. It asks for a valid Pennsylvania and/or New Jersey PA license, two or more years of relevant experience, and damage estimating skills (Xactimate a plus).",
       "Pay is salary plus commission based on experience, with healthcare and a 401(k). Apply through the posting or by emailing a resume to the firm."
     ],
-    "validThrough": "2026-11-18"
+    "validThrough": "2026-11-18",
+    "locs": [
+      "PA"
+    ]
   },
   {
     "id": "united-pa-property-damage-estimator",
@@ -927,7 +1043,10 @@
       "Requirements include at least 3 years of property damage estimating or construction experience, Xactimate proficiency, and a reliable vehicle. Submit a resume through the careers page."
     ],
     "validThrough": "2026-11-18",
-    "addressRegion": "NY"
+    "addressRegion": "NY",
+    "locs": [
+      "NY"
+    ]
   },
   {
     "id": "united-pa-content-claims-adjuster",
@@ -951,7 +1070,10 @@
       "The adjuster builds detailed inventories, researches replacement values, works with field adjusters and estimators, and prepares contents reports for carriers. Prior contents claims experience and familiarity with pricing tools are expected.",
       "The posting lists a $70k–$90k salary plus health benefits. Submit a resume through the careers page."
     ],
-    "validThrough": "2026-11-18"
+    "validThrough": "2026-11-18",
+    "locs": [
+      "NY"
+    ]
   },
   {
     "id": "united-pa-manhattan-business-development-associate",
@@ -975,7 +1097,10 @@
       "The role works existing relationships with property owners, managers, resident managers, and supers, represents the firm at industry events, manages a pipeline in the CRM, and helps on site visits. Hires must get a public adjuster license within 90 days, with training provided.",
       "Pay is salary plus commission with fully paid benefits; a proven sales record and Manhattan real estate connections are expected. Submit a resume through the careers page."
     ],
-    "validThrough": "2026-11-18"
+    "validThrough": "2026-11-18",
+    "locs": [
+      "NY"
+    ]
   },
   {
     "id": "swift-pa-outside-sales-rep-denver",
@@ -999,7 +1124,11 @@
       "The rep builds a network of referral sources, meets residential and commercial property owners, educates partners about public adjusting, screens referred claims, and reports daily activity and territory forecasts.",
       "Pay starts with a $50k–$65k draw against uncapped commission after a 30–60 day probation, plus health, dental, vision, and a 401(k). A public adjuster license is required within a month of hire, and a business degree or five years of sales experience is expected. Apply through the posting."
     ],
-    "validThrough": "2026-11-18"
+    "validThrough": "2026-11-18",
+    "locs": [
+      "CO",
+      "remote"
+    ]
   },
   {
     "id": "swift-pa-outside-sales-rep-minneapolis",
@@ -1023,7 +1152,11 @@
       "The rep builds a network of referral sources, meets residential and commercial property owners, educates partners about public adjusting, screens referred claims, and reports daily activity and territory forecasts.",
       "Pay starts with a $50k–$65k draw against uncapped commission after a 30–60 day probation, plus health, dental, vision, and a 401(k). A public adjuster license is required within a month of hire, and a business degree or five years of sales experience is expected. Apply through the posting."
     ],
-    "validThrough": "2026-11-18"
+    "validThrough": "2026-11-18",
+    "locs": [
+      "MN",
+      "remote"
+    ]
   },
   {
     "id": "allied-pa-construction-consultant-la",
@@ -1047,7 +1180,10 @@
       "The role inspects losses alongside the public adjuster, writes detailed Xactimate estimates (the firm targets a 48-hour turnaround after inspection), rebuts carrier counter-estimates, and reviews vendor and expert bids.",
       "It also helps build the firm's estimating standards, procedures, and historical database, and mentors junior estimators. Apply through the Greenhouse posting."
     ],
-    "validThrough": "2026-11-15"
+    "validThrough": "2026-11-15",
+    "locs": [
+      "CA"
+    ]
   },
   {
     "id": "metro-pa-claims-property-inspector-pa",
@@ -1073,7 +1209,10 @@
     ],
     "validThrough": "2026-11-15",
     "addressLocality": "Philadelphia",
-    "addressRegion": "PA"
+    "addressRegion": "PA",
+    "locs": [
+      "PA"
+    ]
   },
   {
     "id": "experienced-pa-licensed-and-apprentice-fl",
@@ -1098,7 +1237,10 @@
       "It lists three paths: licensed 3-20 public adjusters for inspections, file review, and carrier communication; 6-20 all-lines adjusters who want a supervised 31-20 apprentice appointment; and estimator, inspector, or claim-support people with construction, roofing, mitigation, or Xactimate backgrounds.",
       "Candidates near Naples, Orlando, Tampa, Daytona Beach, and Central or Southwest Florida are especially welcome. Reach out through the form on the careers page."
     ],
-    "validThrough": "2026-11-15"
+    "validThrough": "2026-11-15",
+    "locs": [
+      "FL"
+    ]
   },
   {
     "id": "vpa-property-claims-adjuster-lexington",
@@ -1122,7 +1264,10 @@
       "The adjuster reviews policies, manages claims, and negotiates settlements with carriers, while a support team handles inspections, documentation, and admin work.",
       "VPA covers public adjuster licensing fees and transition support. The role is on-site and requires relocation; apply with the form on the posting."
     ],
-    "validThrough": "2026-11-15"
+    "validThrough": "2026-11-15",
+    "locs": [
+      "KY"
+    ]
   },
   {
     "id": "ai-mbc-c-level-sales-executive-westminster",
@@ -1147,7 +1292,10 @@
       "The executive sells directly, leads two experienced claims sales producers, and builds the pipeline, forecasting, partnerships, and enterprise-account strategy.",
       "The firm wants someone with a track record in commercial insurance claims, commercial real estate, or CRE finance, and lists a draw against commissions, team overrides, and performance-based equity."
     ],
-    "validThrough": "2026-11-15"
+    "validThrough": "2026-11-15",
+    "locs": [
+      "CO"
+    ]
   },
   {
     "id": "icrs-pa-estimator-office-texas",
@@ -1172,7 +1320,12 @@
       "Its careers page has three openings: licensed public adjusters, a commercial Xactimate estimator, and an office manager or assistant. Backgrounds in commercial brokerage, construction, or insurance policies are a plus.",
       "The firm describes the work as work-from-home with free training. Each role has its own application form on the careers page."
     ],
-    "validThrough": "2026-11-15"
+    "validThrough": "2026-11-15",
+    "locs": [
+      "FL",
+      "TX",
+      "remote"
+    ]
   },
   {
     "id": "manhattan-pa-fire-outreach-bd-nyc",
@@ -1198,7 +1351,10 @@
       "Pay is base plus bonus and commission (the posting lists about $91k for the first six months), with health, dental, vision, retirement, and PTO. Apply on the careers page and don't call the office."
     ],
     "validThrough": "2026-11-15",
-    "addressRegion": "NY"
+    "addressRegion": "NY",
+    "locs": [
+      "NY"
+    ]
   },
   {
     "id": "claims-pa-licensed-pa-dfw",
@@ -1222,7 +1378,10 @@
       "Every role is direct W-2 employment, not 1099, with health insurance, base pay plus performance incentives, and support for licensing, CE, Xactimate, and IICRC training. Field adjusters set their own schedules.",
       "Apply through the form on the careers page; the firm says it replies within two business days."
     ],
-    "validThrough": "2026-11-15"
+    "validThrough": "2026-11-15",
+    "locs": [
+      "TX"
+    ]
   },
   {
     "id": "claims-pa-licensed-pa-thousand-oaks",
@@ -1246,7 +1405,10 @@
       "The firm hires everyone as W-2 employees with health insurance, pairs base pay with performance incentives, and supports ongoing licensing and Xactimate training.",
       "Apply through the careers page form and pick the Thousand Oaks Licensed Public Adjuster role."
     ],
-    "validThrough": "2026-11-15"
+    "validThrough": "2026-11-15",
+    "locs": [
+      "CA"
+    ]
   },
   {
     "id": "claims-pa-desk-adjuster-nrh",
@@ -1271,7 +1433,10 @@
       "Apply through the careers page form."
     ],
     "validThrough": "2026-11-15",
-    "employmentType": "FULL_TIME"
+    "employmentType": "FULL_TIME",
+    "locs": [
+      "TX"
+    ]
   },
   {
     "id": "claims-pa-xactimate-estimator-inspector",
@@ -1297,7 +1462,10 @@
       "All positions are W-2 with health insurance. Apply through the careers page form and pick your location."
     ],
     "validThrough": "2026-11-15",
-    "employmentType": "FULL_TIME"
+    "employmentType": "FULL_TIME",
+    "locs": [
+      "TX"
+    ]
   },
   {
     "id": "firstcall-claims-outside-sales-tennessee",
@@ -1322,7 +1490,10 @@
       "The rep prospects and qualifies property owners after fire, storm, and water losses, explains how public adjusting works, and signs representation agreements. Signed files go to the in-house adjusting team, which handles documentation, estimating, and negotiation. The firm supplies leads, referral channels, and training.",
       "This is a 1099, commission-only job with no base or draw. You need outside sales or other closing experience. A Tennessee public adjuster license is preferred, and the firm helps unlicensed hires get one. The posting runs through Dec 4, 2026."
     ],
-    "validThrough": "2026-12-04"
+    "validThrough": "2026-12-04",
+    "locs": [
+      "TN"
+    ]
   },
   {
     "id": "c3-group-sales-public-adjuster-hybrid-colorado",
@@ -1347,7 +1518,11 @@
       "On the sales side, the rep prospects by phone, in person, and at loss sites, presents and signs representation contracts, and builds referral relationships. On the adjusting side, the rep reviews policies, inspects damage, prepares estimates, and negotiates with the carrier's adjuster. Claims go to appraisal or litigation when needed.",
       "According to the posted job description, pay is a $43,888 base plus uncapped commission, with separate percentages for lead generation, contract signing, and adjusting work. You need a Colorado public adjuster license or must get one within 30 days of hire. Apply with a resume and cover letter on the careers page."
     ],
-    "validThrough": "2026-11-19"
+    "validThrough": "2026-11-19",
+    "locs": [
+      "CO",
+      "remote"
+    ]
   },
   {
     "id": "sunpoint-public-insurance-adjuster-los-angeles",
@@ -1372,7 +1547,11 @@
       "The firm wants a four-year degree and about ten years as a staff adjuster on residential and commercial first-party property claims, including building and contents coverage. You also need to travel to loss sites and pass background screening and licensing. Experience only in auto, casualty, or workers' comp does not qualify.",
       "Pay is listed at $60,000–$250,000 a year plus commissions. Benefits include medical, dental, vision, an FSA, PTO, and a 401(k) with a 3% company contribution. A public adjuster license is preferred. Apply through the form on the posting."
     ],
-    "validThrough": "2026-11-19"
+    "validThrough": "2026-11-19",
+    "locs": [
+      "CA",
+      "remote"
+    ]
   },
   {
     "id": "sunpoint-contents-inventory-specialist-washington",
@@ -1397,7 +1576,10 @@
       "This is hands-on fieldwork with up to 60% travel. It involves juggling several projects and vendors and lifting up to 60 lbs. You need at least intermediate Excel, strong attention to detail, a clean driving record, and a clean background check. Knowing retail brands and pricing helps.",
       "Pay is $30–$34 an hour for about 40 hours a week. Benefits include health, dental, vision, an FSA, PTO, and a matched 401(k). Apply through the form on the posting."
     ],
-    "validThrough": "2026-11-19"
+    "validThrough": "2026-11-19",
+    "locs": [
+      "WA"
+    ]
   },
   {
     "id": "sunpoint-sales-professional-washington",
@@ -1422,7 +1604,10 @@
       "The role requires state Department of Insurance licensing, and SunPoint helps strong candidates get licensed. It looks for a record in professional-services or high-level sales and the drive to work unsupervised with high-profile clients. The firm notes that career changers, such as attorneys and bankers, have done well in the role.",
       "Pay is commission-based, with earnings listed at $125K–$400K+ a year. Benefits include medical, dental, vision, and a 401(k) with a 3% company contribution. A degree or equivalent experience is preferred. Apply through the form on the posting."
     ],
-    "validThrough": "2026-11-19"
+    "validThrough": "2026-11-19",
+    "locs": [
+      "WA"
+    ]
   },
   {
     "id": "crossroads-ira-houston-open-applications",
@@ -1447,7 +1632,10 @@
       "It takes applications on a rolling basis from licensed Texas public adjusters, people working toward their license, and staff for claims support and admin. The application form lists adjuster, contents, adjuster sales, admin, support, and other roles.",
       "For candidates without a license, the firm publishes a free Texas licensing study guide with practice questions. Apply through the careers page form with a resume."
     ],
-    "validThrough": "2026-11-19"
+    "validThrough": "2026-11-19",
+    "locs": [
+      "TX"
+    ]
   },
   {
     "id": "ak-public-adjusters-field-sales-owings-mills",
@@ -1472,7 +1660,10 @@
       "The rep canvasses targeted neighborhoods, spots properties likely hit by hail, wind, fire, or water, explains what public adjuster representation involves, does basic inspections and photo documentation, and completes intake paperwork for clients who sign. Training is provided.",
       "This W-2 job pays hourly plus uncapped commission, with expected earnings of $92k–$108k+. It includes paid field coaching, a territory-based flexible schedule, and a company truck depending on role and performance. Canvassing or field sales experience is preferred, and you need a driver's license and reliable transportation."
     ],
-    "validThrough": "2026-12-20"
+    "validThrough": "2026-12-20",
+    "locs": [
+      "MD"
+    ]
   },
   {
     "id": "swift-pa-outside-sales-rep-madison",
@@ -1496,7 +1687,11 @@
       "The rep develops referral sources, meets with residential and commercial property owners, teaches partners what a public adjuster does, screens the claims they send over, and files daily activity reports and territory forecasts.",
       "After a 30–60 day probation, pay starts as a $50k–$65k draw against uncapped commission, and benefits include health, dental, vision, and a 401(k). You need a public adjuster license within a month of hire, plus a business degree or five years of sales experience. Apply through the posting."
     ],
-    "validThrough": "2026-11-19"
+    "validThrough": "2026-11-19",
+    "locs": [
+      "WI",
+      "remote"
+    ]
   },
   {
     "id": "swift-pa-licensed-outside-sales-kansas-city",
@@ -1520,7 +1715,11 @@
       "The rep develops referral sources, meets with residential and commercial property owners, teaches partners what a public adjuster does, screens the claims they send over, and files daily activity reports and territory forecasts.",
       "After a 30–60 day probation, pay starts as a $50k–$65k draw against uncapped commission, and benefits include health, dental, vision, and a 401(k). You need a public adjuster license within a month of hire, plus a business degree or five years of sales experience. Apply through the posting."
     ],
-    "validThrough": "2026-11-19"
+    "validThrough": "2026-11-19",
+    "locs": [
+      "MO",
+      "remote"
+    ]
   },
   {
     "id": "swift-pa-outside-sales-rep-des-moines",
@@ -1544,7 +1743,11 @@
       "The rep develops referral sources, meets with residential and commercial property owners, teaches partners what a public adjuster does, screens the claims they send over, and files daily activity reports and territory forecasts.",
       "After a 30–60 day probation, pay starts as a $50k–$65k draw against uncapped commission, and benefits include health, dental, vision, and a 401(k). You need a public adjuster license within a month of hire, plus a business degree or five years of sales experience. Apply through the posting."
     ],
-    "validThrough": "2026-11-19"
+    "validThrough": "2026-11-19",
+    "locs": [
+      "IA",
+      "remote"
+    ]
   },
   {
     "id": "swift-pa-licensed-outside-sales-springfield-mo",
@@ -1569,7 +1772,11 @@
       "The rep builds and educates a referral network, screens referred claims, keeps partners updated on progress, and signs residential and commercial property owners. The rep also tracks calls, meetings, and sales and provides territory forecasts.",
       "Pay is a 20% uncapped commission on all sales, with a draw against commission once probation ends. Benefits include health, dental, vision, a 401(k), and reimbursed business expenses. Knowing storm damage and the claims process is preferred. Apply through the posting."
     ],
-    "validThrough": "2026-11-19"
+    "validThrough": "2026-11-19",
+    "locs": [
+      "MO",
+      "remote"
+    ]
   },
   {
     "id": "metro-pa-remote-claims-writer-denver",
@@ -1594,7 +1801,11 @@
       "The rep inspects properties for damage that insurance may cover, helps homeowners understand their policy, keeps clients informed throughout the claim, and completes the claim paperwork.",
       "No experience is needed, since Metro provides training and ongoing mentorship and you set your own hours. Apply through the Greenhouse posting."
     ],
-    "validThrough": "2026-11-19"
+    "validThrough": "2026-11-19",
+    "locs": [
+      "CO",
+      "remote"
+    ]
   },
   {
     "id": "metro-pa-business-development-lead-maryland",
@@ -1619,7 +1830,10 @@
       "The lead builds a referral network through networking groups, chambers of commerce, contractors, local businesses, and real estate agents, sets up in-person and virtual meetings, helps owners understand their coverage, and handles the follow-up and paperwork.",
       "No prior experience is required. Metro provides training and mentorship, lets you earn while you learn, and offers a path to build and lead your own team. Apply through the Greenhouse posting."
     ],
-    "validThrough": "2026-11-20"
+    "validThrough": "2026-11-20",
+    "locs": [
+      "MD"
+    ]
   },
   {
     "id": "metro-pa-claims-support-rep-entry-level-nc",
@@ -1644,7 +1858,11 @@
       "The rep inspects homes for damage that insurance may cover, explains policy coverage to homeowners, keeps clients updated during the claim, and completes the claim paperwork.",
       "No experience is needed. Metro trains new reps and assigns a recruiter after an online job overview session. Apply through the Greenhouse posting."
     ],
-    "validThrough": "2026-11-20"
+    "validThrough": "2026-11-20",
+    "locs": [
+      "NC",
+      "remote"
+    ]
   },
   {
     "id": "shoreline-pa-licensed-public-adjuster-fl-mn-wi-nd-sd",
@@ -1669,7 +1887,14 @@
       "The firm describes a small, collaborative team that uses modern claims software and offers flexible work. It wants organized, self-starting communicators who know property insurance claims or are willing to learn.",
       "To apply, email a resume and short introduction to the address listed on the careers page."
     ],
-    "validThrough": "2026-11-20"
+    "validThrough": "2026-11-20",
+    "locs": [
+      "FL",
+      "MN",
+      "ND",
+      "SD",
+      "WI"
+    ]
   },
   {
     "id": "select-adjusters-claims-coordinator-phoenix",
@@ -1694,7 +1919,10 @@
       "The coordinator schedules inspections, manages claim documentation, and communicates with homeowners and insurance carriers. The firm wants someone detail-oriented and comfortable with customer-facing work.",
       "Select advertises base pay plus performance pay, paid training, and promotion from within. Apply through the form on the careers page."
     ],
-    "validThrough": "2026-11-20"
+    "validThrough": "2026-11-20",
+    "locs": [
+      "AZ"
+    ]
   },
   {
     "id": "gavnat-licensed-public-adjuster-or-license-candidate",
@@ -1744,7 +1972,10 @@
       "Reps inspect homes for damage that may be covered, walk homeowners through their policies, keep clients updated through the claim, and handle the paperwork. The posting serves homeowners in South Jersey and the Philadelphia area.",
       "No prior experience is required. Metro provides training and mentorship, and you can set your own part-time or full-time schedule. Apply on Greenhouse."
     ],
-    "validThrough": "2026-11-21"
+    "validThrough": "2026-11-21",
+    "locs": [
+      "remote"
+    ]
   },
   {
     "id": "metro-remote-claims-representative-part-full-time-630810",
@@ -1769,7 +2000,10 @@
       "Reps do virtual or in-person walk-throughs to spot covered damage, explain policies, look after clients, and complete claim paperwork. Applicants are accepted from most states; the posting excludes Alaska, Alabama, Arkansas, and Florida.",
       "No public adjusting experience is needed, and all training is provided. After applying, candidates get a link to book an information interview."
     ],
-    "validThrough": "2026-11-21"
+    "validThrough": "2026-11-21",
+    "locs": [
+      "remote"
+    ]
   },
   {
     "id": "tiger-adjusters-public-adjuster-dayton-oh",
@@ -1794,7 +2028,10 @@
       "The adjuster inspects and documents property damage, reviews policies for gaps and errors, writes loss estimates in Xactimate, consults specialists when needed, and negotiates settlements with carriers.",
       "Tiger wants a dependable self-starter with sales and business development skills who is comfortable with CRM tools. Pay is negotiated based on experience; apply through the careers page."
     ],
-    "validThrough": "2026-11-21"
+    "validThrough": "2026-11-21",
+    "locs": [
+      "OH"
+    ]
   },
   {
     "id": "ifile-claims-public-adjuster-fl-tx-pa",
@@ -1819,7 +2056,12 @@
       "Adjusters run free property inspections, explain the claim process, gather documents, attend inspections, and negotiate settlements with the carrier while keeping clients updated. Xactimate and scoping experience help, and Spanish or Creole is a plus.",
       "The firm lists pay of $50,000 to $150,000 a year plus bonus and commission, with a flexible schedule and an apprenticeship track. Send a resume from the careers page."
     ],
-    "validThrough": "2026-11-21"
+    "validThrough": "2026-11-21",
+    "locs": [
+      "FL",
+      "PA",
+      "TX"
+    ]
   },
   {
     "id": "claim-concepts-public-adjuster-fl-ga-sc",
@@ -1844,7 +2086,12 @@
       "It wants licensed public adjusters, independent or staff adjusters, and contractors with claims experience, and runs an apprenticeship for people new to the field. Adjusters can focus on the parts of the job they do best: marketing, inspecting and estimating, or negotiating.",
       "An adjusting or construction background is preferred but not required for unlicensed candidates. Send a resume to the email listed on the careers page."
     ],
-    "validThrough": "2026-11-21"
+    "validThrough": "2026-11-21",
+    "locs": [
+      "FL",
+      "GA",
+      "SC"
+    ]
   },
   {
     "id": "allied-claims-operations-manager-systems-ai",
@@ -1868,7 +2115,10 @@
       "This manager connects the claims team and its technology: designing every workflow a claim moves through, from client onboarding to settlement, and configuring stages, handoffs, triggers, and SLA timers in Allied's in-house claims platform.",
       "The role also builds the reporting, audits, and AI tools the team uses, and turns stakeholder requests into defined builds or backlog items. Apply on Greenhouse."
     ],
-    "validThrough": "2026-11-22"
+    "validThrough": "2026-11-22",
+    "locs": [
+      "CA"
+    ]
   },
   {
     "id": "metro-claims-rep-618275-ct",
@@ -1894,7 +2144,10 @@
       "Reps review policies with homeowners and business owners, inspect properties for covered damage, keep clients informed through the claim, and document each step.",
       "No experience is needed; Metro provides training and ongoing mentorship, and reps choose part-time or full-time hours. Apply on Greenhouse."
     ],
-    "validThrough": "2026-11-22"
+    "validThrough": "2026-11-22",
+    "locs": [
+      "remote"
+    ]
   },
   {
     "id": "metro-pa-trainee-596930-mo",
@@ -1919,7 +2172,10 @@
       "Trainees help inspect residential and commercial damage, learn to read policies and estimate losses, support senior adjusters on claim files, and talk with clients, contractors, and carriers.",
       "Metro offers paid training, licensing support, a flexible schedule, and a stated pay range of $35,000 to $125,000 with performance-based upside. A valid driver’s license and reliable transportation are required. Apply on Greenhouse."
     ],
-    "validThrough": "2026-11-22"
+    "validThrough": "2026-11-22",
+    "locs": [
+      "MO"
+    ]
   },
   {
     "id": "rockwall-licensed-pa-austin-tx",
@@ -1943,6 +2199,9 @@
       "The adjuster builds referral business, signs clients, evaluates damage, and prepares and negotiates claims on the policyholder’s behalf.",
       "Newly licensed adjusters get structured training and mentorship, while experienced adjusters get the firm’s processes and administrative support. Apply through the BambooHR posting."
     ],
-    "validThrough": "2026-11-22"
+    "validThrough": "2026-11-22",
+    "locs": [
+      "TX"
+    ]
   }
 ]

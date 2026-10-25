@@ -41,6 +41,24 @@ export function renderRedirectPage(job, target) {
 `;
 }
 
+/** Location filter options for the home board: Remote first, then states A–Z, each with its active-listing count. */
+export function locationOptions(groups) {
+  const remote = groups.filter((g) => !g.abbr), states = groups.filter((g) => g.abbr).sort((a, b) => a.name.localeCompare(b.name));
+  return [...remote.map((g) => ({ value: "remote", label: "Remote", count: g.jobs.length })),
+    ...states.map((g) => ({ value: g.abbr, label: g.name, count: g.jobs.length }))];
+}
+const LOC_SELECT = '<label class="sr-only" for="filter-loc">Location</label><select id="filter-loc" class="filter-chip"><option value="">All locations</option><!--LOCS:START--><!--LOCS:END--></select>';
+/** Fill <!--LOCS:START-->…<!--LOCS:END--> in index.html (adds the select after the Type filter if missing). */
+export function injectLocationFilter(html, groups) {
+  if (!html.includes("<!--LOCS:START-->")) {
+    const m = html.match(/<select id="filter-type"[\s\S]*?<\/select>/);
+    if (!m) return html;
+    html = html.replace(m[0], m[0] + LOC_SELECT);
+  }
+  const opts = locationOptions(groups).map((o) => `<option value="${esc(o.value)}">${esc(o.label)} (${o.count})</option>`).join("");
+  return html.replace(/<!--LOCS:START-->[\s\S]*?<!--LOCS:END-->/, `<!--LOCS:START-->${opts}<!--LOCS:END-->`);
+}
+
 export function build({ root, now = new Date(), log = console.log } = {}) {
   root = root || path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
   const today = now.toISOString().slice(0, 10);
@@ -102,14 +120,22 @@ export function build({ root, now = new Date(), log = console.log } = {}) {
 
   for (const j of redirects) fs.writeFileSync(path.join(jobsDir, `${j.id}.html`), renderRedirectPage(j, activeById.get(j.redirectTo)));
 
-  // --- public feed for the client-side board (expired jobs never reach the browser) ---
-  fs.writeFileSync(path.join(root, "jobs.active.json"), JSON.stringify(active, null, 2) + "\n");
-
   // --- state landing pages + state links in every static page footer and the home page ---
   const stateGroups = writeStatePages(root, active, withSponsors);
   const stats = sponsorStats(active, stateGroups);
   report.sponsorStats = stats;
   report.statePages = stateGroups.map((g) => ({ url: `/jobs/${g.slug}/`, listings: g.jobs.length }));
+
+  // --- public feed for the client-side board (expired jobs never reach the browser) ---
+  // Each job gets `locs` (state abbrs and/or "remote", same grouping as the state pages) for the home Location filter.
+  const locsById = new Map();
+  for (const g of stateGroups) for (const j of g.jobs) {
+    if (!locsById.has(j.id)) locsById.set(j.id, []);
+    locsById.get(j.id).push(g.abbr || "remote");
+  }
+  const feed = active.map((j) => (locsById.has(j.id) ? { ...j, locs: locsById.get(j.id) } : j));
+  fs.writeFileSync(path.join(root, "jobs.active.json"), JSON.stringify(feed, null, 2) + "\n");
+  report.locationOptions = locationOptions(stateGroups).map((o) => `${o.value}:${o.count}`);
   const staticPages = [...fs.readdirSync(root).filter((f) => f.endsWith(".html")),
     ...(fs.existsSync(path.join(root, "locations")) ? fs.readdirSync(path.join(root, "locations")).filter((f) => f.endsWith(".html")).map((f) => `locations/${f}`) : [])];
   for (const rel of staticPages) {
@@ -133,6 +159,7 @@ export function build({ root, now = new Date(), log = console.log } = {}) {
     "<!--JOBS:START--><noscript><ul class=\"jobs-static\">" +
     sorted.map((j) => `<li><a href="/jobs/${esc(j.id)}.html">${esc(j.title)}</a> — ${esc(j.company)} · ${esc(j.location)}${featuredIds.has(j.id) ? " · Featured" : ""}</li>`).join("") +
     "</ul></noscript><!--JOBS:END-->";
+  idx = injectLocationFilter(idx, stateGroups);
   if (idx.includes("<!--JOBS:START-->")) idx = idx.replace(/<!--JOBS:START-->[\s\S]*?<!--JOBS:END-->/, list);
   else idx = idx.replace('<div class="jobs" id="job-list" aria-live="polite"></div>', `<div class="jobs" id="job-list" aria-live="polite">${list}</div>`);
   fs.writeFileSync(idxPath, idx);

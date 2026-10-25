@@ -284,3 +284,21 @@ test("sponsor slots: unsold by default, filled from sponsors.json, windows and b
   assert.ok(r.sponsorProblems.florida.length);
   assert.match(read("sponsor.html"), /Taken \(Acme Estimating\)/);
 });
+
+test("home Location filter: options from active listings (Remote first, states A–Z, counts) and job locs in the feed", () => {
+  const dir = sandbox();
+  build({ root: dir, now: NOW, log: quiet });
+  const idx = fs.readFileSync(path.join(dir, "index.html"), "utf8");
+  assert.match(idx, /<label class="sr-only" for="filter-loc">Location<\/label><select id="filter-loc" class="filter-chip"><option value="">All locations<\/option><!--LOCS:START-->/);
+  const opts = [...idx.match(/<!--LOCS:START-->([\s\S]*?)<!--LOCS:END-->/)[1].matchAll(/<option value="([^"]+)">([^<]+) \((\d+)\)<\/option>/g)];
+  assert.ok(opts.length > 1);
+  assert.equal(opts[0][1], "remote");
+  const names = opts.slice(1).map((o) => o[2]);
+  assert.deepEqual(names, [...names].sort((a, b) => a.localeCompare(b)));
+  const feed = JSON.parse(fs.readFileSync(path.join(dir, "jobs.active.json"), "utf8"));
+  for (const [, value, , count] of opts) assert.equal(feed.filter((j) => (j.locs || []).includes(value)).length, Number(count), value);
+  assert.ok(feed.find((j) => j.id === "rockwall-austin").locs.includes("TX"));
+  // idempotent: a second build doesn't duplicate the select
+  build({ root: dir, now: NOW, log: quiet });
+  assert.equal((fs.readFileSync(path.join(dir, "index.html"), "utf8").match(/id="filter-loc"/g) || []).length, 1);
+});
