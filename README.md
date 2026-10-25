@@ -49,6 +49,25 @@ URL as a noindex meta-refresh stub pointing to the replacement (GitHub Pages has
 **`scripts/build.mjs` is the generator for job pages, the index fallback list, and sitemap.xml.** The old
 `_gen/regen_jobs_ctj.py` is retired and deleted; `_gen/` is local scratch and is not published.
 
+## Sponsor slots (`sponsors.json`)
+Founding sponsor spots, sold by email (hello@openpajobs.com, subject "Sponsor Open PA Jobs"); no Stripe link.
+`scripts/build.mjs` fills them from `sponsors.json` via `scripts/lib/sponsors.mjs`:
+
+- `site` ($99/mo): homepage line (`<!--SPONSOR:site-home:…-->` in `index.html`) + the footer of every page
+  (`site-footer`; the build inserts the marker before `.footer-bottom` on any page that lacks it, and job/state pages get it from the template).
+- `pages.<key>` ($49/mo): a box under the lede. Keys: `become-a-public-adjuster`, `remote` (remote.html + /jobs/remote/),
+  `florida` (locations/fl.html + /jobs/florida/), `texas` (locations/tx.html + /jobs/texas/). Markers: `<!--SPONSOR:page-<key>:START/END-->`.
+- `null` = unsold: shows "Your company here: founding sponsor spot, $99/mo" (or $49/mo) linking to `/sponsor.html`.
+
+**To add a sponsor:** replace `null` with
+`{"name": "Acme", "url": "https://acme.com/?utm_source=openpajobs", "logo": "/logos/sponsors/acme.png", "tagline": "optional one line", "start": "2026-11-01", "end": null}`
+(`end` = last day, UTC, or `null`), put the logo file in the repo, run `node scripts/build.mjs`, and commit **all** changed files
+(the daily workflow only commits `jobs/`, `index.html`, sitemap and data, so root pages must be committed by hand). Links get
+`rel="sponsored noopener"` and fire GA4 `sponsor_click`. `main.js` re-checks `start`/`end` in the browser, so a slot turns on/off on
+the right day even before the next commit. Bad entries fail closed (unsold) and are listed in `build-report.json` → `sponsorProblems`.
+`sponsor.html` counts (`<!--STAT:…-->`, slot table) are filled at build time from `jobs.active.json`; listing/firm counts are refreshed
+client-side from the live feed.
+
 ## Analytics (Google Analytics 4)
 GA4 (`G-RJ2FD6L55V`) is loaded `async` in the `<head>` of every page: job pages and redirect stubs via `GA_SNIPPET` in
 `scripts/lib/jobs.mjs` (used by `scripts/build.mjs`), static pages as plain HTML (`scripts/seo_pass.py` injects it too).
@@ -58,6 +77,8 @@ Events are sent from `main.js` through `gtag("event", …)` (no-op if gtag is bl
 |---|---|---|
 | `listing_view` | a job detail page loads | `job_id`, `company`, `state`, `remote`, `featured` |
 | `apply_click` | click on the outbound Apply button / "Source listing" link | job params + `link_location` |
+| `sponsor_click` | click on a sold sponsor link | `slot` (`site_home`, `site_footer`, `page_<key>`), `sponsor` |
+| `sponsor_cta_click` | click on an unsold "Your company here" link | `slot` |
 | `featured_click` | click on any "Feature your listing" (Stripe) button | job params on listing pages; none elsewhere |
 | `post_job_submit` | Web3Forms accepts the post-a-job form | `company` (firm), `state`/`remote` parsed from the location field |
 | `alert_signup` | Web3Forms accepts the alerts form | none (no email or state is sent to GA) |

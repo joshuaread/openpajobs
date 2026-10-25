@@ -1,5 +1,5 @@
 {
-  "buildDate": "2026-10-24",
+  "buildDate": "2026-10-25",
   "total": 89,
   "active": 79,
   "droppedExpired": [
@@ -242,11 +242,19 @@
   "removedPages": [],
   "featuredNow": [],
   "featuredProblems": {},
+  "sponsorProblems": {},
   "redirects": {
     "rockwall-tampa": "rockwall-licensed-pa-tampa-fl",
     "rockwall-destin": "rockwall-licensed-pa-destin-fl",
     "rockwall-san-antonio": "rockwall-licensed-pa-san-antonio-tx",
     "rockwall-houston": "rockwall-licensed-pa-houston-tx"
+  },
+  "sponsorStats": {
+    "listings": 79,
+    "firms": 30,
+    "remote": 20,
+    "florida": 12,
+    "texas": 11
   },
   "statePages": [
     {
@@ -350,5 +358,5 @@
       "listings": 20
     }
   ],
-  "sitemapUrls": 131
+  "sitemapUrls": 132
 }

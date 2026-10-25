@@ -1,0 +1,10 @@
+{
+  "_help": "Sponsor slots. null = unsold (shows the 'Your company here' link to /sponsor.html). To sell a slot, replace null with {\"name\": \"Acme\", \"url\": \"https://acme.com/?utm_source=openpajobs\", \"logo\": \"/logos/sponsors/acme.png\", \"tagline\": \"optional one line\", \"start\": \"YYYY-MM-DD\", \"end\": null}, then run node scripts/build.mjs and commit. end = last day (UTC) or null for open-ended. Page keys: become-a-public-adjuster, remote (remote.html + /jobs/remote/), florida (locations/fl.html + /jobs/florida/), texas (locations/tx.html + /jobs/texas/).",
+  "site": null,
+  "pages": {
+    "become-a-public-adjuster": null,
+    "remote": null,
+    "florida": null,
+    "texas": null
+  }
+}

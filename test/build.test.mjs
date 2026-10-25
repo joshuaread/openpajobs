@@ -252,3 +252,35 @@ test("thanks-featured.html exists, is noindex, fires featured_purchase and stays
 test("validThrough defaults to posted + 30 days when the record has none", () => {
   assert.equal(resolveValidThrough({ posted: "2026-10-01" }).value, "2026-10-31T23:59:59Z");
 });
+
+test("sponsor slots: unsold by default, filled from sponsors.json, windows and bad entries fail closed", () => {
+  const dir = sandbox();
+  build({ root: dir, now: NOW, log: quiet });
+  const read = (rel) => fs.readFileSync(path.join(dir, rel), "utf8");
+  for (const rel of ["index.html", "become-a-public-adjuster.html", "remote.html", "locations/fl.html", "locations/tx.html", "jobs/rockwall-austin.html"]) {
+    assert.match(read(rel), /data-sponsor-slot="site_footer"[\s\S]*?href="\/sponsor\.html">Your company here: founding sponsor spot, \$99\/mo/, rel);
+  }
+  assert.match(read("index.html"), /data-sponsor-slot="site_home"/);
+  assert.match(read("remote.html"), /data-sponsor-slot="page_remote"[\s\S]*?\$49\/mo/);
+  assert.match(read("sponsor.html"), /<!--STAT:listings-->\d+<!--\/STAT-->/);
+  assert.match(read("sitemap.xml"), /openpajobs\.com\/sponsor\.html/);
+
+  fs.writeFileSync(path.join(dir, "sponsors.json"), JSON.stringify({
+    site: { name: "Acme Estimating", url: "https://acme.example/", logo: "/logos/acme.png", start: "2026-10-01", end: null },
+    pages: {
+      "become-a-public-adjuster": { name: "Future Co", url: "https://future.example/", start: "2026-11-01", end: null },
+      remote: { name: "Old Co", url: "https://old.example/", start: "2026-09-01", end: "2026-10-01" },
+      florida: { name: "Bad Co", url: "http://bad.example/", start: "nope" },
+    },
+  }));
+  const r = build({ root: dir, now: NOW, log: quiet });
+  const idx = read("index.html");
+  assert.match(idx, /<a class="sponsor-link" href="https:\/\/acme\.example\/" rel="sponsored noopener" target="_blank" data-sponsor="Acme Estimating">/);
+  assert.match(idx, /class="sponsor-open" href="\/sponsor\.html" hidden>/);
+  assert.match(read("jobs/rockwall-austin.html"), /data-sponsor="Acme Estimating"/);
+  assert.match(read("become-a-public-adjuster.html"), /data-sponsor-start="2026-11-01" aria-label="Sponsor"><span class="sponsor-label">[^<]*<\/span><span class="sponsor-body" hidden>/);
+  assert.doesNotMatch(read("remote.html"), /Old Co/);
+  assert.doesNotMatch(read("locations/fl.html"), /Bad Co/);
+  assert.ok(r.sponsorProblems.florida.length);
+  assert.match(read("sponsor.html"), /Taken \(Acme Estimating\)/);
+});
