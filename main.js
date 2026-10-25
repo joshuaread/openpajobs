@@ -425,21 +425,88 @@
       statusEl.textContent = "Network error — try again in a minute.";
     }
   }
+  // Kit (kit.com) forms: plain POST with FormData (email_address), JSON reply. If fetch itself fails
+  // (network/CORS), fall back to a normal form post to the same Kit action URL.
+  function submitKit(form, statusEl, opts) {
+    if (!form || form.getAttribute("data-busy") === "1") return;
+    var btn = form.querySelector('button[type="submit"]');
+    function done() {
+      form.removeAttribute("data-busy");
+      if (btn) btn.disabled = false;
+    }
+    function say(html) {
+      if (statusEl) statusEl.innerHTML = html;
+    }
+    form.setAttribute("data-busy", "1");
+    if (btn) btn.disabled = true;
+    say("Sending…");
+    var fd = new FormData(form);
+    fd.append("referrer", document.referrer || "");
+    fd.append("host", location.href);
+    fetch(form.action, { method: "POST", body: fd, headers: { Accept: "application/json" } })
+      .then(function (res) {
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        return res.json();
+      })
+      .then(function (data) {
+        done();
+        if (data && data.status === "success") {
+          form.reset();
+          form.classList.add("is-done");
+          say(escapeHtml(opts.success));
+          if (opts.onSuccess) opts.onSuccess();
+        } else if (data && data.status === "quarantined" && data.url) {
+          say(
+            'One more step: <a href="' +
+              escapeAttr(data.url) +
+              '" target="_blank" rel="noopener">complete a quick security check</a> to finish signing up.'
+          );
+          if (opts.onSuccess) opts.onSuccess({ quarantined: true });
+        } else {
+          var msg = "";
+          try {
+            msg = (data.errors && (data.errors.messages || []).join(" ")) || "";
+          } catch (e) {}
+          say(escapeHtml(msg || "That didn’t go through. Check the email address and try again."));
+        }
+      })
+      .catch(function () {
+        done();
+        say("Sending…");
+        try {
+          HTMLFormElement.prototype.submit.call(form);
+        } catch (e) {
+          say("Network error. Try again in a minute.");
+        }
+      });
+  }
   var formAlerts = document.getElementById("form-alerts");
   if (formAlerts) {
     formAlerts.addEventListener("submit", function (e) {
       e.preventDefault();
-      submitWeb3(
-        e.target,
-        document.getElementById("alert-status"),
-        cfg.alertFormName || "Open PA Jobs alerts",
-        { form_type: "alerts" },
-        function () {
-          track("alert_signup", {});
-        }
-      );
+      submitKit(formAlerts, document.getElementById("alert-status"), {
+        success: "Almost done: check your email and click the confirm link to start getting PA job alerts.",
+        onSuccess: function (x) {
+          track("alert_signup", { form: "kit_job_alerts", quarantined: x && x.quarantined ? true : undefined });
+        },
+      });
     });
   }
+  document.querySelectorAll("form[data-kit-guide]").forEach(function (f) {
+    f.addEventListener("submit", function (e) {
+      e.preventDefault();
+      submitKit(f, f.querySelector(".status"), {
+        success: "Almost done: check your email and click the confirm link to get your PDF download.",
+        onSuccess: function (x) {
+          track("guide_signup", {
+            form: "kit_pa_licensing_guide",
+            placement: f.getAttribute("data-kit-guide"),
+            quarantined: x && x.quarantined ? true : undefined,
+          });
+        },
+      });
+    });
+  });
   var formPost = document.getElementById("form-post");
   if (formPost) {
     formPost.addEventListener("submit", function (e) {

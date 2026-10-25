@@ -7,8 +7,8 @@ export const GA_ID = "G-RJ2FD6L55V";
 export const GA_SNIPPET =
   `<!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=${GA_ID}"></script>` +
   `<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');</script>`;
-export const CACHE = "20261024a";
-export const JS_VERSION = "20261025b";
+export const CACHE = "20261025c";
+export const JS_VERSION = "20261025c";
 export const DEFAULT_VALID_DAYS = 30;
 export const FEATURE_URL = "https://buy.stripe.com/7sY4gA1gg3X70W24PLd3i02";
 export const FEATURE_LABEL = "Feature your listing — $49 for 30 days";
