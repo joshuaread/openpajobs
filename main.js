@@ -195,6 +195,47 @@
       "</article>"
     );
   }
+  function matchesNonLoc(j, q, type, time) {
+    if (type === "Featured" ? !isFeatured(j) : type && j.type !== type) return false;
+    if (time === "7" && !withinDays(j.posted, 7)) return false;
+    if (time === "30" && !withinDays(j.posted, 30)) return false;
+    if (!q) return true;
+    var hay = [j.title, j.company, j.location, j.blurb, j.type]
+      .concat(j.tags || [])
+      .join(" ")
+      .toLowerCase();
+    return hay.indexOf(q) !== -1;
+  }
+  // Location option counts follow the other active filters (time, type, search). The build-time
+  // counts in index.html stay as the no-JS fallback. Zero-match options are hidden + disabled,
+  // except the currently selected one.
+  function updateLocCounts() {
+    if (!locEl || !jobs.length) return;
+    var q = qEl ? (qEl.value || "").trim().toLowerCase() : "";
+    var type = typeEl ? typeEl.value : "";
+    var time = timeEl ? timeEl.value : "all";
+    var counts = {};
+    jobs.forEach(function (j) {
+      if (!matchesNonLoc(j, q, type, time)) return;
+      (j.locs || []).forEach(function (l) {
+        counts[l] = (counts[l] || 0) + 1;
+      });
+    });
+    for (var i = 0; i < locEl.options.length; i++) {
+      var o = locEl.options[i];
+      if (!o.value) continue;
+      var base = o.getAttribute("data-label");
+      if (!base) {
+        base = o.textContent.replace(/\s*\(\d+\)\s*$/, "");
+        o.setAttribute("data-label", base);
+      }
+      var n = counts[o.value] || 0;
+      o.textContent = base + " (" + n + ")";
+      var hide = n === 0 && o.value !== locEl.value;
+      o.hidden = hide;
+      o.disabled = hide;
+    }
+  }
   function getFiltered() {
     var q = qEl ? (qEl.value || "").trim().toLowerCase() : "";
     var type = typeEl ? typeEl.value : "";
@@ -203,15 +244,7 @@
     var loc = locEl ? locEl.value : "";
     var filtered = jobs.filter(function (j) {
       if (loc && (j.locs || []).indexOf(loc) === -1) return false;
-      if (type === "Featured" ? !isFeatured(j) : type && j.type !== type) return false;
-      if (time === "7" && !withinDays(j.posted, 7)) return false;
-      if (time === "30" && !withinDays(j.posted, 30)) return false;
-      if (!q) return true;
-      var hay = [j.title, j.company, j.location, j.blurb, j.type]
-        .concat(j.tags || [])
-        .join(" ")
-        .toLowerCase();
-      return hay.indexOf(q) !== -1;
+      return matchesNonLoc(j, q, type, time);
     });
     filtered = filtered.slice();
     if (sort === "company") {
@@ -232,6 +265,7 @@
   }
   function render() {
     if (!listEl) return;
+    updateLocCounts();
     var filtered = getFiltered();
     if (countEl) {
       countEl.textContent =
