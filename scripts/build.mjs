@@ -12,6 +12,7 @@ import {
   missingRequired, extractJsonLd, checkGoogleJobPosting, isFeaturedNow, featuredProblems,
 } from "./lib/jobs.mjs";
 import { writeStatePages, injectStateLinks } from "./lib/states.mjs";
+import { loadSponsors, sponsorProblems, injectSponsors, injectSponsorPage, sponsorStats, PAGE_SLOTS } from "./lib/sponsors.mjs";
 
 const NOINDEX_IDS = new Set(["founding-placeholder"]);
 
@@ -51,8 +52,15 @@ export function build({ root, now = new Date(), log = console.log } = {}) {
     buildDate: today,
     total: jobs.length, active: active.length, droppedExpired: expired.map((j) => j.id),
     jsonLdEmitted: [], jsonLdSkipped: {}, defaultedValidThrough: [], missingFields: {}, validation: {},
-    removedPages: [], featuredNow: [], featuredProblems: {},
+    removedPages: [], featuredNow: [], featuredProblems: {}, sponsorProblems: {},
   };
+  // --- sponsor slots (sponsors.json) ---
+  const sponsors = loadSponsors(root);
+  for (const [k, sp] of [["site", sponsors.site], ...Object.entries(sponsors.pages)]) {
+    const p = sponsorProblems(sp);
+    if (p.length) report.sponsorProblems[k] = p;
+  }
+  const withSponsors = (html) => injectSponsors(html, sponsors, now);
   for (const j of jobs) {
     const vt = resolveValidThrough(j);
     if (vt?.defaulted) report.defaultedValidThrough.push({ id: j.id, validThrough: vt.value, rule: "posted + 60 days" });
@@ -82,7 +90,7 @@ export function build({ root, now = new Date(), log = console.log } = {}) {
     if (f.endsWith(".html") && !keep.has(f)) { fs.unlinkSync(path.join(jobsDir, f)); report.removedPages.push(`jobs/${f}`); }
   }
   for (const j of active) {
-    const html = renderJobPage(j, active, now);
+    const html = withSponsors(renderJobPage(j, active, now));
     fs.writeFileSync(path.join(jobsDir, `${j.id}.html`), html);
     const blocks = extractJsonLd(html); // re-parse what we actually wrote
     if (blocks.length) {
@@ -98,13 +106,21 @@ export function build({ root, now = new Date(), log = console.log } = {}) {
   fs.writeFileSync(path.join(root, "jobs.active.json"), JSON.stringify(active, null, 2) + "\n");
 
   // --- state landing pages + state links in every static page footer and the home page ---
-  const stateGroups = writeStatePages(root, active);
+  const stateGroups = writeStatePages(root, active, withSponsors);
+  const stats = sponsorStats(active, stateGroups);
+  report.sponsorStats = stats;
   report.statePages = stateGroups.map((g) => ({ url: `/jobs/${g.slug}/`, listings: g.jobs.length }));
   const staticPages = [...fs.readdirSync(root).filter((f) => f.endsWith(".html")),
     ...(fs.existsSync(path.join(root, "locations")) ? fs.readdirSync(path.join(root, "locations")).filter((f) => f.endsWith(".html")).map((f) => `locations/${f}`) : [])];
   for (const rel of staticPages) {
-    const fp = path.join(root, rel), cur = fs.readFileSync(fp, "utf8"), next = injectStateLinks(cur, stateGroups);
+    const fp = path.join(root, rel), cur = fs.readFileSync(fp, "utf8");
+    let next = withSponsors(injectStateLinks(cur, stateGroups));
+    if (rel === "sponsor.html") next = injectSponsorPage(next, stats, sponsors, now, today);
     if (next !== cur) fs.writeFileSync(fp, next);
+  }
+  for (const [k, v] of Object.entries(PAGE_SLOTS)) for (const rel of v.pages) {
+    const fp = path.join(root, rel);
+    if (fs.existsSync(fp) && !fs.readFileSync(fp, "utf8").includes(`<!--SPONSOR:page-${k}:START-->`)) log(`sponsor: ${rel} has no page-${k} slot marker`);
   }
 
   // --- index.html crawlable fallback (noscript, so the visible board is unchanged) ---

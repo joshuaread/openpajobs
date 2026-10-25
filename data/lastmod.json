@@ -1,114 +1,118 @@
 {
   "index.html": {
-    "hash": "f15299f8bf60bc737ec451ae4cb0fb9ec67b36131596ea9fbefa6bcf530acf3e",
-    "lastmod": "2026-10-24"
+    "hash": "2606ae9d7c660be2bb639aaeae870ba357402b2a6a556a0476351c557552f48f",
+    "lastmod": "2026-10-25"
   },
   "post.html": {
-    "hash": "d2f1fc9a8b54f8d0c5b1e0877223c4514c5c45aacc5822304f72eef5a0973e3e",
-    "lastmod": "2026-10-23"
+    "hash": "279a1f8da2f1aaa8e2216b927715e6d17ef0b0633a26157aeee9b4a3e9333f3b",
+    "lastmod": "2026-10-25"
   },
   "about.html": {
-    "hash": "b168e72cf27f2050f01befa02adabb2bfd8c0e76fb593e90709bd2a9f39451a8",
-    "lastmod": "2026-10-23"
+    "hash": "b930b196ec95f5cf5243c443e0be097eeb261e6f878196b144f54759cdeb1d6b",
+    "lastmod": "2026-10-25"
   },
   "for-seekers.html": {
-    "hash": "4c67d84438f401b01e48a4fbd3b0311d969c23d75d17c5592ebd44534c12f2b5",
-    "lastmod": "2026-10-23"
+    "hash": "f5d80a282c654b653af21e7e0676dde12c40d10b4a0b0dfb8534234fab2fa451",
+    "lastmod": "2026-10-25"
   },
   "for-employers.html": {
-    "hash": "c50168e5d732027ca64760b285a97529866f8e7c86336cf94bd749d85ec77072",
-    "lastmod": "2026-10-23"
+    "hash": "1096aa57c80a73a255a46b3c3c6264e2bde59dce58397d1b8f8eeb997a174437",
+    "lastmod": "2026-10-25"
   },
   "privacy.html": {
-    "hash": "14f6535f9c29d04108cbfed1e9ca45432ea81d77c47c84307357ce305b3ba0bc",
-    "lastmod": "2026-10-23"
+    "hash": "cdeec97d64416404349d9783a3d8770eb6bebad4c40afc67f4e6c66aa2c24e81",
+    "lastmod": "2026-10-25"
   },
   "terms.html": {
-    "hash": "1c35ee80f763e8eb78b307af48ee1675f681361d13dc470032d1cb43531c9bdf",
-    "lastmod": "2026-10-23"
+    "hash": "f9e369ca602b3b31e82ea3a3bf3bfef310df55596aa55606a314bf85f8558e62",
+    "lastmod": "2026-10-25"
   },
   "roles.html": {
-    "hash": "588953cbb1cbbd39729ed6bda83c145ec8f3bb44b4a6251793c92b1e9476b5fa",
-    "lastmod": "2026-10-23"
+    "hash": "0d938207093fb4f238de74e8be4ba4cb027eb21e5594e8669882a6aca5677efc",
+    "lastmod": "2026-10-25"
   },
   "remote.html": {
-    "hash": "c6d582173ae580407de1bff09ee5492ed3caa8aef33d244554b8b63f9b834b20",
-    "lastmod": "2026-10-23"
+    "hash": "4bc8ab35eac2482a8d7cf3eda396f09143e4ba1f847b23f872ce1e2a85cf575a",
+    "lastmod": "2026-10-25"
   },
   "locations.html": {
-    "hash": "47316abfe5341c3bc656a6c20be3429b2366b2a4e3809a368882a37902128517",
-    "lastmod": "2026-10-23"
+    "hash": "9a2c81f637e397b1e5c44ad4ea8af0a8d3cc5fa4b28b510cdf75ed34f46ca5c9",
+    "lastmod": "2026-10-25"
   },
   "become-a-public-adjuster.html": {
-    "hash": "e89a0b0d5f5b79ef9f2ea6c9711d254aa46e90eefa5f6d178527309dc3e4be01",
-    "lastmod": "2026-10-23"
+    "hash": "0233f9198e57a4823ac8d524228a3eeeb36a25c138b099764e846030dc269a45",
+    "lastmod": "2026-10-25"
   },
   "pricing.html": {
-    "hash": "4a4932f715222c9c9c4aadaab354542f4f16586d9843d8b3a20a76ad499b74bb",
-    "lastmod": "2026-10-23"
+    "hash": "7aca65c4d1d2efa096bf5e13efd595bd7b0dcb29d1a72324fee3c12328f47c93",
+    "lastmod": "2026-10-25"
   },
   "companies.html": {
-    "hash": "44a9b77226211b8a9b8cdc337523a4e3f8aaa2ce13e6e54bd691c42d0f0f060e",
-    "lastmod": "2026-10-23"
+    "hash": "4bf19773de62b2e1c162ecc17d56c7b55d27d2e9837ff278f0ba61082b964ba1",
+    "lastmod": "2026-10-25"
   },
   "resources.html": {
-    "hash": "035ba005159ffa622a15a632a9663e932acaeeec2a61cc10a00b6ac33195503e",
-    "lastmod": "2026-10-23"
+    "hash": "e4454c8fe5bfd28aca961b2fa39cf544dea6750dabb3907c42c8573f1dee9049",
+    "lastmod": "2026-10-25"
   },
   "statistics.html": {
-    "hash": "06c93b34db7617100c639a258a2eba27beac4bba7eb3a6d80b8b18ba3c9d01a9",
-    "lastmod": "2026-10-23"
+    "hash": "b487bba72becc21260653f23559a62c97e97291600a692e71a26177f7d98e870",
+    "lastmod": "2026-10-25"
   },
   "salaries.html": {
-    "hash": "6c8940a72c517cde47521ad31aa520cbecac18a45fcd73bb00fda3a87bb5a4d1",
-    "lastmod": "2026-10-23"
+    "hash": "2670b78fbee72ce3ca37e8e2af3dc523ec2238db2f3bb52175f0108bd8c8b589",
+    "lastmod": "2026-10-25"
   },
   "press.html": {
-    "hash": "06dfed80ef0c772cb2c99611ea6f909fcf88850720fb34a0e19872f73deeb240",
-    "lastmod": "2026-10-23"
+    "hash": "f4118cb58939429a13bac9349e971a1b48f18c02d1dd4ce7a7c01f67aa91a247",
+    "lastmod": "2026-10-25"
   },
   "locations/fl.html": {
-    "hash": "87d185905cc4ab53bace11dc43dca6e40ade89100d565866706fd6844989a59d",
-    "lastmod": "2026-10-23"
+    "hash": "3be20dc9d99b21ed8ecc6a9c9b2e8b560b1b0dbf84d7b7807e8ad2a938de91c5",
+    "lastmod": "2026-10-25"
   },
   "locations/tx.html": {
-    "hash": "b9bbf2d5cfc6e6bf90430063fe5e93f3e252811a99337cc490bf1373c432aa0b",
-    "lastmod": "2026-10-23"
+    "hash": "4304266823deb0dc18729a0f1d7aedf7f4bf0cf3c86198190708497f759e7f26",
+    "lastmod": "2026-10-25"
   },
   "locations/ca.html": {
-    "hash": "aaa24b273ad19cf65b022a9f52207248d5030b19ceb68d1f27d769c01300f741",
-    "lastmod": "2026-10-23"
+    "hash": "c02ebc5ab0678cfc346e7e92ab467d511df8e8454ceaca1cf392f2bf5fc4a641",
+    "lastmod": "2026-10-25"
   },
   "locations/la.html": {
-    "hash": "0bf70b010a17b2d8162caba85501edad03983602fa7c6e279775fc6b4454f64e",
-    "lastmod": "2026-10-23"
+    "hash": "c374160b988b248449bc6e979a9657cfcfda311a2101807c850cc8cbdf01fc22",
+    "lastmod": "2026-10-25"
   },
   "locations/ny.html": {
-    "hash": "63047d72cace88a5fc1324bd5e79f2828d7ea1faab9a67b6f76da1f882a97471",
-    "lastmod": "2026-10-23"
+    "hash": "788c8d96e188bc0f2f511738dcf657d902e30ff520ba24a0241f325cc7b602bb",
+    "lastmod": "2026-10-25"
   },
   "locations/ga.html": {
-    "hash": "eaaa18841da7f05035075d605047409b61f0f7cbb51d827f18a8a19ae652bd18",
-    "lastmod": "2026-10-23"
+    "hash": "e53a1536644cb850ffabb6913c0abcd17d54b47280e28dba5711a7732a079c91",
+    "lastmod": "2026-10-25"
   },
   "locations/nc.html": {
-    "hash": "9e5cb01c70191655922a8dd83398fef6f035f2090393c8786a76384ba31c84ca",
-    "lastmod": "2026-10-23"
+    "hash": "0de546fb2229aef62094e2120402e7dda1458ae6c424da8680e2eb7414face6e",
+    "lastmod": "2026-10-25"
   },
   "locations/co.html": {
-    "hash": "93296a99c22a9070b750a6f63aa73655931a6eda53206f544c7e86deb8924411",
-    "lastmod": "2026-10-23"
+    "hash": "bc7373ec89c6735f5c1ad7138d8bab961a5b85b48fb2e39fa9cd66d3a69f5d0b",
+    "lastmod": "2026-10-25"
   },
   "locations/az.html": {
-    "hash": "7d0bdeab784a35df103441b385489510a7e78f89eb164d7407aa4fdd286d562b",
-    "lastmod": "2026-10-23"
+    "hash": "d367fa8971907e7c298eb9df8ac1739beebf0c53ffb80ae817ecdf54ea0c80b9",
+    "lastmod": "2026-10-25"
   },
   "locations/il.html": {
-    "hash": "b0d9fa9fc7f3bb38dfb0383c895d34326d153b7a39b08cc6b8dac4bf7811389f",
-    "lastmod": "2026-10-23"
+    "hash": "a2db05f3cf17c5891e6c6018443ff87f7ace49515256cade77c34664e3c702b4",
+    "lastmod": "2026-10-25"
   },
   "locations/nationwide.html": {
-    "hash": "5f591210ff1bfd122019cd552d89e251941dd24e524d73565ea91c23b13c7ef0",
-    "lastmod": "2026-10-23"
+    "hash": "9cc9a3da4cddc33755a180f86d521e6e34a364bd654488e2c7361ac882fe12ff",
+    "lastmod": "2026-10-25"
+  },
+  "sponsor.html": {
+    "hash": "a99b858e0ec77b657b9c45a37cbcc109493f1c50940c7fc4274868a1ae6b7bf8",
+    "lastmod": "2026-10-25"
   }
 }

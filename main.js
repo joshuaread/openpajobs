@@ -300,6 +300,16 @@
       track("featured_click", pageJobParams());
       return;
     }
+    var slotEl = a.closest("[data-sponsor-slot]");
+    if (slotEl) {
+      var slot = slotEl.getAttribute("data-sponsor-slot");
+      if (a.classList.contains("sponsor-link")) {
+        track("sponsor_click", { slot: slot, sponsor: a.getAttribute("data-sponsor"), transport_type: "beacon" });
+      } else if (a.classList.contains("sponsor-open")) {
+        track("sponsor_cta_click", { slot: slot });
+      }
+      return;
+    }
     var inApplyBar = a.closest(".job-apply-bar") && a.classList.contains("btn-primary");
     var inSourceLink = a.closest(".job-body-prose");
     if ((inApplyBar || inSourceLink) && isOutbound(a)) {
@@ -384,6 +394,30 @@
     var end = new Date(el.getAttribute("data-featured-until"));
     if (isNaN(end.getTime()) || Date.now() > end.getTime()) el.hidden = true;
   });
+  // Sponsor windows are re-checked in the browser so a slot starts/ends on the right day without a rebuild.
+  document.querySelectorAll("[data-sponsor-start]").forEach(function (el) {
+    var start = Date.parse(el.getAttribute("data-sponsor-start") + "T00:00:00Z");
+    var endAttr = el.getAttribute("data-sponsor-end");
+    var end = endAttr ? Date.parse(endAttr + "T23:59:59Z") : Infinity;
+    var live = !isNaN(start) && Date.now() >= start && Date.now() <= end;
+    var body = el.querySelector(".sponsor-body");
+    var open = el.querySelector(".sponsor-open");
+    if (body) body.hidden = !live;
+    if (open) open.hidden = live;
+  });
+  // sponsor.html: refresh build-time counts from the live feed (same numbers the board shows).
+  if (document.querySelector("[data-live-stat]")) {
+    fetch("/jobs.active.json", { cache: "no-store" }).then(function (r) { return r.ok ? r.json() : null; }).then(function (jobs) {
+      if (!Array.isArray(jobs) || !jobs.length) return;
+      var firms = {};
+      jobs.forEach(function (j) { var c = String(j.company || "").trim().toLowerCase(); if (c) firms[c] = 1; });
+      var vals = { listings: jobs.length, firms: Object.keys(firms).length };
+      document.querySelectorAll("[data-live-stat]").forEach(function (el) {
+        var k = el.getAttribute("data-live-stat");
+        if (vals[k] !== undefined) el.textContent = String(vals[k]);
+      });
+    }).catch(function () {});
+  }
   if (document.querySelector("[data-job-id]")) track("listing_view", pageJobParams());
   if (document.querySelector('[data-ga-event="featured_purchase"]')) {
     var sent = false;
