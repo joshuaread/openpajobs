@@ -1,7 +1,7 @@
 {
   "buildDate": "2026-10-26",
-  "total": 89,
-  "active": 78,
+  "total": 96,
+  "active": 85,
   "droppedExpired": [
     "metro-apprentice",
     "coastal-ctg",
@@ -78,7 +78,12 @@
     "allied-claims-operations-manager-systems-ai",
     "metro-claims-rep-618275-ct",
     "metro-pa-trainee-596930-mo",
-    "rockwall-licensed-pa-austin-tx"
+    "rockwall-licensed-pa-austin-tx",
+    "metro-pa-trainee-596930-ok",
+    "metro-pa-trainee-596930-nv",
+    "justclaims-sr-licensed-pa-california",
+    "justclaims-sr-licensed-pa-texas",
+    "justclaims-sr-licensed-pa-florida"
   ],
   "jsonLdSkipped": {
     "founding-placeholder": "internal/placeholder listing (no external job), not a JobPosting",
@@ -95,7 +100,9 @@
     "icrs-pa-estimator-office-texas": "multi-listing pointer (type Various), not a single job — Google policy",
     "crossroads-ira-houston-open-applications": "multi-listing pointer (type Various), not a single job — Google policy",
     "gavnat-licensed-public-adjuster-or-license-candidate": "missing required: location(jobLocation/applicantLocationRequirements)",
-    "claim-concepts-public-adjuster-fl-ga-sc": "multi-listing pointer (type Various), not a single job — Google policy"
+    "claim-concepts-public-adjuster-fl-ga-sc": "multi-listing pointer (type Various), not a single job — Google policy",
+    "allied-people-operations-director": "multi-listing pointer (type Various), not a single job — Google policy",
+    "american-financial-claims-pa-trainee-miami": "multi-listing pointer (type Various), not a single job — Google policy"
   },
   "defaultedValidThrough": [
     {
@@ -236,11 +243,14 @@
     "allied-claims-operations-manager-systems-ai": "ok",
     "metro-claims-rep-618275-ct": "ok",
     "metro-pa-trainee-596930-mo": "ok",
-    "rockwall-licensed-pa-austin-tx": "ok"
+    "rockwall-licensed-pa-austin-tx": "ok",
+    "metro-pa-trainee-596930-ok": "ok",
+    "metro-pa-trainee-596930-nv": "ok",
+    "justclaims-sr-licensed-pa-california": "ok",
+    "justclaims-sr-licensed-pa-texas": "ok",
+    "justclaims-sr-licensed-pa-florida": "ok"
   },
-  "removedPages": [
-    "jobs/metro-apprentice.html"
-  ],
+  "removedPages": [],
   "featuredNow": [],
   "featuredProblems": {},
   "sponsorProblems": {},
@@ -251,11 +261,11 @@
     "rockwall-houston": "rockwall-licensed-pa-houston-tx"
   },
   "sponsorStats": {
-    "listings": 78,
-    "firms": 30,
-    "remote": 20,
-    "florida": 12,
-    "texas": 11
+    "listings": 85,
+    "firms": 32,
+    "remote": 23,
+    "florida": 14,
+    "texas": 12
   },
   "statePages": [
     {
@@ -264,7 +274,7 @@
     },
     {
       "url": "/jobs/california/",
-      "listings": 7
+      "listings": 9
     },
     {
       "url": "/jobs/colorado/",
@@ -272,7 +282,7 @@
     },
     {
       "url": "/jobs/florida/",
-      "listings": 12
+      "listings": 14
     },
     {
       "url": "/jobs/georgia/",
@@ -303,6 +313,10 @@
       "listings": 1
     },
     {
+      "url": "/jobs/nevada/",
+      "listings": 1
+    },
+    {
       "url": "/jobs/new-jersey/",
       "listings": 3
     },
@@ -323,6 +337,10 @@
       "listings": 1
     },
     {
+      "url": "/jobs/oklahoma/",
+      "listings": 1
+    },
+    {
       "url": "/jobs/pennsylvania/",
       "listings": 8
     },
@@ -340,7 +358,7 @@
     },
     {
       "url": "/jobs/texas/",
-      "listings": 11
+      "listings": 12
     },
     {
       "url": "/jobs/washington/",
@@ -356,15 +374,15 @@
     },
     {
       "url": "/jobs/remote/",
-      "listings": 20
+      "listings": 23
     }
   ],
   "locationOptions": [
-    "remote:20",
+    "remote:23",
     "AZ:2",
-    "CA:7",
+    "CA:9",
     "CO:5",
-    "FL:12",
+    "FL:14",
     "GA:1",
     "IA:1",
     "KY:1",
@@ -372,19 +390,21 @@
     "MN:2",
     "MO:4",
     "NE:1",
+    "NV:1",
     "NJ:3",
     "NY:7",
     "NC:1",
     "ND:1",
     "OH:1",
+    "OK:1",
     "PA:8",
     "SC:3",
     "SD:1",
     "TN:1",
-    "TX:11",
+    "TX:12",
     "WA:2",
     "WV:2",
     "WI:2"
   ],
-  "sitemapUrls": 131
+  "sitemapUrls": 140
 }
