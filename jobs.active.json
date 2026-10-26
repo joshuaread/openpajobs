@@ -21,36 +21,6 @@
     "logo": "/logos/open-pa-jobs.svg"
   },
   {
-    "id": "metro-apprentice",
-    "title": "Public Adjuster Apprentice",
-    "company": "Metro Public Adjustment",
-    "location": "PA / NJ / WV / SC / MD",
-    "type": "Apprentice",
-    "posted": "2026-09-25",
-    "tags": [
-      "apprentice",
-      "commission",
-      "training"
-    ],
-    "url": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4363398009",
-    "blurb": "Entry path with training provided. Commission-based; select Mid-Atlantic states.",
-    "applyUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4363398009",
-    "description": [
-      "Metro Public Adjustment is hiring Public Adjuster Apprentices for select Mid-Atlantic states (PA, NJ, WV, SC, MD).",
-      "This is an entry path with training provided. Compensation is commission-based. Expect mentorship on inspections, estimating, and file work under licensed adjusters.",
-      "Full requirements and apply steps are on the employer Greenhouse posting. Use Apply below to open their official listing."
-    ],
-    "logo": "/logos/metro.svg",
-    "salary": "$45k – $75k OTE",
-    "locs": [
-      "MD",
-      "NJ",
-      "PA",
-      "SC",
-      "WV"
-    ]
-  },
-  {
     "id": "metro-apprentice-249388",
     "title": "Public Adjuster Apprentice",
     "company": "Metro Public Adjustment",
