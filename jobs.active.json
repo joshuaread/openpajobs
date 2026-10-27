@@ -1,26 +1,5 @@
 [
   {
-    "id": "founding-placeholder",
-    "title": "Your firm here — founding free post",
-    "company": "Open PA Jobs",
-    "location": "Nationwide",
-    "type": "Founding",
-    "posted": "2026-09-26",
-    "tags": [
-      "founding",
-      "free-post"
-    ],
-    "url": "/post.html",
-    "blurb": "PA firms: request a free founding listing while we open the board. No card required.",
-    "applyUrl": "/post.html",
-    "description": [
-      "Open PA Jobs is opening with a short founding window: PA firms can request a free listing while we build the board.",
-      "Tell us the role, location, and apply link. We review submissions and publish when they fit the public-adjuster focus — licensed desks, apprentices, and related PA-firm roles.",
-      "No payment is required for founding posts. To pin a listing to the top of the board with a Featured badge, use the Feature your listing button — $49 for 30 days."
-    ],
-    "logo": "/logos/open-pa-jobs.svg"
-  },
-  {
     "id": "metro-apprentice-249388",
     "title": "Public Adjuster Apprentice",
     "company": "Metro Public Adjustment",

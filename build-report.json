@@ -1,8 +1,9 @@
 {
-  "buildDate": "2026-10-26",
+  "buildDate": "2026-10-27",
   "total": 96,
-  "active": 85,
+  "active": 84,
   "droppedExpired": [
+    "founding-placeholder",
     "metro-apprentice",
     "coastal-ctg",
     "aaa-pa",
@@ -86,7 +87,6 @@
     "justclaims-sr-licensed-pa-florida"
   ],
   "jsonLdSkipped": {
-    "founding-placeholder": "internal/placeholder listing (no external job), not a JobPosting",
     "noble-field-pa-sales": "jsonld:false on record",
     "noble-estimator-1099": "jsonld:false on record",
     "avalo-pa-1099": "jsonld:false on record",
@@ -250,7 +250,9 @@
     "justclaims-sr-licensed-pa-texas": "ok",
     "justclaims-sr-licensed-pa-florida": "ok"
   },
-  "removedPages": [],
+  "removedPages": [
+    "jobs/founding-placeholder.html"
+  ],
   "featuredNow": [],
   "featuredProblems": {},
   "sponsorProblems": {},
@@ -261,8 +263,8 @@
     "rockwall-houston": "rockwall-licensed-pa-houston-tx"
   },
   "sponsorStats": {
-    "listings": 85,
-    "firms": 32,
+    "listings": 84,
+    "firms": 31,
     "remote": 23,
     "florida": 14,
     "texas": 12
