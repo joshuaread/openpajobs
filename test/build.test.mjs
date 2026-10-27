@@ -5,7 +5,7 @@ import os from "node:os";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { build } from "../scripts/build.mjs";
-import { mergeInbox, validateRecord } from "../scripts/merge-inbox.mjs";
+import { mergeInbox, mergeRecords, validateRecord, normUrl } from "../scripts/merge-inbox.mjs";
 import { buildJsonLd, extractJsonLd, checkGoogleJobPosting, safeJson, resolveValidThrough } from "../scripts/lib/jobs.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -301,4 +301,28 @@ test("home Location filter: options from active listings (Remote first, states A
   // idempotent: a second build doesn't duplicate the select
   build({ root: dir, now: NOW, log: quiet });
   assert.equal((fs.readFileSync(path.join(dir, "index.html"), "utf8").match(/id="filter-loc"/g) || []).length, 1);
+});
+
+test("merge: same posting URL + company + city + title under a new id is skipped; shared careers URLs are not", () => {
+  const base = (o) => ({ company: "Acme PA", type: "Licensed PA", posted: "2026-10-10", validThrough: "2026-12-31",
+    description: ["x"], applyUrl: o.sourceUrl, ...o });
+  const existing = [
+    base({ id: "acme-pa-tampa", title: "Licensed Public Adjuster – Tampa", location: "Tampa, FL (hybrid)", sourceUrl: "https://acme.bamboohr.com/careers/27" }),
+    base({ id: "acme-pa-dallas", title: "Licensed Public Adjuster", location: "Dallas, TX", sourceUrl: "https://acme.com/careers" }),
+  ];
+  const incoming = [
+    // same job, new id, tracking param, reworded title/location -> skip
+    base({ id: "acme-tampa-new", title: "Licensed Public Adjuster - Tampa, FL", location: "Tampa, FL", sourceUrl: "https://www.acme.bamboohr.com/careers/27/?utm_source=x&source=li" }),
+    // shared generic careers URL, different city -> add
+    base({ id: "acme-pa-austin", title: "Licensed Public Adjuster", location: "Austin, TX", sourceUrl: "https://acme.com/careers" }),
+    // shared careers URL, same city, different role -> add
+    base({ id: "acme-estimator-dallas", title: "Estimator", location: "Dallas, TX", sourceUrl: "https://acme.com/careers" }),
+    // same company + city, different URL -> add but flag
+    base({ id: "acme-tampa-contact", title: "Licensed Public Adjuster — Tampa, FL", location: "Tampa, FL", sourceUrl: "https://acme.com/contact/" }),
+  ];
+  const r = mergeRecords(existing, incoming, NOW);
+  assert.deepEqual(r.urlDuplicates.map((d) => [d.id, d.matches]), [["acme-tampa-new", "acme-pa-tampa"]]);
+  assert.deepEqual(r.added, ["acme-pa-austin", "acme-estimator-dallas", "acme-tampa-contact"]);
+  assert.ok(r.likelyDuplicates.some((d) => d.id === "acme-tampa-contact" && d.matches === "acme-pa-tampa"));
+  assert.equal(normUrl("https://x.com/jobs?id=5&utm_campaign=a"), "x.com/jobs?id=5");
 });

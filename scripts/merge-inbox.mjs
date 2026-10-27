@@ -4,7 +4,10 @@
 // Inbox file = JSON array of records (jobs.json fields + validThrough + sourceUrl).
 // - invalid records are rejected with reasons (not merged)
 // - same id as an existing/earlier record -> skipped as duplicate
-// - same normalized title+company+location under a different id -> merged but FLAGGED as likely duplicate
+// - same posting URL (sourceUrl/applyUrl/url, tracking params ignored) + same company + same city + same title
+//   (place words ignored) as an existing record (live OR expired) under a different id -> skipped as duplicate (urlDuplicates)
+// - same normalized title+company+location, or same company+city with a different URL, under a different id
+//   -> merged but FLAGGED as likely duplicate
 // - processed files move to inbox/processed/ with a <file>.report.json next to them
 // - unparseable files move to inbox/rejected/
 // NEVER pushes. The publish step at the bottom is disabled unless OPJ_PUBLISH=1 AND you uncomment it.
@@ -20,6 +23,26 @@ const isHttpUrl = (s) => { try { const u = new URL(s); return u.protocol === "ht
 const nonEmpty = (s) => typeof s === "string" && s.trim().length > 0;
 const norm = (s) => String(s || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
 export const dupKey = (j) => [j.title, j.company, j.location].map(norm).join("|");
+// Tracking params that never identify a different job (others, e.g. ?jobId=, are kept).
+const TRACKING = /^(utm_.*|source|src|ref|refid|referrer|trk|trackingid|gh_src|lever-source|lever-origin|fbclid|gclid|mc_cid|mc_eid)$/i;
+export function normUrl(s) {
+  try {
+    const u = new URL(s);
+    u.hash = "";
+    const q = [...u.searchParams].filter(([k]) => !TRACKING.test(k)).sort(([a], [b]) => a.localeCompare(b));
+    const qs = q.length ? "?" + new URLSearchParams(q).toString() : "";
+    return (u.host.replace(/^www\./, "") + u.pathname).toLowerCase().replace(/\/+$/, "") + qs;
+  } catch { return ""; }
+}
+// "Tampa, FL (hybrid)" / "Tampa, FL" / "Austin, TX area" -> "tampa"
+export const cityKey = (loc) => norm(String(loc || "").split(/[,(/]/)[0].replace(/\b(area|greater|metro|hybrid|remote)\b/gi, ""));
+const STATE_WORDS = new Set("alabama alaska arizona arkansas california colorado connecticut delaware florida georgia hawaii idaho illinois indiana iowa kansas kentucky louisiana maine maryland massachusetts michigan minnesota mississippi missouri montana nebraska nevada new hampshire jersey mexico york north carolina dakota ohio oklahoma oregon pennsylvania rhode island south tennessee texas utah vermont virginia washington west wisconsin wyoming al ak az ar ca co ct de fl ga hi id il in ia ks ky la me md ma mi mn ms mo mt ne nv nh nj nm ny nc nd oh ok or pa ri sc sd tn tx ut vt va wa wv wi wy".split(" "));
+// Title minus place words: "Licensed Public Adjuster – Destin, FL" -> "licensed public adjuster"
+export const titleCore = (j) => {
+  const place = new Set(norm(j.location).split(" "));
+  return norm(j.title).split(" ").filter((w) => w && !place.has(w) && !STATE_WORDS.has(w)).join(" ");
+};
+const urlsOf = (j) => [...new Set([j.sourceUrl, j.applyUrl, j.url].filter(Boolean).map(normUrl).filter(Boolean))];
 
 export function validateRecord(r, now) {
   const e = [];
@@ -48,17 +71,32 @@ export function validateRecord(r, now) {
 export function mergeRecords(existing, incoming, now) {
   const ids = new Set(existing.map((j) => j.id));
   const keys = new Map(existing.map((j) => [dupKey(j), j.id]));
-  const added = [], rejected = [], duplicates = [], likelyDuplicates = [];
+  const byUrl = new Map(); // normUrl -> [records]
+  const byCompanyCity = new Map(); // company|city -> id
+  const index = (j) => {
+    for (const u of urlsOf(j)) byUrl.set(u, [...(byUrl.get(u) || []), j]);
+    const cc = norm(j.company) + "|" + cityKey(j.location);
+    if (!byCompanyCity.has(cc)) byCompanyCity.set(cc, j.id);
+  };
+  existing.forEach(index);
+  const added = [], rejected = [], duplicates = [], urlDuplicates = [], likelyDuplicates = [];
   incoming.forEach((r, i) => {
     const errs = validateRecord(r, now);
     if (errs.length) return rejected.push({ index: i, id: r?.id ?? null, reasons: errs });
     if (ids.has(r.id)) return duplicates.push({ index: i, id: r.id });
+    // Same posting URL + same company + same city + same title = the same job under a new id.
+    // (Generic URLs like a firm's /careers or /contact page are shared by different jobs, so URL alone isn't enough.)
+    const sameJob = urlsOf(r).flatMap((u) => byUrl.get(u) || []).find((j) =>
+      norm(j.company) === norm(r.company) && cityKey(j.location) === cityKey(r.location) && titleCore(j) === titleCore(r));
+    if (sameJob) return urlDuplicates.push({ index: i, id: r.id, matches: sameJob.id });
     const k = dupKey(r);
+    const cc = norm(r.company) + "|" + cityKey(r.location);
     if (keys.has(k)) likelyDuplicates.push({ id: r.id, matches: keys.get(k), key: k });
+    else if (cityKey(r.location) && byCompanyCity.has(cc)) likelyDuplicates.push({ id: r.id, matches: byCompanyCity.get(cc), key: cc });
     const rec = { ...r, url: r.url || r.applyUrl };
-    added.push(rec); ids.add(r.id); keys.set(k, r.id);
+    added.push(rec); ids.add(r.id); keys.set(k, r.id); index(rec);
   });
-  return { jobs: [...existing, ...added], added: added.map((a) => a.id), rejected, duplicates, likelyDuplicates };
+  return { jobs: [...existing, ...added], added: added.map((a) => a.id), rejected, duplicates, urlDuplicates, likelyDuplicates };
 }
 
 export function mergeInbox({ root, now = new Date(), runBuild = true, log = console.log } = {}) {
@@ -86,11 +124,12 @@ export function mergeInbox({ root, now = new Date(), runBuild = true, log = cons
     }
     const res = mergeRecords(jobs, data, now);
     jobs = res.jobs;
-    const rep = { file: f, added: res.added, duplicates: res.duplicates, likelyDuplicates: res.likelyDuplicates, rejected: res.rejected };
+    const rep = { file: f, added: res.added, duplicates: res.duplicates, urlDuplicates: res.urlDuplicates, likelyDuplicates: res.likelyDuplicates, rejected: res.rejected };
     for (const r of res.rejected) log(`REJECT ${f}[${r.index}] ${r.id}: ${r.reasons.join("; ")}`);
     for (const d of res.duplicates) log(`SKIP duplicate id ${d.id} (${f}[${d.index}])`);
+    for (const d of res.urlDuplicates) log(`SKIP duplicate posting URL ${d.id} = ${d.matches} (${f}[${d.index}])`);
     for (const d of res.likelyDuplicates) log(`FLAG likely duplicate ${d.id} ~ ${d.matches}`);
-    log(`${f}: added ${res.added.length}, dup ${res.duplicates.length}, flagged ${res.likelyDuplicates.length}, rejected ${res.rejected.length}`);
+    log(`${f}: added ${res.added.length}, dup ${res.duplicates.length + res.urlDuplicates.length}, flagged ${res.likelyDuplicates.length}, rejected ${res.rejected.length}`);
     fs.writeFileSync(jobsPath, JSON.stringify(jobs, null, 2) + "\n"); // write before moving the file
     fs.renameSync(src, path.join(processed, f));
     fs.writeFileSync(path.join(processed, f.replace(/\.json$/, ".report.json")), JSON.stringify(rep, null, 2) + "\n");
