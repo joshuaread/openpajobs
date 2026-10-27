@@ -1,7 +1,7 @@
 {
   "buildDate": "2026-10-27",
-  "total": 96,
-  "active": 84,
+  "total": 104,
+  "active": 92,
   "droppedExpired": [
     "founding-placeholder",
     "metro-apprentice",
@@ -84,7 +84,15 @@
     "metro-pa-trainee-596930-nv",
     "justclaims-sr-licensed-pa-california",
     "justclaims-sr-licensed-pa-texas",
-    "justclaims-sr-licensed-pa-florida"
+    "justclaims-sr-licensed-pa-florida",
+    "metro-pa-trainee-596930-oh",
+    "metro-pa-trainee-596930-va",
+    "metro-claims-rep-631580-ca",
+    "metro-claims-rep-592977-nj",
+    "metro-remote-claims-rep-630810-ri",
+    "metro-claims-writer-598753-pueblo-co",
+    "metro-claims-writer-598753-nj",
+    "metro-pa-apprentice-249388-bensalem-1025"
   ],
   "jsonLdSkipped": {
     "noble-field-pa-sales": "jsonld:false on record",
@@ -248,11 +256,17 @@
     "metro-pa-trainee-596930-nv": "ok",
     "justclaims-sr-licensed-pa-california": "ok",
     "justclaims-sr-licensed-pa-texas": "ok",
-    "justclaims-sr-licensed-pa-florida": "ok"
+    "justclaims-sr-licensed-pa-florida": "ok",
+    "metro-pa-trainee-596930-oh": "ok",
+    "metro-pa-trainee-596930-va": "ok",
+    "metro-claims-rep-631580-ca": "ok",
+    "metro-claims-rep-592977-nj": "ok",
+    "metro-remote-claims-rep-630810-ri": "ok",
+    "metro-claims-writer-598753-pueblo-co": "ok",
+    "metro-claims-writer-598753-nj": "ok",
+    "metro-pa-apprentice-249388-bensalem-1025": "ok"
   },
-  "removedPages": [
-    "jobs/founding-placeholder.html"
-  ],
+  "removedPages": [],
   "featuredNow": [],
   "featuredProblems": {},
   "sponsorProblems": {},
@@ -263,9 +277,9 @@
     "rockwall-houston": "rockwall-licensed-pa-houston-tx"
   },
   "sponsorStats": {
-    "listings": 84,
+    "listings": 92,
     "firms": 31,
-    "remote": 23,
+    "remote": 28,
     "florida": 14,
     "texas": 12
   },
@@ -276,11 +290,11 @@
     },
     {
       "url": "/jobs/california/",
-      "listings": 9
+      "listings": 10
     },
     {
       "url": "/jobs/colorado/",
-      "listings": 5
+      "listings": 6
     },
     {
       "url": "/jobs/florida/",
@@ -320,7 +334,7 @@
     },
     {
       "url": "/jobs/new-jersey/",
-      "listings": 3
+      "listings": 5
     },
     {
       "url": "/jobs/new-york/",
@@ -336,7 +350,7 @@
     },
     {
       "url": "/jobs/ohio/",
-      "listings": 1
+      "listings": 2
     },
     {
       "url": "/jobs/oklahoma/",
@@ -344,7 +358,11 @@
     },
     {
       "url": "/jobs/pennsylvania/",
-      "listings": 8
+      "listings": 9
+    },
+    {
+      "url": "/jobs/rhode-island/",
+      "listings": 1
     },
     {
       "url": "/jobs/south-carolina/",
@@ -363,6 +381,10 @@
       "listings": 12
     },
     {
+      "url": "/jobs/virginia/",
+      "listings": 1
+    },
+    {
       "url": "/jobs/washington/",
       "listings": 2
     },
@@ -376,14 +398,14 @@
     },
     {
       "url": "/jobs/remote/",
-      "listings": 23
+      "listings": 28
     }
   ],
   "locationOptions": [
-    "remote:23",
+    "remote:28",
     "AZ:2",
-    "CA:9",
-    "CO:5",
+    "CA:10",
+    "CO:6",
     "FL:14",
     "GA:1",
     "IA:1",
@@ -393,20 +415,22 @@
     "MO:4",
     "NE:1",
     "NV:1",
-    "NJ:3",
+    "NJ:5",
     "NY:7",
     "NC:1",
     "ND:1",
-    "OH:1",
+    "OH:2",
     "OK:1",
-    "PA:8",
+    "PA:9",
+    "RI:1",
     "SC:3",
     "SD:1",
     "TN:1",
     "TX:12",
+    "VA:1",
     "WA:2",
     "WV:2",
     "WI:2"
   ],
-  "sitemapUrls": 140
+  "sitemapUrls": 150
 }
