@@ -1,7 +1,7 @@
 {
   "buildDate": "2026-10-28",
-  "total": 104,
-  "active": 92,
+  "total": 110,
+  "active": 98,
   "droppedExpired": [
     "founding-placeholder",
     "metro-apprentice",
@@ -92,7 +92,13 @@
     "metro-remote-claims-rep-630810-ri",
     "metro-claims-writer-598753-pueblo-co",
     "metro-claims-writer-598753-nj",
-    "metro-pa-apprentice-249388-bensalem-1025"
+    "metro-pa-apprentice-249388-bensalem-1025",
+    "metro-pa-trainee-596930-in",
+    "metro-pa-trainee-596930-wi",
+    "metro-pa-trainee-596930-sd",
+    "metro-pa-trainee-596930-wv",
+    "sunpoint-sales-professional-idaho",
+    "sunpoint-sales-professional-oregon"
   ],
   "jsonLdSkipped": {
     "noble-field-pa-sales": "jsonld:false on record",
@@ -264,7 +270,13 @@
     "metro-remote-claims-rep-630810-ri": "ok",
     "metro-claims-writer-598753-pueblo-co": "ok",
     "metro-claims-writer-598753-nj": "ok",
-    "metro-pa-apprentice-249388-bensalem-1025": "ok"
+    "metro-pa-apprentice-249388-bensalem-1025": "ok",
+    "metro-pa-trainee-596930-in": "ok",
+    "metro-pa-trainee-596930-wi": "ok",
+    "metro-pa-trainee-596930-sd": "ok",
+    "metro-pa-trainee-596930-wv": "ok",
+    "sunpoint-sales-professional-idaho": "ok",
+    "sunpoint-sales-professional-oregon": "ok"
   },
   "removedPages": [],
   "featuredNow": [],
@@ -278,7 +290,7 @@
     "rockwall-houston": "rockwall-licensed-pa-houston-tx"
   },
   "sponsorStats": {
-    "listings": 92,
+    "listings": 98,
     "firms": 31,
     "remote": 28,
     "florida": 14,
@@ -303,6 +315,14 @@
     },
     {
       "url": "/jobs/georgia/",
+      "listings": 1
+    },
+    {
+      "url": "/jobs/idaho/",
+      "listings": 1
+    },
+    {
+      "url": "/jobs/indiana/",
       "listings": 1
     },
     {
@@ -358,6 +378,10 @@
       "listings": 1
     },
     {
+      "url": "/jobs/oregon/",
+      "listings": 1
+    },
+    {
       "url": "/jobs/pennsylvania/",
       "listings": 9
     },
@@ -371,7 +395,7 @@
     },
     {
       "url": "/jobs/south-dakota/",
-      "listings": 1
+      "listings": 2
     },
     {
       "url": "/jobs/tennessee/",
@@ -391,11 +415,11 @@
     },
     {
       "url": "/jobs/west-virginia/",
-      "listings": 2
+      "listings": 3
     },
     {
       "url": "/jobs/wisconsin/",
-      "listings": 2
+      "listings": 3
     },
     {
       "url": "/jobs/remote/",
@@ -409,6 +433,8 @@
     "CO:6",
     "FL:14",
     "GA:1",
+    "ID:1",
+    "IN:1",
     "IA:1",
     "KY:1",
     "MD:3",
@@ -422,16 +448,17 @@
     "ND:1",
     "OH:2",
     "OK:1",
+    "OR:1",
     "PA:9",
     "RI:1",
     "SC:3",
-    "SD:1",
+    "SD:2",
     "TN:1",
     "TX:12",
     "VA:1",
     "WA:2",
-    "WV:2",
-    "WI:2"
+    "WV:3",
+    "WI:3"
   ],
-  "sitemapUrls": 150
+  "sitemapUrls": 159
 }
