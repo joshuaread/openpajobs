@@ -1,7 +1,7 @@
 {
   "buildDate": "2026-10-29",
-  "total": 110,
-  "active": 98,
+  "total": 118,
+  "active": 106,
   "droppedExpired": [
     "founding-placeholder",
     "metro-apprentice",
@@ -98,7 +98,15 @@
     "metro-pa-trainee-596930-sd",
     "metro-pa-trainee-596930-wv",
     "sunpoint-sales-professional-idaho",
-    "sunpoint-sales-professional-oregon"
+    "sunpoint-sales-professional-oregon",
+    "metro-property-inspectors-629550-nj",
+    "metro-licensed-pa-612725-sc",
+    "metro-remote-claims-rep-613829-wi",
+    "metro-claims-rep-596355-scranton-pa",
+    "metro-pa-trainee-596930-pa",
+    "metro-pa-trainee-596930-nj",
+    "metro-pa-trainee-596930-nc",
+    "metro-pa-trainee-596930-md"
   ],
   "jsonLdSkipped": {
     "noble-field-pa-sales": "jsonld:false on record",
@@ -276,7 +284,15 @@
     "metro-pa-trainee-596930-sd": "ok",
     "metro-pa-trainee-596930-wv": "ok",
     "sunpoint-sales-professional-idaho": "ok",
-    "sunpoint-sales-professional-oregon": "ok"
+    "sunpoint-sales-professional-oregon": "ok",
+    "metro-property-inspectors-629550-nj": "ok",
+    "metro-licensed-pa-612725-sc": "ok",
+    "metro-remote-claims-rep-613829-wi": "ok",
+    "metro-claims-rep-596355-scranton-pa": "ok",
+    "metro-pa-trainee-596930-pa": "ok",
+    "metro-pa-trainee-596930-nj": "ok",
+    "metro-pa-trainee-596930-nc": "ok",
+    "metro-pa-trainee-596930-md": "ok"
   },
   "removedPages": [],
   "featuredNow": [],
@@ -290,9 +306,9 @@
     "rockwall-houston": "rockwall-licensed-pa-houston-tx"
   },
   "sponsorStats": {
-    "listings": 98,
+    "listings": 106,
     "firms": 31,
-    "remote": 28,
+    "remote": 29,
     "florida": 14,
     "texas": 12
   },
@@ -335,7 +351,7 @@
     },
     {
       "url": "/jobs/maryland/",
-      "listings": 3
+      "listings": 4
     },
     {
       "url": "/jobs/minnesota/",
@@ -355,7 +371,7 @@
     },
     {
       "url": "/jobs/new-jersey/",
-      "listings": 5
+      "listings": 7
     },
     {
       "url": "/jobs/new-york/",
@@ -363,7 +379,7 @@
     },
     {
       "url": "/jobs/north-carolina/",
-      "listings": 1
+      "listings": 2
     },
     {
       "url": "/jobs/north-dakota/",
@@ -383,7 +399,7 @@
     },
     {
       "url": "/jobs/pennsylvania/",
-      "listings": 9
+      "listings": 11
     },
     {
       "url": "/jobs/rhode-island/",
@@ -391,7 +407,7 @@
     },
     {
       "url": "/jobs/south-carolina/",
-      "listings": 3
+      "listings": 4
     },
     {
       "url": "/jobs/south-dakota/",
@@ -419,15 +435,15 @@
     },
     {
       "url": "/jobs/wisconsin/",
-      "listings": 3
+      "listings": 4
     },
     {
       "url": "/jobs/remote/",
-      "listings": 28
+      "listings": 29
     }
   ],
   "locationOptions": [
-    "remote:28",
+    "remote:29",
     "AZ:2",
     "CA:10",
     "CO:6",
@@ -437,28 +453,28 @@
     "IN:1",
     "IA:1",
     "KY:1",
-    "MD:3",
+    "MD:4",
     "MN:2",
     "MO:4",
     "NE:1",
     "NV:1",
-    "NJ:5",
+    "NJ:7",
     "NY:7",
-    "NC:1",
+    "NC:2",
     "ND:1",
     "OH:2",
     "OK:1",
     "OR:1",
-    "PA:9",
+    "PA:11",
     "RI:1",
-    "SC:3",
+    "SC:4",
     "SD:2",
     "TN:1",
     "TX:12",
     "VA:1",
     "WA:2",
     "WV:3",
-    "WI:3"
+    "WI:4"
   ],
-  "sitemapUrls": 159
+  "sitemapUrls": 167
 }
