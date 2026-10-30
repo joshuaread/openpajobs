@@ -1,7 +1,7 @@
 {
   "buildDate": "2026-10-30",
-  "total": 118,
-  "active": 106,
+  "total": 120,
+  "active": 108,
   "droppedExpired": [
     "founding-placeholder",
     "metro-apprentice",
@@ -106,7 +106,9 @@
     "metro-pa-trainee-596930-pa",
     "metro-pa-trainee-596930-nj",
     "metro-pa-trainee-596930-nc",
-    "metro-pa-trainee-596930-md"
+    "metro-pa-trainee-596930-md",
+    "metro-remote-claims-rep-630669-in",
+    "metro-remote-claims-writer-598753-allentown-pa"
   ],
   "jsonLdSkipped": {
     "noble-field-pa-sales": "jsonld:false on record",
@@ -292,7 +294,9 @@
     "metro-pa-trainee-596930-pa": "ok",
     "metro-pa-trainee-596930-nj": "ok",
     "metro-pa-trainee-596930-nc": "ok",
-    "metro-pa-trainee-596930-md": "ok"
+    "metro-pa-trainee-596930-md": "ok",
+    "metro-remote-claims-rep-630669-in": "ok",
+    "metro-remote-claims-writer-598753-allentown-pa": "ok"
   },
   "removedPages": [],
   "featuredNow": [],
@@ -306,9 +310,9 @@
     "rockwall-houston": "rockwall-licensed-pa-houston-tx"
   },
   "sponsorStats": {
-    "listings": 106,
+    "listings": 108,
     "firms": 31,
-    "remote": 29,
+    "remote": 31,
     "florida": 14,
     "texas": 12
   },
@@ -339,7 +343,7 @@
     },
     {
       "url": "/jobs/indiana/",
-      "listings": 1
+      "listings": 2
     },
     {
       "url": "/jobs/iowa/",
@@ -399,7 +403,7 @@
     },
     {
       "url": "/jobs/pennsylvania/",
-      "listings": 11
+      "listings": 12
     },
     {
       "url": "/jobs/rhode-island/",
@@ -439,18 +443,18 @@
     },
     {
       "url": "/jobs/remote/",
-      "listings": 29
+      "listings": 31
     }
   ],
   "locationOptions": [
-    "remote:29",
+    "remote:31",
     "AZ:2",
     "CA:10",
     "CO:6",
     "FL:14",
     "GA:1",
     "ID:1",
-    "IN:1",
+    "IN:2",
     "IA:1",
     "KY:1",
     "MD:4",
@@ -465,7 +469,7 @@
     "OH:2",
     "OK:1",
     "OR:1",
-    "PA:11",
+    "PA:12",
     "RI:1",
     "SC:4",
     "SD:2",
@@ -476,5 +480,5 @@
     "WV:3",
     "WI:4"
   ],
-  "sitemapUrls": 167
+  "sitemapUrls": 169
 }
