@@ -1,7 +1,7 @@
 {
   "buildDate": "2026-11-05",
-  "total": 122,
-  "active": 101,
+  "total": 127,
+  "active": 106,
   "droppedExpired": [
     "founding-placeholder",
     "metro-apprentice",
@@ -110,7 +110,9 @@
     "metro-remote-claims-rep-630669-in",
     "metro-remote-claims-writer-598753-allentown-pa",
     "metro-public-adjuster-504286-pa",
-    "surfside-claims-experienced-licensed-pa-fl"
+    "surfside-claims-experienced-licensed-pa-fl",
+    "homeland-licensed-pa-fl-nj",
+    "homeland-pa-apprentice-fl-nj"
   ],
   "jsonLdSkipped": {
     "noble-field-pa-sales": "jsonld:false on record",
@@ -128,7 +130,10 @@
     "gavnat-licensed-public-adjuster-or-license-candidate": "missing required: location(jobLocation/applicantLocationRequirements)",
     "claim-concepts-public-adjuster-fl-ga-sc": "multi-listing pointer (type Various), not a single job — Google policy",
     "allied-people-operations-director": "multi-listing pointer (type Various), not a single job — Google policy",
-    "american-financial-claims-pa-trainee-miami": "multi-listing pointer (type Various), not a single job — Google policy"
+    "american-financial-claims-pa-trainee-miami": "multi-listing pointer (type Various), not a single job — Google policy",
+    "gold-star-adjusters-open-application-jacksonville": "multi-listing pointer (type Various), not a single job — Google policy",
+    "united-pa-insurance-coverage-attorney-ny": "multi-listing pointer (type Various), not a single job — Google policy",
+    "united-pa-forensic-cpa-insurance-claims-ny": "multi-listing pointer (type Various), not a single job — Google policy"
   },
   "defaultedValidThrough": [
     {
@@ -291,7 +296,9 @@
     "metro-remote-claims-rep-630669-in": "ok",
     "metro-remote-claims-writer-598753-allentown-pa": "ok",
     "metro-public-adjuster-504286-pa": "ok",
-    "surfside-claims-experienced-licensed-pa-fl": "ok"
+    "surfside-claims-experienced-licensed-pa-fl": "ok",
+    "homeland-licensed-pa-fl-nj": "ok",
+    "homeland-pa-apprentice-fl-nj": "ok"
   },
   "removedPages": [],
   "featuredNow": [],
@@ -305,10 +312,10 @@
     "rockwall-houston": "rockwall-licensed-pa-houston-tx"
   },
   "sponsorStats": {
-    "listings": 101,
-    "firms": 31,
-    "remote": 23,
-    "florida": 15,
+    "listings": 106,
+    "firms": 33,
+    "remote": 24,
+    "florida": 18,
     "texas": 12
   },
   "statePages": [
@@ -326,7 +333,7 @@
     },
     {
       "url": "/jobs/florida/",
-      "listings": 15
+      "listings": 18
     },
     {
       "url": "/jobs/georgia/",
@@ -362,11 +369,11 @@
     },
     {
       "url": "/jobs/new-jersey/",
-      "listings": 7
+      "listings": 9
     },
     {
       "url": "/jobs/new-york/",
-      "listings": 7
+      "listings": 9
     },
     {
       "url": "/jobs/north-carolina/",
@@ -430,15 +437,15 @@
     },
     {
       "url": "/jobs/remote/",
-      "listings": 23
+      "listings": 24
     }
   ],
   "locationOptions": [
-    "remote:23",
+    "remote:24",
     "AZ:2",
     "CA:10",
     "CO:5",
-    "FL:15",
+    "FL:18",
     "GA:1",
     "ID:1",
     "IN:2",
@@ -447,8 +454,8 @@
     "MN:1",
     "MO:1",
     "NV:1",
-    "NJ:7",
-    "NY:7",
+    "NJ:9",
+    "NY:9",
     "NC:1",
     "ND:1",
     "OH:2",
@@ -465,5 +472,5 @@
     "WV:3",
     "WI:3"
   ],
-  "sitemapUrls": 160
+  "sitemapUrls": 165
 }
