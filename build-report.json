@@ -1,7 +1,7 @@
 {
   "buildDate": "2026-11-06",
-  "total": 127,
-  "active": 99,
+  "total": 142,
+  "active": 114,
   "droppedExpired": [
     "founding-placeholder",
     "metro-apprentice",
@@ -112,7 +112,20 @@
     "metro-public-adjuster-504286-pa",
     "surfside-claims-experienced-licensed-pa-fl",
     "homeland-licensed-pa-fl-nj",
-    "homeland-pa-apprentice-fl-nj"
+    "homeland-pa-apprentice-fl-nj",
+    "united-pa-content-claims-coordinator-ny",
+    "united-pa-director-property-claims-ny",
+    "united-pa-drone-operator-documentation-ny",
+    "united-pa-field-contents-consultant-ny",
+    "united-pa-property-claims-consultant-hybrid-ny",
+    "united-pa-property-claims-specialist-desk-ny",
+    "united-pa-property-damage-estimating-consultant-ny",
+    "manhattan-pa-business-development-nyc",
+    "manhattan-pa-senior-claim-consultant-nyc",
+    "manhattan-pa-regional-claims-manager-nyc",
+    "manhattan-pa-outside-sales-phone-nyc",
+    "justclaims-sr-licensed-pa-san-francisco",
+    "metro-property-inspectors-504286-nj"
   ],
   "jsonLdSkipped": {
     "noble-field-pa-sales": "jsonld:false on record",
@@ -133,7 +146,9 @@
     "american-financial-claims-pa-trainee-miami": "multi-listing pointer (type Various), not a single job — Google policy",
     "gold-star-adjusters-open-application-jacksonville": "multi-listing pointer (type Various), not a single job — Google policy",
     "united-pa-insurance-coverage-attorney-ny": "multi-listing pointer (type Various), not a single job — Google policy",
-    "united-pa-forensic-cpa-insurance-claims-ny": "multi-listing pointer (type Various), not a single job — Google policy"
+    "united-pa-forensic-cpa-insurance-claims-ny": "multi-listing pointer (type Various), not a single job — Google policy",
+    "manhattan-pa-field-associate-nyc": "missing required: location(jobLocation/applicantLocationRequirements)",
+    "advantage-pa-licensed-and-apprentice-fl": "multi-listing pointer (type Various), not a single job — Google policy"
   },
   "defaultedValidThrough": [
     {
@@ -208,6 +223,9 @@
       "location(jobLocation/applicantLocationRequirements)"
     ],
     "gavnat-licensed-public-adjuster-or-license-candidate": [
+      "location(jobLocation/applicantLocationRequirements)"
+    ],
+    "manhattan-pa-field-associate-nyc": [
       "location(jobLocation/applicantLocationRequirements)"
     ]
   },
@@ -291,17 +309,22 @@
     "metro-public-adjuster-504286-pa": "ok",
     "surfside-claims-experienced-licensed-pa-fl": "ok",
     "homeland-licensed-pa-fl-nj": "ok",
-    "homeland-pa-apprentice-fl-nj": "ok"
+    "homeland-pa-apprentice-fl-nj": "ok",
+    "united-pa-content-claims-coordinator-ny": "ok",
+    "united-pa-director-property-claims-ny": "ok",
+    "united-pa-drone-operator-documentation-ny": "ok",
+    "united-pa-field-contents-consultant-ny": "ok",
+    "united-pa-property-claims-consultant-hybrid-ny": "ok",
+    "united-pa-property-claims-specialist-desk-ny": "ok",
+    "united-pa-property-damage-estimating-consultant-ny": "ok",
+    "manhattan-pa-business-development-nyc": "ok",
+    "manhattan-pa-senior-claim-consultant-nyc": "ok",
+    "manhattan-pa-regional-claims-manager-nyc": "ok",
+    "manhattan-pa-outside-sales-phone-nyc": "ok",
+    "justclaims-sr-licensed-pa-san-francisco": "ok",
+    "metro-property-inspectors-504286-nj": "ok"
   },
-  "removedPages": [
-    "jobs/allied-pa-construction-consultant-la.html",
-    "jobs/united-pa-claims-advocate-melville.html",
-    "jobs/united-pa-content-claims-adjuster.html",
-    "jobs/united-pa-insurance-claims-manager-ny.html",
-    "jobs/united-pa-manhattan-business-development-associate.html",
-    "jobs/united-pa-property-claims-adjuster-ny.html",
-    "jobs/united-pa-property-damage-estimator.html"
-  ],
+  "removedPages": [],
   "featuredNow": [],
   "featuredProblems": {},
   "sponsorProblems": {},
@@ -313,10 +336,10 @@
     "rockwall-houston": "rockwall-licensed-pa-houston-tx"
   },
   "sponsorStats": {
-    "listings": 99,
-    "firms": 33,
-    "remote": 24,
-    "florida": 18,
+    "listings": 114,
+    "firms": 34,
+    "remote": 25,
+    "florida": 19,
     "texas": 12
   },
   "statePages": [
@@ -334,7 +357,7 @@
     },
     {
       "url": "/jobs/florida/",
-      "listings": 18
+      "listings": 19
     },
     {
       "url": "/jobs/georgia/",
@@ -370,11 +393,11 @@
     },
     {
       "url": "/jobs/new-jersey/",
-      "listings": 9
+      "listings": 10
     },
     {
       "url": "/jobs/new-york/",
-      "listings": 3
+      "listings": 14
     },
     {
       "url": "/jobs/north-carolina/",
@@ -438,15 +461,15 @@
     },
     {
       "url": "/jobs/remote/",
-      "listings": 24
+      "listings": 25
     }
   ],
   "locationOptions": [
-    "remote:24",
+    "remote:25",
     "AZ:2",
     "CA:9",
     "CO:5",
-    "FL:18",
+    "FL:19",
     "GA:1",
     "ID:1",
     "IN:2",
@@ -455,8 +478,8 @@
     "MN:1",
     "MO:1",
     "NV:1",
-    "NJ:9",
-    "NY:3",
+    "NJ:10",
+    "NY:14",
     "NC:1",
     "ND:1",
     "OH:2",
@@ -473,5 +496,5 @@
     "WV:3",
     "WI:3"
   ],
-  "sitemapUrls": 158
+  "sitemapUrls": 173
 }
