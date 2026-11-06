@@ -1,7 +1,7 @@
 [
   {
     "id": "founding-placeholder",
-    "title": "Your firm here — founding free post",
+    "title": "Your firm here \u2014 founding free post",
     "company": "Open PA Jobs",
     "location": "Nationwide",
     "type": "Founding",
@@ -15,8 +15,8 @@
     "applyUrl": "/post.html",
     "description": [
       "Open PA Jobs is opening with a short founding window: PA firms can request a free listing while we build the board.",
-      "Tell us the role, location, and apply link. We review submissions and publish when they fit the public-adjuster focus — licensed desks, apprentices, and related PA-firm roles.",
-      "No payment is required for founding posts. To pin a listing to the top of the board with a Featured badge, use the Feature your listing button — $49 for 30 days."
+      "Tell us the role, location, and apply link. We review submissions and publish when they fit the public-adjuster focus \u2014 licensed desks, apprentices, and related PA-firm roles.",
+      "No payment is required for founding posts. To pin a listing to the top of the board with a Featured badge, use the Feature your listing button \u2014 $49 for 30 days."
     ],
     "logo": "/logos/open-pa-jobs.svg"
   },
@@ -41,7 +41,7 @@
       "Full requirements and apply steps are on the employer Greenhouse posting. Use Apply below to open their official listing."
     ],
     "logo": "/logos/metro.svg",
-    "salary": "$45k – $75k OTE"
+    "salary": "$45k \u2013 $75k OTE"
   },
   {
     "id": "coastal-ctg",
@@ -64,7 +64,7 @@
       "Confirm schedule, state licensing, and 1099 details on the employer career page via Apply."
     ],
     "logo": "/logos/coastal.svg",
-    "salary": "$80k – $120k"
+    "salary": "$80k \u2013 $120k"
   },
   {
     "id": "aaa-pa",
@@ -83,7 +83,7 @@
     "applyUrl": "https://aaapublicadjusters.com/public-adjuster-jobs/",
     "description": [
       "AAA Public Adjusters lists openings for licensed public adjusters plus sales and support tracks, with remote and regional options.",
-      "Roles are commission-focused; some paths include training for newer entrants. Exact seats change — check their careers page for current openings.",
+      "Roles are commission-focused; some paths include training for newer entrants. Exact seats change \u2014 check their careers page for current openings.",
       "Apply opens the employer site so you can pick the role that matches your license and location."
     ],
     "logo": "/logos/aaa-pa.svg",
@@ -109,11 +109,11 @@
       "See the Greenhouse posting for schedule, pay structure, and qualifications."
     ],
     "logo": "/logos/metro.svg",
-    "salary": "$55k – $70k"
+    "salary": "$55k \u2013 $70k"
   },
   {
     "id": "rockwall-austin",
-    "title": "Licensed Public Adjusters — Austin / Central Texas",
+    "title": "Licensed Public Adjusters \u2014 Austin / Central Texas",
     "company": "Rockwall National Public Adjusters",
     "location": "Austin, TX area",
     "type": "Licensed PA",
@@ -128,10 +128,10 @@
     "description": [
       "Rockwall National Public Adjusters is hiring licensed public adjusters for Austin / Central Texas.",
       "Ideal candidates have an active Texas PA license and experience on residential and commercial property claims.",
-      "Apply opens the employer’s LinkedIn hiring post for the latest details."
+      "Apply opens the employer\u2019s LinkedIn hiring post for the latest details."
     ],
     "logo": "/logos/rockwall.svg",
-    "salary": "$90k – $140k",
+    "salary": "$90k \u2013 $140k",
     "redirectTo": "rockwall-licensed-pa-austin-tx"
   },
   {
@@ -150,8 +150,8 @@
     "applyUrl": "https://statewidepa.com/careers/",
     "description": [
       "Statewide Public Adjusters (SPAI) posts openings for licensed public adjusters and contract signer/solicitor roles.",
-      "Locations and contract terms vary by opening — review the careers page for current seats.",
-      "Use Apply to open SPAI’s careers page."
+      "Locations and contract terms vary by opening \u2014 review the careers page for current seats.",
+      "Use Apply to open SPAI\u2019s careers page."
     ],
     "logo": "/logos/statewide.svg",
     "jsonld": false
@@ -171,7 +171,7 @@
     "blurb": "Member association listings for Florida public adjusting firms.",
     "applyUrl": "https://fapia.memberclicks.net/job-boardll",
     "description": [
-      "FAPIA’s member job board aggregates Florida public adjusting openings from association firms.",
+      "FAPIA\u2019s member job board aggregates Florida public adjusting openings from association firms.",
       "Listings and requirements change frequently. Treat this page as a pointer to the association board rather than a single employer role.",
       "Apply opens the FAPIA job board so you can browse current Florida PA postings."
     ],
@@ -385,7 +385,7 @@
   },
   {
     "id": "rockwall-charleston",
-    "title": "Licensed Public Adjuster — Charleston, SC",
+    "title": "Licensed Public Adjuster \u2014 Charleston, SC",
     "company": "Rockwall National Public Adjusters",
     "location": "Charleston, SC",
     "type": "Licensed PA",
@@ -411,7 +411,7 @@
   },
   {
     "id": "rockwall-tampa",
-    "title": "Licensed Public Adjuster — Tampa, FL",
+    "title": "Licensed Public Adjuster \u2014 Tampa, FL",
     "company": "Rockwall National Public Adjusters",
     "location": "Tampa, FL",
     "type": "Licensed PA",
@@ -438,7 +438,7 @@
   },
   {
     "id": "rockwall-destin",
-    "title": "Licensed Public Adjuster — Destin, FL",
+    "title": "Licensed Public Adjuster \u2014 Destin, FL",
     "company": "Rockwall National Public Adjusters",
     "location": "Destin, FL",
     "type": "Licensed PA",
@@ -465,7 +465,7 @@
   },
   {
     "id": "rockwall-dallas",
-    "title": "Licensed Public Adjuster — Dallas, TX",
+    "title": "Licensed Public Adjuster \u2014 Dallas, TX",
     "company": "Rockwall National Public Adjusters",
     "location": "Dallas, TX",
     "type": "Licensed PA",
@@ -491,7 +491,7 @@
   },
   {
     "id": "rockwall-san-antonio",
-    "title": "Licensed Public Adjuster — San Antonio, TX",
+    "title": "Licensed Public Adjuster \u2014 San Antonio, TX",
     "company": "Rockwall National Public Adjusters",
     "location": "San Antonio, TX",
     "type": "Licensed PA",
@@ -518,7 +518,7 @@
   },
   {
     "id": "rockwall-houston",
-    "title": "Licensed Public Adjuster — Houston, TX",
+    "title": "Licensed Public Adjuster \u2014 Houston, TX",
     "company": "Rockwall National Public Adjusters",
     "location": "Houston, TX",
     "type": "Licensed PA",
@@ -563,9 +563,9 @@
     "description": [
       "United Public Adjusters & Appraisers is hiring a Claims Advocate at its Melville, Long Island office, aimed at people coming from accounting, finance, insurance customer service, or claims.",
       "The firm covers licensing and training so the hire can become a licensed public adjuster within a few months, then work business interruption, builder's risk, and property damage files using financial records to support the claim.",
-      "The page lists a $75k–$85k salary (based on experience) plus bonus, health benefits, and PTO; submit a resume through the careers page."
+      "The page lists a $75k\u2013$85k salary (based on experience) plus bonus, health benefits, and PTO; submit a resume through the careers page."
     ],
-    "validThrough": "2026-11-14"
+    "validThrough": "2026-11-05"
   },
   {
     "id": "united-pa-property-claims-adjuster-ny",
@@ -587,9 +587,9 @@
     "description": [
       "United Public Adjusters & Appraisers wants a seasoned property adjuster, from either the carrier or public side, to manage residential and commercial claims for policyholders.",
       "The work is mostly in the office: reviewing estimates, engineering reports, and policy language, building claim packages, and negotiating with carriers, with some joint inspections in the field. It asks for 3+ years of property adjusting and a NY public adjuster license or willingness to get one.",
-      "Pay is listed at $75k–$110k plus medical coverage and PTO."
+      "Pay is listed at $75k\u2013$110k plus medical coverage and PTO."
     ],
-    "validThrough": "2026-11-14"
+    "validThrough": "2026-11-05"
   },
   {
     "id": "united-pa-insurance-claims-manager-ny",
@@ -611,9 +611,9 @@
     "description": [
       "United Public Adjusters & Appraisers is hiring a Claims Manager to coordinate strategy and day-to-day progress on residential and commercial property claims for policyholders.",
       "The manager oversees active files, mentors adjusters and support staff, negotiates settlements, and makes sure files are ready for appraisal, mediation, or litigation. Requirements include 5+ years in property claims and Xactimate experience; a NYS public adjuster license is preferred.",
-      "The posting lists a $110k–$130k salary with medical coverage and PTO."
+      "The posting lists a $110k\u2013$130k salary with medical coverage and PTO."
     ],
-    "validThrough": "2026-11-14"
+    "validThrough": "2026-11-05"
   },
   {
     "id": "tiger-adjusters-public-adjuster-houston",
@@ -637,7 +637,7 @@
       "Daily work covers documenting property damage, reviewing policies for gaps or errors, writing Xactimate estimates, and negotiating settlements with carriers, plus business development to grow the office. A Texas public adjuster license is required.",
       "Full-time, with pay negotiated based on experience; the posting asks applicants to email a resume and LinkedIn profile."
     ],
-    "validThrough": "2026-11-14"
+    "validThrough": "2026-12-06"
   },
   {
     "id": "tiger-adjusters-public-adjuster-trenton",
@@ -661,7 +661,7 @@
       "The role includes property inspections, policy analysis, Xactimate estimating, carrier negotiation, and supporting attorneys when a claim is disputed, along with sales and outreach. A New Jersey public adjuster license is required.",
       "Full-time, with pay negotiated based on experience; applicants send a resume per the posting."
     ],
-    "validThrough": "2026-11-14"
+    "validThrough": "2026-12-06"
   },
   {
     "id": "swift-pa-field-sales-rep-omaha",
@@ -684,7 +684,7 @@
     "description": [
       "Swift Public Adjusters is hiring a full-time Field & Sales Representative for Omaha who both brings in clients and inspects their property damage.",
       "The job combines referral networking and presentations with on-site storm-damage inspections, scope-of-loss reports, policy review, and coordination with carriers and contractors. A public adjusting license is required, or must be obtained within a month of hire.",
-      "Compensation starts as a $50k–$65k draw against uncapped commission, with health, dental, vision, and 401(k) benefits."
+      "Compensation starts as a $50k\u2013$65k draw against uncapped commission, with health, dental, vision, and 401(k) benefits."
     ],
     "validThrough": "2026-11-03"
   },
@@ -708,7 +708,7 @@
     "description": [
       "Swift Public Adjusters wants an outside sales representative to grow its client base across the St. Louis region.",
       "The rep builds referral partnerships, meets with residential and commercial property owners, screens referred claims, and reports on territory activity. A public adjusting license is required, or must be earned within a month of starting.",
-      "Pay begins as a $50k–$65k draw against uncapped commission, with full benefits. Swift also lists similar seats in Kansas City and Springfield, MO."
+      "Pay begins as a $50k\u2013$65k draw against uncapped commission, with full benefits. Swift also lists similar seats in Kansas City and Springfield, MO."
     ],
     "validThrough": "2026-11-03"
   },
@@ -734,7 +734,7 @@
       "Field Public Adjusters inspect and document damage and work with homeowners; an Arizona PA license is preferred, and the firm will help the right candidate get one. Senior Public Adjusters need the license already and lead complex claims and carrier negotiations. The page also lists claims coordinator and office roles.",
       "Pay is base salary plus performance pay tied to claim results, with paid training; apply through the form on the careers page."
     ],
-    "validThrough": "2026-11-14"
+    "validThrough": "2026-12-06"
   },
   {
     "id": "panther-pa-licensed-apprentice-multistate",
@@ -758,7 +758,7 @@
       "Licensed adjusters need an active PA license in one of those states and handle damage assessment, claim filing, and carrier negotiation. Apprentices need no prior experience; they train under senior adjusters while working toward a license.",
       "Pay is commission on successful claims with a flexible schedule; apply by emailing a resume as described on the careers page."
     ],
-    "validThrough": "2026-11-14"
+    "validThrough": "2026-12-06"
   },
   {
     "id": "mla-claims-apprentice-pia-lafayette-hill",
@@ -782,7 +782,7 @@
       "The apprentice handles contents inventories and pricing in Excel, measures and photographs loss sites, schedules inspections, and does office tasks, building the experience needed for licensure. A bachelor's degree, a valid driver's license, and a vehicle are required.",
       "Pay depends on experience, and healthcare and a 401(k) are offered."
     ],
-    "validThrough": "2026-11-14"
+    "validThrough": "2026-12-06"
   },
   {
     "id": "cohen-associates-licensed-pa-florida",
@@ -805,7 +805,7 @@
       "Applicants need a Florida 3-20 public adjuster license or a 31-20 apprentice license, with bond in good standing. The work includes networking with roofers, plumbers, contractors, and property managers for leads, keeping clients updated, and meeting carrier adjusters at inspections.",
       "Xactimate, negotiation skills, and being bilingual are all pluses."
     ],
-    "validThrough": "2026-11-14"
+    "validThrough": "2026-12-06"
   },
   {
     "id": "tutwiler-pa-solicitor-tampa",
@@ -829,7 +829,7 @@
       "The role follows up on leads the firm generates and builds relationships with property managers and businesses. It requires a current all-lines Florida PA license (3-20), 2+ years of experience, and your own laptop, phone, camera, and transportation.",
       "Compensation is discussed after an interview; the careers page explains how to send a resume."
     ],
-    "validThrough": "2026-11-14"
+    "validThrough": "2026-12-06"
   },
   {
     "id": "allied-public-adjuster-socal",
@@ -850,9 +850,9 @@
     "description": [
       "Allied Public Adjusters is hiring Public Adjusters for Glendale and Newport Beach with field work across Southern California.",
       "The seat is aimed at insurance-restoration or carrier claims managers who will inspect, estimate, and advocate for policyholders while working toward a California Public Adjuster license.",
-      "Base pay is listed around $65k–$100k with overtime eligibility; confirm schedule and apply steps on the Greenhouse posting."
+      "Base pay is listed around $65k\u2013$100k with overtime eligibility; confirm schedule and apply steps on the Greenhouse posting."
     ],
-    "validThrough": "2026-11-13",
+    "validThrough": "2026-12-06",
     "sourceUrl": "https://job-boards.greenhouse.io/alliedpublicadjusters/jobs/4379732009"
   },
   {
@@ -874,16 +874,16 @@
     "description": [
       "Allied Public Adjusters is hiring Senior Public Adjusters for in-person work in Glendale or Newport Beach, California.",
       "An active California Public Adjuster license and deep claims experience are required; the firm feeds clients so you can focus on investigation, estimates, and negotiation.",
-      "Compensation is listed with base roughly $85k–$110k and OTE about $160k–$225k; see Greenhouse for benefits and apply."
+      "Compensation is listed with base roughly $85k\u2013$110k and OTE about $160k\u2013$225k; see Greenhouse for benefits and apply."
     ],
-    "validThrough": "2026-11-13",
+    "validThrough": "2026-12-06",
     "sourceUrl": "https://job-boards.greenhouse.io/alliedpublicadjusters/jobs/4379627009"
   },
   {
     "id": "allied-executive-desk-pa",
     "title": "Executive Desk Public Adjuster",
     "company": "Allied Public Adjusters",
-    "location": "Remote (Los Angeles–based firm)",
+    "location": "Remote (Los Angeles\u2013based firm)",
     "type": "Licensed PA",
     "posted": "2026-10-10",
     "tags": [
@@ -898,9 +898,9 @@
     "description": [
       "Allied Public Adjusters posted an Executive Desk Public Adjuster role for remote day-to-day ownership of shared large-loss caseloads.",
       "You partner with an Executive Public Adjuster in the field, run carrier and client communication, and drive supplements and negotiations from the desk.",
-      "Expect 7+ years of property claims experience and an active PA license or ability to obtain one within 90 days; base is listed at about $110k–$150k plus bonus."
+      "Expect 7+ years of property claims experience and an active PA license or ability to obtain one within 90 days; base is listed at about $110k\u2013$150k plus bonus."
     ],
-    "validThrough": "2026-11-13",
+    "validThrough": "2026-12-06",
     "sourceUrl": "https://job-boards.greenhouse.io/alliedpublicadjusters/jobs/4444795009"
   },
   {
@@ -922,9 +922,9 @@
     "description": [
       "Allied Public Adjusters is hiring a Senior Estimator to support public adjusters on complex water, fire, and structural losses in Southern California.",
       "The role owns field investigation, Xactimate production, and defending scopes when carriers push back.",
-      "Requirements include 7+ years of insurance restoration estimating; base is listed around $110k–$135k plus a performance bonus."
+      "Requirements include 7+ years of insurance restoration estimating; base is listed around $110k\u2013$135k plus a performance bonus."
     ],
-    "validThrough": "2026-11-13",
+    "validThrough": "2026-12-06",
     "sourceUrl": "https://job-boards.greenhouse.io/alliedpublicadjusters/jobs/4379731009"
   },
   {
@@ -946,9 +946,9 @@
     "description": [
       "Metro Public Adjustment is hiring Public Insurance Adjuster Trainees for several states, including Georgia, with parallel Greenhouse posts for NC, WV, MD, WI, and SD.",
       "Trainees assist on inspections, policy review, and claim documentation under senior adjusters; training and licensing support are offered.",
-      "Compensation is listed in a broad $35k–$125k band; apply on Greenhouse for the state seat that matches you."
+      "Compensation is listed in a broad $35k\u2013$125k band; apply on Greenhouse for the state seat that matches you."
     ],
-    "validThrough": "2026-11-13",
+    "validThrough": "2026-12-06",
     "sourceUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4330432009"
   },
   {
@@ -970,14 +970,14 @@
     "description": [
       "Metro Public Adjustment refreshed a Remote Claims Representative posting (updated mid-October 2026) focused on Pennsylvania with a multi-state apply list.",
       "Work centers on virtual walk-throughs, photos, and light paperwork; no experience is required and training is provided.",
-      "Pay is commission-based in a stated $35k–$150k range; read the Greenhouse ad carefully for which states they will and will not hire."
+      "Pay is commission-based in a stated $35k\u2013$150k range; read the Greenhouse ad carefully for which states they will and will not hire."
     ],
-    "validThrough": "2026-11-13",
+    "validThrough": "2026-12-06",
     "sourceUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4449000009"
   },
   {
     "id": "rockwall-licensed-pa-destin-fl",
-    "title": "Licensed Public Adjuster – Destin",
+    "title": "Licensed Public Adjuster \u2013 Destin",
     "company": "Rockwall National Public Adjusters",
     "location": "Destin, FL (hybrid)",
     "type": "Licensed PA",
@@ -1001,7 +1001,7 @@
   },
   {
     "id": "rockwall-licensed-pa-tampa-fl",
-    "title": "Licensed Public Adjuster – Tampa",
+    "title": "Licensed Public Adjuster \u2013 Tampa",
     "company": "Rockwall National Public Adjusters",
     "location": "Tampa, FL (hybrid)",
     "type": "Licensed PA",
@@ -1025,7 +1025,7 @@
   },
   {
     "id": "rockwall-licensed-pa-houston-tx",
-    "title": "Licensed Public Adjuster – Houston, Texas",
+    "title": "Licensed Public Adjuster \u2013 Houston, Texas",
     "company": "Rockwall National Public Adjusters",
     "location": "Houston, TX (hybrid)",
     "type": "Licensed PA",
@@ -1049,7 +1049,7 @@
   },
   {
     "id": "rockwall-licensed-pa-san-antonio-tx",
-    "title": "Licensed Public Adjuster – San Antonio, Texas",
+    "title": "Licensed Public Adjuster \u2013 San Antonio, Texas",
     "company": "Rockwall National Public Adjusters",
     "location": "San Antonio, TX (hybrid)",
     "type": "Licensed PA",
@@ -1073,7 +1073,7 @@
   },
   {
     "id": "metro-pa-business-development-lead-western-pa",
-    "title": "Business Development Lead (PT/FT) – Western PA",
+    "title": "Business Development Lead (PT/FT) \u2013 Western PA",
     "company": "Metro Public Adjustment",
     "location": "Western Pennsylvania (work from home + local outreach)",
     "type": "Claims rep",
@@ -1098,7 +1098,7 @@
   },
   {
     "id": "vpa-loss-documentation-field-inspector",
-    "title": "Loss Documentation Field Inspector – Nationwide Travel",
+    "title": "Loss Documentation Field Inspector \u2013 Nationwide Travel",
     "company": "VPA Public Claims Adjusting",
     "location": "Nationwide (75% travel, no relocation)",
     "type": "Claims rep",
@@ -1168,7 +1168,7 @@
       "The estimator writes detailed repair estimates in Xactimate, flags code upgrades and hidden damage carrier adjusters often miss, and supports public adjusters, contents specialists, and claim managers with documentation and joint inspections.",
       "Requirements include at least 3 years of property damage estimating or construction experience, Xactimate proficiency, and a reliable vehicle. Submit a resume through the careers page."
     ],
-    "validThrough": "2026-11-18",
+    "validThrough": "2026-11-05",
     "addressRegion": "NY"
   },
   {
@@ -1191,13 +1191,13 @@
     "description": [
       "United Public Adjusters & Appraisers wants a contents adjuster at its Melville, Long Island office to document and value personal property lost or damaged in fires, water losses, storms, and other insured events.",
       "The adjuster builds detailed inventories, researches replacement values, works with field adjusters and estimators, and prepares contents reports for carriers. Prior contents claims experience and familiarity with pricing tools are expected.",
-      "The posting lists a $70k–$90k salary plus health benefits. Submit a resume through the careers page."
+      "The posting lists a $70k\u2013$90k salary plus health benefits. Submit a resume through the careers page."
     ],
-    "validThrough": "2026-11-18"
+    "validThrough": "2026-11-05"
   },
   {
     "id": "united-pa-manhattan-business-development-associate",
-    "title": "Business Development Associate – Manhattan Territory",
+    "title": "Business Development Associate \u2013 Manhattan Territory",
     "company": "United Public Adjusters & Appraisers",
     "location": "Manhattan, NY",
     "type": "Claims rep",
@@ -1217,11 +1217,11 @@
       "The role works existing relationships with property owners, managers, resident managers, and supers, represents the firm at industry events, manages a pipeline in the CRM, and helps on site visits. Hires must get a public adjuster license within 90 days, with training provided.",
       "Pay is salary plus commission with fully paid benefits; a proven sales record and Manhattan real estate connections are expected. Submit a resume through the careers page."
     ],
-    "validThrough": "2026-11-18"
+    "validThrough": "2026-11-05"
   },
   {
     "id": "swift-pa-outside-sales-rep-denver",
-    "title": "Outside Sales Representative – Denver, CO",
+    "title": "Outside Sales Representative \u2013 Denver, CO",
     "company": "Swift Public Adjusters",
     "location": "Denver, CO (remote + in-person outreach)",
     "type": "Claims rep",
@@ -1239,13 +1239,13 @@
     "description": [
       "Swift Public Adjusters is hiring an Outside Sales Representative for the Denver market, a remote role with in-person outreach across the Rocky Mountain region.",
       "The rep builds a network of referral sources, meets residential and commercial property owners, educates partners about public adjusting, screens referred claims, and reports daily activity and territory forecasts.",
-      "Pay starts with a $50k–$65k draw against uncapped commission after a 30–60 day probation, plus health, dental, vision, and a 401(k). A public adjuster license is required within a month of hire, and a business degree or five years of sales experience is expected. Apply through the posting."
+      "Pay starts with a $50k\u2013$65k draw against uncapped commission after a 30\u201360 day probation, plus health, dental, vision, and a 401(k). A public adjuster license is required within a month of hire, and a business degree or five years of sales experience is expected. Apply through the posting."
     ],
     "validThrough": "2026-11-03"
   },
   {
     "id": "swift-pa-outside-sales-rep-minneapolis",
-    "title": "Outside Sales Representative – Minneapolis, MN",
+    "title": "Outside Sales Representative \u2013 Minneapolis, MN",
     "company": "Swift Public Adjusters",
     "location": "Minneapolis, MN (remote + in-person outreach)",
     "type": "Claims rep",
@@ -1263,7 +1263,7 @@
     "description": [
       "Swift Public Adjusters is hiring an Outside Sales Representative for the Minneapolis market, a remote role with in-person outreach across the Upper Midwest region.",
       "The rep builds a network of referral sources, meets residential and commercial property owners, educates partners about public adjusting, screens referred claims, and reports daily activity and territory forecasts.",
-      "Pay starts with a $50k–$65k draw against uncapped commission after a 30–60 day probation, plus health, dental, vision, and a 401(k). A public adjuster license is required within a month of hire, and a business degree or five years of sales experience is expected. Apply through the posting."
+      "Pay starts with a $50k\u2013$65k draw against uncapped commission after a 30\u201360 day probation, plus health, dental, vision, and a 401(k). A public adjuster license is required within a month of hire, and a business degree or five years of sales experience is expected. Apply through the posting."
     ],
     "validThrough": "2026-11-03"
   },
@@ -1289,7 +1289,7 @@
       "The role inspects losses alongside the public adjuster, writes detailed Xactimate estimates (the firm targets a 48-hour turnaround after inspection), rebuts carrier counter-estimates, and reviews vendor and expert bids.",
       "It also helps build the firm's estimating standards, procedures, and historical database, and mentors junior estimators. Apply through the Greenhouse posting."
     ],
-    "validThrough": "2026-11-15"
+    "validThrough": "2026-11-05"
   },
   {
     "id": "metro-pa-claims-property-inspector-pa",
@@ -1313,7 +1313,7 @@
       "Inspectors look for insurance-covered damage, help homeowners understand their policies, keep clients updated during the claim, and handle the paperwork that supports each file.",
       "The firm says no experience is needed, offers training and mentorship, and lets hires work part-time or full-time on their own schedule."
     ],
-    "validThrough": "2026-11-15",
+    "validThrough": "2026-12-06",
     "addressLocality": "Philadelphia",
     "addressRegion": "PA"
   },
@@ -1340,11 +1340,11 @@
       "It lists three paths: licensed 3-20 public adjusters for inspections, file review, and carrier communication; 6-20 all-lines adjusters who want a supervised 31-20 apprentice appointment; and estimator, inspector, or claim-support people with construction, roofing, mitigation, or Xactimate backgrounds.",
       "Candidates near Naples, Orlando, Tampa, Daytona Beach, and Central or Southwest Florida are especially welcome. Reach out through the form on the careers page."
     ],
-    "validThrough": "2026-11-15"
+    "validThrough": "2026-12-06"
   },
   {
     "id": "vpa-property-claims-adjuster-lexington",
-    "title": "Property Claims Adjuster – Public Adjusting",
+    "title": "Property Claims Adjuster \u2013 Public Adjusting",
     "company": "VPA Public Claims Adjusting",
     "location": "Lexington, KY (on-site, relocation required)",
     "type": "Licensed PA",
@@ -1364,13 +1364,13 @@
       "The adjuster reviews policies, manages claims, and negotiates settlements with carriers, while a support team handles inspections, documentation, and admin work.",
       "VPA covers public adjuster licensing fees and transition support. The role is on-site and requires relocation; apply with the form on the posting."
     ],
-    "validThrough": "2026-11-15"
+    "validThrough": "2026-12-06"
   },
   {
     "id": "ai-mbc-c-level-sales-executive-westminster",
     "title": "C-Level Sales Executive",
     "company": "Adjusters International/MBC",
-    "location": "Westminster, CO (Denver–Boulder)",
+    "location": "Westminster, CO (Denver\u2013Boulder)",
     "type": "Claims rep",
     "posted": "2025-12-02",
     "tags": [
@@ -1389,7 +1389,7 @@
       "The executive sells directly, leads two experienced claims sales producers, and builds the pipeline, forecasting, partnerships, and enterprise-account strategy.",
       "The firm wants someone with a track record in commercial insurance claims, commercial real estate, or CRE finance, and lists a draw against commissions, team overrides, and performance-based equity."
     ],
-    "validThrough": "2026-11-15"
+    "validThrough": "2026-12-06"
   },
   {
     "id": "icrs-pa-estimator-office-texas",
@@ -1414,7 +1414,7 @@
       "Its careers page has three openings: licensed public adjusters, a commercial Xactimate estimator, and an office manager or assistant. Backgrounds in commercial brokerage, construction, or insurance policies are a plus.",
       "The firm describes the work as work-from-home with free training. Each role has its own application form on the careers page."
     ],
-    "validThrough": "2026-11-15"
+    "validThrough": "2026-12-06"
   },
   {
     "id": "manhattan-pa-fire-outreach-bd-nyc",
@@ -1439,14 +1439,14 @@
       "The job is in-person and phone outreach, with 100+ call attempts on some days, while the firm's claims team handles the claim itself. Insurance, claims, or restoration experience is preferred but not required.",
       "Pay is base plus bonus and commission (the posting lists about $91k for the first six months), with health, dental, vision, retirement, and PTO. Apply on the careers page and don't call the office."
     ],
-    "validThrough": "2026-11-15",
+    "validThrough": "2026-12-06",
     "addressRegion": "NY"
   },
   {
     "id": "claims-pa-licensed-pa-dfw",
     "title": "Licensed Public Adjuster",
     "company": "Claims Public Adjusting, Inc.",
-    "location": "Dallas–Fort Worth, TX",
+    "location": "Dallas\u2013Fort Worth, TX",
     "type": "Licensed PA",
     "posted": "2026-10-16",
     "tags": [
@@ -1460,7 +1460,7 @@
     "sourceUrl": "https://www.claimspa.com/careers",
     "blurb": "Full-time W-2 licensed PA seat in DFW with base pay, incentives, and health insurance.",
     "description": [
-      "Claims Public Adjusting, a policyholder-side firm growing across Texas, Oklahoma, and California, is hiring a full-time licensed public adjuster in Dallas–Fort Worth.",
+      "Claims Public Adjusting, a policyholder-side firm growing across Texas, Oklahoma, and California, is hiring a full-time licensed public adjuster in Dallas\u2013Fort Worth.",
       "Every role is direct W-2 employment, not 1099, with health insurance, base pay plus performance incentives, and support for licensing, CE, Xactimate, and IICRC training. Field adjusters set their own schedules.",
       "Apply through the form on the careers page; the firm says it replies within two business days."
     ],
@@ -1543,9 +1543,9 @@
   },
   {
     "id": "firstcall-claims-outside-sales-tennessee",
-    "title": "Outside Sales Representative – Public Adjuster Sales",
+    "title": "Outside Sales Representative \u2013 Public Adjuster Sales",
     "company": "FirstCall Claims",
-    "location": "Tennessee – Nashville, Memphis, Knoxville, or Chattanooga (field-based)",
+    "location": "Tennessee \u2013 Nashville, Memphis, Knoxville, or Chattanooga (field-based)",
     "type": "Claims rep",
     "posted": "2026-10-05",
     "tags": [
@@ -1593,7 +1593,7 @@
   },
   {
     "id": "sunpoint-public-insurance-adjuster-los-angeles",
-    "title": "Public Insurance Adjuster – Los Angeles, CA",
+    "title": "Public Insurance Adjuster \u2013 Los Angeles, CA",
     "company": "SunPoint Public Adjusters",
     "location": "Los Angeles, CA (remote; must commute to LA)",
     "type": "Licensed PA",
@@ -1608,11 +1608,11 @@
     "url": "https://sunpoint.us/careers/public-insurance-adjuster-los-angeles-ca/",
     "applyUrl": "https://sunpoint.us/careers/public-insurance-adjuster-los-angeles-ca/",
     "sourceUrl": "https://sunpoint.us/careers/public-insurance-adjuster-los-angeles-ca/",
-    "blurb": "Seasoned first-party property adjuster role for a major-loss PA firm, paying $60k–$250k plus commissions.",
+    "blurb": "Seasoned first-party property adjuster role for a major-loss PA firm, paying $60k\u2013$250k plus commissions.",
     "description": [
       "SunPoint Public Adjusters represents policyholders on major first-party home, business, and commercial losses. It is hiring a seasoned public insurance adjuster based in Los Angeles to handle claims in California, Washington, and Oregon.",
       "The firm wants a four-year degree and about ten years as a staff adjuster on residential and commercial first-party property claims, including building and contents coverage. You also need to travel to loss sites and pass background screening and licensing. Experience only in auto, casualty, or workers' comp does not qualify.",
-      "Pay is listed at $60,000–$250,000 a year plus commissions. Benefits include medical, dental, vision, an FSA, PTO, and a 401(k) with a 3% company contribution. A public adjuster license is preferred. Apply through the form on the posting."
+      "Pay is listed at $60,000\u2013$250,000 a year plus commissions. Benefits include medical, dental, vision, an FSA, PTO, and a 401(k) with a 3% company contribution. A public adjuster license is preferred. Apply through the form on the posting."
     ],
     "validThrough": "2026-11-19"
   },
@@ -1633,17 +1633,17 @@
     "url": "https://sunpoint.us/careers/contents-inventory-specialist/",
     "applyUrl": "https://sunpoint.us/careers/contents-inventory-specialist/",
     "sourceUrl": "https://sunpoint.us/careers/contents-inventory-specialist/",
-    "blurb": "Full-time $30–$34/hr contents inventory role helping fire, water, and theft clients maximize their recovery.",
+    "blurb": "Full-time $30\u2013$34/hr contents inventory role helping fire, water, and theft clients maximize their recovery.",
     "description": [
       "SunPoint Public Adjusters is hiring a full-time contents and inventory specialist in Washington State. The specialist documents personal property for policyholders after fire, water, or theft losses so they recover the most their policy allows.",
       "This is hands-on fieldwork with up to 60% travel. It involves juggling several projects and vendors and lifting up to 60 lbs. You need at least intermediate Excel, strong attention to detail, a clean driving record, and a clean background check. Knowing retail brands and pricing helps.",
-      "Pay is $30–$34 an hour for about 40 hours a week. Benefits include health, dental, vision, an FSA, PTO, and a matched 401(k). Apply through the form on the posting."
+      "Pay is $30\u2013$34 an hour for about 40 hours a week. Benefits include health, dental, vision, an FSA, PTO, and a matched 401(k). Apply through the form on the posting."
     ],
     "validThrough": "2026-11-19"
   },
   {
     "id": "sunpoint-sales-professional-washington",
-    "title": "Sales Professional – Washington State",
+    "title": "Sales Professional \u2013 Washington State",
     "company": "SunPoint Public Adjusters",
     "location": "Washington State (field-based, travel required)",
     "type": "Claims rep",
@@ -1658,11 +1658,11 @@
     "url": "https://sunpoint.us/careers/sales-professional-washington-state/",
     "applyUrl": "https://sunpoint.us/careers/sales-professional-washington-state/",
     "sourceUrl": "https://sunpoint.us/careers/sales-professional-washington-state/",
-    "blurb": "Commission-based PA sales role ($125k–$400k+) for licensed or apprentice producers in the Pacific Northwest.",
+    "blurb": "Commission-based PA sales role ($125k\u2013$400k+) for licensed or apprentice producers in the Pacific Northwest.",
     "description": [
       "SunPoint Public Adjusters is hiring licensed and apprentice sales professionals for its Pacific Northwest territory. This posting covers Washington State, and the firm has matching postings for Oregon and Idaho.",
       "The role requires state Department of Insurance licensing, and SunPoint helps strong candidates get licensed. It looks for a record in professional-services or high-level sales and the drive to work unsupervised with high-profile clients. The firm notes that career changers, such as attorneys and bankers, have done well in the role.",
-      "Pay is commission-based, with earnings listed at $125K–$400K+ a year. Benefits include medical, dental, vision, and a 401(k) with a 3% company contribution. A degree or equivalent experience is preferred. Apply through the form on the posting."
+      "Pay is commission-based, with earnings listed at $125K\u2013$400K+ a year. Benefits include medical, dental, vision, and a 401(k) with a 3% company contribution. A degree or equivalent experience is preferred. Apply through the form on the posting."
     ],
     "validThrough": "2026-11-19"
   },
@@ -1693,7 +1693,7 @@
   },
   {
     "id": "ak-public-adjusters-field-sales-owings-mills",
-    "title": "Field Sales Representative – Storm & Property Damage",
+    "title": "Field Sales Representative \u2013 Storm & Property Damage",
     "company": "AK Public Adjusters",
     "location": "Owings Mills, MD",
     "type": "Claims rep",
@@ -1708,17 +1708,17 @@
     "url": "https://www.salesjobs.com/sales-job/51167213",
     "applyUrl": "https://www.salesjobs.com/sales-job/51167213",
     "sourceUrl": "https://www.salesjobs.com/sales-job/51167213",
-    "blurb": "W-2 field sales role with hourly pay plus uncapped commission, targeting $92k–$108k+.",
+    "blurb": "W-2 field sales role with hourly pay plus uncapped commission, targeting $92k\u2013$108k+.",
     "description": [
       "AK Public Adjusters is hiring a full-time field sales rep in Owings Mills, MD. The firm advocates for homeowners and businesses after storm, fire, and water damage.",
       "The rep canvasses targeted neighborhoods, spots properties likely hit by hail, wind, fire, or water, explains what public adjuster representation involves, does basic inspections and photo documentation, and completes intake paperwork for clients who sign. Training is provided.",
-      "This W-2 job pays hourly plus uncapped commission, with expected earnings of $92k–$108k+. It includes paid field coaching, a territory-based flexible schedule, and a company truck depending on role and performance. Canvassing or field sales experience is preferred, and you need a driver's license and reliable transportation."
+      "This W-2 job pays hourly plus uncapped commission, with expected earnings of $92k\u2013$108k+. It includes paid field coaching, a territory-based flexible schedule, and a company truck depending on role and performance. Canvassing or field sales experience is preferred, and you need a driver's license and reliable transportation."
     ],
     "validThrough": "2026-12-20"
   },
   {
     "id": "swift-pa-outside-sales-rep-madison",
-    "title": "Outside Sales Representative – Madison, WI",
+    "title": "Outside Sales Representative \u2013 Madison, WI",
     "company": "Swift Public Adjusters",
     "location": "Madison, WI (remote + in-person outreach)",
     "type": "Claims rep",
@@ -1736,13 +1736,13 @@
     "description": [
       "Swift Public Adjusters is hiring an Outside Sales Representative for the Madison market. The job is remote, with in-person outreach across the Greater Madison region.",
       "The rep develops referral sources, meets with residential and commercial property owners, teaches partners what a public adjuster does, screens the claims they send over, and files daily activity reports and territory forecasts.",
-      "After a 30–60 day probation, pay starts as a $50k–$65k draw against uncapped commission, and benefits include health, dental, vision, and a 401(k). You need a public adjuster license within a month of hire, plus a business degree or five years of sales experience. Apply through the posting."
+      "After a 30\u201360 day probation, pay starts as a $50k\u2013$65k draw against uncapped commission, and benefits include health, dental, vision, and a 401(k). You need a public adjuster license within a month of hire, plus a business degree or five years of sales experience. Apply through the posting."
     ],
     "validThrough": "2026-11-03"
   },
   {
     "id": "swift-pa-licensed-outside-sales-kansas-city",
-    "title": "Licensed Outside Sales Representative – Kansas City, MO",
+    "title": "Licensed Outside Sales Representative \u2013 Kansas City, MO",
     "company": "Swift Public Adjusters",
     "location": "Kansas City, MO (remote + in-person outreach)",
     "type": "Claims rep",
@@ -1760,13 +1760,13 @@
     "description": [
       "Swift Public Adjusters is hiring an Outside Sales Representative for the Kansas City market. The job is remote, with in-person outreach across the Kansas City metro.",
       "The rep develops referral sources, meets with residential and commercial property owners, teaches partners what a public adjuster does, screens the claims they send over, and files daily activity reports and territory forecasts.",
-      "After a 30–60 day probation, pay starts as a $50k–$65k draw against uncapped commission, and benefits include health, dental, vision, and a 401(k). You need a public adjuster license within a month of hire, plus a business degree or five years of sales experience. Apply through the posting."
+      "After a 30\u201360 day probation, pay starts as a $50k\u2013$65k draw against uncapped commission, and benefits include health, dental, vision, and a 401(k). You need a public adjuster license within a month of hire, plus a business degree or five years of sales experience. Apply through the posting."
     ],
     "validThrough": "2026-11-03"
   },
   {
     "id": "swift-pa-outside-sales-rep-des-moines",
-    "title": "Outside Sales Representative – Des Moines, IA",
+    "title": "Outside Sales Representative \u2013 Des Moines, IA",
     "company": "Swift Public Adjusters",
     "location": "Des Moines, IA (remote + in-person outreach)",
     "type": "Claims rep",
@@ -1784,13 +1784,13 @@
     "description": [
       "Swift Public Adjusters is hiring an Outside Sales Representative for the Des Moines market. The job is remote, with in-person outreach across the Midwest region.",
       "The rep develops referral sources, meets with residential and commercial property owners, teaches partners what a public adjuster does, screens the claims they send over, and files daily activity reports and territory forecasts.",
-      "After a 30–60 day probation, pay starts as a $50k–$65k draw against uncapped commission, and benefits include health, dental, vision, and a 401(k). You need a public adjuster license within a month of hire, plus a business degree or five years of sales experience. Apply through the posting."
+      "After a 30\u201360 day probation, pay starts as a $50k\u2013$65k draw against uncapped commission, and benefits include health, dental, vision, and a 401(k). You need a public adjuster license within a month of hire, plus a business degree or five years of sales experience. Apply through the posting."
     ],
     "validThrough": "2026-11-03"
   },
   {
     "id": "swift-pa-licensed-outside-sales-springfield-mo",
-    "title": "Licensed Outside Sales Rep – Springfield, MO",
+    "title": "Licensed Outside Sales Rep \u2013 Springfield, MO",
     "company": "Swift Public Adjusters",
     "location": "Springfield, MO (remote + in-person outreach)",
     "type": "Claims rep",
@@ -1815,7 +1815,7 @@
   },
   {
     "id": "metro-pa-remote-claims-writer-denver",
-    "title": "Remote Claims Writer – Denver, CO",
+    "title": "Remote Claims Writer \u2013 Denver, CO",
     "company": "Metro Public Adjustment",
     "location": "Denver, CO (work from home + field inspections)",
     "type": "Claims rep",
@@ -1840,7 +1840,7 @@
   },
   {
     "id": "metro-pa-business-development-lead-maryland",
-    "title": "Business Development Lead (PT/FT) – Maryland",
+    "title": "Business Development Lead (PT/FT) \u2013 Maryland",
     "company": "Metro Public Adjustment",
     "location": "Maryland (work from home + local meetings)",
     "type": "Claims rep",
@@ -1865,7 +1865,7 @@
   },
   {
     "id": "metro-pa-claims-support-rep-entry-level-nc",
-    "title": "Claims Support Representative (Entry Level) – North Carolina",
+    "title": "Claims Support Representative (Entry Level) \u2013 North Carolina",
     "company": "Metro Public Adjustment",
     "location": "North Carolina (work from home + field inspections)",
     "type": "Claims rep",
@@ -2015,7 +2015,7 @@
   },
   {
     "id": "tiger-adjusters-public-adjuster-dayton-oh",
-    "title": "Public Adjuster – Dayton, OH",
+    "title": "Public Adjuster \u2013 Dayton, OH",
     "company": "Tiger Adjusters",
     "location": "Dayton, OH",
     "type": "Licensed PA",
@@ -2040,7 +2040,7 @@
   },
   {
     "id": "ifile-claims-public-adjuster-fl-tx-pa",
-    "title": "Public Adjuster – Florida, Texas, and Pennsylvania",
+    "title": "Public Adjuster \u2013 Florida, Texas, and Pennsylvania",
     "company": "iFile Claims",
     "location": "Florida, Texas, and Pennsylvania (field)",
     "type": "Licensed PA",
@@ -2055,7 +2055,7 @@
     "url": "https://www.ifileclaims.com/our-team",
     "applyUrl": "https://www.ifileclaims.com/our-team",
     "sourceUrl": "https://www.ifileclaims.com/our-team",
-    "blurb": "Field public adjuster role in FL, TX, and PA listed at $50k–$150k with bonus and commission; apprenticeship available.",
+    "blurb": "Field public adjuster role in FL, TX, and PA listed at $50k\u2013$150k with bonus and commission; apprenticeship available.",
     "description": [
       "iFile Claims is hiring public adjusters in Florida, Texas, and Pennsylvania. Florida candidates need a 6-20 license; a 3-20 license is preferred.",
       "Adjusters run free property inspections, explain the claim process, gather documents, attend inspections, and negotiate settlements with the carrier while keeping clients updated. Xactimate and scoping experience help, and Spanish or Creole is a plus.",
@@ -2065,7 +2065,7 @@
   },
   {
     "id": "claim-concepts-public-adjuster-fl-ga-sc",
-    "title": "Public Adjuster or Apprentice – Florida, Georgia, South Carolina",
+    "title": "Public Adjuster or Apprentice \u2013 Florida, Georgia, South Carolina",
     "company": "Claim Concepts",
     "location": "Florida, Georgia, and South Carolina",
     "type": "Various",
@@ -2114,7 +2114,7 @@
   },
   {
     "id": "metro-claims-rep-618275-ct",
-    "title": "Claims Rep – Connecticut (Remote)",
+    "title": "Claims Rep \u2013 Connecticut (Remote)",
     "company": "Metro Public Adjustment",
     "location": "Connecticut, work from home",
     "type": "Claims rep",
@@ -2140,7 +2140,7 @@
   },
   {
     "id": "metro-pa-trainee-596930-mo",
-    "title": "Public Insurance Adjuster Trainee – Missouri",
+    "title": "Public Insurance Adjuster Trainee \u2013 Missouri",
     "company": "Metro Public Adjustment",
     "location": "Missouri",
     "type": "Apprentice",
@@ -2155,17 +2155,17 @@
     "url": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4455197009",
     "applyUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4455197009",
     "sourceUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4455197009",
-    "blurb": "Paid-training path to a public adjuster license in Missouri; full- or part-time, posted at $35,000–$125,000.",
+    "blurb": "Paid-training path to a public adjuster license in Missouri; full- or part-time, posted at $35,000\u2013$125,000.",
     "description": [
       "Metro Public Adjustment is hiring public adjuster trainees in Missouri, one of sixteen states listed on the posting. No adjusting experience is required.",
       "Trainees help inspect residential and commercial damage, learn to read policies and estimate losses, support senior adjusters on claim files, and talk with clients, contractors, and carriers.",
-      "Metro offers paid training, licensing support, a flexible schedule, and a stated pay range of $35,000 to $125,000 with performance-based upside. A valid driver’s license and reliable transportation are required. Apply on Greenhouse."
+      "Metro offers paid training, licensing support, a flexible schedule, and a stated pay range of $35,000 to $125,000 with performance-based upside. A valid driver\u2019s license and reliable transportation are required. Apply on Greenhouse."
     ],
     "validThrough": "2026-11-22"
   },
   {
     "id": "rockwall-licensed-pa-austin-tx",
-    "title": "Licensed Public Adjuster – Austin, Texas",
+    "title": "Licensed Public Adjuster \u2013 Austin, Texas",
     "company": "Rockwall National Public Adjusters",
     "location": "Austin, TX (hybrid)",
     "type": "Licensed PA",
@@ -2182,14 +2182,14 @@
     "blurb": "Hybrid, commission-based Austin PA seat for Texas-licensed adjusters, with mentorship and back-office support.",
     "description": [
       "Rockwall National Public Adjusters, a policyholder-side firm with more than 15 years in the business, is adding a licensed Texas public adjuster in Austin on a hybrid, commission-based contractor basis.",
-      "The adjuster builds referral business, signs clients, evaluates damage, and prepares and negotiates claims on the policyholder’s behalf.",
-      "Newly licensed adjusters get structured training and mentorship, while experienced adjusters get the firm’s processes and administrative support. Apply through the BambooHR posting."
+      "The adjuster builds referral business, signs clients, evaluates damage, and prepares and negotiates claims on the policyholder\u2019s behalf.",
+      "Newly licensed adjusters get structured training and mentorship, while experienced adjusters get the firm\u2019s processes and administrative support. Apply through the BambooHR posting."
     ],
     "validThrough": "2026-11-22"
   },
   {
     "id": "metro-pa-trainee-596930-ok",
-    "title": "Public Insurance Adjuster Trainee – Oklahoma",
+    "title": "Public Insurance Adjuster Trainee \u2013 Oklahoma",
     "company": "Metro Public Adjustment",
     "location": "Oklahoma",
     "type": "Apprentice",
@@ -2204,18 +2204,18 @@
     "url": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4455198009",
     "applyUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4455198009",
     "sourceUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4455198009",
-    "salary": "$35k – $125k",
-    "blurb": "Paid-training path to a public adjuster license in Oklahoma; full- or part-time, posted at $35,000–$125,000.",
+    "salary": "$35k \u2013 $125k",
+    "blurb": "Paid-training path to a public adjuster license in Oklahoma; full- or part-time, posted at $35,000\u2013$125,000.",
     "description": [
       "Metro Public Adjustment is hiring public adjuster trainees in Oklahoma, one of sixteen states listed on the posting. No adjusting experience is required.",
       "Trainees help inspect residential and commercial damage, learn to read policies and estimate losses, support senior adjusters on claim files, and talk with clients, contractors, and carriers.",
-      "Metro offers paid training, licensing support, a flexible schedule, and a stated pay range of $35,000 to $125,000 with performance-based upside. A valid driver’s license and reliable transportation are required. Apply on Greenhouse."
+      "Metro offers paid training, licensing support, a flexible schedule, and a stated pay range of $35,000 to $125,000 with performance-based upside. A valid driver\u2019s license and reliable transportation are required. Apply on Greenhouse."
     ],
     "validThrough": "2026-11-25"
   },
   {
     "id": "metro-pa-trainee-596930-nv",
-    "title": "Public Insurance Adjuster Trainee – Nevada",
+    "title": "Public Insurance Adjuster Trainee \u2013 Nevada",
     "company": "Metro Public Adjustment",
     "location": "Nevada",
     "type": "Apprentice",
@@ -2230,12 +2230,12 @@
     "url": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4455200009",
     "applyUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4455200009",
     "sourceUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4455200009",
-    "salary": "$35k – $125k",
-    "blurb": "Paid-training path to a public adjuster license in Nevada; full- or part-time, posted at $35,000–$125,000.",
+    "salary": "$35k \u2013 $125k",
+    "blurb": "Paid-training path to a public adjuster license in Nevada; full- or part-time, posted at $35,000\u2013$125,000.",
     "description": [
       "Metro Public Adjustment is hiring public adjuster trainees in Nevada, one of sixteen states listed on the posting. No adjusting experience is required.",
       "Trainees help inspect residential and commercial damage, learn to read policies and estimate losses, support senior adjusters on claim files, and talk with clients, contractors, and carriers.",
-      "Metro offers paid training, licensing support, a flexible schedule, and a stated pay range of $35,000 to $125,000 with performance-based upside. A valid driver’s license and reliable transportation are required. Apply on Greenhouse."
+      "Metro offers paid training, licensing support, a flexible schedule, and a stated pay range of $35,000 to $125,000 with performance-based upside. A valid driver\u2019s license and reliable transportation are required. Apply on Greenhouse."
     ],
     "validThrough": "2026-11-25"
   },
@@ -2265,7 +2265,7 @@
   },
   {
     "id": "justclaims-sr-licensed-pa-california",
-    "title": "Senior Claims Professional / Licensed Public Adjuster – California",
+    "title": "Senior Claims Professional / Licensed Public Adjuster \u2013 California",
     "company": "JustClaims",
     "location": "Los Angeles, CA or Remote (CA)",
     "type": "Licensed PA",
@@ -2291,7 +2291,7 @@
   },
   {
     "id": "justclaims-sr-licensed-pa-texas",
-    "title": "Senior Claims Professional / Licensed Public Adjuster – Texas",
+    "title": "Senior Claims Professional / Licensed Public Adjuster \u2013 Texas",
     "company": "JustClaims",
     "location": "Dallas, TX or Remote (TX)",
     "type": "Licensed PA",
@@ -2317,7 +2317,7 @@
   },
   {
     "id": "justclaims-sr-licensed-pa-florida",
-    "title": "Senior Claims Professional / Licensed Public Adjuster – Florida",
+    "title": "Senior Claims Professional / Licensed Public Adjuster \u2013 Florida",
     "company": "JustClaims",
     "location": "Miami, FL or Remote (FL)",
     "type": "Licensed PA",
@@ -2367,7 +2367,7 @@
   },
   {
     "id": "metro-pa-trainee-596930-oh",
-    "title": "Public Insurance Adjuster Trainee – Ohio",
+    "title": "Public Insurance Adjuster Trainee \u2013 Ohio",
     "company": "Metro Public Adjustment",
     "location": "OH",
     "type": "Apprentice",
@@ -2382,18 +2382,18 @@
     "url": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4455193009",
     "applyUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4455193009",
     "sourceUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4455193009",
-    "blurb": "Paid-training path to a public adjuster license in Ohio; full- or part-time, posted at $35,000–$125,000.",
+    "blurb": "Paid-training path to a public adjuster license in Ohio; full- or part-time, posted at $35,000\u2013$125,000.",
     "description": [
       "Metro Public Adjustment is hiring public adjuster trainees in Ohio, one of sixteen states listed on the posting. No adjusting experience is required.",
       "Trainees learn to advocate for policyholders, evaluate property damage, and negotiate insurance settlements, with comprehensive training and mentorship.",
-      "The posting lists full- or part-time work and compensation of $35,000 to $125,000. A valid driver’s license and reliable transportation are required. Apply on Greenhouse."
+      "The posting lists full- or part-time work and compensation of $35,000 to $125,000. A valid driver\u2019s license and reliable transportation are required. Apply on Greenhouse."
     ],
     "validThrough": "2026-11-26",
-    "salary": "$35k – $125k"
+    "salary": "$35k \u2013 $125k"
   },
   {
     "id": "metro-pa-trainee-596930-va",
-    "title": "Public Insurance Adjuster Trainee – Virginia",
+    "title": "Public Insurance Adjuster Trainee \u2013 Virginia",
     "company": "Metro Public Adjustment",
     "location": "VA",
     "type": "Apprentice",
@@ -2408,18 +2408,18 @@
     "url": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4455194009",
     "applyUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4455194009",
     "sourceUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4455194009",
-    "blurb": "Paid-training path to a public adjuster license in Virginia; full- or part-time, posted at $35,000–$125,000.",
+    "blurb": "Paid-training path to a public adjuster license in Virginia; full- or part-time, posted at $35,000\u2013$125,000.",
     "description": [
       "Metro Public Adjustment is hiring public adjuster trainees in Virginia, one of sixteen states listed on the posting. No adjusting experience is required.",
       "Trainees learn to advocate for policyholders, evaluate property damage, and negotiate insurance settlements, with comprehensive training and mentorship.",
-      "The posting lists full- or part-time work and compensation of $35,000 to $125,000. A valid driver’s license and reliable transportation are required. Apply on Greenhouse."
+      "The posting lists full- or part-time work and compensation of $35,000 to $125,000. A valid driver\u2019s license and reliable transportation are required. Apply on Greenhouse."
     ],
     "validThrough": "2026-11-26",
-    "salary": "$35k – $125k"
+    "salary": "$35k \u2013 $125k"
   },
   {
     "id": "metro-claims-rep-631580-ca",
-    "title": "Claims Representative (Work From Home) – California",
+    "title": "Claims Representative (Work From Home) \u2013 California",
     "company": "Metro Public Adjustment",
     "location": "CA",
     "type": "Entry-level",
@@ -2444,7 +2444,7 @@
   },
   {
     "id": "metro-claims-rep-592977-nj",
-    "title": "Claims Representative (Work From Home) – New Jersey",
+    "title": "Claims Representative (Work From Home) \u2013 New Jersey",
     "company": "Metro Public Adjustment",
     "location": "New Jersey",
     "type": "Entry-level",
@@ -2469,7 +2469,7 @@
   },
   {
     "id": "metro-remote-claims-rep-630810-ri",
-    "title": "Remote Claims Representative – Rhode Island",
+    "title": "Remote Claims Representative \u2013 Rhode Island",
     "company": "Metro Public Adjustment",
     "location": "Rhode Island",
     "type": "Entry-level",
@@ -2494,7 +2494,7 @@
   },
   {
     "id": "metro-claims-writer-598753-pueblo-co",
-    "title": "Remote Claims Writer – Pueblo County, CO",
+    "title": "Remote Claims Writer \u2013 Pueblo County, CO",
     "company": "Metro Public Adjustment",
     "location": "Pueblo County, CO",
     "type": "Entry-level",
@@ -2519,7 +2519,7 @@
   },
   {
     "id": "metro-claims-writer-598753-nj",
-    "title": "Insurance Claims Writer – New Jersey",
+    "title": "Insurance Claims Writer \u2013 New Jersey",
     "company": "Metro Public Adjustment",
     "location": "New Jersey",
     "type": "Entry-level",
@@ -2544,7 +2544,7 @@
   },
   {
     "id": "metro-pa-apprentice-249388-bensalem-1025",
-    "title": "Public Adjuster Apprentice – Bensalem, PA",
+    "title": "Public Adjuster Apprentice \u2013 Bensalem, PA",
     "company": "Metro Public Adjustment",
     "location": "Bensalem, PA",
     "type": "Apprentice",
@@ -2568,7 +2568,7 @@
   },
   {
     "id": "metro-pa-trainee-596930-in",
-    "title": "Public Insurance Adjuster Trainee – Indiana",
+    "title": "Public Insurance Adjuster Trainee \u2013 Indiana",
     "company": "Metro Public Adjustment",
     "location": "Indiana",
     "type": "Apprentice",
@@ -2583,17 +2583,17 @@
     "url": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4455192009",
     "applyUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4455192009",
     "sourceUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4455192009",
-    "blurb": "Paid-training path to a public adjuster license in Indiana; full- or part-time, posted at $35,000–$125,000.",
+    "blurb": "Paid-training path to a public adjuster license in Indiana; full- or part-time, posted at $35,000\u2013$125,000.",
     "description": [
       "Metro Public Adjustment is hiring public adjuster trainees in Indiana, one of sixteen states listed on the posting. No adjusting experience is required.",
       "Trainees help inspect residential and commercial damage, learn to read policies and estimate losses, support senior adjusters on claim files, and talk with clients, contractors, and carriers.",
-      "Metro offers paid training, licensing support, a flexible schedule, and a stated pay range of $35,000 to $125,000 with performance-based upside. A valid driver’s license and reliable transportation are required. Apply on Greenhouse."
+      "Metro offers paid training, licensing support, a flexible schedule, and a stated pay range of $35,000 to $125,000 with performance-based upside. A valid driver\u2019s license and reliable transportation are required. Apply on Greenhouse."
     ],
     "validThrough": "2026-11-27"
   },
   {
     "id": "metro-pa-trainee-596930-wi",
-    "title": "Public Insurance Adjuster Trainee – Wisconsin",
+    "title": "Public Insurance Adjuster Trainee \u2013 Wisconsin",
     "company": "Metro Public Adjustment",
     "location": "Wisconsin",
     "type": "Apprentice",
@@ -2608,17 +2608,17 @@
     "url": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4329579009",
     "applyUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4329579009",
     "sourceUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4329579009",
-    "blurb": "Paid-training path to a public adjuster license in Wisconsin; full- or part-time, posted at $35,000–$125,000.",
+    "blurb": "Paid-training path to a public adjuster license in Wisconsin; full- or part-time, posted at $35,000\u2013$125,000.",
     "description": [
       "Metro Public Adjustment is hiring public adjuster trainees in Wisconsin, one of sixteen states listed on the posting. No adjusting experience is required.",
       "Trainees help inspect residential and commercial damage, learn to read policies and estimate losses, support senior adjusters on claim files, and talk with clients, contractors, and carriers.",
-      "Metro offers paid training, licensing support, a flexible schedule, and a stated pay range of $35,000 to $125,000 with performance-based upside. A valid driver’s license and reliable transportation are required. Apply on Greenhouse."
+      "Metro offers paid training, licensing support, a flexible schedule, and a stated pay range of $35,000 to $125,000 with performance-based upside. A valid driver\u2019s license and reliable transportation are required. Apply on Greenhouse."
     ],
     "validThrough": "2026-11-27"
   },
   {
     "id": "metro-pa-trainee-596930-sd",
-    "title": "Public Insurance Adjuster Trainee – South Dakota",
+    "title": "Public Insurance Adjuster Trainee \u2013 South Dakota",
     "company": "Metro Public Adjustment",
     "location": "South Dakota",
     "type": "Apprentice",
@@ -2633,17 +2633,17 @@
     "url": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4330433009",
     "applyUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4330433009",
     "sourceUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4330433009",
-    "blurb": "Paid-training path to a public adjuster license in South Dakota; full- or part-time, posted at $35,000–$125,000.",
+    "blurb": "Paid-training path to a public adjuster license in South Dakota; full- or part-time, posted at $35,000\u2013$125,000.",
     "description": [
       "Metro Public Adjustment is hiring public adjuster trainees in South Dakota, one of sixteen states listed on the posting. No adjusting experience is required.",
       "Trainees help inspect residential and commercial damage, learn to read policies and estimate losses, support senior adjusters on claim files, and talk with clients, contractors, and carriers.",
-      "Metro offers paid training, licensing support, a flexible schedule, and a stated pay range of $35,000 to $125,000 with performance-based upside. A valid driver’s license and reliable transportation are required. Apply on Greenhouse."
+      "Metro offers paid training, licensing support, a flexible schedule, and a stated pay range of $35,000 to $125,000 with performance-based upside. A valid driver\u2019s license and reliable transportation are required. Apply on Greenhouse."
     ],
     "validThrough": "2026-11-27"
   },
   {
     "id": "metro-pa-trainee-596930-wv",
-    "title": "Public Insurance Adjuster Trainee – West Virginia",
+    "title": "Public Insurance Adjuster Trainee \u2013 West Virginia",
     "company": "Metro Public Adjustment",
     "location": "West Virginia",
     "type": "Apprentice",
@@ -2658,17 +2658,17 @@
     "url": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4330430009",
     "applyUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4330430009",
     "sourceUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4330430009",
-    "blurb": "Paid-training path to a public adjuster license in West Virginia; full- or part-time, posted at $35,000–$125,000.",
+    "blurb": "Paid-training path to a public adjuster license in West Virginia; full- or part-time, posted at $35,000\u2013$125,000.",
     "description": [
       "Metro Public Adjustment is hiring public adjuster trainees in West Virginia, one of sixteen states listed on the posting. No adjusting experience is required.",
       "Trainees help inspect residential and commercial damage, learn to read policies and estimate losses, support senior adjusters on claim files, and talk with clients, contractors, and carriers.",
-      "Metro offers paid training, licensing support, a flexible schedule, and a stated pay range of $35,000 to $125,000 with performance-based upside. A valid driver’s license and reliable transportation are required. Apply on Greenhouse."
+      "Metro offers paid training, licensing support, a flexible schedule, and a stated pay range of $35,000 to $125,000 with performance-based upside. A valid driver\u2019s license and reliable transportation are required. Apply on Greenhouse."
     ],
     "validThrough": "2026-11-27"
   },
   {
     "id": "sunpoint-sales-professional-idaho",
-    "title": "Sales Professional – Idaho",
+    "title": "Sales Professional \u2013 Idaho",
     "company": "SunPoint Public Adjusters",
     "location": "Idaho (field-based, travel required)",
     "type": "Claims rep",
@@ -2683,17 +2683,17 @@
     "url": "https://sunpoint.us/careers/sales-professional-idaho/",
     "applyUrl": "https://sunpoint.us/careers/sales-professional-idaho/",
     "sourceUrl": "https://sunpoint.us/careers/sales-professional-idaho/",
-    "blurb": "Commission-based PA sales role ($125k–$400k+) for licensed or apprentice producers in the Pacific Northwest.",
+    "blurb": "Commission-based PA sales role ($125k\u2013$400k+) for licensed or apprentice producers in the Pacific Northwest.",
     "description": [
       "SunPoint Public Adjusters is hiring licensed and apprentice sales professionals for its Pacific Northwest territory. This posting covers Idaho, and the firm has matching postings for Washington and the rest of the region.",
       "The role requires state Department of Insurance licensing, and SunPoint helps strong candidates get licensed. It looks for a record in professional-services or high-level sales and the drive to work unsupervised with high-profile clients. Travel is required.",
-      "Pay is commission-based, with earnings listed at $125K–$400K+ a year. Benefits include medical, dental, vision, and a 401(k) with a 3% company contribution. A degree or equivalent experience is preferred. Apply through the form on the posting."
+      "Pay is commission-based, with earnings listed at $125K\u2013$400K+ a year. Benefits include medical, dental, vision, and a 401(k) with a 3% company contribution. A degree or equivalent experience is preferred. Apply through the form on the posting."
     ],
     "validThrough": "2026-11-27"
   },
   {
     "id": "sunpoint-sales-professional-oregon",
-    "title": "Sales Professional – Oregon",
+    "title": "Sales Professional \u2013 Oregon",
     "company": "SunPoint Public Adjusters",
     "location": "Oregon (field-based, travel required)",
     "type": "Claims rep",
@@ -2708,17 +2708,17 @@
     "url": "https://sunpoint.us/careers/sales-professional-oregon/",
     "applyUrl": "https://sunpoint.us/careers/sales-professional-oregon/",
     "sourceUrl": "https://sunpoint.us/careers/sales-professional-oregon/",
-    "blurb": "Commission-based PA sales role ($125k–$400k+) for licensed or apprentice producers in the Pacific Northwest.",
+    "blurb": "Commission-based PA sales role ($125k\u2013$400k+) for licensed or apprentice producers in the Pacific Northwest.",
     "description": [
       "SunPoint Public Adjusters is hiring licensed and apprentice sales professionals for its Pacific Northwest territory. This posting covers Oregon, and the firm has matching postings for Washington and the rest of the region.",
       "The role requires state Department of Insurance licensing, and SunPoint helps strong candidates get licensed. It looks for a record in professional-services or high-level sales and the drive to work unsupervised with high-profile clients. Travel is required.",
-      "Pay is commission-based, with earnings listed at $125K–$400K+ a year. Benefits include medical, dental, vision, and a 401(k) with a 3% company contribution. A degree or equivalent experience is preferred. Apply through the form on the posting."
+      "Pay is commission-based, with earnings listed at $125K\u2013$400K+ a year. Benefits include medical, dental, vision, and a 401(k) with a 3% company contribution. A degree or equivalent experience is preferred. Apply through the form on the posting."
     ],
     "validThrough": "2026-11-27"
   },
   {
     "id": "metro-property-inspectors-629550-nj",
-    "title": "Property Inspectors – New Jersey",
+    "title": "Property Inspectors \u2013 New Jersey",
     "company": "Metro Public Adjustment",
     "location": "New Jersey",
     "type": "Claims rep",
@@ -2743,7 +2743,7 @@
   },
   {
     "id": "metro-licensed-pa-612725-sc",
-    "title": "Claims Representative (Licensed Public Adjuster) – South Carolina",
+    "title": "Claims Representative (Licensed Public Adjuster) \u2013 South Carolina",
     "company": "Metro Public Adjustment",
     "location": "South Carolina",
     "type": "Licensed PA",
@@ -2766,7 +2766,7 @@
   },
   {
     "id": "metro-remote-claims-rep-613829-wi",
-    "title": "Remote Claims Representative – Wisconsin",
+    "title": "Remote Claims Representative \u2013 Wisconsin",
     "company": "Metro Public Adjustment",
     "location": "Wisconsin",
     "type": "Claims rep",
@@ -2790,7 +2790,7 @@
   },
   {
     "id": "metro-claims-rep-596355-scranton-pa",
-    "title": "Homeowners Insurance Claims Representative – Scranton, PA",
+    "title": "Homeowners Insurance Claims Representative \u2013 Scranton, PA",
     "company": "Metro Public Adjustment",
     "location": "Scranton, PA",
     "type": "Claims rep",
@@ -2815,7 +2815,7 @@
   },
   {
     "id": "metro-pa-trainee-596930-pa",
-    "title": "Public Insurance Adjuster Trainee – Pennsylvania",
+    "title": "Public Insurance Adjuster Trainee \u2013 Pennsylvania",
     "company": "Metro Public Adjustment",
     "location": "PA",
     "type": "Apprentice",
@@ -2830,17 +2830,17 @@
     "url": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4455179009",
     "applyUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4455179009",
     "sourceUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4455179009",
-    "blurb": "Paid-training path to a public adjuster license in Pennsylvania; full- or part-time, posted at $35,000–$125,000.",
+    "blurb": "Paid-training path to a public adjuster license in Pennsylvania; full- or part-time, posted at $35,000\u2013$125,000.",
     "description": [
       "Metro Public Adjustment is hiring public adjuster trainees in Pennsylvania, one of sixteen states listed on the posting. No adjusting experience is required.",
       "Trainees learn to advocate for policyholders, evaluate property damage, and negotiate fair insurance settlements, with comprehensive training and mentorship provided.",
-      "The posting lists full- or part-time work and compensation of $35,000 to $125,000. A valid driver’s license and reliable transportation are required. Apply on Greenhouse."
+      "The posting lists full- or part-time work and compensation of $35,000 to $125,000. A valid driver\u2019s license and reliable transportation are required. Apply on Greenhouse."
     ],
     "validThrough": "2026-11-28"
   },
   {
     "id": "metro-pa-trainee-596930-nj",
-    "title": "Public Insurance Adjuster Trainee – New Jersey",
+    "title": "Public Insurance Adjuster Trainee \u2013 New Jersey",
     "company": "Metro Public Adjustment",
     "location": "NJ",
     "type": "Apprentice",
@@ -2855,17 +2855,17 @@
     "url": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4455199009",
     "applyUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4455199009",
     "sourceUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4455199009",
-    "blurb": "Paid-training path to a public adjuster license in New Jersey; full- or part-time, posted at $35,000–$125,000.",
+    "blurb": "Paid-training path to a public adjuster license in New Jersey; full- or part-time, posted at $35,000\u2013$125,000.",
     "description": [
       "Metro Public Adjustment is hiring public adjuster trainees in New Jersey, one of sixteen states listed on the posting. No adjusting experience is required.",
       "Trainees learn to advocate for policyholders, evaluate property damage, and negotiate fair insurance settlements, with comprehensive training and mentorship provided.",
-      "The posting lists full- or part-time work and compensation of $35,000 to $125,000. A valid driver’s license and reliable transportation are required. Apply on Greenhouse."
+      "The posting lists full- or part-time work and compensation of $35,000 to $125,000. A valid driver\u2019s license and reliable transportation are required. Apply on Greenhouse."
     ],
     "validThrough": "2026-11-28"
   },
   {
     "id": "metro-pa-trainee-596930-nc",
-    "title": "Public Insurance Adjuster Trainee – North Carolina",
+    "title": "Public Insurance Adjuster Trainee \u2013 North Carolina",
     "company": "Metro Public Adjustment",
     "location": "NC",
     "type": "Apprentice",
@@ -2880,17 +2880,17 @@
     "url": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4330424009",
     "applyUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4330424009",
     "sourceUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4330424009",
-    "blurb": "Paid-training path to a public adjuster license in North Carolina; full- or part-time, posted at $35,000–$125,000.",
+    "blurb": "Paid-training path to a public adjuster license in North Carolina; full- or part-time, posted at $35,000\u2013$125,000.",
     "description": [
       "Metro Public Adjustment is hiring public adjuster trainees in North Carolina, one of sixteen states listed on the posting. No adjusting experience is required.",
       "Trainees learn to advocate for policyholders, evaluate property damage, and negotiate fair insurance settlements, with comprehensive training and mentorship provided.",
-      "The posting lists full- or part-time work and compensation of $35,000 to $125,000. A valid driver’s license and reliable transportation are required. Apply on Greenhouse."
+      "The posting lists full- or part-time work and compensation of $35,000 to $125,000. A valid driver\u2019s license and reliable transportation are required. Apply on Greenhouse."
     ],
     "validThrough": "2026-11-28"
   },
   {
     "id": "metro-pa-trainee-596930-md",
-    "title": "Public Insurance Adjuster Trainee – Maryland",
+    "title": "Public Insurance Adjuster Trainee \u2013 Maryland",
     "company": "Metro Public Adjustment",
     "location": "MD",
     "type": "Apprentice",
@@ -2905,17 +2905,17 @@
     "url": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4330429009",
     "applyUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4330429009",
     "sourceUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4330429009",
-    "blurb": "Paid-training path to a public adjuster license in Maryland; full- or part-time, posted at $35,000–$125,000.",
+    "blurb": "Paid-training path to a public adjuster license in Maryland; full- or part-time, posted at $35,000\u2013$125,000.",
     "description": [
       "Metro Public Adjustment is hiring public adjuster trainees in Maryland, one of sixteen states listed on the posting. No adjusting experience is required.",
       "Trainees learn to advocate for policyholders, evaluate property damage, and negotiate fair insurance settlements, with comprehensive training and mentorship provided.",
-      "The posting lists full- or part-time work and compensation of $35,000 to $125,000. A valid driver’s license and reliable transportation are required. Apply on Greenhouse."
+      "The posting lists full- or part-time work and compensation of $35,000 to $125,000. A valid driver\u2019s license and reliable transportation are required. Apply on Greenhouse."
     ],
     "validThrough": "2026-11-28"
   },
   {
     "id": "metro-remote-claims-rep-630669-in",
-    "title": "Remote Claims Representative – Indiana",
+    "title": "Remote Claims Representative \u2013 Indiana",
     "company": "Metro Public Adjustment",
     "location": "Indiana",
     "type": "Claims rep",
@@ -2940,7 +2940,7 @@
   },
   {
     "id": "metro-remote-claims-writer-598753-allentown-pa",
-    "title": "Remote Claims Writer – Allentown, PA",
+    "title": "Remote Claims Writer \u2013 Allentown, PA",
     "company": "Metro Public Adjustment",
     "location": "Allentown, PA",
     "type": "Claims rep",
@@ -2966,7 +2966,7 @@
   },
   {
     "id": "metro-public-adjuster-504286-pa",
-    "title": "Public Adjuster – Pennsylvania",
+    "title": "Public Adjuster \u2013 Pennsylvania",
     "company": "Metro Public Adjustment",
     "location": "PA",
     "type": "Licensed PA",
@@ -3034,7 +3034,7 @@
     "description": [
       "Homeland Public Adjusters, a Florida public adjusting firm serving homeowners, business owners and community associations since 2006, is hiring licensed public adjusters in Florida and New Jersey to represent property owners on their insurance claims. English-only and bilingual candidates are welcome.",
       "The firm says you can work remotely from your own location with an open schedule. New hires get onboarding on its own tools: ClaimsHub, a claims platform with deadline tracking, document and photo files, a contact directory and a view of your own commissions, plus the Adjuster Advantage app, which gives you a referral code for property owners you sign up.",
-      "The page describes pay as commission splits and does not list amounts, so pay is not listed. Apply through the form on the careers page with your résumé, or call the Florida or New Jersey office."
+      "The page describes pay as commission splits and does not list amounts, so pay is not listed. Apply through the form on the careers page with your r\u00e9sum\u00e9, or call the Florida or New Jersey office."
     ],
     "url": "https://homelandpa.com/about/join-our-team/",
     "applyUrl": "https://homelandpa.com/about/join-our-team/",
@@ -3059,7 +3059,7 @@
     "description": [
       "Homeland Public Adjusters, which has represented property owners in Florida and New Jersey since 2006, lists a Public Adjuster Apprentice opening for people who want to start a career in public adjusting and learn how the firm works.",
       "Per the careers page, apprentices work alongside licensed public adjusters on assigned claims inside the firm's ClaimsHub platform, and get onboarding on its tools. Members who sign up through an apprentice's referral code in the firm's Adjuster Advantage app go to the supervising PA. The page does not say which state the apprentice role is based in; the firm works in Florida and New Jersey.",
-      "Pay is not listed. Apply through the form on the careers page with your résumé."
+      "Pay is not listed. Apply through the form on the careers page with your r\u00e9sum\u00e9."
     ],
     "url": "https://homelandpa.com/about/join-our-team/",
     "applyUrl": "https://homelandpa.com/about/join-our-team/",
@@ -3084,7 +3084,7 @@
     "description": [
       "Gold Star Adjusters, a public adjusting firm headquartered in Jacksonville, Florida, represents policyholders, not insurance companies. It runs an open employment application and welcomes licensed public insurance adjusters, experienced claims professionals ready to move into public adjusting, and newcomers with strong communication, documentation or construction backgrounds.",
       "The firm handles first-party home, business and rental property losses, including hurricane, tornado, hail and flood damage, fire, water leaks, mold, theft, vandalism and sinkhole claims. It says it provides structured training and set systems. Its base is Florida, and it also has adjusters licensed in Georgia, parts of the Carolinas, Louisiana and Texas, so list all your active licenses when you apply.",
-      "The page mentions fee arrangements but gives no figures, so pay is not listed. Apply through the form on the page with a cover letter, résumé, earliest start date and any license copies, or call 904-406-7232 first."
+      "The page mentions fee arrangements but gives no figures, so pay is not listed. Apply through the form on the page with a cover letter, r\u00e9sum\u00e9, earliest start date and any license copies, or call 904-406-7232 first."
     ],
     "url": "https://goldstaradjusters.com/employment/",
     "applyUrl": "https://goldstaradjusters.com/employment/",
@@ -3093,7 +3093,7 @@
   },
   {
     "id": "united-pa-insurance-coverage-attorney-ny",
-    "title": "In-House Insurance Coverage Attorney – Property Claims",
+    "title": "In-House Insurance Coverage Attorney \u2013 Property Claims",
     "company": "United Public Adjusters & Appraisers",
     "location": "Melville, NY",
     "type": "Various",
@@ -3108,16 +3108,16 @@
     "description": [
       "United Public Adjusters & Appraisers, a public adjusting firm that represents homeowners, business owners and institutions on property damage claims, lists an opening for an In-House Insurance Coverage Attorney focused on property claims.",
       "The careers page describes the role in one line: an attorney focused on supporting the firm's advocacy efforts for policyholders. It gives no further duties or requirements. The firm's headquarters is in Melville, NY, and it also has an office in Ozone Park, Queens; the page does not say which office this role works from.",
-      "Pay is not listed. Apply by choosing this role in the résumé form on the careers page."
+      "Pay is not listed. Apply by choosing this role in the r\u00e9sum\u00e9 form on the careers page."
     ],
     "url": "https://www.unitedpublicadjusters.com/about/careers/",
     "applyUrl": "https://www.unitedpublicadjusters.com/about/careers/",
     "sourceUrl": "https://www.unitedpublicadjusters.com/about/careers/",
-    "validThrough": "2026-12-05"
+    "validThrough": "2026-12-06"
   },
   {
     "id": "united-pa-forensic-cpa-insurance-claims-ny",
-    "title": "Forensic Certified Public Accountant (CPA) – Insurance Claims",
+    "title": "Forensic Certified Public Accountant (CPA) \u2013 Insurance Claims",
     "company": "United Public Adjusters & Appraisers",
     "location": "Melville, NY",
     "type": "Various",
@@ -3132,11 +3132,11 @@
     "description": [
       "United Public Adjusters & Appraisers, a public adjusting firm that advocates for policyholders after property losses, lists an opening for a Forensic Certified Public Accountant on insurance claims.",
       "Per the careers page, the CPA plays a key role in business interruption and complex financial loss claims, analyzing the numbers and telling the story behind the data. The page gives no further requirements. The firm's headquarters is in Melville, NY, with another office in Ozone Park, Queens; the page does not say which office this role works from.",
-      "Pay is not listed. Apply by choosing this role in the résumé form on the careers page."
+      "Pay is not listed. Apply by choosing this role in the r\u00e9sum\u00e9 form on the careers page."
     ],
     "url": "https://www.unitedpublicadjusters.com/about/careers/",
     "applyUrl": "https://www.unitedpublicadjusters.com/about/careers/",
     "sourceUrl": "https://www.unitedpublicadjusters.com/about/careers/",
-    "validThrough": "2026-12-05"
+    "validThrough": "2026-12-06"
   }
 ]

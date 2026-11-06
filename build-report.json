@@ -1,7 +1,7 @@
 {
   "buildDate": "2026-11-06",
   "total": 127,
-  "active": 106,
+  "active": 99,
   "droppedExpired": [
     "founding-placeholder",
     "metro-apprentice",
@@ -15,10 +15,17 @@
     "rockwall-destin",
     "rockwall-san-antonio",
     "rockwall-houston",
+    "united-pa-claims-advocate-melville",
+    "united-pa-property-claims-adjuster-ny",
+    "united-pa-insurance-claims-manager-ny",
     "swift-pa-field-sales-rep-omaha",
     "swift-pa-licensed-outside-sales-st-louis",
+    "united-pa-property-damage-estimator",
+    "united-pa-content-claims-adjuster",
+    "united-pa-manhattan-business-development-associate",
     "swift-pa-outside-sales-rep-denver",
     "swift-pa-outside-sales-rep-minneapolis",
+    "allied-pa-construction-consultant-la",
     "swift-pa-outside-sales-rep-madison",
     "swift-pa-licensed-outside-sales-kansas-city",
     "swift-pa-outside-sales-rep-des-moines",
@@ -29,9 +36,6 @@
     "metro-apprentice-249388",
     "metro-inspectors-western-pa",
     "fspa-apprentice-fl",
-    "united-pa-claims-advocate-melville",
-    "united-pa-property-claims-adjuster-ny",
-    "united-pa-insurance-claims-manager-ny",
     "tiger-adjusters-public-adjuster-houston",
     "tiger-adjusters-public-adjuster-trenton",
     "mla-claims-apprentice-pia-lafayette-hill",
@@ -50,10 +54,6 @@
     "metro-pa-business-development-lead-western-pa",
     "vpa-loss-documentation-field-inspector",
     "mla-claims-licensed-public-adjuster",
-    "united-pa-property-damage-estimator",
-    "united-pa-content-claims-adjuster",
-    "united-pa-manhattan-business-development-associate",
-    "allied-pa-construction-consultant-la",
     "metro-pa-claims-property-inspector-pa",
     "vpa-property-claims-adjuster-lexington",
     "ai-mbc-c-level-sales-executive-westminster",
@@ -215,9 +215,6 @@
     "metro-apprentice-249388": "ok",
     "metro-inspectors-western-pa": "ok",
     "fspa-apprentice-fl": "ok",
-    "united-pa-claims-advocate-melville": "ok",
-    "united-pa-property-claims-adjuster-ny": "ok",
-    "united-pa-insurance-claims-manager-ny": "ok",
     "tiger-adjusters-public-adjuster-houston": "ok",
     "tiger-adjusters-public-adjuster-trenton": "ok",
     "mla-claims-apprentice-pia-lafayette-hill": "ok",
@@ -236,10 +233,6 @@
     "metro-pa-business-development-lead-western-pa": "ok",
     "vpa-loss-documentation-field-inspector": "ok",
     "mla-claims-licensed-public-adjuster": "ok",
-    "united-pa-property-damage-estimator": "ok",
-    "united-pa-content-claims-adjuster": "ok",
-    "united-pa-manhattan-business-development-associate": "ok",
-    "allied-pa-construction-consultant-la": "ok",
     "metro-pa-claims-property-inspector-pa": "ok",
     "vpa-property-claims-adjuster-lexington": "ok",
     "ai-mbc-c-level-sales-executive-westminster": "ok",
@@ -300,7 +293,15 @@
     "homeland-licensed-pa-fl-nj": "ok",
     "homeland-pa-apprentice-fl-nj": "ok"
   },
-  "removedPages": [],
+  "removedPages": [
+    "jobs/allied-pa-construction-consultant-la.html",
+    "jobs/united-pa-claims-advocate-melville.html",
+    "jobs/united-pa-content-claims-adjuster.html",
+    "jobs/united-pa-insurance-claims-manager-ny.html",
+    "jobs/united-pa-manhattan-business-development-associate.html",
+    "jobs/united-pa-property-claims-adjuster-ny.html",
+    "jobs/united-pa-property-damage-estimator.html"
+  ],
   "featuredNow": [],
   "featuredProblems": {},
   "sponsorProblems": {},
@@ -312,7 +313,7 @@
     "rockwall-houston": "rockwall-licensed-pa-houston-tx"
   },
   "sponsorStats": {
-    "listings": 106,
+    "listings": 99,
     "firms": 33,
     "remote": 24,
     "florida": 18,
@@ -325,7 +326,7 @@
     },
     {
       "url": "/jobs/california/",
-      "listings": 10
+      "listings": 9
     },
     {
       "url": "/jobs/colorado/",
@@ -373,7 +374,7 @@
     },
     {
       "url": "/jobs/new-york/",
-      "listings": 9
+      "listings": 3
     },
     {
       "url": "/jobs/north-carolina/",
@@ -443,7 +444,7 @@
   "locationOptions": [
     "remote:24",
     "AZ:2",
-    "CA:10",
+    "CA:9",
     "CO:5",
     "FL:18",
     "GA:1",
@@ -455,7 +456,7 @@
     "MO:1",
     "NV:1",
     "NJ:9",
-    "NY:9",
+    "NY:3",
     "NC:1",
     "ND:1",
     "OH:2",
@@ -472,5 +473,5 @@
     "WV:3",
     "WI:3"
   ],
-  "sitemapUrls": 165
+  "sitemapUrls": 158
 }
