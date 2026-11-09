@@ -3196,5 +3196,55 @@
     "locs": [
       "NJ"
     ]
+  },
+  {
+    "id": "odry-claims-licensed-pa-remote",
+    "title": "Licensed Public Adjusters Wanted",
+    "company": "Odry Claims",
+    "location": "Remote",
+    "type": "Licensed PA",
+    "posted": "2026-11-09",
+    "tags": [
+      "licensed-pa",
+      "remote",
+      "contract",
+      "apprenticeship"
+    ],
+    "blurb": "Odry Claims is adding licensed public adjusters on a remote contract/commission basis, and says an apprenticeship is available.",
+    "description": [
+      "Odry Claims' careers page lists \"Licensed Public Adjusters Wanted 3-20\" and describes the role as contract/commission, remote, with evenings and weekends available. The page also says an apprenticeship is available.",
+      "Requirements listed: reliable transportation, a valid driver's license and insurance, and authorization for a background check. Listed pay is $100,000-$150,000 (contract/commission). Apply by phone through the careers page."
+    ],
+    "url": "https://odryclaims.com/careers",
+    "applyUrl": "https://odryclaims.com/careers",
+    "sourceUrl": "https://odryclaims.com/careers",
+    "salary": "$100,000–$150,000 (contract/commission)",
+    "validThrough": "2026-12-09",
+    "locs": [
+      "remote"
+    ]
+  },
+  {
+    "id": "york-pa-public-adjuster-trainee-chicago-il",
+    "title": "Public Adjusters",
+    "company": "York Public Adjusting",
+    "location": "Chicago and Central Illinois",
+    "type": "Apprentice",
+    "posted": "2026-11-09",
+    "tags": [
+      "illinois",
+      "chicago",
+      "trainee",
+      "public-adjuster"
+    ],
+    "blurb": "York Public Adjusting is hiring public adjusters in Chicago and Central Illinois and says it will train and help new hires on the PA path.",
+    "description": [
+      "York Public Adjusting's site says it is hiring in Chicago and Central Illinois and is looking for public adjusters, adding \"We will train you and help you on the Public Adjuster path.\"",
+      "Apply through the Join Our Team form on the York Public Adjusting site, attaching a resume. Pay is not listed."
+    ],
+    "url": "https://yorkpublicadjusting.com/about-us",
+    "applyUrl": "https://yorkpublicadjusting.com/about-us",
+    "sourceUrl": "https://yorkpublicadjusting.com/about-us",
+    "validThrough": "2026-12-09"
   }
 ]

@@ -1,7 +1,7 @@
 {
   "buildDate": "2026-11-09",
-  "total": 142,
-  "active": 114,
+  "total": 144,
+  "active": 116,
   "droppedExpired": [
     "founding-placeholder",
     "metro-apprentice",
@@ -125,7 +125,8 @@
     "manhattan-pa-regional-claims-manager-nyc",
     "manhattan-pa-outside-sales-phone-nyc",
     "justclaims-sr-licensed-pa-san-francisco",
-    "metro-property-inspectors-504286-nj"
+    "metro-property-inspectors-504286-nj",
+    "odry-claims-licensed-pa-remote"
   ],
   "jsonLdSkipped": {
     "noble-field-pa-sales": "jsonld:false on record",
@@ -148,7 +149,8 @@
     "united-pa-insurance-coverage-attorney-ny": "multi-listing pointer (type Various), not a single job — Google policy",
     "united-pa-forensic-cpa-insurance-claims-ny": "multi-listing pointer (type Various), not a single job — Google policy",
     "manhattan-pa-field-associate-nyc": "missing required: location(jobLocation/applicantLocationRequirements)",
-    "advantage-pa-licensed-and-apprentice-fl": "multi-listing pointer (type Various), not a single job — Google policy"
+    "advantage-pa-licensed-and-apprentice-fl": "multi-listing pointer (type Various), not a single job — Google policy",
+    "york-pa-public-adjuster-trainee-chicago-il": "missing required: location(jobLocation/applicantLocationRequirements)"
   },
   "defaultedValidThrough": [
     {
@@ -226,6 +228,9 @@
       "location(jobLocation/applicantLocationRequirements)"
     ],
     "manhattan-pa-field-associate-nyc": [
+      "location(jobLocation/applicantLocationRequirements)"
+    ],
+    "york-pa-public-adjuster-trainee-chicago-il": [
       "location(jobLocation/applicantLocationRequirements)"
     ]
   },
@@ -322,7 +327,8 @@
     "manhattan-pa-regional-claims-manager-nyc": "ok",
     "manhattan-pa-outside-sales-phone-nyc": "ok",
     "justclaims-sr-licensed-pa-san-francisco": "ok",
-    "metro-property-inspectors-504286-nj": "ok"
+    "metro-property-inspectors-504286-nj": "ok",
+    "odry-claims-licensed-pa-remote": "ok"
   },
   "removedPages": [],
   "featuredNow": [],
@@ -336,9 +342,9 @@
     "rockwall-houston": "rockwall-licensed-pa-houston-tx"
   },
   "sponsorStats": {
-    "listings": 114,
-    "firms": 34,
-    "remote": 25,
+    "listings": 116,
+    "firms": 36,
+    "remote": 26,
     "florida": 19,
     "texas": 12
   },
@@ -461,11 +467,11 @@
     },
     {
       "url": "/jobs/remote/",
-      "listings": 25
+      "listings": 26
     }
   ],
   "locationOptions": [
-    "remote:25",
+    "remote:26",
     "AZ:2",
     "CA:9",
     "CO:5",
@@ -496,5 +502,5 @@
     "WV:3",
     "WI:3"
   ],
-  "sitemapUrls": 173
+  "sitemapUrls": 175
 }
