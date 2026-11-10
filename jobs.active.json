@@ -3218,5 +3218,63 @@
     "applyUrl": "https://yorkpublicadjusting.com/about-us",
     "sourceUrl": "https://yorkpublicadjusting.com/about-us",
     "validThrough": "2026-12-09"
+  },
+  {
+    "id": "metro-claims-rep-628238-md",
+    "title": "Claims Representative",
+    "company": "Metro Public Adjustment",
+    "location": "Maryland (remote or in person)",
+    "type": "Claims rep",
+    "posted": "2026-11-09",
+    "tags": [
+      "maryland",
+      "remote",
+      "entry-level",
+      "flexible-schedule",
+      "training"
+    ],
+    "url": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4486103009",
+    "applyUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4486103009",
+    "sourceUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4486103009",
+    "blurb": "Entry-level, flexible-schedule claims role in Maryland with a 30-year PA firm. Training is provided.",
+    "description": [
+      "Metro Public Adjustment has represented policyholders for more than 30 years. Its Greenhouse posting is for a claims representative in Maryland, with no prior public adjusting experience required.",
+      "The rep does virtual or in-person walk-through inspections for damage that insurance may cover, interprets policies for homeowners, supports clients, and completes claim paperwork. Schedule is flexible, part-time or full-time, in person or remote.",
+      "Metro says it provides ongoing training. Pay is not listed. Apply through the Greenhouse posting."
+    ],
+    "validThrough": "2026-12-10",
+    "locs": [
+      "MD",
+      "remote"
+    ]
+  },
+  {
+    "id": "metro-claims-rep-598753-co",
+    "title": "Claims Representative",
+    "company": "Metro Public Adjustment",
+    "location": "Colorado (remote or in person)",
+    "type": "Claims rep",
+    "posted": "2026-11-02",
+    "tags": [
+      "colorado",
+      "remote",
+      "entry-level",
+      "flexible-schedule",
+      "training"
+    ],
+    "url": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4475644009",
+    "applyUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4475644009",
+    "sourceUrl": "https://job-boards.greenhouse.io/metropublicadjustment/jobs/4475644009",
+    "blurb": "Entry-level, flexible-schedule claims role in Colorado with a 30-year PA firm. Training is provided.",
+    "description": [
+      "Metro Public Adjustment has represented policyholders for more than 30 years. Its Greenhouse posting is for a claims representative in Colorado, with no prior public adjusting experience required.",
+      "The rep does virtual or in-person walk-through inspections for damage that insurance may cover, interprets policies for homeowners, supports clients, and completes claim paperwork. Schedule is flexible, part-time or full-time, in person or remote.",
+      "Metro says it provides ongoing training. Pay is not listed. Apply through the Greenhouse posting."
+    ],
+    "validThrough": "2026-12-10",
+    "locs": [
+      "CO",
+      "remote"
+    ]
   }
 ]

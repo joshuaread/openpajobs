@@ -1,7 +1,7 @@
 {
   "buildDate": "2026-11-10",
-  "total": 144,
-  "active": 115,
+  "total": 146,
+  "active": 117,
   "droppedExpired": [
     "founding-placeholder",
     "metro-apprentice",
@@ -126,7 +126,9 @@
     "manhattan-pa-outside-sales-phone-nyc",
     "justclaims-sr-licensed-pa-san-francisco",
     "metro-property-inspectors-504286-nj",
-    "odry-claims-licensed-pa-remote"
+    "odry-claims-licensed-pa-remote",
+    "metro-claims-rep-628238-md",
+    "metro-claims-rep-598753-co"
   ],
   "jsonLdSkipped": {
     "noble-field-pa-sales": "jsonld:false on record",
@@ -327,11 +329,11 @@
     "manhattan-pa-outside-sales-phone-nyc": "ok",
     "justclaims-sr-licensed-pa-san-francisco": "ok",
     "metro-property-inspectors-504286-nj": "ok",
-    "odry-claims-licensed-pa-remote": "ok"
+    "odry-claims-licensed-pa-remote": "ok",
+    "metro-claims-rep-628238-md": "ok",
+    "metro-claims-rep-598753-co": "ok"
   },
-  "removedPages": [
-    "jobs/metro-remote-claims-rep-613829-wi.html"
-  ],
+  "removedPages": [],
   "featuredNow": [],
   "featuredProblems": {},
   "sponsorProblems": {},
@@ -343,9 +345,9 @@
     "rockwall-houston": "rockwall-licensed-pa-houston-tx"
   },
   "sponsorStats": {
-    "listings": 115,
+    "listings": 117,
     "firms": 36,
-    "remote": 25,
+    "remote": 27,
     "florida": 19,
     "texas": 12
   },
@@ -360,7 +362,7 @@
     },
     {
       "url": "/jobs/colorado/",
-      "listings": 5
+      "listings": 6
     },
     {
       "url": "/jobs/florida/",
@@ -384,7 +386,7 @@
     },
     {
       "url": "/jobs/maryland/",
-      "listings": 4
+      "listings": 5
     },
     {
       "url": "/jobs/minnesota/",
@@ -468,20 +470,20 @@
     },
     {
       "url": "/jobs/remote/",
-      "listings": 25
+      "listings": 27
     }
   ],
   "locationOptions": [
-    "remote:25",
+    "remote:27",
     "AZ:2",
     "CA:9",
-    "CO:5",
+    "CO:6",
     "FL:19",
     "GA:1",
     "ID:1",
     "IN:2",
     "KY:1",
-    "MD:4",
+    "MD:5",
     "MN:1",
     "MO:1",
     "NV:1",
@@ -503,5 +505,5 @@
     "WV:3",
     "WI:2"
   ],
-  "sitemapUrls": 174
+  "sitemapUrls": 176
 }
