@@ -1,7 +1,7 @@
 {
   "buildDate": "2026-11-10",
   "total": 144,
-  "active": 116,
+  "active": 115,
   "droppedExpired": [
     "founding-placeholder",
     "metro-apprentice",
@@ -30,7 +30,8 @@
     "swift-pa-licensed-outside-sales-kansas-city",
     "swift-pa-outside-sales-rep-des-moines",
     "swift-pa-licensed-outside-sales-springfield-mo",
-    "metro-pa-claims-support-rep-entry-level-nc"
+    "metro-pa-claims-support-rep-entry-level-nc",
+    "metro-remote-claims-rep-613829-wi"
   ],
   "jsonLdEmitted": [
     "metro-apprentice-249388",
@@ -101,7 +102,6 @@
     "sunpoint-sales-professional-oregon",
     "metro-property-inspectors-629550-nj",
     "metro-licensed-pa-612725-sc",
-    "metro-remote-claims-rep-613829-wi",
     "metro-claims-rep-596355-scranton-pa",
     "metro-pa-trainee-596930-pa",
     "metro-pa-trainee-596930-nj",
@@ -303,7 +303,6 @@
     "sunpoint-sales-professional-oregon": "ok",
     "metro-property-inspectors-629550-nj": "ok",
     "metro-licensed-pa-612725-sc": "ok",
-    "metro-remote-claims-rep-613829-wi": "ok",
     "metro-claims-rep-596355-scranton-pa": "ok",
     "metro-pa-trainee-596930-pa": "ok",
     "metro-pa-trainee-596930-nj": "ok",
@@ -330,7 +329,9 @@
     "metro-property-inspectors-504286-nj": "ok",
     "odry-claims-licensed-pa-remote": "ok"
   },
-  "removedPages": [],
+  "removedPages": [
+    "jobs/metro-remote-claims-rep-613829-wi.html"
+  ],
   "featuredNow": [],
   "featuredProblems": {},
   "sponsorProblems": {},
@@ -342,9 +343,9 @@
     "rockwall-houston": "rockwall-licensed-pa-houston-tx"
   },
   "sponsorStats": {
-    "listings": 116,
+    "listings": 115,
     "firms": 36,
-    "remote": 26,
+    "remote": 25,
     "florida": 19,
     "texas": 12
   },
@@ -463,15 +464,15 @@
     },
     {
       "url": "/jobs/wisconsin/",
-      "listings": 3
+      "listings": 2
     },
     {
       "url": "/jobs/remote/",
-      "listings": 26
+      "listings": 25
     }
   ],
   "locationOptions": [
-    "remote:26",
+    "remote:25",
     "AZ:2",
     "CA:9",
     "CO:5",
@@ -500,7 +501,7 @@
     "VA:1",
     "WA:2",
     "WV:3",
-    "WI:3"
+    "WI:2"
   ],
-  "sitemapUrls": 175
+  "sitemapUrls": 174
 }
