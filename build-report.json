@@ -1,7 +1,7 @@
 {
   "buildDate": "2026-11-11",
-  "total": 146,
-  "active": 117,
+  "total": 147,
+  "active": 118,
   "droppedExpired": [
     "founding-placeholder",
     "metro-apprentice",
@@ -128,7 +128,8 @@
     "metro-property-inspectors-504286-nj",
     "odry-claims-licensed-pa-remote",
     "metro-claims-rep-628238-md",
-    "metro-claims-rep-598753-co"
+    "metro-claims-rep-598753-co",
+    "mla-claims-sales-executive-pa"
   ],
   "jsonLdSkipped": {
     "noble-field-pa-sales": "jsonld:false on record",
@@ -331,7 +332,8 @@
     "metro-property-inspectors-504286-nj": "ok",
     "odry-claims-licensed-pa-remote": "ok",
     "metro-claims-rep-628238-md": "ok",
-    "metro-claims-rep-598753-co": "ok"
+    "metro-claims-rep-598753-co": "ok",
+    "mla-claims-sales-executive-pa": "ok"
   },
   "removedPages": [],
   "featuredNow": [],
@@ -345,7 +347,7 @@
     "rockwall-houston": "rockwall-licensed-pa-houston-tx"
   },
   "sponsorStats": {
-    "listings": 117,
+    "listings": 118,
     "firms": 36,
     "remote": 27,
     "florida": 19,
@@ -430,7 +432,7 @@
     },
     {
       "url": "/jobs/pennsylvania/",
-      "listings": 13
+      "listings": 14
     },
     {
       "url": "/jobs/rhode-island/",
@@ -494,7 +496,7 @@
     "OH:2",
     "OK:1",
     "OR:1",
-    "PA:13",
+    "PA:14",
     "RI:1",
     "SC:4",
     "SD:2",
@@ -505,5 +507,5 @@
     "WV:3",
     "WI:2"
   ],
-  "sitemapUrls": 176
+  "sitemapUrls": 177
 }

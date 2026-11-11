@@ -3276,5 +3276,34 @@
       "CO",
       "remote"
     ]
+  },
+  {
+    "id": "mla-claims-sales-executive-pa",
+    "title": "Sales Executive – Public Adjuster",
+    "company": "MLA Claims",
+    "location": "Lafayette Hill, PA (PA / NJ)",
+    "type": "Licensed PA",
+    "posted": "2026-11-11",
+    "tags": [
+      "pennsylvania",
+      "new-jersey",
+      "sales",
+      "full-time",
+      "part-time",
+      "healthcare"
+    ],
+    "url": "https://www.mlaclaims.com/public-adjuster-sales",
+    "applyUrl": "https://www.mlaclaims.com/public-adjuster-sales",
+    "sourceUrl": "https://www.mlaclaims.com/public-adjuster-sales",
+    "blurb": "Sales-focused public adjuster seat at a suburban Philadelphia firm; full- or part-time, production-based pay, healthcare and 401(k) available.",
+    "description": [
+      "MLA Claims, a property loss consulting and public adjusting firm headquartered in Lafayette Hill outside Philadelphia, is seeking a licensed public adjuster with a focus on sales and marketing, full-time or part-time.",
+      "Duties include creating and signing new loss leads, business development, marketing efforts, client management, contents inventories and claims handling as required. It asks for a Pennsylvania and/or New Jersey public adjuster license (or ability to obtain it), 2+ years of applicable experience, and a bachelor's degree or equivalent. Candidates without a license must obtain it within the first few months.",
+      "Compensation is production-based and commensurate with experience, with healthcare and 401(k) available. Apply through the posting or email a resume to the firm."
+    ],
+    "validThrough": "2026-12-11",
+    "locs": [
+      "PA"
+    ]
   }
 ]
