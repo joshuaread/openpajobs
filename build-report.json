@@ -1,7 +1,7 @@
 {
   "buildDate": "2026-11-12",
-  "total": 147,
-  "active": 118,
+  "total": 162,
+  "active": 133,
   "droppedExpired": [
     "founding-placeholder",
     "metro-apprentice",
@@ -129,7 +129,22 @@
     "odry-claims-licensed-pa-remote",
     "metro-claims-rep-628238-md",
     "metro-claims-rep-598753-co",
-    "mla-claims-sales-executive-pa"
+    "mla-claims-sales-executive-pa",
+    "metro-4485632009-new-jersey-nj-remote",
+    "metro-4486012009-new-jersey-sales",
+    "metro-4486205009-maryland-sales",
+    "metro-4486034009-texas-sales",
+    "metro-4486041009-north-carolina-sales",
+    "metro-4486094009-west-virginia-sales",
+    "metro-4486122009-south-carolina-sales",
+    "metro-4486182009-ohio-sales",
+    "metro-4474191009-pennsylvania-apprentice",
+    "metro-4474146009-pennsylvania-part-time",
+    "metro-4474211009-ohio-apprentice",
+    "metro-4474200009-georgia-apprentice",
+    "metro-4467273009-pennsylvania-writer",
+    "metro-4475643009-new-jersey-claims-rep",
+    "metro-4438953009-pennsylvania-nj-remote"
   ],
   "jsonLdSkipped": {
     "noble-field-pa-sales": "jsonld:false on record",
@@ -333,7 +348,22 @@
     "odry-claims-licensed-pa-remote": "ok",
     "metro-claims-rep-628238-md": "ok",
     "metro-claims-rep-598753-co": "ok",
-    "mla-claims-sales-executive-pa": "ok"
+    "mla-claims-sales-executive-pa": "ok",
+    "metro-4485632009-new-jersey-nj-remote": "ok",
+    "metro-4486012009-new-jersey-sales": "ok",
+    "metro-4486205009-maryland-sales": "ok",
+    "metro-4486034009-texas-sales": "ok",
+    "metro-4486041009-north-carolina-sales": "ok",
+    "metro-4486094009-west-virginia-sales": "ok",
+    "metro-4486122009-south-carolina-sales": "ok",
+    "metro-4486182009-ohio-sales": "ok",
+    "metro-4474191009-pennsylvania-apprentice": "ok",
+    "metro-4474146009-pennsylvania-part-time": "ok",
+    "metro-4474211009-ohio-apprentice": "ok",
+    "metro-4474200009-georgia-apprentice": "ok",
+    "metro-4467273009-pennsylvania-writer": "ok",
+    "metro-4475643009-new-jersey-claims-rep": "ok",
+    "metro-4438953009-pennsylvania-nj-remote": "ok"
   },
   "removedPages": [],
   "featuredNow": [],
@@ -347,11 +377,11 @@
     "rockwall-houston": "rockwall-licensed-pa-houston-tx"
   },
   "sponsorStats": {
-    "listings": 118,
+    "listings": 133,
     "firms": 36,
-    "remote": 27,
+    "remote": 36,
     "florida": 19,
-    "texas": 12
+    "texas": 13
   },
   "statePages": [
     {
@@ -372,7 +402,7 @@
     },
     {
       "url": "/jobs/georgia/",
-      "listings": 1
+      "listings": 2
     },
     {
       "url": "/jobs/idaho/",
@@ -388,7 +418,7 @@
     },
     {
       "url": "/jobs/maryland/",
-      "listings": 5
+      "listings": 6
     },
     {
       "url": "/jobs/minnesota/",
@@ -404,7 +434,7 @@
     },
     {
       "url": "/jobs/new-jersey/",
-      "listings": 10
+      "listings": 13
     },
     {
       "url": "/jobs/new-york/",
@@ -412,7 +442,7 @@
     },
     {
       "url": "/jobs/north-carolina/",
-      "listings": 1
+      "listings": 2
     },
     {
       "url": "/jobs/north-dakota/",
@@ -420,7 +450,7 @@
     },
     {
       "url": "/jobs/ohio/",
-      "listings": 2
+      "listings": 4
     },
     {
       "url": "/jobs/oklahoma/",
@@ -432,7 +462,7 @@
     },
     {
       "url": "/jobs/pennsylvania/",
-      "listings": 14
+      "listings": 18
     },
     {
       "url": "/jobs/rhode-island/",
@@ -440,7 +470,7 @@
     },
     {
       "url": "/jobs/south-carolina/",
-      "listings": 4
+      "listings": 5
     },
     {
       "url": "/jobs/south-dakota/",
@@ -452,7 +482,7 @@
     },
     {
       "url": "/jobs/texas/",
-      "listings": 12
+      "listings": 13
     },
     {
       "url": "/jobs/virginia/",
@@ -464,7 +494,7 @@
     },
     {
       "url": "/jobs/west-virginia/",
-      "listings": 3
+      "listings": 4
     },
     {
       "url": "/jobs/wisconsin/",
@@ -472,40 +502,40 @@
     },
     {
       "url": "/jobs/remote/",
-      "listings": 27
+      "listings": 36
     }
   ],
   "locationOptions": [
-    "remote:27",
+    "remote:36",
     "AZ:2",
     "CA:9",
     "CO:6",
     "FL:19",
-    "GA:1",
+    "GA:2",
     "ID:1",
     "IN:2",
     "KY:1",
-    "MD:5",
+    "MD:6",
     "MN:1",
     "MO:1",
     "NV:1",
-    "NJ:10",
+    "NJ:13",
     "NY:14",
-    "NC:1",
+    "NC:2",
     "ND:1",
-    "OH:2",
+    "OH:4",
     "OK:1",
     "OR:1",
-    "PA:14",
+    "PA:18",
     "RI:1",
-    "SC:4",
+    "SC:5",
     "SD:2",
     "TN:1",
-    "TX:12",
+    "TX:13",
     "VA:1",
     "WA:2",
-    "WV:3",
+    "WV:4",
     "WI:2"
   ],
-  "sitemapUrls": 177
+  "sitemapUrls": 192
 }
