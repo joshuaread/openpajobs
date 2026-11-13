@@ -1,7 +1,7 @@
 {
   "buildDate": "2026-11-13",
-  "total": 162,
-  "active": 133,
+  "total": 177,
+  "active": 146,
   "droppedExpired": [
     "founding-placeholder",
     "metro-apprentice",
@@ -20,6 +20,7 @@
     "united-pa-insurance-claims-manager-ny",
     "swift-pa-field-sales-rep-omaha",
     "swift-pa-licensed-outside-sales-st-louis",
+    "allied-senior-estimator",
     "united-pa-property-damage-estimator",
     "united-pa-content-claims-adjuster",
     "united-pa-manhattan-business-development-associate",
@@ -31,7 +32,8 @@
     "swift-pa-outside-sales-rep-des-moines",
     "swift-pa-licensed-outside-sales-springfield-mo",
     "metro-pa-claims-support-rep-entry-level-nc",
-    "metro-remote-claims-rep-613829-wi"
+    "metro-remote-claims-rep-613829-wi",
+    "united-pa-insurance-coverage-attorney-ny"
   ],
   "jsonLdEmitted": [
     "metro-apprentice-249388",
@@ -45,7 +47,6 @@
     "allied-public-adjuster-socal",
     "allied-senior-public-adjuster",
     "allied-executive-desk-pa",
-    "allied-senior-estimator",
     "metro-pa-trainee-ga",
     "metro-remote-claims-rep-pa",
     "rockwall-licensed-pa-destin-fl",
@@ -144,7 +145,22 @@
     "metro-4474200009-georgia-apprentice",
     "metro-4467273009-pennsylvania-writer",
     "metro-4475643009-new-jersey-claims-rep",
-    "metro-4438953009-pennsylvania-nj-remote"
+    "metro-4438953009-pennsylvania-nj-remote",
+    "metro-4505948009-nationwide",
+    "metro-4505627009-new-jersey",
+    "metro-4486109009-pennsylvania",
+    "metro-4475649009-pennsylvania",
+    "metro-4475650009-new-jersey",
+    "metro-4474171009-georgia",
+    "metro-4474164009-ohio",
+    "metro-4466796009-pennsylvania",
+    "metro-4463019009-pennsylvania",
+    "metro-4459421009-pennsylvania",
+    "metro-4457778009-bensalem-pa",
+    "metro-4457368009-nationwide",
+    "metro-4486135009-new-jersey",
+    "metro-4455183009-pa-nj-md-and-other",
+    "metro-4486108009-colorado"
   ],
   "jsonLdSkipped": {
     "noble-field-pa-sales": "jsonld:false on record",
@@ -164,7 +180,6 @@
     "allied-people-operations-director": "multi-listing pointer (type Various), not a single job — Google policy",
     "american-financial-claims-pa-trainee-miami": "multi-listing pointer (type Various), not a single job — Google policy",
     "gold-star-adjusters-open-application-jacksonville": "multi-listing pointer (type Various), not a single job — Google policy",
-    "united-pa-insurance-coverage-attorney-ny": "multi-listing pointer (type Various), not a single job — Google policy",
     "united-pa-forensic-cpa-insurance-claims-ny": "multi-listing pointer (type Various), not a single job — Google policy",
     "manhattan-pa-field-associate-nyc": "missing required: location(jobLocation/applicantLocationRequirements)",
     "advantage-pa-licensed-and-apprentice-fl": "multi-listing pointer (type Various), not a single job — Google policy",
@@ -264,7 +279,6 @@
     "allied-public-adjuster-socal": "ok",
     "allied-senior-public-adjuster": "ok",
     "allied-executive-desk-pa": "ok",
-    "allied-senior-estimator": "ok",
     "metro-pa-trainee-ga": "ok",
     "metro-remote-claims-rep-pa": "ok",
     "rockwall-licensed-pa-destin-fl": "ok",
@@ -363,9 +377,27 @@
     "metro-4474200009-georgia-apprentice": "ok",
     "metro-4467273009-pennsylvania-writer": "ok",
     "metro-4475643009-new-jersey-claims-rep": "ok",
-    "metro-4438953009-pennsylvania-nj-remote": "ok"
+    "metro-4438953009-pennsylvania-nj-remote": "ok",
+    "metro-4505948009-nationwide": "ok",
+    "metro-4505627009-new-jersey": "ok",
+    "metro-4486109009-pennsylvania": "ok",
+    "metro-4475649009-pennsylvania": "ok",
+    "metro-4475650009-new-jersey": "ok",
+    "metro-4474171009-georgia": "ok",
+    "metro-4474164009-ohio": "ok",
+    "metro-4466796009-pennsylvania": "ok",
+    "metro-4463019009-pennsylvania": "ok",
+    "metro-4459421009-pennsylvania": "ok",
+    "metro-4457778009-bensalem-pa": "ok",
+    "metro-4457368009-nationwide": "ok",
+    "metro-4486135009-new-jersey": "ok",
+    "metro-4455183009-pa-nj-md-and-other": "ok",
+    "metro-4486108009-colorado": "ok"
   },
-  "removedPages": [],
+  "removedPages": [
+    "jobs/allied-senior-estimator.html",
+    "jobs/united-pa-insurance-coverage-attorney-ny.html"
+  ],
   "featuredNow": [],
   "featuredProblems": {},
   "sponsorProblems": {},
@@ -377,9 +409,9 @@
     "rockwall-houston": "rockwall-licensed-pa-houston-tx"
   },
   "sponsorStats": {
-    "listings": 133,
+    "listings": 146,
     "firms": 36,
-    "remote": 36,
+    "remote": 40,
     "florida": 19,
     "texas": 13
   },
@@ -390,11 +422,11 @@
     },
     {
       "url": "/jobs/california/",
-      "listings": 9
+      "listings": 8
     },
     {
       "url": "/jobs/colorado/",
-      "listings": 6
+      "listings": 7
     },
     {
       "url": "/jobs/florida/",
@@ -402,7 +434,7 @@
     },
     {
       "url": "/jobs/georgia/",
-      "listings": 2
+      "listings": 3
     },
     {
       "url": "/jobs/idaho/",
@@ -434,11 +466,11 @@
     },
     {
       "url": "/jobs/new-jersey/",
-      "listings": 13
+      "listings": 16
     },
     {
       "url": "/jobs/new-york/",
-      "listings": 14
+      "listings": 13
     },
     {
       "url": "/jobs/north-carolina/",
@@ -450,7 +482,7 @@
     },
     {
       "url": "/jobs/ohio/",
-      "listings": 4
+      "listings": 5
     },
     {
       "url": "/jobs/oklahoma/",
@@ -462,7 +494,7 @@
     },
     {
       "url": "/jobs/pennsylvania/",
-      "listings": 18
+      "listings": 25
     },
     {
       "url": "/jobs/rhode-island/",
@@ -502,16 +534,16 @@
     },
     {
       "url": "/jobs/remote/",
-      "listings": 36
+      "listings": 40
     }
   ],
   "locationOptions": [
-    "remote:36",
+    "remote:40",
     "AZ:2",
-    "CA:9",
-    "CO:6",
+    "CA:8",
+    "CO:7",
     "FL:19",
-    "GA:2",
+    "GA:3",
     "ID:1",
     "IN:2",
     "KY:1",
@@ -519,14 +551,14 @@
     "MN:1",
     "MO:1",
     "NV:1",
-    "NJ:13",
-    "NY:14",
+    "NJ:16",
+    "NY:13",
     "NC:2",
     "ND:1",
-    "OH:4",
+    "OH:5",
     "OK:1",
     "OR:1",
-    "PA:18",
+    "PA:25",
     "RI:1",
     "SC:5",
     "SD:2",
@@ -537,5 +569,5 @@
     "WV:4",
     "WI:2"
   ],
-  "sitemapUrls": 192
+  "sitemapUrls": 205
 }

@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://openpajobs.com/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-13</lastmod>
   </url>
   <url>
     <loc>https://openpajobs.com/post.html</loc>
@@ -114,7 +114,7 @@
   </url>
   <url>
     <loc>https://openpajobs.com/sponsor.html</loc>
-    <lastmod>2026-11-12</lastmod>
+    <lastmod>2026-11-13</lastmod>
   </url>
   <url>
     <loc>https://openpajobs.com/jobs/arizona/</loc>
@@ -126,7 +126,7 @@
   </url>
   <url>
     <loc>https://openpajobs.com/jobs/colorado/</loc>
-    <lastmod>2026-11-02</lastmod>
+    <lastmod>2026-11-09</lastmod>
   </url>
   <url>
     <loc>https://openpajobs.com/jobs/florida/</loc>
@@ -166,7 +166,7 @@
   </url>
   <url>
     <loc>https://openpajobs.com/jobs/new-jersey/</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-12</lastmod>
   </url>
   <url>
     <loc>https://openpajobs.com/jobs/new-york/</loc>
@@ -234,7 +234,7 @@
   </url>
   <url>
     <loc>https://openpajobs.com/jobs/remote/</loc>
-    <lastmod>2026-11-09</lastmod>
+    <lastmod>2026-11-12</lastmod>
   </url>
   <url>
     <loc>https://openpajobs.com/jobs/metro-apprentice-249388.html</loc>
@@ -315,10 +315,6 @@
   <url>
     <loc>https://openpajobs.com/jobs/allied-executive-desk-pa.html</loc>
     <lastmod>2026-10-10</lastmod>
-  </url>
-  <url>
-    <loc>https://openpajobs.com/jobs/allied-senior-estimator.html</loc>
-    <lastmod>2026-10-02</lastmod>
   </url>
   <url>
     <loc>https://openpajobs.com/jobs/metro-pa-trainee-ga.html</loc>
@@ -621,10 +617,6 @@
     <lastmod>2025-07-16</lastmod>
   </url>
   <url>
-    <loc>https://openpajobs.com/jobs/united-pa-insurance-coverage-attorney-ny.html</loc>
-    <lastmod>2025-10-03</lastmod>
-  </url>
-  <url>
     <loc>https://openpajobs.com/jobs/united-pa-forensic-cpa-insurance-claims-ny.html</loc>
     <lastmod>2025-10-03</lastmod>
   </url>
@@ -767,5 +759,65 @@
   <url>
     <loc>https://openpajobs.com/jobs/metro-4438953009-pennsylvania-nj-remote.html</loc>
     <lastmod>2026-10-08</lastmod>
+  </url>
+  <url>
+    <loc>https://openpajobs.com/jobs/metro-4505948009-nationwide.html</loc>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://openpajobs.com/jobs/metro-4505627009-new-jersey.html</loc>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://openpajobs.com/jobs/metro-4486109009-pennsylvania.html</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://openpajobs.com/jobs/metro-4475649009-pennsylvania.html</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://openpajobs.com/jobs/metro-4475650009-new-jersey.html</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://openpajobs.com/jobs/metro-4474171009-georgia.html</loc>
+    <lastmod>2026-10-30</lastmod>
+  </url>
+  <url>
+    <loc>https://openpajobs.com/jobs/metro-4474164009-ohio.html</loc>
+    <lastmod>2026-10-30</lastmod>
+  </url>
+  <url>
+    <loc>https://openpajobs.com/jobs/metro-4466796009-pennsylvania.html</loc>
+    <lastmod>2026-10-25</lastmod>
+  </url>
+  <url>
+    <loc>https://openpajobs.com/jobs/metro-4463019009-pennsylvania.html</loc>
+    <lastmod>2026-10-21</lastmod>
+  </url>
+  <url>
+    <loc>https://openpajobs.com/jobs/metro-4459421009-pennsylvania.html</loc>
+    <lastmod>2026-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://openpajobs.com/jobs/metro-4457778009-bensalem-pa.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://openpajobs.com/jobs/metro-4457368009-nationwide.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://openpajobs.com/jobs/metro-4486135009-new-jersey.html</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
+    <loc>https://openpajobs.com/jobs/metro-4455183009-pa-nj-md-and-other.html</loc>
+    <lastmod>2026-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://openpajobs.com/jobs/metro-4486108009-colorado.html</loc>
+    <lastmod>2026-11-09</lastmod>
   </url>
 </urlset>
