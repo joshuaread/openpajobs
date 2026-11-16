@@ -1,7 +1,7 @@
 {
   "buildDate": "2026-11-16",
-  "total": 177,
-  "active": 146,
+  "total": 189,
+  "active": 158,
   "droppedExpired": [
     "founding-placeholder",
     "metro-apprentice",
@@ -160,7 +160,16 @@
     "metro-4457368009-nationwide",
     "metro-4486135009-new-jersey",
     "metro-4455183009-pa-nj-md-and-other",
-    "metro-4486108009-colorado"
+    "metro-4486108009-colorado",
+    "metro-4299957009-pennsylvania",
+    "metro-4299936009-ohio",
+    "metro-4299955009-georgia",
+    "metro-4299981009-south-carolina",
+    "metro-4282052009-north-carolina",
+    "metro-4279630009-maryland",
+    "metro-4282062009-west-virginia",
+    "metro-4315334009-philadelphia-senior",
+    "claims-pa-xactimate-estimator-inspector-thousand-oaks"
   ],
   "jsonLdSkipped": {
     "noble-field-pa-sales": "jsonld:false on record",
@@ -183,7 +192,10 @@
     "united-pa-forensic-cpa-insurance-claims-ny": "multi-listing pointer (type Various), not a single job — Google policy",
     "manhattan-pa-field-associate-nyc": "missing required: location(jobLocation/applicantLocationRequirements)",
     "advantage-pa-licensed-and-apprentice-fl": "multi-listing pointer (type Various), not a single job — Google policy",
-    "york-pa-public-adjuster-trainee-chicago-il": "missing required: location(jobLocation/applicantLocationRequirements)"
+    "york-pa-public-adjuster-trainee-chicago-il": "missing required: location(jobLocation/applicantLocationRequirements)",
+    "united-pa-property-claims-coverage-counsel-ny": "multi-listing pointer (type Various), not a single job — Google policy",
+    "manhattan-pa-outside-sales-field-nyc": "missing required: location(jobLocation/applicantLocationRequirements)",
+    "manhattan-pa-estimator-nyc": "missing required: location(jobLocation/applicantLocationRequirements)"
   },
   "defaultedValidThrough": [
     {
@@ -264,6 +276,12 @@
       "location(jobLocation/applicantLocationRequirements)"
     ],
     "york-pa-public-adjuster-trainee-chicago-il": [
+      "location(jobLocation/applicantLocationRequirements)"
+    ],
+    "manhattan-pa-outside-sales-field-nyc": [
+      "location(jobLocation/applicantLocationRequirements)"
+    ],
+    "manhattan-pa-estimator-nyc": [
       "location(jobLocation/applicantLocationRequirements)"
     ]
   },
@@ -392,7 +410,16 @@
     "metro-4457368009-nationwide": "ok",
     "metro-4486135009-new-jersey": "ok",
     "metro-4455183009-pa-nj-md-and-other": "ok",
-    "metro-4486108009-colorado": "ok"
+    "metro-4486108009-colorado": "ok",
+    "metro-4299957009-pennsylvania": "ok",
+    "metro-4299936009-ohio": "ok",
+    "metro-4299955009-georgia": "ok",
+    "metro-4299981009-south-carolina": "ok",
+    "metro-4282052009-north-carolina": "ok",
+    "metro-4279630009-maryland": "ok",
+    "metro-4282062009-west-virginia": "ok",
+    "metro-4315334009-philadelphia-senior": "ok",
+    "claims-pa-xactimate-estimator-inspector-thousand-oaks": "ok"
   },
   "removedPages": [],
   "featuredNow": [],
@@ -406,9 +433,9 @@
     "rockwall-houston": "rockwall-licensed-pa-houston-tx"
   },
   "sponsorStats": {
-    "listings": 146,
+    "listings": 158,
     "firms": 36,
-    "remote": 40,
+    "remote": 47,
     "florida": 19,
     "texas": 13
   },
@@ -419,7 +446,7 @@
     },
     {
       "url": "/jobs/california/",
-      "listings": 8
+      "listings": 9
     },
     {
       "url": "/jobs/colorado/",
@@ -431,7 +458,7 @@
     },
     {
       "url": "/jobs/georgia/",
-      "listings": 3
+      "listings": 4
     },
     {
       "url": "/jobs/idaho/",
@@ -447,7 +474,7 @@
     },
     {
       "url": "/jobs/maryland/",
-      "listings": 6
+      "listings": 7
     },
     {
       "url": "/jobs/minnesota/",
@@ -467,11 +494,11 @@
     },
     {
       "url": "/jobs/new-york/",
-      "listings": 13
+      "listings": 14
     },
     {
       "url": "/jobs/north-carolina/",
-      "listings": 2
+      "listings": 3
     },
     {
       "url": "/jobs/north-dakota/",
@@ -479,7 +506,7 @@
     },
     {
       "url": "/jobs/ohio/",
-      "listings": 5
+      "listings": 6
     },
     {
       "url": "/jobs/oklahoma/",
@@ -491,7 +518,7 @@
     },
     {
       "url": "/jobs/pennsylvania/",
-      "listings": 25
+      "listings": 27
     },
     {
       "url": "/jobs/rhode-island/",
@@ -499,7 +526,7 @@
     },
     {
       "url": "/jobs/south-carolina/",
-      "listings": 5
+      "listings": 6
     },
     {
       "url": "/jobs/south-dakota/",
@@ -523,7 +550,7 @@
     },
     {
       "url": "/jobs/west-virginia/",
-      "listings": 4
+      "listings": 5
     },
     {
       "url": "/jobs/wisconsin/",
@@ -531,40 +558,40 @@
     },
     {
       "url": "/jobs/remote/",
-      "listings": 40
+      "listings": 47
     }
   ],
   "locationOptions": [
-    "remote:40",
+    "remote:47",
     "AZ:2",
-    "CA:8",
+    "CA:9",
     "CO:7",
     "FL:19",
-    "GA:3",
+    "GA:4",
     "ID:1",
     "IN:2",
     "KY:1",
-    "MD:6",
+    "MD:7",
     "MN:1",
     "MO:1",
     "NV:1",
     "NJ:16",
-    "NY:13",
-    "NC:2",
+    "NY:14",
+    "NC:3",
     "ND:1",
-    "OH:5",
+    "OH:6",
     "OK:1",
     "OR:1",
-    "PA:25",
+    "PA:27",
     "RI:1",
-    "SC:5",
+    "SC:6",
     "SD:2",
     "TN:1",
     "TX:13",
     "VA:1",
     "WA:2",
-    "WV:4",
+    "WV:5",
     "WI:2"
   ],
-  "sitemapUrls": 205
+  "sitemapUrls": 217
 }
