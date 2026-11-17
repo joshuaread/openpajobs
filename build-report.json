@@ -1,7 +1,7 @@
 {
   "buildDate": "2026-11-17",
-  "total": 189,
-  "active": 158,
+  "total": 197,
+  "active": 166,
   "droppedExpired": [
     "founding-placeholder",
     "metro-apprentice",
@@ -169,7 +169,15 @@
     "metro-4279630009-maryland",
     "metro-4282062009-west-virginia",
     "metro-4315334009-philadelphia-senior",
-    "claims-pa-xactimate-estimator-inspector-thousand-oaks"
+    "claims-pa-xactimate-estimator-inspector-thousand-oaks",
+    "metro-4508373009",
+    "metro-4508419009",
+    "metro-4508389009",
+    "metro-4505983009",
+    "metro-4507882009",
+    "metro-4482540009",
+    "metro-4486187009",
+    "metro-4457330009"
   ],
   "jsonLdSkipped": {
     "noble-field-pa-sales": "jsonld:false on record",
@@ -419,7 +427,15 @@
     "metro-4279630009-maryland": "ok",
     "metro-4282062009-west-virginia": "ok",
     "metro-4315334009-philadelphia-senior": "ok",
-    "claims-pa-xactimate-estimator-inspector-thousand-oaks": "ok"
+    "claims-pa-xactimate-estimator-inspector-thousand-oaks": "ok",
+    "metro-4508373009": "ok",
+    "metro-4508419009": "ok",
+    "metro-4508389009": "ok",
+    "metro-4505983009": "ok",
+    "metro-4507882009": "ok",
+    "metro-4482540009": "ok",
+    "metro-4486187009": "ok",
+    "metro-4457330009": "ok"
   },
   "removedPages": [],
   "featuredNow": [],
@@ -433,9 +449,9 @@
     "rockwall-houston": "rockwall-licensed-pa-houston-tx"
   },
   "sponsorStats": {
-    "listings": 158,
+    "listings": 166,
     "firms": 36,
-    "remote": 47,
+    "remote": 49,
     "florida": 19,
     "texas": 13
   },
@@ -446,11 +462,11 @@
     },
     {
       "url": "/jobs/california/",
-      "listings": 9
+      "listings": 10
     },
     {
       "url": "/jobs/colorado/",
-      "listings": 7
+      "listings": 8
     },
     {
       "url": "/jobs/florida/",
@@ -490,7 +506,7 @@
     },
     {
       "url": "/jobs/new-jersey/",
-      "listings": 16
+      "listings": 18
     },
     {
       "url": "/jobs/new-york/",
@@ -498,7 +514,7 @@
     },
     {
       "url": "/jobs/north-carolina/",
-      "listings": 3
+      "listings": 4
     },
     {
       "url": "/jobs/north-dakota/",
@@ -518,7 +534,7 @@
     },
     {
       "url": "/jobs/pennsylvania/",
-      "listings": 27
+      "listings": 28
     },
     {
       "url": "/jobs/rhode-island/",
@@ -554,18 +570,18 @@
     },
     {
       "url": "/jobs/wisconsin/",
-      "listings": 2
+      "listings": 3
     },
     {
       "url": "/jobs/remote/",
-      "listings": 47
+      "listings": 49
     }
   ],
   "locationOptions": [
-    "remote:47",
+    "remote:49",
     "AZ:2",
-    "CA:9",
-    "CO:7",
+    "CA:10",
+    "CO:8",
     "FL:19",
     "GA:4",
     "ID:1",
@@ -575,14 +591,14 @@
     "MN:1",
     "MO:1",
     "NV:1",
-    "NJ:16",
+    "NJ:18",
     "NY:14",
-    "NC:3",
+    "NC:4",
     "ND:1",
     "OH:6",
     "OK:1",
     "OR:1",
-    "PA:27",
+    "PA:28",
     "RI:1",
     "SC:6",
     "SD:2",
@@ -591,7 +607,7 @@
     "VA:1",
     "WA:2",
     "WV:5",
-    "WI:2"
+    "WI:3"
   ],
-  "sitemapUrls": 217
+  "sitemapUrls": 225
 }
