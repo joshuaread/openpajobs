@@ -1,6 +1,6 @@
 {
   "buildDate": "2026-11-18",
-  "total": 197,
+  "total": 199,
   "active": 166,
   "droppedExpired": [
     "founding-placeholder",
@@ -32,8 +32,10 @@
     "swift-pa-outside-sales-rep-des-moines",
     "swift-pa-licensed-outside-sales-springfield-mo",
     "metro-pa-claims-support-rep-entry-level-nc",
+    "allied-claims-operations-manager-systems-ai",
     "metro-remote-claims-rep-613829-wi",
-    "united-pa-insurance-coverage-attorney-ny"
+    "united-pa-insurance-coverage-attorney-ny",
+    "metro-4459421009-pennsylvania"
   ],
   "jsonLdEmitted": [
     "metro-apprentice-249388",
@@ -78,7 +80,6 @@
     "metro-remote-claims-representative-part-full-time-630810",
     "tiger-adjusters-public-adjuster-dayton-oh",
     "ifile-claims-public-adjuster-fl-tx-pa",
-    "allied-claims-operations-manager-systems-ai",
     "metro-claims-rep-618275-ct",
     "metro-pa-trainee-596930-mo",
     "rockwall-licensed-pa-austin-tx",
@@ -155,7 +156,6 @@
     "metro-4474164009-ohio",
     "metro-4466796009-pennsylvania",
     "metro-4463019009-pennsylvania",
-    "metro-4459421009-pennsylvania",
     "metro-4457778009-bensalem-pa",
     "metro-4457368009-nationwide",
     "metro-4486135009-new-jersey",
@@ -177,7 +177,8 @@
     "metro-4507882009",
     "metro-4482540009",
     "metro-4486187009",
-    "metro-4457330009"
+    "metro-4457330009",
+    "metro-4510557009"
   ],
   "jsonLdSkipped": {
     "noble-field-pa-sales": "jsonld:false on record",
@@ -203,7 +204,8 @@
     "york-pa-public-adjuster-trainee-chicago-il": "missing required: location(jobLocation/applicantLocationRequirements)",
     "united-pa-property-claims-coverage-counsel-ny": "multi-listing pointer (type Various), not a single job — Google policy",
     "manhattan-pa-outside-sales-field-nyc": "missing required: location(jobLocation/applicantLocationRequirements)",
-    "manhattan-pa-estimator-nyc": "missing required: location(jobLocation/applicantLocationRequirements)"
+    "manhattan-pa-estimator-nyc": "missing required: location(jobLocation/applicantLocationRequirements)",
+    "allied-talent-acquisition-specialist": "multi-listing pointer (type Various), not a single job — Google policy"
   },
   "defaultedValidThrough": [
     {
@@ -336,7 +338,6 @@
     "metro-remote-claims-representative-part-full-time-630810": "ok",
     "tiger-adjusters-public-adjuster-dayton-oh": "ok",
     "ifile-claims-public-adjuster-fl-tx-pa": "ok",
-    "allied-claims-operations-manager-systems-ai": "ok",
     "metro-claims-rep-618275-ct": "ok",
     "metro-pa-trainee-596930-mo": "ok",
     "rockwall-licensed-pa-austin-tx": "ok",
@@ -413,7 +414,6 @@
     "metro-4474164009-ohio": "ok",
     "metro-4466796009-pennsylvania": "ok",
     "metro-4463019009-pennsylvania": "ok",
-    "metro-4459421009-pennsylvania": "ok",
     "metro-4457778009-bensalem-pa": "ok",
     "metro-4457368009-nationwide": "ok",
     "metro-4486135009-new-jersey": "ok",
@@ -435,9 +435,13 @@
     "metro-4507882009": "ok",
     "metro-4482540009": "ok",
     "metro-4486187009": "ok",
-    "metro-4457330009": "ok"
+    "metro-4457330009": "ok",
+    "metro-4510557009": "ok"
   },
-  "removedPages": [],
+  "removedPages": [
+    "jobs/allied-claims-operations-manager-systems-ai.html",
+    "jobs/metro-4459421009-pennsylvania.html"
+  ],
   "featuredNow": [],
   "featuredProblems": {},
   "sponsorProblems": {},
@@ -451,7 +455,7 @@
   "sponsorStats": {
     "listings": 166,
     "firms": 36,
-    "remote": 49,
+    "remote": 50,
     "florida": 19,
     "texas": 13
   },
@@ -506,7 +510,7 @@
     },
     {
       "url": "/jobs/new-jersey/",
-      "listings": 18
+      "listings": 19
     },
     {
       "url": "/jobs/new-york/",
@@ -534,7 +538,7 @@
     },
     {
       "url": "/jobs/pennsylvania/",
-      "listings": 28
+      "listings": 27
     },
     {
       "url": "/jobs/rhode-island/",
@@ -574,11 +578,11 @@
     },
     {
       "url": "/jobs/remote/",
-      "listings": 49
+      "listings": 50
     }
   ],
   "locationOptions": [
-    "remote:49",
+    "remote:50",
     "AZ:2",
     "CA:10",
     "CO:8",
@@ -591,14 +595,14 @@
     "MN:1",
     "MO:1",
     "NV:1",
-    "NJ:18",
+    "NJ:19",
     "NY:14",
     "NC:4",
     "ND:1",
     "OH:6",
     "OK:1",
     "OR:1",
-    "PA:28",
+    "PA:27",
     "RI:1",
     "SC:6",
     "SD:2",
