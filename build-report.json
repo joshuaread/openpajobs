@@ -1,7 +1,7 @@
 {
   "buildDate": "2026-11-19",
-  "total": 199,
-  "active": 166,
+  "total": 206,
+  "active": 173,
   "droppedExpired": [
     "founding-placeholder",
     "metro-apprentice",
@@ -178,7 +178,14 @@
     "metro-4482540009",
     "metro-4486187009",
     "metro-4457330009",
-    "metro-4510557009"
+    "metro-4510557009",
+    "united-pa-learning-development-specialist-ny",
+    "united-pa-sales-operations-coordinator-ny",
+    "united-pa-vp-external-affairs-strategic-partnerships-ny",
+    "mla-claims-regional-manager-nj",
+    "mla-claims-forensic-accountant-bi-specialist-pa",
+    "metro-4505993009-work-study-scholarship",
+    "us-claims-adjusters-pa-apprentice-fl"
   ],
   "jsonLdSkipped": {
     "noble-field-pa-sales": "jsonld:false on record",
@@ -436,7 +443,14 @@
     "metro-4482540009": "ok",
     "metro-4486187009": "ok",
     "metro-4457330009": "ok",
-    "metro-4510557009": "ok"
+    "metro-4510557009": "ok",
+    "united-pa-learning-development-specialist-ny": "ok",
+    "united-pa-sales-operations-coordinator-ny": "ok",
+    "united-pa-vp-external-affairs-strategic-partnerships-ny": "ok",
+    "mla-claims-regional-manager-nj": "ok",
+    "mla-claims-forensic-accountant-bi-specialist-pa": "ok",
+    "metro-4505993009-work-study-scholarship": "ok",
+    "us-claims-adjusters-pa-apprentice-fl": "ok"
   },
   "removedPages": [],
   "featuredNow": [],
@@ -450,10 +464,10 @@
     "rockwall-houston": "rockwall-licensed-pa-houston-tx"
   },
   "sponsorStats": {
-    "listings": 166,
-    "firms": 36,
-    "remote": 50,
-    "florida": 19,
+    "listings": 173,
+    "firms": 37,
+    "remote": 51,
+    "florida": 20,
     "texas": 13
   },
   "statePages": [
@@ -471,7 +485,7 @@
     },
     {
       "url": "/jobs/florida/",
-      "listings": 19
+      "listings": 20
     },
     {
       "url": "/jobs/georgia/",
@@ -507,11 +521,11 @@
     },
     {
       "url": "/jobs/new-jersey/",
-      "listings": 19
+      "listings": 20
     },
     {
       "url": "/jobs/new-york/",
-      "listings": 14
+      "listings": 17
     },
     {
       "url": "/jobs/north-carolina/",
@@ -535,7 +549,7 @@
     },
     {
       "url": "/jobs/pennsylvania/",
-      "listings": 27
+      "listings": 28
     },
     {
       "url": "/jobs/rhode-island/",
@@ -575,15 +589,15 @@
     },
     {
       "url": "/jobs/remote/",
-      "listings": 50
+      "listings": 51
     }
   ],
   "locationOptions": [
-    "remote:50",
+    "remote:51",
     "AZ:2",
     "CA:10",
     "CO:8",
-    "FL:19",
+    "FL:20",
     "GA:4",
     "ID:1",
     "IN:2",
@@ -592,14 +606,14 @@
     "MN:1",
     "MO:1",
     "NV:1",
-    "NJ:19",
-    "NY:14",
+    "NJ:20",
+    "NY:17",
     "NC:4",
     "ND:1",
     "OH:6",
     "OK:1",
     "OR:1",
-    "PA:27",
+    "PA:28",
     "RI:1",
     "SC:6",
     "SD:2",
@@ -610,5 +624,5 @@
     "WV:5",
     "WI:3"
   ],
-  "sitemapUrls": 225
+  "sitemapUrls": 232
 }
