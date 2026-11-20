@@ -1,7 +1,7 @@
 {
   "buildDate": "2026-11-20",
-  "total": 206,
-  "active": 173,
+  "total": 212,
+  "active": 179,
   "droppedExpired": [
     "founding-placeholder",
     "metro-apprentice",
@@ -185,7 +185,9 @@
     "mla-claims-regional-manager-nj",
     "mla-claims-forensic-accountant-bi-specialist-pa",
     "metro-4505993009-work-study-scholarship",
-    "us-claims-adjusters-pa-apprentice-fl"
+    "us-claims-adjusters-pa-apprentice-fl",
+    "tiger-adjusters-public-adjuster-league-city-tx",
+    "island-claims-xactimate-estimator-hawaii"
   ],
   "jsonLdSkipped": {
     "noble-field-pa-sales": "jsonld:false on record",
@@ -212,7 +214,11 @@
     "united-pa-property-claims-coverage-counsel-ny": "multi-listing pointer (type Various), not a single job — Google policy",
     "manhattan-pa-outside-sales-field-nyc": "missing required: location(jobLocation/applicantLocationRequirements)",
     "manhattan-pa-estimator-nyc": "missing required: location(jobLocation/applicantLocationRequirements)",
-    "allied-talent-acquisition-specialist": "multi-listing pointer (type Various), not a single job — Google policy"
+    "allied-talent-acquisition-specialist": "multi-listing pointer (type Various), not a single job — Google policy",
+    "island-claims-licensed-public-adjuster-hawaii": "missing required: location(jobLocation/applicantLocationRequirements)",
+    "island-claims-apprentice-trainee-hawaii": "missing required: location(jobLocation/applicantLocationRequirements)",
+    "island-claims-field-adjuster-hawaii": "missing required: location(jobLocation/applicantLocationRequirements)",
+    "irwin-associates-appraiser-public-adjuster-umpire-slidell-la": "multi-listing pointer (type Various), not a single job — Google policy"
   },
   "defaultedValidThrough": [
     {
@@ -299,6 +305,15 @@
       "location(jobLocation/applicantLocationRequirements)"
     ],
     "manhattan-pa-estimator-nyc": [
+      "location(jobLocation/applicantLocationRequirements)"
+    ],
+    "island-claims-licensed-public-adjuster-hawaii": [
+      "location(jobLocation/applicantLocationRequirements)"
+    ],
+    "island-claims-apprentice-trainee-hawaii": [
+      "location(jobLocation/applicantLocationRequirements)"
+    ],
+    "island-claims-field-adjuster-hawaii": [
       "location(jobLocation/applicantLocationRequirements)"
     ]
   },
@@ -450,7 +465,9 @@
     "mla-claims-regional-manager-nj": "ok",
     "mla-claims-forensic-accountant-bi-specialist-pa": "ok",
     "metro-4505993009-work-study-scholarship": "ok",
-    "us-claims-adjusters-pa-apprentice-fl": "ok"
+    "us-claims-adjusters-pa-apprentice-fl": "ok",
+    "tiger-adjusters-public-adjuster-league-city-tx": "ok",
+    "island-claims-xactimate-estimator-hawaii": "ok"
   },
   "removedPages": [],
   "featuredNow": [],
@@ -464,11 +481,11 @@
     "rockwall-houston": "rockwall-licensed-pa-houston-tx"
   },
   "sponsorStats": {
-    "listings": 173,
-    "firms": 37,
-    "remote": 51,
+    "listings": 179,
+    "firms": 39,
+    "remote": 52,
     "florida": 20,
-    "texas": 13
+    "texas": 14
   },
   "statePages": [
     {
@@ -501,6 +518,10 @@
     },
     {
       "url": "/jobs/kentucky/",
+      "listings": 1
+    },
+    {
+      "url": "/jobs/louisiana/",
       "listings": 1
     },
     {
@@ -569,7 +590,7 @@
     },
     {
       "url": "/jobs/texas/",
-      "listings": 13
+      "listings": 14
     },
     {
       "url": "/jobs/virginia/",
@@ -589,11 +610,11 @@
     },
     {
       "url": "/jobs/remote/",
-      "listings": 51
+      "listings": 52
     }
   ],
   "locationOptions": [
-    "remote:51",
+    "remote:52",
     "AZ:2",
     "CA:10",
     "CO:8",
@@ -602,6 +623,7 @@
     "ID:1",
     "IN:2",
     "KY:1",
+    "LA:1",
     "MD:7",
     "MN:1",
     "MO:1",
@@ -618,11 +640,11 @@
     "SC:6",
     "SD:2",
     "TN:1",
-    "TX:13",
+    "TX:14",
     "VA:1",
     "WA:2",
     "WV:5",
     "WI:3"
   ],
-  "sitemapUrls": 232
+  "sitemapUrls": 239
 }
