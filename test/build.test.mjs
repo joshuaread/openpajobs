@@ -1,4 +1,4 @@
-import { test } from "node:test";
+import { test, after } from "node:test";
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import os from "node:os";
@@ -13,8 +13,16 @@ const FIX = path.join(ROOT, "test", "fixtures");
 const NOW = new Date("2026-10-12T22:00:00Z");
 const quiet = () => {};
 
+// Every sandbox is a full copy of the repo (~2k files); remove them all when the file's tests finish,
+// pass or fail, so test runs don't pile up opj-* folders in the OS temp dir.
+const sandboxes = [];
+after(() => {
+  for (const dir of sandboxes) fs.rmSync(dir, { recursive: true, force: true });
+});
+
 function sandbox() {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), "opj-"));
+  sandboxes.push(dir);
   for (const f of fs.readdirSync(ROOT)) {
     if (["test", "inbox", "node_modules", "_gen", "ref"].includes(f)) continue;
     fs.cpSync(path.join(ROOT, f), path.join(dir, f), { recursive: true });
