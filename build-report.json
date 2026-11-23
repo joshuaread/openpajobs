@@ -1,7 +1,7 @@
 {
   "buildDate": "2026-11-23",
-  "total": 212,
-  "active": 179,
+  "total": 216,
+  "active": 183,
   "droppedExpired": [
     "founding-placeholder",
     "metro-apprentice",
@@ -187,7 +187,11 @@
     "metro-4505993009-work-study-scholarship",
     "us-claims-adjusters-pa-apprentice-fl",
     "tiger-adjusters-public-adjuster-league-city-tx",
-    "island-claims-xactimate-estimator-hawaii"
+    "island-claims-xactimate-estimator-hawaii",
+    "metro-4517104009",
+    "metro-4517122009",
+    "metro-4517111009",
+    "coastal-claims-cradle-to-grave-adjuster-remote"
   ],
   "jsonLdSkipped": {
     "noble-field-pa-sales": "jsonld:false on record",
@@ -467,7 +471,11 @@
     "metro-4505993009-work-study-scholarship": "ok",
     "us-claims-adjusters-pa-apprentice-fl": "ok",
     "tiger-adjusters-public-adjuster-league-city-tx": "ok",
-    "island-claims-xactimate-estimator-hawaii": "ok"
+    "island-claims-xactimate-estimator-hawaii": "ok",
+    "metro-4517104009": "ok",
+    "metro-4517122009": "ok",
+    "metro-4517111009": "ok",
+    "coastal-claims-cradle-to-grave-adjuster-remote": "ok"
   },
   "removedPages": [],
   "featuredNow": [],
@@ -481,9 +489,9 @@
     "rockwall-houston": "rockwall-licensed-pa-houston-tx"
   },
   "sponsorStats": {
-    "listings": 179,
-    "firms": 39,
-    "remote": 52,
+    "listings": 183,
+    "firms": 40,
+    "remote": 53,
     "florida": 20,
     "texas": 14
   },
@@ -498,7 +506,7 @@
     },
     {
       "url": "/jobs/colorado/",
-      "listings": 8
+      "listings": 9
     },
     {
       "url": "/jobs/florida/",
@@ -542,7 +550,7 @@
     },
     {
       "url": "/jobs/new-jersey/",
-      "listings": 20
+      "listings": 21
     },
     {
       "url": "/jobs/new-york/",
@@ -570,7 +578,7 @@
     },
     {
       "url": "/jobs/pennsylvania/",
-      "listings": 28
+      "listings": 29
     },
     {
       "url": "/jobs/rhode-island/",
@@ -610,14 +618,14 @@
     },
     {
       "url": "/jobs/remote/",
-      "listings": 52
+      "listings": 53
     }
   ],
   "locationOptions": [
-    "remote:52",
+    "remote:53",
     "AZ:2",
     "CA:10",
-    "CO:8",
+    "CO:9",
     "FL:20",
     "GA:4",
     "ID:1",
@@ -628,14 +636,14 @@
     "MN:1",
     "MO:1",
     "NV:1",
-    "NJ:20",
+    "NJ:21",
     "NY:17",
     "NC:4",
     "ND:1",
     "OH:6",
     "OK:1",
     "OR:1",
-    "PA:28",
+    "PA:29",
     "RI:1",
     "SC:6",
     "SD:2",
@@ -646,5 +654,5 @@
     "WV:5",
     "WI:3"
   ],
-  "sitemapUrls": 239
+  "sitemapUrls": 243
 }
