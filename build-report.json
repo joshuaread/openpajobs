@@ -1,7 +1,7 @@
 {
   "buildDate": "2026-11-24",
-  "total": 216,
-  "active": 183,
+  "total": 217,
+  "active": 184,
   "droppedExpired": [
     "founding-placeholder",
     "metro-apprentice",
@@ -191,7 +191,8 @@
     "metro-4517104009",
     "metro-4517122009",
     "metro-4517111009",
-    "coastal-claims-cradle-to-grave-adjuster-remote"
+    "coastal-claims-cradle-to-grave-adjuster-remote",
+    "crestview-pa-public-adjusters-ny-nj-pa-tx-fl"
   ],
   "jsonLdSkipped": {
     "noble-field-pa-sales": "jsonld:false on record",
@@ -475,9 +476,17 @@
     "metro-4517104009": "ok",
     "metro-4517122009": "ok",
     "metro-4517111009": "ok",
-    "coastal-claims-cradle-to-grave-adjuster-remote": "ok"
+    "coastal-claims-cradle-to-grave-adjuster-remote": "ok",
+    "crestview-pa-public-adjusters-ny-nj-pa-tx-fl": "ok"
   },
-  "removedPages": [],
+  "removedPages": [
+    "jobs/allied-claims-operations-manager-systems-ai.html",
+    "jobs/allied-pa-construction-consultant-la.html",
+    "jobs/allied-senior-estimator.html",
+    "jobs/metro-4459421009-pennsylvania.html",
+    "jobs/metro-pa-claims-support-rep-entry-level-nc.html",
+    "jobs/metro-remote-claims-rep-613829-wi.html"
+  ],
   "featuredNow": [],
   "featuredProblems": {},
   "sponsorProblems": {},
@@ -489,11 +498,11 @@
     "rockwall-houston": "rockwall-licensed-pa-houston-tx"
   },
   "sponsorStats": {
-    "listings": 183,
-    "firms": 40,
+    "listings": 184,
+    "firms": 41,
     "remote": 53,
-    "florida": 20,
-    "texas": 14
+    "florida": 21,
+    "texas": 15
   },
   "statePages": [
     {
@@ -510,7 +519,7 @@
     },
     {
       "url": "/jobs/florida/",
-      "listings": 20
+      "listings": 21
     },
     {
       "url": "/jobs/georgia/",
@@ -550,11 +559,11 @@
     },
     {
       "url": "/jobs/new-jersey/",
-      "listings": 21
+      "listings": 22
     },
     {
       "url": "/jobs/new-york/",
-      "listings": 17
+      "listings": 18
     },
     {
       "url": "/jobs/north-carolina/",
@@ -578,7 +587,7 @@
     },
     {
       "url": "/jobs/pennsylvania/",
-      "listings": 29
+      "listings": 30
     },
     {
       "url": "/jobs/rhode-island/",
@@ -598,7 +607,7 @@
     },
     {
       "url": "/jobs/texas/",
-      "listings": 14
+      "listings": 15
     },
     {
       "url": "/jobs/virginia/",
@@ -626,7 +635,7 @@
     "AZ:2",
     "CA:10",
     "CO:9",
-    "FL:20",
+    "FL:21",
     "GA:4",
     "ID:1",
     "IN:2",
@@ -636,23 +645,23 @@
     "MN:1",
     "MO:1",
     "NV:1",
-    "NJ:21",
-    "NY:17",
+    "NJ:22",
+    "NY:18",
     "NC:4",
     "ND:1",
     "OH:6",
     "OK:1",
     "OR:1",
-    "PA:29",
+    "PA:30",
     "RI:1",
     "SC:6",
     "SD:2",
     "TN:1",
-    "TX:14",
+    "TX:15",
     "VA:1",
     "WA:2",
     "WV:5",
     "WI:3"
   ],
-  "sitemapUrls": 243
+  "sitemapUrls": 244
 }
